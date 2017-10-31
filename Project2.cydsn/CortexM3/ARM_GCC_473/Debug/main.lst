@@ -1,0 +1,491 @@
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccXkSYcW.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"main.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.rodata
+  19              		.align	2
+  20              	.LC0:
+  21 0000 48656C6C 		.ascii	"Hello World\000"
+  21      6F20576F 
+  21      726C6400 
+  22              		.section	.text.main,"ax",%progbits
+  23              		.align	2
+  24              		.global	main
+  25              		.thumb
+  26              		.thumb_func
+  27              		.type	main, %function
+  28              	main:
+  29              	.LFB56:
+  30              		.file 1 ".\\main.c"
+   1:.\main.c      **** /*******************************************************************************
+   2:.\main.c      **** * File: main.c
+   3:.\main.c      **** *
+   4:.\main.c      **** * Description: 
+   5:.\main.c      **** *	The HelloWorld project prints the string 'Hello World' on the character LCD
+   6:.\main.c      **** *	and blinks an LED.
+   7:.\main.c      **** *
+   8:.\main.c      **** ********************************************************************************
+   9:.\main.c      **** * Copyright 2012, Cypress Semiconductor Corporation. All rights reserved.
+  10:.\main.c      **** * This software is owned by Cypress Semiconductor Corporation and is protected
+  11:.\main.c      **** * by and subject to worldwide patent and copyright laws and treaties.
+  12:.\main.c      **** * Therefore, you may use this software only as provided in the license agreement
+  13:.\main.c      **** * accompanying the software package from which you obtained this software.
+  14:.\main.c      **** * CYPRESS AND ITS SUPPLIERS MAKE NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+  15:.\main.c      **** * WITH REGARD TO THIS SOFTWARE, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT,
+  16:.\main.c      **** * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  17:.\main.c      **** *******************************************************************************/
+  18:.\main.c      **** 
+  19:.\main.c      **** #include <device.h>
+  20:.\main.c      **** 
+  21:.\main.c      **** /*******************************************************************************
+  22:.\main.c      **** * Function Name: main
+  23:.\main.c      **** ********************************************************************************
+  24:.\main.c      **** *
+  25:.\main.c      **** * Summary:
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccXkSYcW.s 			page 2
+
+
+  26:.\main.c      **** *  Main function performs following functions:
+  27:.\main.c      **** *   1. Start the LCD and PWM
+  28:.\main.c      **** *   2. Print 'Hello World' on the LCD
+  29:.\main.c      **** *
+  30:.\main.c      **** * Parameters:
+  31:.\main.c      **** *  None.
+  32:.\main.c      **** *
+  33:.\main.c      **** * Return:
+  34:.\main.c      **** *  None.
+  35:.\main.c      **** *
+  36:.\main.c      **** *******************************************************************************/
+  37:.\main.c      **** void main()
+  38:.\main.c      **** {
+  31              		.loc 1 38 0
+  32              		.cfi_startproc
+  33              		@ args = 0, pretend = 0, frame = 0
+  34              		@ frame_needed = 1, uses_anonymous_args = 0
+  35 0000 80B5     		push	{r7, lr}
+  36              	.LCFI0:
+  37              		.cfi_def_cfa_offset 8
+  38              		.cfi_offset 7, -8
+  39              		.cfi_offset 14, -4
+  40 0002 00AF     		add	r7, sp, #0
+  41              	.LCFI1:
+  42              		.cfi_def_cfa_register 7
+  39:.\main.c      **** 	/* Start LCD and PWM */
+  40:.\main.c      **** 	LCD_Char_Start();
+  43              		.loc 1 40 0
+  44 0004 FFF7FEFF 		bl	LCD_Char_Start
+  41:.\main.c      **** 	PWM_Start();
+  45              		.loc 1 41 0
+  46 0008 FFF7FEFF 		bl	PWM_Start
+  42:.\main.c      **** 	
+  43:.\main.c      **** 	/* Print Hello World on LCD */
+  44:.\main.c      **** 	LCD_Char_PrintString("Hello World");
+  47              		.loc 1 44 0
+  48 000c 40F20000 		movw	r0, #:lower16:.LC0
+  49 0010 C0F20000 		movt	r0, #:upper16:.LC0
+  50 0014 FFF7FEFF 		bl	LCD_Char_PrintString
+  45:.\main.c      ****     
+  46:.\main.c      ****     // Test: Set Compare Mode to Less Than and set Compare Time to different values
+  47:.\main.c      ****     PWM_WriteCompare(ADC_SAR_1__VNEG_VDAC_DIFF);
+  51              		.loc 1 47 0
+  52 0018 4FF00600 		mov	r0, #6
+  53 001c FFF7FEFF 		bl	PWM_WriteCompare
+  48:.\main.c      ****     PWM_WritePeriod(255u);
+  54              		.loc 1 48 0
+  55 0020 4FF0FF00 		mov	r0, #255
+  56 0024 FFF7FEFF 		bl	PWM_WritePeriod
+  57              	.L2:
+  49:.\main.c      ****     
+  50:.\main.c      **** 
+  51:.\main.c      ****     /* Loop forever */
+  52:.\main.c      **** 	for(;;)
+  53:.\main.c      ****     {
+  54:.\main.c      ****         // Read value of potentiometer
+  55:.\main.c      ****         // Set PWM duty cycle
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccXkSYcW.s 			page 3
+
+
+  56:.\main.c      ****     }
+  58              		.loc 1 56 0 discriminator 1
+  59 0028 FEE7     		b	.L2
+  60              		.cfi_endproc
+  61              	.LFE56:
+  62              		.size	main, .-main
+  63 002a 00BF     		.text
+  64              	.Letext0:
+  65              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\3.0\\psoc creator\\import\\gnu_cs\\arm\\4
+  66              		.file 3 "./Generated_Source/PSoC5/core_cm3.h"
+  67              		.section	.debug_info,"",%progbits
+  68              	.Ldebug_info0:
+  69 0000 BB000000 		.4byte	0xbb
+  70 0004 0200     		.2byte	0x2
+  71 0006 00000000 		.4byte	.Ldebug_abbrev0
+  72 000a 04       		.byte	0x4
+  73 000b 01       		.uleb128 0x1
+  74 000c 7C000000 		.4byte	.LASF13
+  75 0010 01       		.byte	0x1
+  76 0011 1D010000 		.4byte	.LASF14
+  77 0015 0E000000 		.4byte	.LASF15
+  78 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  79 001d 00000000 		.4byte	0
+  80 0021 00000000 		.4byte	0
+  81 0025 00000000 		.4byte	.Ldebug_line0
+  82 0029 02       		.uleb128 0x2
+  83 002a 01       		.byte	0x1
+  84 002b 06       		.byte	0x6
+  85 002c 3A010000 		.4byte	.LASF0
+  86 0030 02       		.uleb128 0x2
+  87 0031 01       		.byte	0x1
+  88 0032 08       		.byte	0x8
+  89 0033 01010000 		.4byte	.LASF1
+  90 0037 02       		.uleb128 0x2
+  91 0038 02       		.byte	0x2
+  92 0039 05       		.byte	0x5
+  93 003a 4C010000 		.4byte	.LASF2
+  94 003e 02       		.uleb128 0x2
+  95 003f 02       		.byte	0x2
+  96 0040 07       		.byte	0x7
+  97 0041 EE000000 		.4byte	.LASF3
+  98 0045 03       		.uleb128 0x3
+  99 0046 56010000 		.4byte	.LASF16
+ 100 004a 02       		.byte	0x2
+ 101 004b 4F       		.byte	0x4f
+ 102 004c 50000000 		.4byte	0x50
+ 103 0050 02       		.uleb128 0x2
+ 104 0051 04       		.byte	0x4
+ 105 0052 05       		.byte	0x5
+ 106 0053 14010000 		.4byte	.LASF4
+ 107 0057 02       		.uleb128 0x2
+ 108 0058 04       		.byte	0x4
+ 109 0059 07       		.byte	0x7
+ 110 005a C5000000 		.4byte	.LASF5
+ 111 005e 02       		.uleb128 0x2
+ 112 005f 08       		.byte	0x8
+ 113 0060 05       		.byte	0x5
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccXkSYcW.s 			page 4
+
+
+ 114 0061 00000000 		.4byte	.LASF6
+ 115 0065 02       		.uleb128 0x2
+ 116 0066 08       		.byte	0x8
+ 117 0067 07       		.byte	0x7
+ 118 0068 D7000000 		.4byte	.LASF7
+ 119 006c 04       		.uleb128 0x4
+ 120 006d 04       		.byte	0x4
+ 121 006e 05       		.byte	0x5
+ 122 006f 696E7400 		.ascii	"int\000"
+ 123 0073 02       		.uleb128 0x2
+ 124 0074 04       		.byte	0x4
+ 125 0075 07       		.byte	0x7
+ 126 0076 6A000000 		.4byte	.LASF8
+ 127 007a 02       		.uleb128 0x2
+ 128 007b 04       		.byte	0x4
+ 129 007c 04       		.byte	0x4
+ 130 007d 46010000 		.4byte	.LASF9
+ 131 0081 02       		.uleb128 0x2
+ 132 0082 08       		.byte	0x8
+ 133 0083 04       		.byte	0x4
+ 134 0084 26010000 		.4byte	.LASF10
+ 135 0088 02       		.uleb128 0x2
+ 136 0089 01       		.byte	0x1
+ 137 008a 08       		.byte	0x8
+ 138 008b 0F010000 		.4byte	.LASF11
+ 139 008f 02       		.uleb128 0x2
+ 140 0090 04       		.byte	0x4
+ 141 0091 07       		.byte	0x7
+ 142 0092 5E010000 		.4byte	.LASF12
+ 143 0096 05       		.uleb128 0x5
+ 144 0097 01       		.byte	0x1
+ 145 0098 77000000 		.4byte	.LASF17
+ 146 009c 01       		.byte	0x1
+ 147 009d 25       		.byte	0x25
+ 148 009e 00000000 		.4byte	.LFB56
+ 149 00a2 2A000000 		.4byte	.LFE56
+ 150 00a6 00000000 		.4byte	.LLST0
+ 151 00aa 01       		.byte	0x1
+ 152 00ab 06       		.uleb128 0x6
+ 153 00ac 2D010000 		.4byte	.LASF18
+ 154 00b0 03       		.byte	0x3
+ 155 00b1 1606     		.2byte	0x616
+ 156 00b3 B9000000 		.4byte	0xb9
+ 157 00b7 01       		.byte	0x1
+ 158 00b8 01       		.byte	0x1
+ 159 00b9 07       		.uleb128 0x7
+ 160 00ba 45000000 		.4byte	0x45
+ 161 00be 00       		.byte	0
+ 162              		.section	.debug_abbrev,"",%progbits
+ 163              	.Ldebug_abbrev0:
+ 164 0000 01       		.uleb128 0x1
+ 165 0001 11       		.uleb128 0x11
+ 166 0002 01       		.byte	0x1
+ 167 0003 25       		.uleb128 0x25
+ 168 0004 0E       		.uleb128 0xe
+ 169 0005 13       		.uleb128 0x13
+ 170 0006 0B       		.uleb128 0xb
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccXkSYcW.s 			page 5
+
+
+ 171 0007 03       		.uleb128 0x3
+ 172 0008 0E       		.uleb128 0xe
+ 173 0009 1B       		.uleb128 0x1b
+ 174 000a 0E       		.uleb128 0xe
+ 175 000b 55       		.uleb128 0x55
+ 176 000c 06       		.uleb128 0x6
+ 177 000d 11       		.uleb128 0x11
+ 178 000e 01       		.uleb128 0x1
+ 179 000f 52       		.uleb128 0x52
+ 180 0010 01       		.uleb128 0x1
+ 181 0011 10       		.uleb128 0x10
+ 182 0012 06       		.uleb128 0x6
+ 183 0013 00       		.byte	0
+ 184 0014 00       		.byte	0
+ 185 0015 02       		.uleb128 0x2
+ 186 0016 24       		.uleb128 0x24
+ 187 0017 00       		.byte	0
+ 188 0018 0B       		.uleb128 0xb
+ 189 0019 0B       		.uleb128 0xb
+ 190 001a 3E       		.uleb128 0x3e
+ 191 001b 0B       		.uleb128 0xb
+ 192 001c 03       		.uleb128 0x3
+ 193 001d 0E       		.uleb128 0xe
+ 194 001e 00       		.byte	0
+ 195 001f 00       		.byte	0
+ 196 0020 03       		.uleb128 0x3
+ 197 0021 16       		.uleb128 0x16
+ 198 0022 00       		.byte	0
+ 199 0023 03       		.uleb128 0x3
+ 200 0024 0E       		.uleb128 0xe
+ 201 0025 3A       		.uleb128 0x3a
+ 202 0026 0B       		.uleb128 0xb
+ 203 0027 3B       		.uleb128 0x3b
+ 204 0028 0B       		.uleb128 0xb
+ 205 0029 49       		.uleb128 0x49
+ 206 002a 13       		.uleb128 0x13
+ 207 002b 00       		.byte	0
+ 208 002c 00       		.byte	0
+ 209 002d 04       		.uleb128 0x4
+ 210 002e 24       		.uleb128 0x24
+ 211 002f 00       		.byte	0
+ 212 0030 0B       		.uleb128 0xb
+ 213 0031 0B       		.uleb128 0xb
+ 214 0032 3E       		.uleb128 0x3e
+ 215 0033 0B       		.uleb128 0xb
+ 216 0034 03       		.uleb128 0x3
+ 217 0035 08       		.uleb128 0x8
+ 218 0036 00       		.byte	0
+ 219 0037 00       		.byte	0
+ 220 0038 05       		.uleb128 0x5
+ 221 0039 2E       		.uleb128 0x2e
+ 222 003a 00       		.byte	0
+ 223 003b 3F       		.uleb128 0x3f
+ 224 003c 0C       		.uleb128 0xc
+ 225 003d 03       		.uleb128 0x3
+ 226 003e 0E       		.uleb128 0xe
+ 227 003f 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccXkSYcW.s 			page 6
+
+
+ 228 0040 0B       		.uleb128 0xb
+ 229 0041 3B       		.uleb128 0x3b
+ 230 0042 0B       		.uleb128 0xb
+ 231 0043 11       		.uleb128 0x11
+ 232 0044 01       		.uleb128 0x1
+ 233 0045 12       		.uleb128 0x12
+ 234 0046 01       		.uleb128 0x1
+ 235 0047 40       		.uleb128 0x40
+ 236 0048 06       		.uleb128 0x6
+ 237 0049 9642     		.uleb128 0x2116
+ 238 004b 0C       		.uleb128 0xc
+ 239 004c 00       		.byte	0
+ 240 004d 00       		.byte	0
+ 241 004e 06       		.uleb128 0x6
+ 242 004f 34       		.uleb128 0x34
+ 243 0050 00       		.byte	0
+ 244 0051 03       		.uleb128 0x3
+ 245 0052 0E       		.uleb128 0xe
+ 246 0053 3A       		.uleb128 0x3a
+ 247 0054 0B       		.uleb128 0xb
+ 248 0055 3B       		.uleb128 0x3b
+ 249 0056 05       		.uleb128 0x5
+ 250 0057 49       		.uleb128 0x49
+ 251 0058 13       		.uleb128 0x13
+ 252 0059 3F       		.uleb128 0x3f
+ 253 005a 0C       		.uleb128 0xc
+ 254 005b 3C       		.uleb128 0x3c
+ 255 005c 0C       		.uleb128 0xc
+ 256 005d 00       		.byte	0
+ 257 005e 00       		.byte	0
+ 258 005f 07       		.uleb128 0x7
+ 259 0060 35       		.uleb128 0x35
+ 260 0061 00       		.byte	0
+ 261 0062 49       		.uleb128 0x49
+ 262 0063 13       		.uleb128 0x13
+ 263 0064 00       		.byte	0
+ 264 0065 00       		.byte	0
+ 265 0066 00       		.byte	0
+ 266              		.section	.debug_loc,"",%progbits
+ 267              	.Ldebug_loc0:
+ 268              	.LLST0:
+ 269 0000 00000000 		.4byte	.LFB56
+ 270 0004 02000000 		.4byte	.LCFI0
+ 271 0008 0200     		.2byte	0x2
+ 272 000a 7D       		.byte	0x7d
+ 273 000b 00       		.sleb128 0
+ 274 000c 02000000 		.4byte	.LCFI0
+ 275 0010 04000000 		.4byte	.LCFI1
+ 276 0014 0200     		.2byte	0x2
+ 277 0016 7D       		.byte	0x7d
+ 278 0017 08       		.sleb128 8
+ 279 0018 04000000 		.4byte	.LCFI1
+ 280 001c 2A000000 		.4byte	.LFE56
+ 281 0020 0200     		.2byte	0x2
+ 282 0022 77       		.byte	0x77
+ 283 0023 08       		.sleb128 8
+ 284 0024 00000000 		.4byte	0
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccXkSYcW.s 			page 7
+
+
+ 285 0028 00000000 		.4byte	0
+ 286              		.section	.debug_aranges,"",%progbits
+ 287 0000 1C000000 		.4byte	0x1c
+ 288 0004 0200     		.2byte	0x2
+ 289 0006 00000000 		.4byte	.Ldebug_info0
+ 290 000a 04       		.byte	0x4
+ 291 000b 00       		.byte	0
+ 292 000c 0000     		.2byte	0
+ 293 000e 0000     		.2byte	0
+ 294 0010 00000000 		.4byte	.LFB56
+ 295 0014 2A000000 		.4byte	.LFE56-.LFB56
+ 296 0018 00000000 		.4byte	0
+ 297 001c 00000000 		.4byte	0
+ 298              		.section	.debug_ranges,"",%progbits
+ 299              	.Ldebug_ranges0:
+ 300 0000 00000000 		.4byte	.LFB56
+ 301 0004 2A000000 		.4byte	.LFE56
+ 302 0008 00000000 		.4byte	0
+ 303 000c 00000000 		.4byte	0
+ 304              		.section	.debug_line,"",%progbits
+ 305              	.Ldebug_line0:
+ 306 0000 0B010000 		.section	.debug_str,"MS",%progbits,1
+ 306      0200EC00 
+ 306      00000201 
+ 306      FB0E0D00 
+ 306      01010101 
+ 307              	.LASF6:
+ 308 0000 6C6F6E67 		.ascii	"long long int\000"
+ 308      206C6F6E 
+ 308      6720696E 
+ 308      7400
+ 309              	.LASF15:
+ 310 000e 5C5C6D69 		.ascii	"\\\\mightor\\home\\spring2013\\gmh5970\\Documents\\"
+ 310      6768746F 
+ 310      725C686F 
+ 310      6D655C73 
+ 310      7072696E 
+ 311 003a 50536F43 		.ascii	"PSoC Creator\\HelloWorld_Blinky01\\Project2.cydsn\000"
+ 311      20437265 
+ 311      61746F72 
+ 311      5C48656C 
+ 311      6C6F576F 
+ 312              	.LASF8:
+ 313 006a 756E7369 		.ascii	"unsigned int\000"
+ 313      676E6564 
+ 313      20696E74 
+ 313      00
+ 314              	.LASF17:
+ 315 0077 6D61696E 		.ascii	"main\000"
+ 315      00
+ 316              	.LASF13:
+ 317 007c 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
+ 317      4320342E 
+ 317      372E3320 
+ 317      32303133 
+ 317      30333132 
+ 318 00af 616E6368 		.ascii	"anch revision 196615]\000"
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccXkSYcW.s 			page 8
+
+
+ 318      20726576 
+ 318      6973696F 
+ 318      6E203139 
+ 318      36363135 
+ 319              	.LASF5:
+ 320 00c5 6C6F6E67 		.ascii	"long unsigned int\000"
+ 320      20756E73 
+ 320      69676E65 
+ 320      6420696E 
+ 320      7400
+ 321              	.LASF7:
+ 322 00d7 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 322      206C6F6E 
+ 322      6720756E 
+ 322      7369676E 
+ 322      65642069 
+ 323              	.LASF3:
+ 324 00ee 73686F72 		.ascii	"short unsigned int\000"
+ 324      7420756E 
+ 324      7369676E 
+ 324      65642069 
+ 324      6E7400
+ 325              	.LASF1:
+ 326 0101 756E7369 		.ascii	"unsigned char\000"
+ 326      676E6564 
+ 326      20636861 
+ 326      7200
+ 327              	.LASF11:
+ 328 010f 63686172 		.ascii	"char\000"
+ 328      00
+ 329              	.LASF4:
+ 330 0114 6C6F6E67 		.ascii	"long int\000"
+ 330      20696E74 
+ 330      00
+ 331              	.LASF14:
+ 332 011d 2E5C6D61 		.ascii	".\\main.c\000"
+ 332      696E2E63 
+ 332      00
+ 333              	.LASF10:
+ 334 0126 646F7562 		.ascii	"double\000"
+ 334      6C6500
+ 335              	.LASF18:
+ 336 012d 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 336      52784275 
+ 336      66666572 
+ 336      00
+ 337              	.LASF0:
+ 338 013a 7369676E 		.ascii	"signed char\000"
+ 338      65642063 
+ 338      68617200 
+ 339              	.LASF9:
+ 340 0146 666C6F61 		.ascii	"float\000"
+ 340      7400
+ 341              	.LASF2:
+ 342 014c 73686F72 		.ascii	"short int\000"
+ 342      7420696E 
+ 342      7400
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccXkSYcW.s 			page 9
+
+
+ 343              	.LASF16:
+ 344 0156 696E7433 		.ascii	"int32_t\000"
+ 344      325F7400 
+ 345              	.LASF12:
+ 346 015e 73697A65 		.ascii	"sizetype\000"
+ 346      74797065 
+ 346      00
+ 347              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br

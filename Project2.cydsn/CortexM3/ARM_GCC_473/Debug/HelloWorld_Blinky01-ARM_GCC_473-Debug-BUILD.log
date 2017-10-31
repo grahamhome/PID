@@ -1,0 +1,12 @@
+--------------- Build Started: 10/19/2017 15:57:28 Project: HelloWorld_Blinky01, Configuration: ARM GCC 4.7.3 Debug ---------------
+cydsfit.exe "-.appdatapath" "C:\Users\gmh5970\AppData\Local\Cypress Semiconductor\PSoC Creator\3.0" "-.fdsnotice" "-.fdswarpdepfile=warp_dependencies.txt" "-.fdselabdepfile=elab_dependencies.txt" "-.fdsbldfile=generated_files.txt" "-p" "\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\HelloWorld_Blinky01.cyprj" "-d" "CY8C5868AXI-LP035" "-s" "\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\Generated_Source\PSoC5" "--" "-yv2" "-v3" "-ygs" "-q10" "-o2" "-.fftcfgtype=LE"
+Elaborating Design...
+ADD: sdb.M0012: error: Terminals "ADC_SAR_1.vplus" connected to signal "Net_268" have mismatching types.
+ * \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\TopDesign\TopDesign.cysch (Signal: Net_268)
+ * \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\TopDesign\TopDesign.cysch (Shape_28.16)
+ * \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\TopDesign\TopDesign.cysch (W)
+ * \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\TopDesign\TopDesign.cysch (Shape_33.3)
+ * \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\TopDesign\TopDesign.cysch (vplus)
+ * \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\TopDesign\TopDesign.cysch (Shape_41)
+Error: cdf.M0005: CyDsFit aborted due to errors, please address all errors and rerun CyDsFit. (App=cydsfit)
+--------------- Build Failed: 10/19/2017 15:57:41 ---------------

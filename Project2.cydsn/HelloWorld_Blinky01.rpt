@@ -1,0 +1,16 @@
+Loading plugins phase: Elapsed time ==> 0s.606ms
+Initializing data phase: Elapsed time ==> 2s.184ms
+<CYPRESSTAG name="CyDsfit arguments...">
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\HelloWorld_Blinky01.cyprj -d CY8C5868AXI-LP035 -s \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\Generated_Source\PSoC5 -- -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE</CYPRESSTAG>
+<CYPRESSTAG name="Design elaboration results...">
+ADD: sdb.M0012: error: Terminals "ADC_SAR_1.vplus" connected to signal "Net_268" have mismatching types.
+ * \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\TopDesign\TopDesign.cysch (Signal: Net_268)
+ * \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\TopDesign\TopDesign.cysch (Shape_28.16)
+ * \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\TopDesign\TopDesign.cysch (W)
+ * \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\TopDesign\TopDesign.cysch (Shape_33.3)
+ * \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\TopDesign\TopDesign.cysch (vplus)
+ * \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\HelloWorld_Blinky01\HelloWorld_Blinky01.cydsn\TopDesign\TopDesign.cysch (Shape_41)
+
+</CYPRESSTAG>
+Elaboration phase: Elapsed time ==> 5s.737ms
+Error: cdf.M0005: CyDsFit aborted due to errors, please address all errors and rerun CyDsFit. (App=cydsfit)
