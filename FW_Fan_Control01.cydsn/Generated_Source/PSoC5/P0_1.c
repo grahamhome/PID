@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: SW2.c  
+* File Name: P0_1.c  
 * Version 2.5
 *
 * Description:
@@ -15,15 +15,15 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "SW2.h"
+#include "P0_1.h"
 
 /* APIs are not generated for P15[7:6] on PSoC 5 */
 #if !(CY_PSOC5A &&\
-	 SW2__PORT == 15 && ((SW2__MASK & 0xC0) != 0))
+	 P0_1__PORT == 15 && ((P0_1__MASK & 0xC0) != 0))
 
 
 /*******************************************************************************
-* Function Name: SW2_Write
+* Function Name: P0_1_Write
 ********************************************************************************
 *
 * Summary:
@@ -36,15 +36,15 @@
 *  None
 *  
 *******************************************************************************/
-void SW2_Write(uint8 value) 
+void P0_1_Write(uint8 value) 
 {
-    uint8 staticBits = (SW2_DR & (uint8)(~SW2_MASK));
-    SW2_DR = staticBits | ((uint8)(value << SW2_SHIFT) & SW2_MASK);
+    uint8 staticBits = (P0_1_DR & (uint8)(~P0_1_MASK));
+    P0_1_DR = staticBits | ((uint8)(value << P0_1_SHIFT) & P0_1_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: SW2_SetDriveMode
+* Function Name: P0_1_SetDriveMode
 ********************************************************************************
 *
 * Summary:
@@ -53,27 +53,27 @@ void SW2_Write(uint8 value)
 * Parameters:  
 *  mode:  Change the pins to one of the following drive modes.
 *
-*  SW2_DM_STRONG     Strong Drive 
-*  SW2_DM_OD_HI      Open Drain, Drives High 
-*  SW2_DM_OD_LO      Open Drain, Drives Low 
-*  SW2_DM_RES_UP     Resistive Pull Up 
-*  SW2_DM_RES_DWN    Resistive Pull Down 
-*  SW2_DM_RES_UPDWN  Resistive Pull Up/Down 
-*  SW2_DM_DIG_HIZ    High Impedance Digital 
-*  SW2_DM_ALG_HIZ    High Impedance Analog 
+*  P0_1_DM_STRONG     Strong Drive 
+*  P0_1_DM_OD_HI      Open Drain, Drives High 
+*  P0_1_DM_OD_LO      Open Drain, Drives Low 
+*  P0_1_DM_RES_UP     Resistive Pull Up 
+*  P0_1_DM_RES_DWN    Resistive Pull Down 
+*  P0_1_DM_RES_UPDWN  Resistive Pull Up/Down 
+*  P0_1_DM_DIG_HIZ    High Impedance Digital 
+*  P0_1_DM_ALG_HIZ    High Impedance Analog 
 *
 * Return: 
 *  None
 *
 *******************************************************************************/
-void SW2_SetDriveMode(uint8 mode) 
+void P0_1_SetDriveMode(uint8 mode) 
 {
-	CyPins_SetPinDriveMode(SW2_0, mode);
+	CyPins_SetPinDriveMode(P0_1_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: SW2_Read
+* Function Name: P0_1_Read
 ********************************************************************************
 *
 * Summary:
@@ -87,17 +87,17 @@ void SW2_SetDriveMode(uint8 mode)
 *  Returns the current value of the Digital Port as a right justified number
 *  
 * Note:
-*  Macro SW2_ReadPS calls this function. 
+*  Macro P0_1_ReadPS calls this function. 
 *  
 *******************************************************************************/
-uint8 SW2_Read(void) 
+uint8 P0_1_Read(void) 
 {
-    return (SW2_PS & SW2_MASK) >> SW2_SHIFT;
+    return (P0_1_PS & P0_1_MASK) >> P0_1_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: SW2_ReadDataReg
+* Function Name: P0_1_ReadDataReg
 ********************************************************************************
 *
 * Summary:
@@ -110,17 +110,17 @@ uint8 SW2_Read(void)
 *  Returns the current value assigned to the Digital Port's data output register
 *  
 *******************************************************************************/
-uint8 SW2_ReadDataReg(void) 
+uint8 P0_1_ReadDataReg(void) 
 {
-    return (SW2_DR & SW2_MASK) >> SW2_SHIFT;
+    return (P0_1_DR & P0_1_MASK) >> P0_1_SHIFT;
 }
 
 
 /* If Interrupts Are Enabled for this Pins component */ 
-#if defined(SW2_INTSTAT) 
+#if defined(P0_1_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: SW2_ClearInterrupt
+    * Function Name: P0_1_ClearInterrupt
     ********************************************************************************
     * Summary:
     *  Clears any active interrupts attached to port and returns the value of the 
@@ -133,9 +133,9 @@ uint8 SW2_ReadDataReg(void)
     *  Returns the value of the interrupt status register
     *  
     *******************************************************************************/
-    uint8 SW2_ClearInterrupt(void) 
+    uint8 P0_1_ClearInterrupt(void) 
     {
-        return (SW2_INTSTAT & SW2_MASK) >> SW2_SHIFT;
+        return (P0_1_INTSTAT & P0_1_MASK) >> P0_1_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

@@ -57,8 +57,66 @@
 
 #define FAN                 (1u)
 
+#include <device.h>
+#include <end_echo_IRR.h>
+#include <Echo_Timer.h>
+#include <start_echo_IRR.h>
+#include <stdio.h>
+#include <time.h>
+
+
+#define max_32b_int 4294967295u
+
+
+uint8 InterruptCnt;
+uint32 echo=0;
+uint32 min = max_32b_int; 
+uint32 max =0;
+
+CY_ISR(start_echo_IRR_Interrupt)
+{
+    start_echo_IRR_ClearPending(); 
+    
+    Echo_Timer_Stop();
+    Echo_Timer_Init();
+    Echo_Timer_Start();
+}
+
+
+CY_ISR(end_echo_IRR_Interrupt)
+{
+
+    end_echo_IRR_ClearPending();    
+    echo = Echo_Timer_ReadCounter();
+    
+    Echo_Timer_Stop();
+}
+
 void main()
 {
+    
+    /* Enable the global interrupt */
+    CyGlobalIntEnable;
+    
+    /* 1 - Enable the Interrupt component connected to Timer interrupt */
+    /* 2 - Start the components */
+
+    Trigger_Timer_Start();
+    
+    start_echo_IRR_StartEx(start_echo_IRR_Interrupt);
+    start_echo_IRR_Start();
+    
+    end_echo_IRR_StartEx(end_echo_IRR_Interrupt);
+    end_echo_IRR_Start();
+    
+    //Echo_Timer_ISR_StartEx(Echo_Timer_ISR_Interrupt);
+    //Echo_Timer_ISR_Start();
+    
+    /* Display TMR-16 on LCD */
+    /*LCD_Start();
+    LCD_Position(0u, 0u);
+    LCD_PrintString("TMR-16"); */
+    
     uint16  desiredSpeed = INIT_RPM;
     uint16  dutyCycle;
     char    displayString[6];
@@ -70,9 +128,9 @@ void main()
     FanController_SetDesiredSpeed(FAN, desiredSpeed);
     dutyCycle = FanController_GetDutyCycle(FAN);
     
-    LCD_Start();
+    /*LCD_Start();
     LCD_Position(0u, 0u);
-    LCD_PrintDecUint16(desiredSpeed);
+    LCD_PrintDecUint16(desiredSpeed);*/
     
     ADC_DelSig_1_Start();
 
@@ -81,112 +139,64 @@ void main()
     
     while(1u)
     {
+        /* Get position */
+        
+        LCD_Position(0u, 0u);
+        LCD_PrintInt16(echo/2u);
+        
+        if (echo>max){
+            max = echo;
+            LCD_Position(0u, 8u);
+            //LCD_PrintString("MAX: ");
+            //LCD_Position(0u, 12u);
+            LCD_PrintInt16(max/2u);
+            //LCD_PrintInt32(max);
+        }
+        if (echo<min){
+            min = echo;
+            LCD_Position(1u, 8u);
+            //LCD_PrintString("MIN: ");
+            //LCD_Position(0u, 121u);
+            //LCD_PrintInt32(min);
+            LCD_PrintInt16(min/2u);
+        }
+		CyDelay(100u);
+        
+        /* Update fan speed */
+        
         /* Synchronize firmware to end-of-cycle pulse from FanController */
         if(EOC_SR_Read())
         {
         
             /* Display Fan Actual Speeds */
-            LCD_Position(0,5u);
+            /*LCD_Position(0,5u);
             LCD_PrintDecUint16(FanController_GetActualSpeed(FAN));
-            LCD_PrintString("   ");
-
-            /* Firmware Speed Regulation */
-            //LCD_Position(0,9u);
-            
-            /* Fan Below Desired Speed */
-            /*if(FanController_GetActualSpeed(FAN) < desiredSpeed)
-            {
-                if((desiredSpeed - FanController_GetActualSpeed(FAN)) > RPM_DELTA_LARGE)
-                {
-                    dutyCycle += DUTY_STEP_COARSE;
-                }
-                else
-                {
-                    dutyCycle += DUTY_STEP_FINE;
-                }
-                if(dutyCycle > MAX_DUTY)
-                {
-                    dutyCycle = MAX_DUTY;
-                }
-            }*/
-            /* Fan Above Desired Speed */
-            /*else if(FanController_GetActualSpeed(FAN) > desiredSpeed)
-            {
-                if((FanController_GetActualSpeed(FAN) - desiredSpeed) > RPM_DELTA_LARGE)
-                {
-                    if(dutyCycle > (MIN_DUTY+DUTY_STEP_COARSE))
-                    {
-                        dutyCycle -= DUTY_STEP_COARSE;
-                    }
-                }
-                else if((FanController_GetActualSpeed(FAN) - desiredSpeed) > RPM_TOLERANCE)
-                {
-                    if(dutyCycle > MIN_DUTY)
-                    {
-                        dutyCycle -= DUTY_STEP_FINE;
-                    }
-                }
-            }
-            FanController_SetDutyCycle(FAN, dutyCycle);*/
+            LCD_PrintString("   ");*/
 
             /* Display Current Duty Cycle Settings (in 100ths of a percent) */
-            LCD_Position(0,10u);
+           /* LCD_Position(0,10u);
             sprintf(displayString, "%5.2f", (((float)dutyCycle)/100));
             LCD_PrintString(displayString);
-            LCD_PrintString("%    ");
+            LCD_PrintString("%    ");*/
             
             
             // Check for potentiometer reading to change speed
             if(ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_RETURN_STATUS))
             {
                 uint16 output = ADC_DelSig_1_GetResult16() + 1; // Add one to overflow int at minimum value (was being read as max in value)
-                LCD_Position(1u, 8u);
-                LCD_PrintInt16(output);
+                //LCD_Position(1u, 8u);
+                //LCD_PrintInt16(output);
                 float speed = (((float) output)/(float)256 * (((float)MAX_RPM) - ((float)MIN_RPM))) + (float)MIN_RPM;
                 float duty = (((float) output)/(float)256 * (((float)MAX_DUTY) - ((float)MIN_DUTY))) + (float)MIN_DUTY;
                 dutyCycle = (uint16) duty;
                 desiredSpeed = (uint16) speed;
                 /* Display Updated Desired Speed */
-                LCD_Position(1u, 0u);
-                LCD_PrintDecUint16(desiredSpeed);
+                //LCD_Position(1u, 0u);
+                //LCD_PrintDecUint16(desiredSpeed);
                 FanController_SetDesiredSpeed(FAN, desiredSpeed);
                 FanController_SetDutyCycle(FAN, dutyCycle);
                 
             }
-            
-            //CyDelay(250u);
-            
-            /* Check for Button Press to Change Speed */
-            /*if((!SW1_Read()) || (!SW2_Read()))
-            {*/
-                /* Decrease Speed */
-                /*if(!SW1_Read())
-                {
-                    if(desiredSpeed > MIN_RPM)
-                    {
-                        desiredSpeed -= RPM_STEP;
-                    }
-                }*/
-                
-                /* Increase Speed */
-                /*else
-                {
-                    desiredSpeed += RPM_STEP;
-                    if(desiredSpeed > MAX_RPM)
-                    {
-                        desiredSpeed = MAX_RPM;
-                    }
-                }*/
-    
-                /* Display Updated Desired Speed */
-                /*LCD_Position(0u, 0u);
-                LCD_PrintDecUint16(desiredSpeed);
-                FanController_SetDesiredSpeed(1u, desiredSpeed);
-                dutyCycle = FanController_GetDutyCycle(1u);*/
-                
-                /* Switch Debounce */
-                //CyDelay(250u);
-            //}
         }
     }
 }

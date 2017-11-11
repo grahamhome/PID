@@ -21,10 +21,6 @@
 #include <cydisabledsheets.h>
 #include <LCD.h>
 #include <FanController.h>
-#include <SW1_aliases.h>
-#include <SW1.h>
-#include <SW2_aliases.h>
-#include <SW2.h>
 #include <tach_1_aliases.h>
 #include <tach_1.h>
 #include <pwm_1_aliases.h>
@@ -35,6 +31,16 @@
 #include <ADC_DelSig_1.h>
 #include <Pin_1_aliases.h>
 #include <Pin_1.h>
+#include <Trigger_Timer.h>
+#include <clock_3.h>
+#include <P0_1_aliases.h>
+#include <P0_1.h>
+#include <Echo_Timer.h>
+#include <clock_4.h>
+#include <Pin_2_aliases.h>
+#include <Pin_2.h>
+#include <end_echo_IRR.h>
+#include <start_echo_IRR.h>
 #include <LCD_LCDPort_aliases.h>
 #include <LCD_LCDPort.h>
 #include <ADC_DelSig_1_AMux.h>

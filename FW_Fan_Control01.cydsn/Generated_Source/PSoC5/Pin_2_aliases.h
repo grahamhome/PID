@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: SW2.h  
+* File Name: Pin_2.h  
 * Version 2.5
 *
 * Description:
@@ -14,8 +14,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_SW2_ALIASES_H) /* Pins SW2_ALIASES_H */
-#define CY_PINS_SW2_ALIASES_H
+#if !defined(CY_PINS_Pin_2_ALIASES_H) /* Pins Pin_2_ALIASES_H */
+#define CY_PINS_Pin_2_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,8 +25,8 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define SW2_0		SW2__0__PC
+#define Pin_2_0		Pin_2__0__PC
 
-#endif /* End Pins SW2_ALIASES_H */
+#endif /* End Pins Pin_2_ALIASES_H */
 
 /* [] END OF FILE */

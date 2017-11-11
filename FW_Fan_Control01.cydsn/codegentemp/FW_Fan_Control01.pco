@@ -1,5 +1,5 @@
 # FW_Fan_Control01
-# 2017-10-31 20:40:57Z
+# 2017-11-07 21:43:01Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -8,47 +8,59 @@ dont_use_io iocell 1 1
 # IO_3@[IOP=(1)][IoId=(3)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 3
 set_location "ClockBlock" clockblockcell -1 -1 0
-set_location "Net_357" 3 2 1 0
-set_location "Net_947" 2 0 0 1
+set_location "Net_162" 0 2 0 3
+set_location "Net_357" 2 2 0 2
+set_location "Net_541" 0 2 0 0
+set_location "Net_947" 3 1 0 1
+set_io "P0_1(0)" iocell 1 6
 set_io "Pin_1(0)" iocell 0 0
-set_io "SW1(0)" iocell 1 6
-set_io "SW2(0)" iocell 1 7
+set_io "Pin_2(0)" iocell 1 7
 set_location "\ADC_DelSig_1:DEC\" decimatorcell -1 -1 0
 set_location "\ADC_DelSig_1:DSM\" dsmodcell -1 -1 0
 set_location "\ADC_DelSig_1:IRQ\" interrupt -1 -1 29
-set_location "\EOC_SR:sts:sts_reg\" 2 0 3
-set_location "\FanController:B_FanCtrl:AlertMaskLSB\" 3 1 6
-set_location "\FanController:B_FanCtrl:AlertStatusReg\" 2 1 4
-set_location "\FanController:B_FanCtrl:GlobalControlReg\" 2 1 6
-set_location "\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u0\" 2 3 2
-set_location "\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u1\" 3 3 2
-set_location "\FanController:B_FanCtrl:StallError_LSB\" 3 1 3
-set_location "\FanController:B_FanCtrl:alert_reg\" 2 1 1 2
-set_location "\FanController:B_FanCtrl:continuous_nrq\" 2 0 1 0
-set_location "\FanController:B_FanCtrl:stall_alrt\" 2 1 0 2
-set_location "\FanController:B_FanCtrl:stall_status\" 2 1 1 0
-set_location "\FanController:B_FanCtrl:sync_nrq\" 2 0 0 2
-set_location "\FanController:FanTach:FanCounter\" 3 0 7
-set_location "\FanController:FanTach:FanTachCounter:u0\" 3 2 2
-set_location "\FanController:FanTach:FanTachCounter:u1\" 2 2 2
-set_location "\FanController:FanTach:GlitchFilterTimer:u0\" 3 0 2
-set_location "\FanController:FanTach:filtered_rising_tach\" 3 1 1 2
-set_location "\FanController:FanTach:gf_dmp_state\" 3 1 0 0
-set_location "\FanController:FanTach:glitch_filter_ld\" 3 0 0 0
-set_location "\FanController:FanTach:glitch_filter_state\" 3 0 0 2
-set_location "\FanController:FanTach:next_fan\" 3 1 0 3
-set_location "\FanController:FanTach:pulse_tc\" 3 3 0 0
-set_location "\FanController:FanTach:stall_det\" 3 1 0 1
-set_location "\FanController:FanTach:tach\" 3 0 0 1
-set_location "\FanController:FanTach:tach_state_0\" 3 1 1 0
-set_location "\FanController:FanTach:tach_state_1\" 3 2 0 0
-set_location "\FanController:FanTach:tach_state_2\" 3 2 0 1
-set_location "\FanController:FanTach:tach_state_3\" 3 3 0 3
-set_location "\FanController:Net_6146\" 3 3 0 1
-set_location "\FanController:Net_6149_0\" 3 1 0 2
-set_location "\FanController:Net_6505\" 3 3 0 2
+set_location "\EOC_SR:sts:sts_reg\" 3 1 3
+set_location "\Echo_Timer:TimerUDB:rstSts:stsreg\" 2 0 4
+set_location "\Echo_Timer:TimerUDB:run_mode\" 2 0 0 2
+set_location "\Echo_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 2 0 6
+set_location "\Echo_Timer:TimerUDB:sT32:timerdp:u0\" 2 0 2
+set_location "\Echo_Timer:TimerUDB:sT32:timerdp:u1\" 3 0 2
+set_location "\Echo_Timer:TimerUDB:sT32:timerdp:u2\" 3 1 2
+set_location "\Echo_Timer:TimerUDB:sT32:timerdp:u3\" 2 1 2
+set_location "\Echo_Timer:TimerUDB:status_tc\" 2 0 0 3
+set_location "\Echo_Timer:TimerUDB:timer_enable\" 2 0 0 0
+set_location "\Echo_Timer:TimerUDB:trig_disable\" 2 0 0 1
+set_location "\FanController:B_FanCtrl:AlertMaskLSB\" 2 4 6
+set_location "\FanController:B_FanCtrl:AlertStatusReg\" 3 2 4
+set_location "\FanController:B_FanCtrl:GlobalControlReg\" 3 2 6
+set_location "\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u0\" 3 2 2
+set_location "\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u1\" 2 2 2
+set_location "\FanController:B_FanCtrl:StallError_LSB\" 2 4 3
+set_location "\FanController:B_FanCtrl:alert_reg\" 3 1 0 0
+set_location "\FanController:B_FanCtrl:continuous_nrq\" 3 1 1 0
+set_location "\FanController:B_FanCtrl:stall_alrt\" 3 4 1 0
+set_location "\FanController:B_FanCtrl:stall_status\" 3 2 1 0
+set_location "\FanController:B_FanCtrl:sync_nrq\" 3 1 0 2
+set_location "\FanController:FanTach:FanCounter\" 2 3 7
+set_location "\FanController:FanTach:FanTachCounter:u0\" 2 3 2
+set_location "\FanController:FanTach:FanTachCounter:u1\" 3 3 2
+set_location "\FanController:FanTach:GlitchFilterTimer:u0\" 2 4 2
+set_location "\FanController:FanTach:filtered_rising_tach\" 2 3 1 3
+set_location "\FanController:FanTach:gf_dmp_state\" 2 4 1 0
+set_location "\FanController:FanTach:glitch_filter_ld\" 2 3 1 1
+set_location "\FanController:FanTach:glitch_filter_state\" 2 3 1 2
+set_location "\FanController:FanTach:next_fan\" 2 4 1 2
+set_location "\FanController:FanTach:pulse_tc\" 3 2 1 3
+set_location "\FanController:FanTach:stall_det\" 2 4 0 1
+set_location "\FanController:FanTach:tach\" 2 3 1 0
+set_location "\FanController:FanTach:tach_state_0\" 3 3 0 0
+set_location "\FanController:FanTach:tach_state_1\" 3 3 1 1
+set_location "\FanController:FanTach:tach_state_2\" 3 3 0 1
+set_location "\FanController:FanTach:tach_state_3\" 3 2 0 2
+set_location "\FanController:Net_6146\" 3 4 0 1
+set_location "\FanController:Net_6149_0\" 2 4 1 1
+set_location "\FanController:Net_6505\" 2 2 1 2
 set_location "\FanController:TachOutDMA\" drqcell -1 -1 0
-set_location "\FanController:drq\" 3 1 1 1
+set_location "\FanController:drq\" 3 2 0 1
 set_io "\LCD:LCDPort(0)\" iocell 2 0
 set_io "\LCD:LCDPort(1)\" iocell 2 1
 set_io "\LCD:LCDPort(2)\" iocell 2 2
@@ -56,6 +68,15 @@ set_io "\LCD:LCDPort(3)\" iocell 2 3
 set_io "\LCD:LCDPort(4)\" iocell 2 4
 set_io "\LCD:LCDPort(5)\" iocell 2 5
 set_io "\LCD:LCDPort(6)\" iocell 2 6
-set_location "__ONE__" 2 2 1 2
+set_location "\Trigger_Timer:TimerUDB:rstSts:stsreg\" 1 3 4
+set_location "\Trigger_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" 1 2 6
+set_location "\Trigger_Timer:TimerUDB:sT32:timerdp:u0\" 1 2 2
+set_location "\Trigger_Timer:TimerUDB:sT32:timerdp:u1\" 0 2 2
+set_location "\Trigger_Timer:TimerUDB:sT32:timerdp:u2\" 0 3 2
+set_location "\Trigger_Timer:TimerUDB:sT32:timerdp:u3\" 1 3 2
+set_location "\Trigger_Timer:TimerUDB:status_tc\" 1 3 0 3
+set_location "__ONE__" 2 4 0 2
+set_location "end_echo_IRR" interrupt -1 -1 0
 set_io "pwm_1(0)" iocell 3 0
+set_location "start_echo_IRR" interrupt -1 -1 1
 set_io "tach_1(0)" iocell 3 1
