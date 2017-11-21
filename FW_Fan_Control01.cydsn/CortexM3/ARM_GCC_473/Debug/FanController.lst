@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
   21:.\Generated_Source\PSoC5/FanController.c **** * disclaimers, and limitations in the end user license agreement accompanying
   22:.\Generated_Source\PSoC5/FanController.c **** * the software package with which this file was provided.
   23:.\Generated_Source\PSoC5/FanController.c **** ********************************************************************************/
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 2
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 2
 
 
   24:.\Generated_Source\PSoC5/FanController.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
   78:.\Generated_Source\PSoC5/FanController.c **** 
   79:.\Generated_Source\PSoC5/FanController.c **** #endif /* (!CY_PSOC4) */
   80:.\Generated_Source\PSoC5/FanController.c **** 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 3
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 3
 
 
   81:.\Generated_Source\PSoC5/FanController.c **** /* Arrays for storing PID parameters and saturation ranges */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  135:.\Generated_Source\PSoC5/FanController.c **** {
   35              		.loc 1 135 0
   36              		.cfi_startproc
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 4
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 4
 
 
   37              		@ args = 0, pretend = 0, frame = 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  151:.\Generated_Source\PSoC5/FanController.c **** *  Stop the fan controller component.  Disables all hardware sub-components,
  152:.\Generated_Source\PSoC5/FanController.c **** *  drives fan outputs high and de-asserts the alert pin.
  153:.\Generated_Source\PSoC5/FanController.c **** *
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 5
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 5
 
 
  154:.\Generated_Source\PSoC5/FanController.c **** * Parameters:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  187:.\Generated_Source\PSoC5/FanController.c ****         #elif(FanController_NUMBER_OF_FAN_OUTPUTS == 2u)
  188:.\Generated_Source\PSoC5/FanController.c ****             FanController_FW_PWM1_Stop();
  189:.\Generated_Source\PSoC5/FanController.c ****             FanController_FW_PWM2_Stop();
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 6
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 6
 
 
  190:.\Generated_Source\PSoC5/FanController.c ****         #elif(FanController_NUMBER_OF_FAN_OUTPUTS == 3u)
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  115              	.LCFI4:
  116              		.cfi_def_cfa_offset 8
  117              		.cfi_offset 7, -8
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 7
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 7
 
 
  118              		.cfi_offset 14, -4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  128 000a 4FF00003 		mov	r3, #0
  129 000e FB71     		strb	r3, [r7, #7]
  130 0010 30E0     		b	.L5
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 8
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 8
 
 
  131              	.L6:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  292:.\Generated_Source\PSoC5/FanController.c **** 
  293:.\Generated_Source\PSoC5/FanController.c ****                     CyExitCriticalSection(interruptState);
  163              		.loc 1 293 0 discriminator 2
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 9
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 9
 
 
  164 0064 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  302:.\Generated_Source\PSoC5/FanController.c ****             }
  303:.\Generated_Source\PSoC5/FanController.c **** 
  304:.\Generated_Source\PSoC5/FanController.c ****         #endif /* ((FanController_IS_AUTO_HARDWARE_MODE) || (FanController_IS_AUTO_FIRMWARE_MODE)) 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 10
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 10
 
 
  305:.\Generated_Source\PSoC5/FanController.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  211 00c4 46F29443 		movw	r3, #25748
  212 00c8 C4F20003 		movt	r3, 16384
  213 00cc 46F29442 		movw	r2, #25748
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 11
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 11
 
 
  214 00d0 C4F20002 		movt	r2, 16384
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  390:.\Generated_Source\PSoC5/FanController.c ****             FanController_pidA1[counti] = FanController_PID_A1;
  391:.\Generated_Source\PSoC5/FanController.c ****             FanController_pidA2[counti] = FanController_PID_A2;
  392:.\Generated_Source\PSoC5/FanController.c ****             FanController_pidA3[counti] = FanController_PID_A3;
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 12
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 12
 
 
  393:.\Generated_Source\PSoC5/FanController.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  247              		.loc 1 431 0
  248              		.cfi_startproc
  249              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 13
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 13
 
 
  250              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  274 0024 46F29642 		movw	r2, #25750
  275 0028 C4F20002 		movt	r2, 16384
  276 002c 1278     		ldrb	r2, [r2, #0]
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 14
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 14
 
 
  277 002e D2B2     		uxtb	r2, r2
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  486:.\Generated_Source\PSoC5/FanController.c **** *  Alert output pin.
  487:.\Generated_Source\PSoC5/FanController.c **** *
  488:.\Generated_Source\PSoC5/FanController.c **** * Parameters:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 15
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 15
 
 
  489:.\Generated_Source\PSoC5/FanController.c **** *  None
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  344              		.cfi_endproc
  345              	.LFE4:
  346              		.size	FanController_EnableAlert, .-FanController_EnableAlert
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 16
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 16
 
 
  347 003a 00BF     		.section	.text.FanController_DisableAlert,"ax",%progbits
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  376 0012 C4F20003 		movt	r3, 16384
  377 0016 46F27642 		movw	r2, #25718
  378 001a C4F20002 		movt	r2, 16384
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 17
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 17
 
 
  379 001e 1278     		ldrb	r2, [r2, #0]
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  406              		@ frame_needed = 1, uses_anonymous_args = 0
  407 0000 80B5     		push	{r7, lr}
  408              	.LCFI16:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 18
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 18
 
 
  409              		.cfi_def_cfa_offset 8
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  454              		.cfi_endproc
  455              	.LFE6:
  456              		.size	FanController_SetAlertMode, .-FanController_SetAlertMode
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 19
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 19
 
 
  457 0056 00BF     		.section	.text.FanController_GetAlertMode,"ax",%progbits
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  592:.\Generated_Source\PSoC5/FanController.c **** }
  485              		.loc 1 592 0
  486 001a 1846     		mov	r0, r3
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 20
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 20
 
 
  487 001c BD46     		mov	sp, r7
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  516 0006 0346     		mov	r3, r0
  517 0008 FB80     		strh	r3, [r7, #6]	@ movhi
  618:.\Generated_Source\PSoC5/FanController.c ****     FanController_ALERT_MASK_LSB_CONTROL_REG = LO8(alertMask);
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 21
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 21
 
 
  518              		.loc 1 618 0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  542              		@ args = 0, pretend = 0, frame = 8
  543              		@ frame_needed = 1, uses_anonymous_args = 0
  544              		@ link register save eliminated.
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 22
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 22
 
 
  545 0000 80B4     		push	{r7}
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  668:.\Generated_Source\PSoC5/FanController.c **** *  this API call. If this API call returns a non-zero value, call the
  669:.\Generated_Source\PSoC5/FanController.c **** *  GetFanStallStatus() or GetFanSpeedStatus() APIs to determine the exact
  670:.\Generated_Source\PSoC5/FanController.c **** *  source of the alert and simultaneously de-assert the pending alert and
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 23
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 23
 
 
  671:.\Generated_Source\PSoC5/FanController.c **** *  alert pin.
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  690:.\Generated_Source\PSoC5/FanController.c **** 
  691:.\Generated_Source\PSoC5/FanController.c **** 
  692:.\Generated_Source\PSoC5/FanController.c **** /******************************************************************************
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 24
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 24
 
 
  693:.\Generated_Source\PSoC5/FanController.c **** * Function Name: FanController_GetFanStallStatus
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  636              		.loc 1 725 0
  637 0014 FB88     		ldrh	r3, [r7, #6]
  726:.\Generated_Source\PSoC5/FanController.c **** }
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 25
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 25
 
 
  638              		.loc 1 726 0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  764:.\Generated_Source\PSoC5/FanController.c ****                     ((uint16)FanController_SPEED_ERROR_MSB_STATUS_REG << 8u);
  765:.\Generated_Source\PSoC5/FanController.c ****             #else
  766:.\Generated_Source\PSoC5/FanController.c ****                 speedStatus = (uint16)FanController_SPEED_ERROR_LSB_STATUS_REG;
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 26
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 26
 
 
  767:.\Generated_Source\PSoC5/FanController.c ****             #endif /* FanController_NUMBER_OF_FANS > 8u */
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  662              		.cfi_def_cfa_offset 4
  663              		.cfi_offset 7, -4
  664 0002 85B0     		sub	sp, sp, #20
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 27
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 27
 
 
  665              	.LCFI33:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  702 0054 1A80     		strh	r2, [r3, #0]	@ movhi
  703              	.L22:
  831:.\Generated_Source\PSoC5/FanController.c ****                 #endif /* FanController_PWMRES == FanController_PWMRES_EIGHTBIT */
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 28
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 28
 
 
  832:.\Generated_Source\PSoC5/FanController.c ****             #else
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  727              		.cfi_def_cfa_offset 4
  728              		.cfi_offset 7, -4
  729 0002 85B0     		sub	sp, sp, #20
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 29
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 29
 
 
  730              	.LCFI36:
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  884:.\Generated_Source\PSoC5/FanController.c ****     return(duyCycle);
  762              		.loc 1 884 0
  763 0046 FB89     		ldrh	r3, [r7, #14]
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 30
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 30
 
 
  885:.\Generated_Source\PSoC5/FanController.c **** }
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  786              	.LCFI38:
  787              		.cfi_def_cfa_offset 16
  788              		.cfi_offset 4, -16
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 31
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 31
 
 
  789              		.cfi_offset 5, -12
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  818 0032 4FEAC303 		lsl	r3, r3, #3
  819 0036 5B1A     		subs	r3, r3, r1
  820 0038 4FEA4303 		lsl	r3, r3, #1
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 32
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 32
 
 
  821 003c D318     		adds	r3, r2, r3
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  870 00ba A3FB0213 		umull	r1, r3, r3, r2
  871 00be 4FEA5313 		lsr	r3, r3, #5
  943:.\Generated_Source\PSoC5/FanController.c ****                 overrideDuty =  (uint32)FanController_fanProperties[fanNumber - 1u].dutyA -
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 33
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 33
 
 
  872              		.loc 1 943 0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  912 011e FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
  913 0120 03F1FF31 		add	r1, r3, #-1
  914 0124 40F20002 		movw	r2, #:lower16:FanController_fanProperties
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 34
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 34
 
 
  915 0128 C0F20002 		movt	r2, #:upper16:FanController_fanProperties
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  977:.\Generated_Source\PSoC5/FanController.c ****             FanController_fanControl.desiredPeriod[fanNumber - 1u] =
  978:.\Generated_Source\PSoC5/FanController.c ****                 (uint16) (FanController_RPM_PERIOD_CONV_FACTOR /
  979:.\Generated_Source\PSoC5/FanController.c ****                     (uint32) ((uint32) rpm + (((uint32) rpm * FanController_TOLERANCE) /
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 35
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 35
 
 
  980:.\Generated_Source\PSoC5/FanController.c ****                         FanController_TOLERANCE_DIVIDER)));
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
 1019:.\Generated_Source\PSoC5/FanController.c ****     *  uint8 fanNumber
 1020:.\Generated_Source\PSoC5/FanController.c ****     *  Valid range is 1-16 and should not exceed the number of fans in the system.
 1021:.\Generated_Source\PSoC5/FanController.c ****     *
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 36
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 36
 
 
 1022:.\Generated_Source\PSoC5/FanController.c ****     * Return:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  983 000a 4FF00003 		mov	r3, #0
  984 000e FB81     		strh	r3, [r7, #14]	@ movhi
 1058:.\Generated_Source\PSoC5/FanController.c **** 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 37
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 37
 
 
 1059:.\Generated_Source\PSoC5/FanController.c ****     if(fanNumber <= FanController_NUMBER_OF_FANS)
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1003 003e 1A46     		mov	r2, r3
 1093:.\Generated_Source\PSoC5/FanController.c ****                 actualSpeed = (uint16) (FanController_RPM_PERIOD_CONV_FACTOR /
  1004              		.loc 1 1093 0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 38
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 38
 
 
  1005 0040 4CF28033 		movw	r3, #50048
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
 1126:.\Generated_Source\PSoC5/FanController.c **** 
 1127:.\Generated_Source\PSoC5/FanController.c ****     void FanController_OverrideAutomaticControl(uint8 override)
 1128:.\Generated_Source\PSoC5/FanController.c ****                                 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 39
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 39
 
 
 1129:.\Generated_Source\PSoC5/FanController.c ****     {
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
 1183:.\Generated_Source\PSoC5/FanController.c ****             /* Calculate PID Constants for fan and store them into temporary variables to
 1184:.\Generated_Source\PSoC5/FanController.c ****             * be later written to PID vars. This is done so to not disable interrupt for a
 1185:.\Generated_Source\PSoC5/FanController.c ****             * long time.
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 40
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 40
 
 
 1186:.\Generated_Source\PSoC5/FanController.c ****             */
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
 1240:.\Generated_Source\PSoC5/FanController.c ****         {
 1241:.\Generated_Source\PSoC5/FanController.c ****             /* Calculate PID Constants for fan and store them into temporary variables to
 1242:.\Generated_Source\PSoC5/FanController.c ****             * be later written to PID vars. This is done so to not disable interrupt for a
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 41
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 41
 
 
 1243:.\Generated_Source\PSoC5/FanController.c ****             * long time.
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
 1297:.\Generated_Source\PSoC5/FanController.c ****     *  None
 1298:.\Generated_Source\PSoC5/FanController.c ****     *
 1299:.\Generated_Source\PSoC5/FanController.c ****     * Side Effects:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 42
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 42
 
 
 1300:.\Generated_Source\PSoC5/FanController.c ****     *  None
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
 1338:.\Generated_Source\PSoC5/FanController.c ****                                                     HI16(FanController_TACH_ACTUAL_PERIOD_PTR),
 1339:.\Generated_Source\PSoC5/FanController.c ****                                                     HI16(((uint32)&FanController_fanControl.actualP
  1044              		.loc 1 1339 0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 43
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 43
 
 
  1045 0006 40F20003 		movw	r3, #:lower16:FanController_fanControl
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1076              	.L35:
 1352:.\Generated_Source\PSoC5/FanController.c ****         for (counti = 0u; counti < FanController_NUMBER_OF_FANS; counti++)
  1077              		.loc 1 1352 0 is_stmt 0 discriminator 1
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 44
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 44
 
 
  1078 0056 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
 1399:.\Generated_Source\PSoC5/FanController.c ****                                             FanController_TachOutDMA__TD_TERMOUT_EN);
 1400:.\Generated_Source\PSoC5/FanController.c **** 
 1401:.\Generated_Source\PSoC5/FanController.c ****                     (void) CyDmaTdSetConfiguration(
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 45
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 45
 
 
 1402:.\Generated_Source\PSoC5/FanController.c ****                                 FanController_fanOutTds[FanController_NUMBER_OF_FANS].setActualPeri
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
 1441:.\Generated_Source\PSoC5/FanController.c ****                             TD_INC_DST_ADR | FanController_TD_SWAP_ENDIAN_FLAG  |
 1442:.\Generated_Source\PSoC5/FanController.c ****                             /* Also assert NRQ at end of each TD in hardware controlled fan mode */
 1443:.\Generated_Source\PSoC5/FanController.c ****                             FanController_TachOutDMA__TD_TERMOUT_EN);
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 46
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 46
 
 
 1444:.\Generated_Source\PSoC5/FanController.c **** 
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1126              	.L39:
 1370:.\Generated_Source\PSoC5/FanController.c ****         for (counti = 0u; counti < FanController_NUMBER_OF_FANS; counti++)
  1127              		.loc 1 1370 0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 47
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 47
 
 
  1128 00c6 FB79     		ldrb	r3, [r7, #7]
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1137 00d4 4FF00003 		mov	r3, #0
  1138 00d8 FB71     		strb	r3, [r7, #7]
  1139 00da 18E0     		b	.L41
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 48
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 48
 
 
  1140              	.L42:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
 1548:.\Generated_Source\PSoC5/FanController.c ****                                 LO16(FanController_TACH_DESIRED_PERIOD_PTR));
 1549:.\Generated_Source\PSoC5/FanController.c **** 
 1550:.\Generated_Source\PSoC5/FanController.c ****                 /* TD for tolerance to tachometer */
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 49
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 49
 
 
 1551:.\Generated_Source\PSoC5/FanController.c ****                 (void) CyDmaTdSetAddress(FanController_fanInTds[counti].getToleranceTD,
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
 1581:.\Generated_Source\PSoC5/FanController.c ****     * Parameters:
 1582:.\Generated_Source\PSoC5/FanController.c ****     *  uint8  burstCount
 1583:.\Generated_Source\PSoC5/FanController.c ****     *  uint8  requestPerBurst
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 50
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 50
 
 
 1584:.\Generated_Source\PSoC5/FanController.c ****     *  uint16 upperSrcAddress
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1224 002a 0190     		str	r0, [sp, #4]
  1225 002c 0846     		mov	r0, r1
  1226 002e 1146     		mov	r1, r2
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 51
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 51
 
 
  1227 0030 1A46     		mov	r2, r3
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
 1625:.\Generated_Source\PSoC5/FanController.c ****     *
 1626:.\Generated_Source\PSoC5/FanController.c ****     * Summary:
 1627:.\Generated_Source\PSoC5/FanController.c ****     *   Frees the channel associated with FanController_TachOutDMA and
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 52
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 52
 
 
 1628:.\Generated_Source\PSoC5/FanController.c ****     *   also frees the TD descriptors.
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1298              		.comm	FanController_fanControl,2,4
  1299              		.global	FanController_fanProperties
  1300              		.data
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 53
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 53
 
 
  1301              		.align	2
@@ -3147,10 +3147,10 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1324 0006 00000000 		.4byte	.Ldebug_abbrev0
  1325 000a 04       		.byte	0x4
  1326 000b 01       		.uleb128 0x1
- 1327 000c 54040000 		.4byte	.LASF77
+ 1327 000c 68040000 		.4byte	.LASF77
  1328 0010 01       		.byte	0x1
- 1329 0011 56050000 		.4byte	.LASF78
- 1330 0015 D7000000 		.4byte	.LASF79
+ 1329 0011 6A050000 		.4byte	.LASF78
+ 1330 0015 4B030000 		.4byte	.LASF79
  1331 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1332 001d 00000000 		.4byte	0
  1333 0021 00000000 		.4byte	0
@@ -3158,34 +3158,34 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1335 0029 02       		.uleb128 0x2
  1336 002a 01       		.byte	0x1
  1337 002b 06       		.byte	0x6
- 1338 002c 44010000 		.4byte	.LASF0
+ 1338 002c F2000000 		.4byte	.LASF0
  1339 0030 02       		.uleb128 0x2
  1340 0031 01       		.byte	0x1
  1341 0032 08       		.byte	0x8
- 1342 0033 A2040000 		.4byte	.LASF1
+ 1342 0033 B6040000 		.4byte	.LASF1
  1343 0037 02       		.uleb128 0x2
  1344 0038 02       		.byte	0x2
  1345 0039 05       		.byte	0x5
- 1346 003a B0040000 		.4byte	.LASF2
+ 1346 003a C4040000 		.4byte	.LASF2
  1347 003e 02       		.uleb128 0x2
  1348 003f 02       		.byte	0x2
  1349 0040 07       		.byte	0x7
- 1350 0041 64020000 		.4byte	.LASF3
+ 1350 0041 12020000 		.4byte	.LASF3
  1351 0045 02       		.uleb128 0x2
  1352 0046 04       		.byte	0x4
  1353 0047 05       		.byte	0x5
- 1354 0048 6A010000 		.4byte	.LASF4
+ 1354 0048 18010000 		.4byte	.LASF4
  1355 004c 02       		.uleb128 0x2
  1356 004d 04       		.byte	0x4
  1357 004e 07       		.byte	0x7
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 54
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 54
 
 
- 1358 004f 37020000 		.4byte	.LASF5
+ 1358 004f E5010000 		.4byte	.LASF5
  1359 0053 02       		.uleb128 0x2
  1360 0054 08       		.byte	0x8
  1361 0055 05       		.byte	0x5
- 1362 0056 36010000 		.4byte	.LASF6
+ 1362 0056 E4000000 		.4byte	.LASF6
  1363 005a 02       		.uleb128 0x2
  1364 005b 08       		.byte	0x8
  1365 005c 07       		.byte	0x7
@@ -3197,9 +3197,9 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1371 0068 02       		.uleb128 0x2
  1372 0069 04       		.byte	0x4
  1373 006a 07       		.byte	0x7
- 1374 006b 2A020000 		.4byte	.LASF8
+ 1374 006b D8010000 		.4byte	.LASF8
  1375 006f 04       		.uleb128 0x4
- 1376 0070 96010000 		.4byte	.LASF9
+ 1376 0070 44010000 		.4byte	.LASF9
  1377 0074 02       		.byte	0x2
  1378 0075 5B       		.byte	0x5b
  1379 0076 30000000 		.4byte	0x30
@@ -3209,50 +3209,50 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1383 0080 5C       		.byte	0x5c
  1384 0081 3E000000 		.4byte	0x3e
  1385 0085 04       		.uleb128 0x4
- 1386 0086 B7010000 		.4byte	.LASF11
+ 1386 0086 65010000 		.4byte	.LASF11
  1387 008a 02       		.byte	0x2
  1388 008b 5D       		.byte	0x5d
  1389 008c 4C000000 		.4byte	0x4c
  1390 0090 02       		.uleb128 0x2
  1391 0091 04       		.byte	0x4
  1392 0092 04       		.byte	0x4
- 1393 0093 0A040000 		.4byte	.LASF12
+ 1393 0093 1E040000 		.4byte	.LASF12
  1394 0097 02       		.uleb128 0x2
  1395 0098 08       		.byte	0x8
  1396 0099 04       		.byte	0x4
- 1397 009a 9C010000 		.4byte	.LASF13
+ 1397 009a 4A010000 		.4byte	.LASF13
  1398 009e 02       		.uleb128 0x2
  1399 009f 01       		.byte	0x1
  1400 00a0 08       		.byte	0x8
- 1401 00a1 05050000 		.4byte	.LASF14
+ 1401 00a1 19050000 		.4byte	.LASF14
  1402 00a5 04       		.uleb128 0x4
- 1403 00a6 9D040000 		.4byte	.LASF15
+ 1403 00a6 B1040000 		.4byte	.LASF15
  1404 00aa 02       		.byte	0x2
  1405 00ab F0       		.byte	0xf0
  1406 00ac B0000000 		.4byte	0xb0
  1407 00b0 05       		.uleb128 0x5
  1408 00b1 6F000000 		.4byte	0x6f
  1409 00b5 04       		.uleb128 0x4
- 1410 00b6 73010000 		.4byte	.LASF16
+ 1410 00b6 21010000 		.4byte	.LASF16
  1411 00ba 02       		.byte	0x2
  1412 00bb F1       		.byte	0xf1
  1413 00bc C0000000 		.4byte	0xc0
  1414 00c0 05       		.uleb128 0x5
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 55
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 55
 
 
  1415 00c1 7A000000 		.4byte	0x7a
  1416 00c5 02       		.uleb128 0x2
  1417 00c6 04       		.byte	0x4
  1418 00c7 07       		.byte	0x7
- 1419 00c8 1D030000 		.4byte	.LASF17
+ 1419 00c8 CB020000 		.4byte	.LASF17
  1420 00cc 06       		.uleb128 0x6
  1421 00cd 01       		.byte	0x1
  1422 00ce 03       		.byte	0x3
  1423 00cf D1       		.byte	0xd1
  1424 00d0 E3000000 		.4byte	0xe3
  1425 00d4 07       		.uleb128 0x7
- 1426 00d5 7D020000 		.4byte	.LASF19
+ 1426 00d5 2B020000 		.4byte	.LASF19
  1427 00d9 03       		.byte	0x3
  1428 00da D3       		.byte	0xd3
  1429 00db 6F000000 		.4byte	0x6f
@@ -3261,7 +3261,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1432 00e1 00       		.uleb128 0
  1433 00e2 00       		.byte	0
  1434 00e3 04       		.uleb128 0x4
- 1435 00e4 FF050000 		.4byte	.LASF18
+ 1435 00e4 13060000 		.4byte	.LASF18
  1436 00e8 03       		.byte	0x3
  1437 00e9 D4       		.byte	0xd4
  1438 00ea CC000000 		.4byte	0xcc
@@ -3287,7 +3287,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1458 0113 00       		.byte	0
  1459 0114 00       		.byte	0
  1460 0115 04       		.uleb128 0x4
- 1461 0116 5A030000 		.4byte	.LASF21
+ 1461 0116 08030000 		.4byte	.LASF21
  1462 011a 03       		.byte	0x3
  1463 011b EE       		.byte	0xee
  1464 011c EE000000 		.4byte	0xee
@@ -3297,8 +3297,8 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1468 0123 F1       		.byte	0xf1
  1469 0124 8B010000 		.4byte	0x18b
  1470 0128 07       		.uleb128 0x7
- 1471 0129 D8020000 		.4byte	.LASF22
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 56
+ 1471 0129 86020000 		.4byte	.LASF22
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 56
 
 
  1472 012d 03       		.byte	0x3
@@ -3308,7 +3308,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1476 0134 23       		.byte	0x23
  1477 0135 00       		.uleb128 0
  1478 0136 07       		.uleb128 0x7
- 1479 0137 DD020000 		.4byte	.LASF23
+ 1479 0137 8B020000 		.4byte	.LASF23
  1480 013b 03       		.byte	0x3
  1481 013c F4       		.byte	0xf4
  1482 013d 7A000000 		.4byte	0x7a
@@ -3316,7 +3316,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1484 0142 23       		.byte	0x23
  1485 0143 02       		.uleb128 0x2
  1486 0144 07       		.uleb128 0x7
- 1487 0145 17030000 		.4byte	.LASF24
+ 1487 0145 C5020000 		.4byte	.LASF24
  1488 0149 03       		.byte	0x3
  1489 014a F5       		.byte	0xf5
  1490 014b 7A000000 		.4byte	0x7a
@@ -3324,7 +3324,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1492 0150 23       		.byte	0x23
  1493 0151 04       		.uleb128 0x4
  1494 0152 07       		.uleb128 0x7
- 1495 0153 77020000 		.4byte	.LASF25
+ 1495 0153 25020000 		.4byte	.LASF25
  1496 0157 03       		.byte	0x3
  1497 0158 F6       		.byte	0xf6
  1498 0159 7A000000 		.4byte	0x7a
@@ -3332,7 +3332,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1500 015e 23       		.byte	0x23
  1501 015f 06       		.uleb128 0x6
  1502 0160 07       		.uleb128 0x7
- 1503 0161 F2050000 		.4byte	.LASF26
+ 1503 0161 06060000 		.4byte	.LASF26
  1504 0165 03       		.byte	0x3
  1505 0166 F7       		.byte	0xf7
  1506 0167 7A000000 		.4byte	0x7a
@@ -3348,7 +3348,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1516 017a 23       		.byte	0x23
  1517 017b 0A       		.uleb128 0xa
  1518 017c 07       		.uleb128 0x7
- 1519 017d 0E030000 		.4byte	.LASF28
+ 1519 017d BC020000 		.4byte	.LASF28
  1520 0181 03       		.byte	0x3
  1521 0182 F9       		.byte	0xf9
  1522 0183 7A000000 		.4byte	0x7a
@@ -3357,8 +3357,8 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1525 0189 0C       		.uleb128 0xc
  1526 018a 00       		.byte	0
  1527 018b 04       		.uleb128 0x4
- 1528 018c D2030000 		.4byte	.LASF29
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 57
+ 1528 018c E6030000 		.4byte	.LASF29
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 57
 
 
  1529 0190 03       		.byte	0x3
@@ -3379,7 +3379,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1544 01ad 00       		.uleb128 0
  1545 01ae 00       		.byte	0
  1546 01af 0C       		.uleb128 0xc
- 1547 01b0 F3010000 		.4byte	.LASF31
+ 1547 01b0 A1010000 		.4byte	.LASF31
  1548 01b4 03       		.byte	0x3
  1549 01b5 1201     		.2byte	0x112
  1550 01b7 96010000 		.4byte	0x196
@@ -3389,7 +3389,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1554 01be 1401     		.2byte	0x114
  1555 01c0 E3010000 		.4byte	0x1e3
  1556 01c4 0B       		.uleb128 0xb
- 1557 01c5 29010000 		.4byte	.LASF32
+ 1557 01c5 D7000000 		.4byte	.LASF32
  1558 01c9 03       		.byte	0x3
  1559 01ca 1601     		.2byte	0x116
  1560 01cc 85000000 		.4byte	0x85
@@ -3397,7 +3397,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1562 01d1 23       		.byte	0x23
  1563 01d2 00       		.uleb128 0
  1564 01d3 0B       		.uleb128 0xb
- 1565 01d4 26030000 		.4byte	.LASF33
+ 1565 01d4 D4020000 		.4byte	.LASF33
  1566 01d8 03       		.byte	0x3
  1567 01d9 1701     		.2byte	0x117
  1568 01db 85000000 		.4byte	0x85
@@ -3406,7 +3406,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1571 01e1 04       		.uleb128 0x4
  1572 01e2 00       		.byte	0
  1573 01e3 0C       		.uleb128 0xc
- 1574 01e4 37030000 		.4byte	.LASF34
+ 1574 01e4 E5020000 		.4byte	.LASF34
  1575 01e8 03       		.byte	0x3
  1576 01e9 1801     		.2byte	0x118
  1577 01eb BB010000 		.4byte	0x1bb
@@ -3418,14 +3418,14 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1583 01f7 01       		.byte	0x1
  1584 01f8 00000000 		.4byte	.LFB0
  1585 01fc 2A000000 		.4byte	.LFE0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 58
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 58
 
 
  1586 0200 00000000 		.4byte	.LLST0
  1587 0204 01       		.byte	0x1
  1588 0205 0D       		.uleb128 0xd
  1589 0206 01       		.byte	0x1
- 1590 0207 9D030000 		.4byte	.LASF36
+ 1590 0207 B1030000 		.4byte	.LASF36
  1591 020b 01       		.byte	0x1
  1592 020c A5       		.byte	0xa5
  1593 020d 01       		.byte	0x1
@@ -3435,7 +3435,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1597 021a 01       		.byte	0x1
  1598 021b 0E       		.uleb128 0xe
  1599 021c 01       		.byte	0x1
- 1600 021d 1C060000 		.4byte	.LASF39
+ 1600 021d 30060000 		.4byte	.LASF39
  1601 0221 01       		.byte	0x1
  1602 0222 E0       		.byte	0xe0
  1603 0223 01       		.byte	0x1
@@ -3445,7 +3445,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1607 0230 01       		.byte	0x1
  1608 0231 52020000 		.4byte	0x252
  1609 0235 0F       		.uleb128 0xf
- 1610 0236 B6020000 		.4byte	.LASF37
+ 1610 0236 64020000 		.4byte	.LASF37
  1611 023a 01       		.byte	0x1
  1612 023b E2       		.byte	0xe2
  1613 023c 6F000000 		.4byte	0x6f
@@ -3453,7 +3453,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1615 0241 91       		.byte	0x91
  1616 0242 77       		.sleb128 -9
  1617 0243 0F       		.uleb128 0xf
- 1618 0244 5B010000 		.4byte	.LASF38
+ 1618 0244 09010000 		.4byte	.LASF38
  1619 0248 01       		.byte	0x1
  1620 0249 E3       		.byte	0xe3
  1621 024a 6F000000 		.4byte	0x6f
@@ -3473,12 +3473,12 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1635 0268 01       		.byte	0x1
  1636 0269 7D020000 		.4byte	0x27d
  1637 026d 11       		.uleb128 0x11
- 1638 026e 5B010000 		.4byte	.LASF38
+ 1638 026e 09010000 		.4byte	.LASF38
  1639 0272 01       		.byte	0x1
  1640 0273 B001     		.2byte	0x1b0
  1641 0275 6F000000 		.4byte	0x6f
  1642 0279 02       		.byte	0x2
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 59
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 59
 
 
  1643 027a 91       		.byte	0x91
@@ -3486,7 +3486,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1645 027c 00       		.byte	0
  1646 027d 10       		.uleb128 0x10
  1647 027e 01       		.byte	0x1
- 1648 027f D9010000 		.4byte	.LASF41
+ 1648 027f 87010000 		.4byte	.LASF41
  1649 0283 01       		.byte	0x1
  1650 0284 F201     		.2byte	0x1f2
  1651 0286 01       		.byte	0x1
@@ -3496,7 +3496,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1655 0293 01       		.byte	0x1
  1656 0294 A8020000 		.4byte	0x2a8
  1657 0298 11       		.uleb128 0x11
- 1658 0299 5B010000 		.4byte	.LASF38
+ 1658 0299 09010000 		.4byte	.LASF38
  1659 029d 01       		.byte	0x1
  1660 029e F401     		.2byte	0x1f4
  1661 02a0 6F000000 		.4byte	0x6f
@@ -3506,7 +3506,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1665 02a7 00       		.byte	0
  1666 02a8 10       		.uleb128 0x10
  1667 02a9 01       		.byte	0x1
- 1668 02aa 49020000 		.4byte	.LASF42
+ 1668 02aa F7010000 		.4byte	.LASF42
  1669 02ae 01       		.byte	0x1
  1670 02af 0E02     		.2byte	0x20e
  1671 02b1 01       		.byte	0x1
@@ -3516,7 +3516,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1675 02be 01       		.byte	0x1
  1676 02bf D3020000 		.4byte	0x2d3
  1677 02c3 11       		.uleb128 0x11
- 1678 02c4 5B010000 		.4byte	.LASF38
+ 1678 02c4 09010000 		.4byte	.LASF38
  1679 02c8 01       		.byte	0x1
  1680 02c9 1002     		.2byte	0x210
  1681 02cb 6F000000 		.4byte	0x6f
@@ -3526,7 +3526,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1685 02d2 00       		.byte	0
  1686 02d3 10       		.uleb128 0x10
  1687 02d4 01       		.byte	0x1
- 1688 02d5 BE010000 		.4byte	.LASF43
+ 1688 02d5 6C010000 		.4byte	.LASF43
  1689 02d9 01       		.byte	0x1
  1690 02da 2C02     		.2byte	0x22c
  1691 02dc 01       		.byte	0x1
@@ -3536,9 +3536,9 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1695 02e9 01       		.byte	0x1
  1696 02ea 0D030000 		.4byte	0x30d
  1697 02ee 12       		.uleb128 0x12
- 1698 02ef A3010000 		.4byte	.LASF45
+ 1698 02ef 51010000 		.4byte	.LASF45
  1699 02f3 01       		.byte	0x1
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 60
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 60
 
 
  1700 02f4 2C02     		.2byte	0x22c
@@ -3547,7 +3547,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1703 02fb 91       		.byte	0x91
  1704 02fc 6F       		.sleb128 -17
  1705 02fd 11       		.uleb128 0x11
- 1706 02fe 5B010000 		.4byte	.LASF38
+ 1706 02fe 09010000 		.4byte	.LASF38
  1707 0302 01       		.byte	0x1
  1708 0303 2E02     		.2byte	0x22e
  1709 0305 6F000000 		.4byte	0x6f
@@ -3557,7 +3557,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1713 030c 00       		.byte	0
  1714 030d 13       		.uleb128 0x13
  1715 030e 01       		.byte	0x1
- 1716 030f B0030000 		.4byte	.LASF47
+ 1716 030f C4030000 		.4byte	.LASF47
  1717 0313 01       		.byte	0x1
  1718 0314 4C02     		.2byte	0x24c
  1719 0316 01       		.byte	0x1
@@ -3568,7 +3568,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1724 0327 01       		.byte	0x1
  1725 0328 14       		.uleb128 0x14
  1726 0329 01       		.byte	0x1
- 1727 032a 7F050000 		.4byte	.LASF44
+ 1727 032a 93050000 		.4byte	.LASF44
  1728 032e 01       		.byte	0x1
  1729 032f 6802     		.2byte	0x268
  1730 0331 01       		.byte	0x1
@@ -3578,7 +3578,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1734 033e 01       		.byte	0x1
  1735 033f 53030000 		.4byte	0x353
  1736 0343 12       		.uleb128 0x12
- 1737 0344 FB040000 		.4byte	.LASF46
+ 1737 0344 0F050000 		.4byte	.LASF46
  1738 0348 01       		.byte	0x1
  1739 0349 6802     		.2byte	0x268
  1740 034b 7A000000 		.4byte	0x7a
@@ -3598,11 +3598,11 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1754 0369 D4010000 		.4byte	.LLST9
  1755 036d 01       		.byte	0x1
  1756 036e 82030000 		.4byte	0x382
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 61
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 61
 
 
  1757 0372 11       		.uleb128 0x11
- 1758 0373 FB040000 		.4byte	.LASF46
+ 1758 0373 0F050000 		.4byte	.LASF46
  1759 0377 01       		.byte	0x1
  1760 0378 8902     		.2byte	0x289
  1761 037a 7A000000 		.4byte	0x7a
@@ -3612,7 +3612,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1765 0381 00       		.byte	0
  1766 0382 13       		.uleb128 0x13
  1767 0383 01       		.byte	0x1
- 1768 0384 10040000 		.4byte	.LASF48
+ 1768 0384 24040000 		.4byte	.LASF48
  1769 0388 01       		.byte	0x1
  1770 0389 AE02     		.2byte	0x2ae
  1771 038b 01       		.byte	0x1
@@ -3623,7 +3623,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1776 039c 01       		.byte	0x1
  1777 039d 15       		.uleb128 0x15
  1778 039e 01       		.byte	0x1
- 1779 039f BA040000 		.4byte	.LASF50
+ 1779 039f CE040000 		.4byte	.LASF50
  1780 03a3 01       		.byte	0x1
  1781 03a4 CA02     		.2byte	0x2ca
  1782 03a6 01       		.byte	0x1
@@ -3634,7 +3634,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1787 03b7 01       		.byte	0x1
  1788 03b8 CC030000 		.4byte	0x3cc
  1789 03bc 11       		.uleb128 0x11
- 1790 03bd AA020000 		.4byte	.LASF51
+ 1790 03bd 58020000 		.4byte	.LASF51
  1791 03c1 01       		.byte	0x1
  1792 03c2 CC02     		.2byte	0x2cc
  1793 03c4 7A000000 		.4byte	0x7a
@@ -3644,7 +3644,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1797 03cb 00       		.byte	0
  1798 03cc 14       		.uleb128 0x14
  1799 03cd 01       		.byte	0x1
- 1800 03ce 8F020000 		.4byte	.LASF52
+ 1800 03ce 3D020000 		.4byte	.LASF52
  1801 03d2 01       		.byte	0x1
  1802 03d3 2B03     		.2byte	0x32b
  1803 03d5 01       		.byte	0x1
@@ -3654,11 +3654,11 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1807 03e2 01       		.byte	0x1
  1808 03e3 15040000 		.4byte	0x415
  1809 03e7 12       		.uleb128 0x12
- 1810 03e8 C8020000 		.4byte	.LASF53
+ 1810 03e8 76020000 		.4byte	.LASF53
  1811 03ec 01       		.byte	0x1
  1812 03ed 2B03     		.2byte	0x32b
  1813 03ef 6F000000 		.4byte	0x6f
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 62
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 62
 
 
  1814 03f3 02       		.byte	0x2
@@ -3673,7 +3673,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1823 0403 91       		.byte	0x91
  1824 0404 6C       		.sleb128 -20
  1825 0405 11       		.uleb128 0x11
- 1826 0406 50010000 		.4byte	.LASF55
+ 1826 0406 FE000000 		.4byte	.LASF55
  1827 040a 01       		.byte	0x1
  1828 040b 2E03     		.2byte	0x32e
  1829 040d 85000000 		.4byte	0x85
@@ -3683,7 +3683,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1833 0414 00       		.byte	0
  1834 0415 15       		.uleb128 0x15
  1835 0416 01       		.byte	0x1
- 1836 0417 A6050000 		.4byte	.LASF56
+ 1836 0417 BA050000 		.4byte	.LASF56
  1837 041b 01       		.byte	0x1
  1838 041c 5D03     		.2byte	0x35d
  1839 041e 01       		.byte	0x1
@@ -3694,7 +3694,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1844 042f 01       		.byte	0x1
  1845 0430 53040000 		.4byte	0x453
  1846 0434 12       		.uleb128 0x12
- 1847 0435 C8020000 		.4byte	.LASF53
+ 1847 0435 76020000 		.4byte	.LASF53
  1848 0439 01       		.byte	0x1
  1849 043a 5D03     		.2byte	0x35d
  1850 043c 6F000000 		.4byte	0x6f
@@ -3702,7 +3702,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1852 0441 91       		.byte	0x91
  1853 0442 6F       		.sleb128 -17
  1854 0443 11       		.uleb128 0x11
- 1855 0444 0A050000 		.4byte	.LASF57
+ 1855 0444 1E050000 		.4byte	.LASF57
  1856 0448 01       		.byte	0x1
  1857 0449 5F03     		.2byte	0x35f
  1858 044b 7A000000 		.4byte	0x7a
@@ -3712,20 +3712,20 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1862 0452 00       		.byte	0
  1863 0453 10       		.uleb128 0x10
  1864 0454 01       		.byte	0x1
- 1865 0455 2F060000 		.4byte	.LASF58
+ 1865 0455 43060000 		.4byte	.LASF58
  1866 0459 01       		.byte	0x1
  1867 045a 9303     		.2byte	0x393
  1868 045c 01       		.byte	0x1
  1869 045d 00000000 		.4byte	.LFB14
  1870 0461 7C010000 		.4byte	.LFE14
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 63
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 63
 
 
  1871 0465 E0020000 		.4byte	.LLST14
  1872 0469 01       		.byte	0x1
  1873 046a AB040000 		.4byte	0x4ab
  1874 046e 12       		.uleb128 0x12
- 1875 046f AD010000 		.4byte	.LASF59
+ 1875 046f 5B010000 		.4byte	.LASF59
  1876 0473 01       		.byte	0x1
  1877 0474 9303     		.2byte	0x393
  1878 0476 6F000000 		.4byte	0x6f
@@ -3770,7 +3770,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1917 04c5 01       		.byte	0x1
  1918 04c6 E9040000 		.4byte	0x4e9
  1919 04ca 12       		.uleb128 0x12
- 1920 04cb AD010000 		.4byte	.LASF59
+ 1920 04cb 5B010000 		.4byte	.LASF59
  1921 04cf 01       		.byte	0x1
  1922 04d0 1F04     		.2byte	0x41f
  1923 04d2 6F000000 		.4byte	0x6f
@@ -3778,10 +3778,10 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1925 04d7 91       		.byte	0x91
  1926 04d8 6F       		.sleb128 -17
  1927 04d9 11       		.uleb128 0x11
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 64
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 64
 
 
- 1928 04da 9A050000 		.4byte	.LASF63
+ 1928 04da AE050000 		.4byte	.LASF63
  1929 04de 01       		.byte	0x1
  1930 04df 2104     		.2byte	0x421
  1931 04e1 7A000000 		.4byte	0x7a
@@ -3790,7 +3790,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1934 04e7 76       		.sleb128 -10
  1935 04e8 00       		.byte	0
  1936 04e9 17       		.uleb128 0x17
- 1937 04ea 13050000 		.4byte	.LASF80
+ 1937 04ea 27050000 		.4byte	.LASF80
  1938 04ee 01       		.byte	0x1
  1939 04ef 1705     		.2byte	0x517
  1940 04f1 01       		.byte	0x1
@@ -3800,7 +3800,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1944 04fe 01       		.byte	0x1
  1945 04ff 34050000 		.4byte	0x534
  1946 0503 11       		.uleb128 0x11
- 1947 0504 B6020000 		.4byte	.LASF37
+ 1947 0504 64020000 		.4byte	.LASF37
  1948 0508 01       		.byte	0x1
  1949 0509 1905     		.2byte	0x519
  1950 050b 6F000000 		.4byte	0x6f
@@ -3808,7 +3808,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1952 0510 91       		.byte	0x91
  1953 0511 6F       		.sleb128 -17
  1954 0512 11       		.uleb128 0x11
- 1955 0513 CB030000 		.4byte	.LASF64
+ 1955 0513 DF030000 		.4byte	.LASF64
  1956 0517 01       		.byte	0x1
  1957 0518 1A05     		.2byte	0x51a
  1958 051a 6F000000 		.4byte	0x6f
@@ -3816,7 +3816,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1960 051f 91       		.byte	0x91
  1961 0520 6E       		.sleb128 -18
  1962 0521 11       		.uleb128 0x11
- 1963 0522 DA050000 		.4byte	.LASF65
+ 1963 0522 EE050000 		.4byte	.LASF65
  1964 0526 01       		.byte	0x1
  1965 0527 1F05     		.2byte	0x51f
  1966 0529 34050000 		.4byte	0x534
@@ -3832,13 +3832,13 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1976 0542 00       		.byte	0
  1977 0543 00       		.byte	0
  1978 0544 18       		.uleb128 0x18
- 1979 0545 2D040000 		.4byte	.LASF81
+ 1979 0545 41040000 		.4byte	.LASF81
  1980 0549 01       		.byte	0x1
  1981 054a 3B06     		.2byte	0x63b
  1982 054c 01       		.byte	0x1
  1983 054d 6F000000 		.4byte	0x6f
  1984 0551 00000000 		.4byte	.LFB17
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 65
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 65
 
 
  1985 0555 62000000 		.4byte	.LFE17
@@ -3846,7 +3846,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1987 055d 01       		.byte	0x1
  1988 055e AE050000 		.4byte	0x5ae
  1989 0562 12       		.uleb128 0x12
- 1990 0563 BD020000 		.4byte	.LASF66
+ 1990 0563 6B020000 		.4byte	.LASF66
  1991 0567 01       		.byte	0x1
  1992 0568 3B06     		.2byte	0x63b
  1993 056a 6F000000 		.4byte	0x6f
@@ -3854,7 +3854,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  1995 056f 91       		.byte	0x91
  1996 0570 6F       		.sleb128 -17
  1997 0571 12       		.uleb128 0x12
- 1998 0572 2A050000 		.4byte	.LASF67
+ 1998 0572 3E050000 		.4byte	.LASF67
  1999 0576 01       		.byte	0x1
  2000 0577 3B06     		.2byte	0x63b
  2001 0579 6F000000 		.4byte	0x6f
@@ -3862,7 +3862,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2003 057e 91       		.byte	0x91
  2004 057f 6E       		.sleb128 -18
  2005 0580 12       		.uleb128 0x12
- 2006 0581 E2020000 		.4byte	.LASF68
+ 2006 0581 90020000 		.4byte	.LASF68
  2007 0585 01       		.byte	0x1
  2008 0586 3C06     		.2byte	0x63c
  2009 0588 7A000000 		.4byte	0x7a
@@ -3878,7 +3878,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2019 059c 91       		.byte	0x91
  2020 059d 6A       		.sleb128 -22
  2021 059e 11       		.uleb128 0x11
- 2022 059f 15020000 		.4byte	.LASF70
+ 2022 059f C3010000 		.4byte	.LASF70
  2023 05a3 01       		.byte	0x1
  2024 05a4 3F06     		.2byte	0x63f
  2025 05a6 6F000000 		.4byte	0x6f
@@ -3887,7 +3887,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2028 05ac 77       		.sleb128 -9
  2029 05ad 00       		.byte	0
  2030 05ae 19       		.uleb128 0x19
- 2031 05af 79030000 		.4byte	.LASF82
+ 2031 05af 27030000 		.4byte	.LASF82
  2032 05b3 01       		.byte	0x1
  2033 05b4 6806     		.2byte	0x668
  2034 05b6 01       		.byte	0x1
@@ -3896,9 +3896,9 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2037 05bf C0030000 		.4byte	.LLST18
  2038 05c3 01       		.byte	0x1
  2039 05c4 0F       		.uleb128 0xf
- 2040 05c5 DA040000 		.4byte	.LASF71
+ 2040 05c5 EE040000 		.4byte	.LASF71
  2041 05c9 01       		.byte	0x1
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 66
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 66
 
 
  2042 05ca 41       		.byte	0x41
@@ -3914,7 +3914,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2052 05e3 00       		.byte	0
  2053 05e4 00       		.byte	0
  2054 05e5 1A       		.uleb128 0x1a
- 2055 05e6 79010000 		.4byte	.LASF72
+ 2055 05e6 27010000 		.4byte	.LASF72
  2056 05ea 01       		.byte	0x1
  2057 05eb 0809     		.2byte	0x908
  2058 05ed F8050000 		.4byte	0x5f8
@@ -3925,7 +3925,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2063 05f8 1B       		.uleb128 0x1b
  2064 05f9 D5050000 		.4byte	0x5d5
  2065 05fd 1C       		.uleb128 0x1c
- 2066 05fe F4030000 		.4byte	.LASF73
+ 2066 05fe 08040000 		.4byte	.LASF73
  2067 0602 01       		.byte	0x1
  2068 0603 3C       		.byte	0x3c
  2069 0604 6F000000 		.4byte	0x6f
@@ -3934,7 +3934,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2072 060a 03       		.byte	0x3
  2073 060b 00000000 		.4byte	FanController_initVar
  2074 060f 1A       		.uleb128 0x1a
- 2075 0610 C1050000 		.4byte	.LASF74
+ 2075 0610 D5050000 		.4byte	.LASF74
  2076 0614 01       		.byte	0x1
  2077 0615 8509     		.2byte	0x985
  2078 0617 15010000 		.4byte	0x115
@@ -3950,7 +3950,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2088 0630 00       		.byte	0
  2089 0631 00       		.byte	0
  2090 0632 1A       		.uleb128 0x1a
- 2091 0633 F2020000 		.4byte	.LASF75
+ 2091 0633 A0020000 		.4byte	.LASF75
  2092 0637 01       		.byte	0x1
  2093 0638 A408     		.2byte	0x8a4
  2094 063a 45060000 		.4byte	0x645
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2096 063f 05       		.byte	0x5
  2097 0640 03       		.byte	0x3
  2098 0641 00000000 		.4byte	FanController_fanDriverRegs
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 67
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 67
 
 
  2099 0645 1B       		.uleb128 0x1b
@@ -3971,7 +3971,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2106 0658 00       		.byte	0
  2107 0659 00       		.byte	0
  2108 065a 1A       		.uleb128 0x1a
- 2109 065b 3A050000 		.4byte	.LASF76
+ 2109 065b 4E050000 		.4byte	.LASF76
  2110 065f 01       		.byte	0x1
  2111 0660 340A     		.2byte	0xa34
  2112 0662 4A060000 		.4byte	0x64a
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2153 0021 24       		.uleb128 0x24
  2154 0022 00       		.byte	0
  2155 0023 0B       		.uleb128 0xb
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 68
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 68
 
 
  2156 0024 0B       		.uleb128 0xb
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2210 005a 00       		.byte	0
  2211 005b 08       		.uleb128 0x8
  2212 005c 01       		.uleb128 0x1
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 69
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 69
 
 
  2213 005d 01       		.byte	0x1
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2267 0093 13       		.uleb128 0x13
  2268 0094 00       		.byte	0
  2269 0095 00       		.byte	0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 70
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 70
 
 
  2270 0096 0D       		.uleb128 0xd
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2324 00ce 0B       		.uleb128 0xb
  2325 00cf 3B       		.uleb128 0x3b
  2326 00d0 0B       		.uleb128 0xb
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 71
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 71
 
 
  2327 00d1 49       		.uleb128 0x49
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2381 0108 05       		.uleb128 0x5
  2382 0109 49       		.uleb128 0x49
  2383 010a 13       		.uleb128 0x13
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 72
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 72
 
 
  2384 010b 02       		.uleb128 0x2
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2438 0143 15       		.uleb128 0x15
  2439 0144 2E       		.uleb128 0x2e
  2440 0145 01       		.byte	0x1
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 73
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 73
 
 
  2441 0146 3F       		.uleb128 0x3f
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2495 017d 40       		.uleb128 0x40
  2496 017e 06       		.uleb128 0x6
  2497 017f 9642     		.uleb128 0x2116
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 74
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 74
 
 
  2498 0181 0C       		.uleb128 0xc
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2552 01b9 03       		.uleb128 0x3
  2553 01ba 0E       		.uleb128 0xe
  2554 01bb 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 75
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 75
 
 
  2555 01bc 0B       		.uleb128 0xb
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2609 0024 00000000 		.4byte	0
  2610 0028 00000000 		.4byte	0
  2611              	.LLST1:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 76
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 76
 
 
  2612 002c 00000000 		.4byte	.LFB1
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2666 00b2 7D       		.byte	0x7d
  2667 00b3 10       		.sleb128 16
  2668 00b4 06000000 		.4byte	.LCFI9
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 77
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 77
 
 
  2669 00b8 5C000000 		.4byte	.LFE3
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2723 013c 02000000 		.4byte	.LCFI16
  2724 0140 0200     		.2byte	0x2
  2725 0142 7D       		.byte	0x7d
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 78
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 78
 
 
  2726 0143 00       		.sleb128 0
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2780 01c8 0200     		.2byte	0x2
  2781 01ca 77       		.byte	0x77
  2782 01cb 10       		.sleb128 16
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 79
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 79
 
 
  2783 01cc 00000000 		.4byte	0
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2837 0250 04000000 		.4byte	.LCFI30
  2838 0254 06000000 		.4byte	.LCFI31
  2839 0258 0200     		.2byte	0x2
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 80
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 80
 
 
  2840 025a 7D       		.byte	0x7d
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2894 02dc 00000000 		.4byte	0
  2895              	.LLST14:
  2896 02e0 00000000 		.4byte	.LFB14
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 81
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 81
 
 
  2897 02e4 02000000 		.4byte	.LCFI38
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  2951 0367 0C       		.sleb128 12
  2952 0368 04000000 		.4byte	.LCFI45
  2953 036c 06000000 		.4byte	.LCFI46
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 82
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 82
 
 
  2954 0370 0200     		.2byte	0x2
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  3008 0006 00000000 		.4byte	.Ldebug_info0
  3009 000a 04       		.byte	0x4
  3010 000b 00       		.byte	0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 83
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 83
 
 
  3011 000c 0000     		.2byte	0
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  3065 0028 00000000 		.4byte	.LFB5
  3066 002c 3A000000 		.4byte	.LFE5
  3067 0030 00000000 		.4byte	.LFB6
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 84
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 84
 
 
  3068 0034 56000000 		.4byte	.LFE6
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  3107      725F4765 
  3107      74416374 
  3108              	.LASF54:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 85
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 85
 
 
  3109 0046 64757479 		.ascii	"dutyCycle\000"
@@ -5084,381 +5084,384 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 1
  3123      72696465 
  3123      44757479 
  3123      00
- 3124              	.LASF79:
- 3125 00d7 5C5C6D69 		.ascii	"\\\\mightor\\home\\fall2016\\ajs5433\\Documents\\PS"
- 3125      6768746F 
- 3125      725C686F 
- 3125      6D655C66 
- 3125      616C6C32 
- 3126 0103 6F432043 		.ascii	"oC Creator\\PID\\FW_Fan_Control01.cydsn\000"
- 3126      72656174 
- 3126      6F725C50 
- 3126      49445C46 
- 3126      575F4661 
- 3127              	.LASF32:
- 3128 0129 70776D50 		.ascii	"pwmPeriodReg\000"
- 3128      6572696F 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 86
+ 3124              	.LASF32:
+ 3125 00d7 70776D50 		.ascii	"pwmPeriodReg\000"
+ 3125      6572696F 
+ 3125      64526567 
+ 3125      00
+ 3126              	.LASF6:
+ 3127 00e4 6C6F6E67 		.ascii	"long long int\000"
+ 3127      206C6F6E 
+ 3127      6720696E 
+ 3127      7400
+ 3128              	.LASF0:
+ 3129 00f2 7369676E 		.ascii	"signed char\000"
+ 3129      65642063 
+ 3129      68617200 
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 86
 
 
- 3128      64526567 
- 3128      00
- 3129              	.LASF6:
- 3130 0136 6C6F6E67 		.ascii	"long long int\000"
- 3130      206C6F6E 
- 3130      6720696E 
- 3130      7400
- 3131              	.LASF0:
- 3132 0144 7369676E 		.ascii	"signed char\000"
- 3132      65642063 
- 3132      68617200 
- 3133              	.LASF55:
- 3134 0150 6E657743 		.ascii	"newCompare\000"
- 3134      6F6D7061 
- 3134      726500
- 3135              	.LASF38:
- 3136 015b 696E7465 		.ascii	"interruptState\000"
- 3136      72727570 
- 3136      74537461 
- 3136      746500
- 3137              	.LASF4:
- 3138 016a 6C6F6E67 		.ascii	"long int\000"
- 3138      20696E74 
- 3138      00
- 3139              	.LASF16:
- 3140 0173 72656731 		.ascii	"reg16\000"
- 3140      3600
- 3141              	.LASF72:
- 3142 0179 46616E43 		.ascii	"FanController_fanPwmInitRegs\000"
- 3142      6F6E7472 
- 3142      6F6C6C65 
- 3142      725F6661 
- 3142      6E50776D 
- 3143              	.LASF9:
- 3144 0196 75696E74 		.ascii	"uint8\000"
- 3144      3800
- 3145              	.LASF13:
- 3146 019c 646F7562 		.ascii	"double\000"
- 3146      6C6500
- 3147              	.LASF45:
- 3148 01a3 616C6572 		.ascii	"alertMode\000"
- 3148      744D6F64 
- 3148      6500
- 3149              	.LASF59:
- 3150 01ad 66616E4E 		.ascii	"fanNumber\000"
- 3150      756D6265 
- 3150      7200
- 3151              	.LASF11:
- 3152 01b7 75696E74 		.ascii	"uint32\000"
- 3152      333200
- 3153              	.LASF43:
- 3154 01be 46616E43 		.ascii	"FanController_SetAlertMode\000"
- 3154      6F6E7472 
- 3154      6F6C6C65 
- 3154      725F5365 
- 3154      74416C65 
- 3155              	.LASF41:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 87
+ 3130              	.LASF55:
+ 3131 00fe 6E657743 		.ascii	"newCompare\000"
+ 3131      6F6D7061 
+ 3131      726500
+ 3132              	.LASF38:
+ 3133 0109 696E7465 		.ascii	"interruptState\000"
+ 3133      72727570 
+ 3133      74537461 
+ 3133      746500
+ 3134              	.LASF4:
+ 3135 0118 6C6F6E67 		.ascii	"long int\000"
+ 3135      20696E74 
+ 3135      00
+ 3136              	.LASF16:
+ 3137 0121 72656731 		.ascii	"reg16\000"
+ 3137      3600
+ 3138              	.LASF72:
+ 3139 0127 46616E43 		.ascii	"FanController_fanPwmInitRegs\000"
+ 3139      6F6E7472 
+ 3139      6F6C6C65 
+ 3139      725F6661 
+ 3139      6E50776D 
+ 3140              	.LASF9:
+ 3141 0144 75696E74 		.ascii	"uint8\000"
+ 3141      3800
+ 3142              	.LASF13:
+ 3143 014a 646F7562 		.ascii	"double\000"
+ 3143      6C6500
+ 3144              	.LASF45:
+ 3145 0151 616C6572 		.ascii	"alertMode\000"
+ 3145      744D6F64 
+ 3145      6500
+ 3146              	.LASF59:
+ 3147 015b 66616E4E 		.ascii	"fanNumber\000"
+ 3147      756D6265 
+ 3147      7200
+ 3148              	.LASF11:
+ 3149 0165 75696E74 		.ascii	"uint32\000"
+ 3149      333200
+ 3150              	.LASF43:
+ 3151 016c 46616E43 		.ascii	"FanController_SetAlertMode\000"
+ 3151      6F6E7472 
+ 3151      6F6C6C65 
+ 3151      725F5365 
+ 3151      74416C65 
+ 3152              	.LASF41:
+ 3153 0187 46616E43 		.ascii	"FanController_EnableAlert\000"
+ 3153      6F6E7472 
+ 3153      6F6C6C65 
+ 3153      725F456E 
+ 3153      61626C65 
+ 3154              	.LASF31:
+ 3155 01a1 46616E43 		.ascii	"FanController_fanDriverRegsStruct\000"
+ 3155      6F6E7472 
+ 3155      6F6C6C65 
+ 3155      725F6661 
+ 3155      6E447269 
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 87
 
 
- 3156 01d9 46616E43 		.ascii	"FanController_EnableAlert\000"
- 3156      6F6E7472 
- 3156      6F6C6C65 
- 3156      725F456E 
- 3156      61626C65 
- 3157              	.LASF31:
- 3158 01f3 46616E43 		.ascii	"FanController_fanDriverRegsStruct\000"
- 3158      6F6E7472 
- 3158      6F6C6C65 
- 3158      725F6661 
- 3158      6E447269 
- 3159              	.LASF70:
- 3160 0215 74616368 		.ascii	"tachOutDMA_dmaHandle\000"
- 3160      4F757444 
- 3160      4D415F64 
- 3160      6D614861 
- 3160      6E646C65 
- 3161              	.LASF8:
- 3162 022a 756E7369 		.ascii	"unsigned int\000"
- 3162      676E6564 
- 3162      20696E74 
- 3162      00
- 3163              	.LASF5:
- 3164 0237 6C6F6E67 		.ascii	"long unsigned int\000"
- 3164      20756E73 
- 3164      69676E65 
- 3164      6420696E 
- 3164      7400
- 3165              	.LASF42:
- 3166 0249 46616E43 		.ascii	"FanController_DisableAlert\000"
- 3166      6F6E7472 
- 3166      6F6C6C65 
- 3166      725F4469 
- 3166      7361626C 
- 3167              	.LASF3:
- 3168 0264 73686F72 		.ascii	"short unsigned int\000"
- 3168      7420756E 
- 3168      7369676E 
- 3168      65642069 
- 3168      6E7400
- 3169              	.LASF25:
- 3170 0277 64757479 		.ascii	"dutyB\000"
- 3170      4200
- 3171              	.LASF19:
- 3172 027d 73657441 		.ascii	"setActualPeriodTD\000"
- 3172      63747561 
- 3172      6C506572 
- 3172      696F6454 
- 3172      4400
- 3173              	.LASF52:
- 3174 028f 46616E43 		.ascii	"FanController_SetDutyCycle\000"
- 3174      6F6E7472 
- 3174      6F6C6C65 
- 3174      725F5365 
- 3174      74447574 
- 3175              	.LASF51:
- 3176 02aa 7374616C 		.ascii	"stallStatus\000"
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 88
+ 3156              	.LASF70:
+ 3157 01c3 74616368 		.ascii	"tachOutDMA_dmaHandle\000"
+ 3157      4F757444 
+ 3157      4D415F64 
+ 3157      6D614861 
+ 3157      6E646C65 
+ 3158              	.LASF8:
+ 3159 01d8 756E7369 		.ascii	"unsigned int\000"
+ 3159      676E6564 
+ 3159      20696E74 
+ 3159      00
+ 3160              	.LASF5:
+ 3161 01e5 6C6F6E67 		.ascii	"long unsigned int\000"
+ 3161      20756E73 
+ 3161      69676E65 
+ 3161      6420696E 
+ 3161      7400
+ 3162              	.LASF42:
+ 3163 01f7 46616E43 		.ascii	"FanController_DisableAlert\000"
+ 3163      6F6E7472 
+ 3163      6F6C6C65 
+ 3163      725F4469 
+ 3163      7361626C 
+ 3164              	.LASF3:
+ 3165 0212 73686F72 		.ascii	"short unsigned int\000"
+ 3165      7420756E 
+ 3165      7369676E 
+ 3165      65642069 
+ 3165      6E7400
+ 3166              	.LASF25:
+ 3167 0225 64757479 		.ascii	"dutyB\000"
+ 3167      4200
+ 3168              	.LASF19:
+ 3169 022b 73657441 		.ascii	"setActualPeriodTD\000"
+ 3169      63747561 
+ 3169      6C506572 
+ 3169      696F6454 
+ 3169      4400
+ 3170              	.LASF52:
+ 3171 023d 46616E43 		.ascii	"FanController_SetDutyCycle\000"
+ 3171      6F6E7472 
+ 3171      6F6C6C65 
+ 3171      725F5365 
+ 3171      74447574 
+ 3172              	.LASF51:
+ 3173 0258 7374616C 		.ascii	"stallStatus\000"
+ 3173      6C537461 
+ 3173      74757300 
+ 3174              	.LASF37:
+ 3175 0264 636F756E 		.ascii	"counti\000"
+ 3175      746900
+ 3176              	.LASF66:
+ 3177 026b 62757273 		.ascii	"burstCount\000"
+ 3177      74436F75 
+ 3177      6E7400
+ 3178              	.LASF53:
+ 3179 0276 66616E4F 		.ascii	"fanOrBankNumber\000"
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 88
 
 
- 3176      6C537461 
- 3176      74757300 
- 3177              	.LASF37:
- 3178 02b6 636F756E 		.ascii	"counti\000"
- 3178      746900
- 3179              	.LASF66:
- 3180 02bd 62757273 		.ascii	"burstCount\000"
- 3180      74436F75 
- 3180      6E7400
- 3181              	.LASF53:
- 3182 02c8 66616E4F 		.ascii	"fanOrBankNumber\000"
- 3182      7242616E 
- 3182      6B4E756D 
- 3182      62657200 
- 3183              	.LASF22:
- 3184 02d8 72706D41 		.ascii	"rpmA\000"
- 3184      00
- 3185              	.LASF23:
- 3186 02dd 72706D42 		.ascii	"rpmB\000"
- 3186      00
- 3187              	.LASF68:
- 3188 02e2 75707065 		.ascii	"upperSrcAddress\000"
- 3188      72537263 
- 3188      41646472 
- 3188      65737300 
- 3189              	.LASF75:
- 3190 02f2 46616E43 		.ascii	"FanController_fanDriverRegs\000"
- 3190      6F6E7472 
- 3190      6F6C6C65 
- 3190      725F6661 
- 3190      6E447269 
- 3191              	.LASF28:
- 3192 030e 696E6974 		.ascii	"initDuty\000"
- 3192      44757479 
- 3192      00
- 3193              	.LASF24:
- 3194 0317 64757479 		.ascii	"dutyA\000"
- 3194      4100
- 3195              	.LASF17:
- 3196 031d 73697A65 		.ascii	"sizetype\000"
- 3196      74797065 
- 3196      00
- 3197              	.LASF33:
- 3198 0326 70776D41 		.ascii	"pwmAuxControlReg\000"
- 3198      7578436F 
- 3198      6E74726F 
- 3198      6C526567 
- 3198      00
- 3199              	.LASF34:
- 3200 0337 46616E43 		.ascii	"FanController_fanPwmInitRegsStruct\000"
- 3200      6F6E7472 
- 3200      6F6C6C65 
- 3200      725F6661 
- 3200      6E50776D 
- 3201              	.LASF21:
- 3202 035a 46616E43 		.ascii	"FanController_fanControlStruct\000"
- 3202      6F6E7472 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 89
+ 3179      7242616E 
+ 3179      6B4E756D 
+ 3179      62657200 
+ 3180              	.LASF22:
+ 3181 0286 72706D41 		.ascii	"rpmA\000"
+ 3181      00
+ 3182              	.LASF23:
+ 3183 028b 72706D42 		.ascii	"rpmB\000"
+ 3183      00
+ 3184              	.LASF68:
+ 3185 0290 75707065 		.ascii	"upperSrcAddress\000"
+ 3185      72537263 
+ 3185      41646472 
+ 3185      65737300 
+ 3186              	.LASF75:
+ 3187 02a0 46616E43 		.ascii	"FanController_fanDriverRegs\000"
+ 3187      6F6E7472 
+ 3187      6F6C6C65 
+ 3187      725F6661 
+ 3187      6E447269 
+ 3188              	.LASF28:
+ 3189 02bc 696E6974 		.ascii	"initDuty\000"
+ 3189      44757479 
+ 3189      00
+ 3190              	.LASF24:
+ 3191 02c5 64757479 		.ascii	"dutyA\000"
+ 3191      4100
+ 3192              	.LASF17:
+ 3193 02cb 73697A65 		.ascii	"sizetype\000"
+ 3193      74797065 
+ 3193      00
+ 3194              	.LASF33:
+ 3195 02d4 70776D41 		.ascii	"pwmAuxControlReg\000"
+ 3195      7578436F 
+ 3195      6E74726F 
+ 3195      6C526567 
+ 3195      00
+ 3196              	.LASF34:
+ 3197 02e5 46616E43 		.ascii	"FanController_fanPwmInitRegsStruct\000"
+ 3197      6F6E7472 
+ 3197      6F6C6C65 
+ 3197      725F6661 
+ 3197      6E50776D 
+ 3198              	.LASF21:
+ 3199 0308 46616E43 		.ascii	"FanController_fanControlStruct\000"
+ 3199      6F6E7472 
+ 3199      6F6C6C65 
+ 3199      725F6661 
+ 3199      6E436F6E 
+ 3200              	.LASF82:
+ 3201 0327 46616E43 		.ascii	"FanController_TachOutDMA_DmaRelease\000"
+ 3201      6F6E7472 
+ 3201      6F6C6C65 
+ 3201      725F5461 
+ 3201      63684F75 
+ 3202              	.LASF79:
+ 3203 034b 5C5C6D69 		.ascii	"\\\\mightor\\home\\spring2013\\gmh5970\\Documents\\"
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 89
 
 
- 3202      6F6C6C65 
- 3202      725F6661 
- 3202      6E436F6E 
- 3203              	.LASF82:
- 3204 0379 46616E43 		.ascii	"FanController_TachOutDMA_DmaRelease\000"
- 3204      6F6E7472 
- 3204      6F6C6C65 
- 3204      725F5461 
- 3204      63684F75 
- 3205              	.LASF36:
- 3206 039d 46616E43 		.ascii	"FanController_Stop\000"
- 3206      6F6E7472 
- 3206      6F6C6C65 
- 3206      725F5374 
- 3206      6F7000
- 3207              	.LASF47:
- 3208 03b0 46616E43 		.ascii	"FanController_GetAlertMode\000"
- 3208      6F6E7472 
- 3208      6F6C6C65 
- 3208      725F4765 
- 3208      74416C65 
- 3209              	.LASF64:
- 3210 03cb 66616E4E 		.ascii	"fanNum\000"
- 3210      756D00
- 3211              	.LASF29:
- 3212 03d2 46616E43 		.ascii	"FanController_fanPropertiesStruct\000"
- 3212      6F6E7472 
- 3212      6F6C6C65 
- 3212      725F6661 
- 3212      6E50726F 
- 3213              	.LASF73:
- 3214 03f4 46616E43 		.ascii	"FanController_initVar\000"
- 3214      6F6E7472 
- 3214      6F6C6C65 
- 3214      725F696E 
- 3214      69745661 
- 3215              	.LASF12:
- 3216 040a 666C6F61 		.ascii	"float\000"
- 3216      7400
- 3217              	.LASF48:
- 3218 0410 46616E43 		.ascii	"FanController_GetAlertSource\000"
- 3218      6F6E7472 
- 3218      6F6C6C65 
- 3218      725F4765 
- 3218      74416C65 
- 3219              	.LASF81:
- 3220 042d 46616E43 		.ascii	"FanController_TachOutDMA_DmaInitialize\000"
- 3220      6F6E7472 
- 3220      6F6C6C65 
- 3220      725F5461 
- 3220      63684F75 
- 3221              	.LASF77:
- 3222 0454 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
- 3222      4320342E 
- 3222      372E3320 
- 3222      32303133 
- 3222      30333132 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 90
+ 3203      6768746F 
+ 3203      725C686F 
+ 3203      6D655C73 
+ 3203      7072696E 
+ 3204 0377 50536F43 		.ascii	"PSoC Creator\\Fan_And_Potentiometer\\FW_Fan_Control"
+ 3204      20437265 
+ 3204      61746F72 
+ 3204      5C46616E 
+ 3204      5F416E64 
+ 3205 03a8 30312E63 		.ascii	"01.cydsn\000"
+ 3205      7964736E 
+ 3205      00
+ 3206              	.LASF36:
+ 3207 03b1 46616E43 		.ascii	"FanController_Stop\000"
+ 3207      6F6E7472 
+ 3207      6F6C6C65 
+ 3207      725F5374 
+ 3207      6F7000
+ 3208              	.LASF47:
+ 3209 03c4 46616E43 		.ascii	"FanController_GetAlertMode\000"
+ 3209      6F6E7472 
+ 3209      6F6C6C65 
+ 3209      725F4765 
+ 3209      74416C65 
+ 3210              	.LASF64:
+ 3211 03df 66616E4E 		.ascii	"fanNum\000"
+ 3211      756D00
+ 3212              	.LASF29:
+ 3213 03e6 46616E43 		.ascii	"FanController_fanPropertiesStruct\000"
+ 3213      6F6E7472 
+ 3213      6F6C6C65 
+ 3213      725F6661 
+ 3213      6E50726F 
+ 3214              	.LASF73:
+ 3215 0408 46616E43 		.ascii	"FanController_initVar\000"
+ 3215      6F6E7472 
+ 3215      6F6C6C65 
+ 3215      725F696E 
+ 3215      69745661 
+ 3216              	.LASF12:
+ 3217 041e 666C6F61 		.ascii	"float\000"
+ 3217      7400
+ 3218              	.LASF48:
+ 3219 0424 46616E43 		.ascii	"FanController_GetAlertSource\000"
+ 3219      6F6E7472 
+ 3219      6F6C6C65 
+ 3219      725F4765 
+ 3219      74416C65 
+ 3220              	.LASF81:
+ 3221 0441 46616E43 		.ascii	"FanController_TachOutDMA_DmaInitialize\000"
+ 3221      6F6E7472 
+ 3221      6F6C6C65 
+ 3221      725F5461 
+ 3221      63684F75 
+ 3222              	.LASF77:
+ 3223 0468 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
+ 3223      4320342E 
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 90
 
 
- 3223 0487 616E6368 		.ascii	"anch revision 196615]\000"
- 3223      20726576 
- 3223      6973696F 
- 3223      6E203139 
- 3223      36363135 
- 3224              	.LASF15:
- 3225 049d 72656738 		.ascii	"reg8\000"
- 3225      00
- 3226              	.LASF1:
- 3227 04a2 756E7369 		.ascii	"unsigned char\000"
- 3227      676E6564 
- 3227      20636861 
- 3227      7200
- 3228              	.LASF2:
- 3229 04b0 73686F72 		.ascii	"short int\000"
- 3229      7420696E 
- 3229      7400
- 3230              	.LASF50:
- 3231 04ba 46616E43 		.ascii	"FanController_GetFanStallStatus\000"
- 3231      6F6E7472 
- 3231      6F6C6C65 
- 3231      725F4765 
- 3231      7446616E 
- 3232              	.LASF71:
- 3233 04da 46616E43 		.ascii	"FanController_TachOutDMA_channel\000"
- 3233      6F6E7472 
- 3233      6F6C6C65 
- 3233      725F5461 
- 3233      63684F75 
- 3234              	.LASF46:
- 3235 04fb 616C6572 		.ascii	"alertMask\000"
- 3235      744D6173 
- 3235      6B00
- 3236              	.LASF14:
- 3237 0505 63686172 		.ascii	"char\000"
- 3237      00
- 3238              	.LASF57:
- 3239 050a 64757943 		.ascii	"duyCycle\000"
- 3239      79636C65 
- 3239      00
- 3240              	.LASF80:
- 3241 0513 46616E43 		.ascii	"FanController_SetupDMA\000"
- 3241      6F6E7472 
- 3241      6F6C6C65 
- 3241      725F5365 
- 3241      74757044 
- 3242              	.LASF67:
- 3243 052a 72657175 		.ascii	"requestPerBurst\000"
- 3243      65737450 
- 3243      65724275 
- 3243      72737400 
- 3244              	.LASF76:
- 3245 053a 46616E43 		.ascii	"FanController_fanProperties\000"
- 3245      6F6E7472 
- 3245      6F6C6C65 
- 3245      725F6661 
- 3245      6E50726F 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 91
+ 3223      372E3320 
+ 3223      32303133 
+ 3223      30333132 
+ 3224 049b 616E6368 		.ascii	"anch revision 196615]\000"
+ 3224      20726576 
+ 3224      6973696F 
+ 3224      6E203139 
+ 3224      36363135 
+ 3225              	.LASF15:
+ 3226 04b1 72656738 		.ascii	"reg8\000"
+ 3226      00
+ 3227              	.LASF1:
+ 3228 04b6 756E7369 		.ascii	"unsigned char\000"
+ 3228      676E6564 
+ 3228      20636861 
+ 3228      7200
+ 3229              	.LASF2:
+ 3230 04c4 73686F72 		.ascii	"short int\000"
+ 3230      7420696E 
+ 3230      7400
+ 3231              	.LASF50:
+ 3232 04ce 46616E43 		.ascii	"FanController_GetFanStallStatus\000"
+ 3232      6F6E7472 
+ 3232      6F6C6C65 
+ 3232      725F4765 
+ 3232      7446616E 
+ 3233              	.LASF71:
+ 3234 04ee 46616E43 		.ascii	"FanController_TachOutDMA_channel\000"
+ 3234      6F6E7472 
+ 3234      6F6C6C65 
+ 3234      725F5461 
+ 3234      63684F75 
+ 3235              	.LASF46:
+ 3236 050f 616C6572 		.ascii	"alertMask\000"
+ 3236      744D6173 
+ 3236      6B00
+ 3237              	.LASF14:
+ 3238 0519 63686172 		.ascii	"char\000"
+ 3238      00
+ 3239              	.LASF57:
+ 3240 051e 64757943 		.ascii	"duyCycle\000"
+ 3240      79636C65 
+ 3240      00
+ 3241              	.LASF80:
+ 3242 0527 46616E43 		.ascii	"FanController_SetupDMA\000"
+ 3242      6F6E7472 
+ 3242      6F6C6C65 
+ 3242      725F5365 
+ 3242      74757044 
+ 3243              	.LASF67:
+ 3244 053e 72657175 		.ascii	"requestPerBurst\000"
+ 3244      65737450 
+ 3244      65724275 
+ 3244      72737400 
+ 3245              	.LASF76:
+ 3246 054e 46616E43 		.ascii	"FanController_fanProperties\000"
+ 3246      6F6E7472 
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 91
 
 
- 3246              	.LASF78:
- 3247 0556 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\FanController.c\000"
- 3247      6E657261 
- 3247      7465645F 
- 3247      536F7572 
- 3247      63655C50 
- 3248              	.LASF44:
- 3249 057f 46616E43 		.ascii	"FanController_SetAlertMask\000"
- 3249      6F6E7472 
- 3249      6F6C6C65 
- 3249      725F5365 
- 3249      74416C65 
- 3250              	.LASF63:
- 3251 059a 61637475 		.ascii	"actualSpeed\000"
- 3251      616C5370 
- 3251      65656400 
- 3252              	.LASF56:
- 3253 05a6 46616E43 		.ascii	"FanController_GetDutyCycle\000"
- 3253      6F6E7472 
- 3253      6F6C6C65 
- 3253      725F4765 
- 3253      74447574 
- 3254              	.LASF74:
- 3255 05c1 46616E43 		.ascii	"FanController_fanControl\000"
- 3255      6F6E7472 
- 3255      6F6C6C65 
- 3255      725F6661 
- 3255      6E436F6E 
- 3256              	.LASF65:
- 3257 05da 46616E43 		.ascii	"FanController_fanOutTds\000"
- 3257      6F6E7472 
- 3257      6F6C6C65 
- 3257      725F6661 
- 3257      6E4F7574 
- 3258              	.LASF26:
- 3259 05f2 64757479 		.ascii	"dutyRpmSlope\000"
- 3259      52706D53 
- 3259      6C6F7065 
- 3259      00
- 3260              	.LASF18:
- 3261 05ff 46616E43 		.ascii	"FanController_fanTdOutStruct\000"
- 3261      6F6E7472 
- 3261      6F6C6C65 
- 3261      725F6661 
- 3261      6E54644F 
- 3262              	.LASF39:
- 3263 061c 46616E43 		.ascii	"FanController_Init\000"
- 3263      6F6E7472 
- 3263      6F6C6C65 
- 3263      725F496E 
- 3263      697400
- 3264              	.LASF58:
- 3265 062f 46616E43 		.ascii	"FanController_SetDesiredSpeed\000"
- 3265      6F6E7472 
- 3265      6F6C6C65 
- 3265      725F5365 
- 3265      74446573 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccDPWocT.s 			page 92
+ 3246      6F6C6C65 
+ 3246      725F6661 
+ 3246      6E50726F 
+ 3247              	.LASF78:
+ 3248 056a 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\FanController.c\000"
+ 3248      6E657261 
+ 3248      7465645F 
+ 3248      536F7572 
+ 3248      63655C50 
+ 3249              	.LASF44:
+ 3250 0593 46616E43 		.ascii	"FanController_SetAlertMask\000"
+ 3250      6F6E7472 
+ 3250      6F6C6C65 
+ 3250      725F5365 
+ 3250      74416C65 
+ 3251              	.LASF63:
+ 3252 05ae 61637475 		.ascii	"actualSpeed\000"
+ 3252      616C5370 
+ 3252      65656400 
+ 3253              	.LASF56:
+ 3254 05ba 46616E43 		.ascii	"FanController_GetDutyCycle\000"
+ 3254      6F6E7472 
+ 3254      6F6C6C65 
+ 3254      725F4765 
+ 3254      74447574 
+ 3255              	.LASF74:
+ 3256 05d5 46616E43 		.ascii	"FanController_fanControl\000"
+ 3256      6F6E7472 
+ 3256      6F6C6C65 
+ 3256      725F6661 
+ 3256      6E436F6E 
+ 3257              	.LASF65:
+ 3258 05ee 46616E43 		.ascii	"FanController_fanOutTds\000"
+ 3258      6F6E7472 
+ 3258      6F6C6C65 
+ 3258      725F6661 
+ 3258      6E4F7574 
+ 3259              	.LASF26:
+ 3260 0606 64757479 		.ascii	"dutyRpmSlope\000"
+ 3260      52706D53 
+ 3260      6C6F7065 
+ 3260      00
+ 3261              	.LASF18:
+ 3262 0613 46616E43 		.ascii	"FanController_fanTdOutStruct\000"
+ 3262      6F6E7472 
+ 3262      6F6C6C65 
+ 3262      725F6661 
+ 3262      6E54644F 
+ 3263              	.LASF39:
+ 3264 0630 46616E43 		.ascii	"FanController_Init\000"
+ 3264      6F6E7472 
+ 3264      6F6C6C65 
+ 3264      725F496E 
+ 3264      697400
+ 3265              	.LASF58:
+ 3266 0643 46616E43 		.ascii	"FanController_SetDesiredSpeed\000"
+ 3266      6F6E7472 
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccGz7sYR.s 			page 92
 
 
- 3266              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br
+ 3266      6F6C6C65 
+ 3266      725F5365 
+ 3266      74446573 
+ 3267              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br

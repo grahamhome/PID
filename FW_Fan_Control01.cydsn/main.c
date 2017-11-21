@@ -30,6 +30,11 @@
 * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 *******************************************************************************/
 
+#define LCD_MAX_ECHO (LCD_Position(0u, 8u))
+#define LCD_MIN_ECHO (LCD_Position(0u, 0u))
+#define LCD_MIN_DUTY (LCD_Position(1u, 8u))
+#define LCD_MAX_DUTY (LCD_Position(1u, 0u))
+
 #include <device.h>
 #include <stdio.h>
 
@@ -71,7 +76,7 @@
 uint8 InterruptCnt;
 uint32 echo=0;
 uint32 min = max_32b_int; 
-uint32 max =0;
+uint32 max = 0;
 
 CY_ISR(start_echo_IRR_Interrupt)
 {
@@ -121,9 +126,10 @@ void main()
     uint16  dutyCycle;
     char    displayString[6];
     
+    
+    
     /* Globally Enable Interrupts to the CPU Core */
     CyGlobalIntEnable;
-    
     FanController_Start();
     FanController_SetDesiredSpeed(FAN, desiredSpeed);
     dutyCycle = FanController_GetDutyCycle(FAN);
@@ -137,36 +143,65 @@ void main()
     /* Start the ADC conversion */
     ADC_DelSig_1_StartConvert();
     
-    while(1u)
-    {
-        /* Get position */
+    
+    // Determine minimum and maximum fan speed and min & max. distance readings
+    //FanController_SetDesiredSpeed(FAN, desiredSpeed);
+    
+    
+    // TODO: Figure out max. and min. duty cycles by measuring how long it takes the ball to get to the top.
+    // Start low for the min. and capture the value at which the ball starts to move.
+    // Start high for the max. and capture the value at which the ball moves to the top the fastest.
+    uint16 currentDuty = MIN_DUTY;
+    FanController_SetDesiredSpeed(FAN, MAX_RPM);
+    FanController_SetDutyCycle(FAN, currentDuty);
+    uint16 min_duty = 0;
+    uint16 max_duty = 0;
+    uint8 min_record_counter = 0;
+    while (1u) {
         
-        LCD_Position(0u, 0u);
-        LCD_PrintInt16(echo/2u);
+        /* Display position */
+        //LCD_Position(0u, 0u);
+        //LCD_PrintInt16(echo/2u);
         
+        // Check if max rpm should be updated 
         if (echo>max){
             max = echo;
-            LCD_Position(0u, 8u);
-            //LCD_PrintString("MAX: ");
-            //LCD_Position(0u, 12u);
+            min_duty = currentDuty;
+            LCD_MAX_ECHO;
             LCD_PrintInt16(max/2u);
-            //LCD_PrintInt32(max);
+            LCD_MIN_DUTY;
+            LCD_PrintInt16(min_duty);
         }
+        
+        // Check if min rpm should be updated
         if (echo<min){
             min = echo;
-            LCD_Position(1u, 8u);
-            //LCD_PrintString("MIN: ");
-            //LCD_Position(0u, 121u);
-            //LCD_PrintInt32(min);
+            max_duty = currentDuty;
+            min_record_counter = 0;
+            LCD_MIN_ECHO;
             LCD_PrintInt16(min/2u);
+            LCD_MAX_DUTY;
+            LCD_PrintInt16(max_duty);
+        }  else {
+            min_record_counter++;
+            if (min_record_counter >= 200) {
+                break;
+            }
         }
+        
+        currentDuty += DUTY_STEP_COARSE;
+        FanController_SetDutyCycle(FAN, currentDuty);
 		CyDelay(100u);
+    }
+    FanController_SetDutyCycle(FAN, MIN_DUTY);
+    
+    //while(1u) {
         
         /* Update fan speed */
         
         /* Synchronize firmware to end-of-cycle pulse from FanController */
-        if(EOC_SR_Read())
-        {
+        //if(EOC_SR_Read())
+        //{
         
             /* Display Fan Actual Speeds */
             /*LCD_Position(0,5u);
@@ -181,24 +216,24 @@ void main()
             
             
             // Check for potentiometer reading to change speed
-            if(ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_RETURN_STATUS))
-            {
-                uint16 output = ADC_DelSig_1_GetResult16() + 1; // Add one to overflow int at minimum value (was being read as max in value)
+            //if(ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_RETURN_STATUS))
+            //{
+                //uint16 output = ADC_DelSig_1_GetResult16() + 1; // Add one to overflow int at minimum value (was being read as max in value)
                 //LCD_Position(1u, 8u);
                 //LCD_PrintInt16(output);
-                float speed = (((float) output)/(float)256 * (((float)MAX_RPM) - ((float)MIN_RPM))) + (float)MIN_RPM;
-                float duty = (((float) output)/(float)256 * (((float)MAX_DUTY) - ((float)MIN_DUTY))) + (float)MIN_DUTY;
-                dutyCycle = (uint16) duty;
-                desiredSpeed = (uint16) speed;
+                //float speed = (((float) output)/(float)256 * (((float)MAX_RPM) - ((float)MIN_RPM))) + (float)MIN_RPM;
+                //float duty = (((float) output)/(float)256 * (((float)MAX_DUTY) - ((float)MIN_DUTY))) + (float)MIN_DUTY;
+               // dutyCycle = (uint16) duty;
+               // desiredSpeed = (uint16) speed;
                 /* Display Updated Desired Speed */
                 //LCD_Position(1u, 0u);
                 //LCD_PrintDecUint16(desiredSpeed);
-                FanController_SetDesiredSpeed(FAN, desiredSpeed);
-                FanController_SetDutyCycle(FAN, dutyCycle);
+                //FanController_SetDesiredSpeed(FAN, desiredSpeed);
+                //FanController_SetDutyCycle(FAN, dutyCycle);
                 
-            }
-        }
-    }
+            //}
+        //}
+    //}
 }
 
 

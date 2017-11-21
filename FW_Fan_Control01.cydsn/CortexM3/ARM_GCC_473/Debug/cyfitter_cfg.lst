@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
   30:.\Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYALIGNED __attribute__ ((aligned))
   31:.\Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CY_CFG_UNUSED __attribute__ ((unused))
   32:.\Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CY_CFG_SECTION __attribute__ ((section(".psocinit")))
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 2
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 2
 
 
   33:.\Generated_Source\PSoC5/cyfitter_cfg.c ****     
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
   32              		.cfi_def_cfa_offset 8
   33              		.cfi_offset 7, -8
   34              		.cfi_offset 14, -4
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 3
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 3
 
 
   35 0002 82B0     		sub	sp, sp, #8
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
   81 000c F868     		ldr	r0, [r7, #12]
   82 000e B968     		ldr	r1, [r7, #8]
   83 0010 7A68     		ldr	r2, [r7, #4]
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 4
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 4
 
 
   84 0012 FFF7FEFF 		bl	memcpy
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  130              		.align	2
  131              		.thumb
  132              		.thumb_func
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 5
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 5
 
 
  133              		.type	CyClockStartupError, %function
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  130:.\Generated_Source\PSoC5/cyfitter_cfg.c ****     /* `#START CyClockStartupError` */
  131:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 
  132:.\Generated_Source\PSoC5/cyfitter_cfg.c ****     /* If we have a clock startup error (bad MHz crystal, PLL lock, etc.),  */
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 6
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 6
 
 
  133:.\Generated_Source\PSoC5/cyfitter_cfg.c ****     /* we will end up here to allow the customer to implement something to  */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  175:.\Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_UDB_0_2_1_CONFIG_VAL ((const uint8 CYFAR *)0x48000320u)
  176:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 
  177:.\Generated_Source\PSoC5/cyfitter_cfg.c **** /* UDB_0_2_0_CONFIG Address: CYDEV_UCFG_B0_P4_U1_BASE Size (bytes): 128 */
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 7
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 7
 
 
  178:.\Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_UDB_0_2_0_CONFIG_VAL ((const uint8 CYFAR *)0x480003A0u)
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  232:.\Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_DSISWITCH_0_5_VAL ((const uint8 CYFAR *)0x48000B00u)
  233:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 
  234:.\Generated_Source\PSoC5/cyfitter_cfg.c **** /* DSI0_5_HV_ROUTING Address: CYDEV_UCFG_DSI4_BASE + 0x00000080u Size (bytes): 128 */
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 8
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 8
 
 
  235:.\Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_DSI0_5_HV_ROUTING_VAL ((const uint8 CYFAR *)0x48000B80u)
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  289:.\Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_DSISWITCH_1_0_VAL ((const uint8 CYFAR *)0x48001480u)
  290:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 
  291:.\Generated_Source\PSoC5/cyfitter_cfg.c **** /* DSI3_0_HV_ROUTING Address: CYDEV_UCFG_DSI9_BASE + 0x00000080u Size (bytes): 128 */
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 9
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 9
 
 
  292:.\Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_DSI3_0_HV_ROUTING_VAL ((const uint8 CYFAR *)0x48001500u)
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  346:.\Generated_Source\PSoC5/cyfitter_cfg.c **** static void cfg_dma_init(void);
  347:.\Generated_Source\PSoC5/cyfitter_cfg.c **** static void cfg_dma_init(void)
  348:.\Generated_Source\PSoC5/cyfitter_cfg.c **** {
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 10
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 10
 
 
  166              		.loc 1 348 0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  388:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		{ 5u, 0x07u, 0x23u, (uint16)(uint32)(0u), (uint16)(CYREG_PHUB_CH2_BASIC_CFG) },	/* TD 6 */
  389:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		{ 5u, 0x08u, 0x23u, (uint16)(uint32)(0u), (uint16)(CYREG_PHUB_CH5_BASIC_CFG) },	/* TD 7 */
  390:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		{ 5u, 0xFEu, 0x23u, (uint16)(uint32)(0u), (uint16)(CYREG_PHUB_CH6_BASIC_CFG) },	/* TD 8 */
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 11
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 11
 
 
  391:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		{ 48u, 0x0Au, 0x22u, (uint16)(uint32)(0u), (uint16)(CYREG_PRT4_DR) },	/* TD 9 */
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  445:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		{ 128u, 0x40u, 0x23u, (uint16)(uint32)(0u), (uint16)(CYDEV_UCFG_B0_P5_ROUTE_BASE) },	/* TD 63 */
  446:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		{ 128u, 0x41u, 0x23u, (uint16)(uint32)(0u), (uint16)(CYDEV_UCFG_B0_P5_ROUTE_BASE + 0x00000080u) }
  447:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		{ 128u, 0x42u, 0x23u, (uint16)(uint32)(0u), (uint16)(CYDEV_UCFG_B0_P2_ROUTE_BASE) },	/* TD 65 */
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 12
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 12
 
 
  448:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		{ 128u, 0x43u, 0x23u, (uint16)(uint32)(0u), (uint16)(CYDEV_UCFG_B0_P2_ROUTE_BASE + 0x00000080u) }
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  502:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		(const void *)(BS_UDB_0_2_1_CONFIG_VAL),	/* TD 34 */
  503:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		(const void *)(BS_UDB_0_2_0_CONFIG_VAL),	/* TD 35 */
  504:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		(const void *)(BS_UDB_0_3_0_CONFIG_VAL),	/* TD 36 */
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 13
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 13
 
 
  505:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 		(const void *)(BS_UDB_0_3_1_CONFIG_VAL),	/* TD 37 */
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  186              		.loc 1 553 0
  187 0014 4FF4EC43 		mov	r3, #30208
  188 0018 C4F20003 		movt	r3, 16384
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 14
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 14
 
 
  189 001c 4FF01002 		mov	r2, #16
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  234 0098 47F20663 		movw	r3, #30214
  235 009c C4F20003 		movt	r3, 16384
  236 00a0 4FF48042 		mov	r2, #16384
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 15
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 15
 
 
  237 00a4 1A80     		strh	r2, [r3, #0]	@ movhi
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  277              		.loc 1 576 0 is_stmt 1
  278 0106 4FF00003 		mov	r3, #0
  279 010a 7B60     		str	r3, [r7, #4]
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 16
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 16
 
 
  280 010c 15E0     		b	.L8
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  322 0168 002B     		cmp	r3, #0
  323 016a F5D1     		bne	.L10
  587:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	while(0u != (CY_GET_REG8((void CYXDATA *)CYREG_PHUB_CH1_BASIC_STATUS) & 0x01u)){}
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 17
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 17
 
 
  324              		.loc 1 587 0 is_stmt 1
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  372 01d0 4FF00602 		mov	r2, #6
  373 01d4 FFF7FEFF 		bl	CYCONFIGCPY
  594:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 18
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 18
 
 
  595:.\Generated_Source\PSoC5/cyfitter_cfg.c **** }
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  620:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG16((void CYFAR *)(CYREG_CLKDIST_DCFG0_CFG0), 0x0000u);
  403              		.loc 1 620 0
  404 0006 4FF48143 		mov	r3, #16512
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 19
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 19
 
 
  405 000a C4F20003 		movt	r3, 16384
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  450 0088 C4F20003 		movt	r3, 16384
  451 008c 4FF01902 		mov	r2, #25
  452 0090 1A70     		strb	r2, [r3, #0]
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 20
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 20
 
 
  630:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG16((void CYFAR *)(CYREG_CLKDIST_DCFG5_CFG0), 0x001Du);
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  645:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG16((void CYFAR *)(CYREG_FASTCLK_PLL_P), 0x0008u);
  492              		.loc 1 645 0
  493 0102 44F22223 		movw	r3, #16930
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 21
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 21
 
 
  494 0106 C4F20003 		movt	r3, 16384
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  539              	.L17:
  653:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	}
  654:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	/* If we ran out of time the PLL didn't lock so go to the error function */
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 22
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 22
 
 
  655:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	if (timeout == 0u)
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  581 01d6 4FF00402 		mov	r2, #4
  582 01da 1A70     		strb	r2, [r3, #0]
  668:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 23
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 23
 
 
  669:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_PM_ACT_CFG2), ((CY_GET_XTND_REG8((void CYFAR *)CYREG_PM_ACT_
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  679:.\Generated_Source\PSoC5/cyfitter_cfg.c **** * Function Name: AnalogSetDefault
  680:.\Generated_Source\PSoC5/cyfitter_cfg.c **** ********************************************************************************
  681:.\Generated_Source\PSoC5/cyfitter_cfg.c **** *
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 24
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 24
 
 
  682:.\Generated_Source\PSoC5/cyfitter_cfg.c **** * Summary:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  663 003a C4F20003 		movt	r3, 16384
  664 003e 4FF00102 		mov	r2, #1
  665 0042 1A70     		strb	r2, [r3, #0]
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 25
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 25
 
 
  700:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)CYREG_DSM0_SW0, 0x10u);
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  696              		@ link register save eliminated.
  697 0000 80B4     		push	{r7}
  698              	.LCFI21:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 26
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 26
 
 
  699              		.cfi_def_cfa_offset 4
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  742              		.global	ADC_DelSig_1_AMux__addrTable
  743              		.section	.rodata
  744              		.align	2
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 27
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 27
 
 
  745              		.type	ADC_DelSig_1_AMux__addrTable, %object
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  768              		@ frame_needed = 1, uses_anonymous_args = 0
  769              		@ link register save eliminated.
  770 0000 80B4     		push	{r7}
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 28
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 28
 
 
  771              	.LCFI24:
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  771:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 
  772:.\Generated_Source\PSoC5/cyfitter_cfg.c **** /*******************************************************************************
  773:.\Generated_Source\PSoC5/cyfitter_cfg.c **** * Function Name: ADC_DelSig_1_AMux_Unset
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 29
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 29
 
 
  774:.\Generated_Source\PSoC5/cyfitter_cfg.c **** ********************************************************************************
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  857 0040 0B40     		ands	r3, r3, r1
  858 0042 DBB2     		uxtb	r3, r3
  859 0044 1370     		strb	r3, [r2, #0]
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 30
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 30
 
 
  860              	.L26:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  816:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	/* Disable interrupts by default. Let user enable if/when they want. */
  817:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CYGlobalIntDisable
  889              		.loc 1 817 0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 31
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 31
 
 
  890              	@ 817 ".\Generated_Source\PSoC5\cyfitter_cfg.c" 1
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  929 0068 45F21302 		movw	r2, #20499
  930 006c C4F20102 		movt	r2, 16385
  931 0070 1278     		ldrb	r2, [r2, #0]
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 32
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 32
 
 
  932 0072 D2B2     		uxtb	r2, r2
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  976 00f8 FFF7FEFF 		bl	CYCONFIGCPY
  843:.\Generated_Source\PSoC5/cyfitter_cfg.c **** 	CYCONFIGCPY((void CYFAR *)(CYREG_PRT3_DR), (const void CYFAR *)(BS_IOPINS0_3_VAL), 10u);
  977              		.loc 1 843 0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 33
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 33
 
 
  978 00fc 45F23010 		movw	r0, #20784
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1015 0166 C4F20000 		movt	r0, 16384
  1016 016a 44F2A031 		movw	r1, #17312
  1017 016e C4F20001 		movt	r1, 16384
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 34
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 34
 
 
  1018 0172 4FF00E02 		mov	r2, #14
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1071 003b 23       		.byte	35
  1072 003c 0000     		.short	0
  1073 003e 7070     		.short	28784
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 35
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 35
 
 
  1074 0040 3000     		.short	48
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1128 0096 0043     		.short	17152
  1129 0098 8000     		.short	128
  1130 009a 15       		.byte	21
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 36
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 36
 
 
  1131 009b 22       		.byte	34
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1185 00f2 20       		.byte	32
  1186 00f3 23       		.byte	35
  1187 00f4 0000     		.short	0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 37
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 37
 
 
  1188 00f6 8004     		.short	1152
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1242 014c 0000     		.short	0
  1243 014e 1050     		.short	20496
  1244 0150 1000     		.short	16
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 38
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 38
 
 
  1245 0152 2C       		.byte	44
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1299 01a8 8000     		.short	128
  1300 01aa 37       		.byte	55
  1301 01ab 23       		.byte	35
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 39
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 39
 
 
  1302 01ac 0000     		.short	0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1356 0203 23       		.byte	35
  1357 0204 0000     		.short	0
  1358 0206 0005     		.short	1280
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 40
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 40
 
 
  1359 0208 8000     		.short	128
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1413 025e 8041     		.short	16768
  1414 0260 8000     		.short	128
  1415 0262 4E       		.byte	78
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 41
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 41
 
 
  1416 0263 23       		.byte	35
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1470 00b0 60070048 		.word	1207961440
  1471 00b4 70070048 		.word	1207961456
  1472 00b8 80070048 		.word	1207961472
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 42
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 42
 
 
  1473 00bc 00080048 		.word	1207961600
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1527 027e 01       		.byte	1
  1528 027f 40       		.byte	64
  1529              		.align	2
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 43
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 43
 
 
  1530              		.type	CH5_ADDR_DATA0.4779, %object
@@ -2567,10 +2567,10 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1573 0006 00000000 		.4byte	.Ldebug_abbrev0
  1574 000a 04       		.byte	0x4
  1575 000b 01       		.uleb128 0x1
- 1576 000c 5D020000 		.4byte	.LASF50
+ 1576 000c 10020000 		.4byte	.LASF50
  1577 0010 01       		.byte	0x1
- 1578 0011 AF020000 		.4byte	.LASF51
- 1579 0015 78000000 		.4byte	.LASF52
+ 1578 0011 62020000 		.4byte	.LASF51
+ 1579 0015 9B020000 		.4byte	.LASF52
  1580 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1581 001d 00000000 		.4byte	0
  1582 0021 00000000 		.4byte	0
@@ -2578,22 +2578,22 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1584 0029 02       		.uleb128 0x2
  1585 002a 01       		.byte	0x1
  1586 002b 06       		.byte	0x6
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 44
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 44
 
 
- 1587 002c 1C030000 		.4byte	.LASF0
+ 1587 002c 30030000 		.4byte	.LASF0
  1588 0030 02       		.uleb128 0x2
  1589 0031 01       		.byte	0x1
  1590 0032 08       		.byte	0x8
- 1591 0033 53010000 		.4byte	.LASF1
+ 1591 0033 06010000 		.4byte	.LASF1
  1592 0037 02       		.uleb128 0x2
  1593 0038 02       		.byte	0x2
  1594 0039 05       		.byte	0x5
- 1595 003a 3B020000 		.4byte	.LASF2
+ 1595 003a EE010000 		.4byte	.LASF2
  1596 003e 02       		.uleb128 0x2
  1597 003f 02       		.byte	0x2
  1598 0040 07       		.byte	0x7
- 1599 0041 4E000000 		.4byte	.LASF3
+ 1599 0041 53000000 		.4byte	.LASF3
  1600 0045 03       		.uleb128 0x3
  1601 0046 04       		.byte	0x4
  1602 0047 05       		.byte	0x5
@@ -2601,66 +2601,66 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1604 004c 02       		.uleb128 0x2
  1605 004d 04       		.byte	0x4
  1606 004e 07       		.byte	0x7
- 1607 004f A3010000 		.4byte	.LASF4
+ 1607 004f 56010000 		.4byte	.LASF4
  1608 0053 02       		.uleb128 0x2
  1609 0054 08       		.byte	0x8
  1610 0055 05       		.byte	0x5
- 1611 0056 16020000 		.4byte	.LASF5
+ 1611 0056 C9010000 		.4byte	.LASF5
  1612 005a 02       		.uleb128 0x2
  1613 005b 08       		.byte	0x8
  1614 005c 07       		.byte	0x7
- 1615 005d C3010000 		.4byte	.LASF6
+ 1615 005d 76010000 		.4byte	.LASF6
  1616 0061 02       		.uleb128 0x2
  1617 0062 04       		.byte	0x4
  1618 0063 05       		.byte	0x5
- 1619 0064 DF020000 		.4byte	.LASF7
+ 1619 0064 92020000 		.4byte	.LASF7
  1620 0068 02       		.uleb128 0x2
  1621 0069 04       		.byte	0x4
  1622 006a 07       		.byte	0x7
- 1623 006b 0D020000 		.4byte	.LASF8
+ 1623 006b C0010000 		.4byte	.LASF8
  1624 006f 04       		.uleb128 0x4
  1625 0070 04       		.byte	0x4
  1626 0071 02       		.uleb128 0x2
  1627 0072 04       		.byte	0x4
  1628 0073 07       		.byte	0x7
- 1629 0074 F3000000 		.4byte	.LASF9
+ 1629 0074 A6000000 		.4byte	.LASF9
  1630 0078 02       		.uleb128 0x2
  1631 0079 01       		.byte	0x1
  1632 007a 08       		.byte	0x8
- 1633 007b E8020000 		.4byte	.LASF10
+ 1633 007b 06000000 		.4byte	.LASF10
  1634 007f 05       		.uleb128 0x5
- 1635 0080 06000000 		.4byte	.LASF11
+ 1635 0080 0B000000 		.4byte	.LASF11
  1636 0084 02       		.byte	0x2
  1637 0085 D5       		.byte	0xd5
  1638 0086 4C000000 		.4byte	0x4c
  1639 008a 05       		.uleb128 0x5
- 1640 008b 05010000 		.4byte	.LASF12
+ 1640 008b B8000000 		.4byte	.LASF12
  1641 008f 03       		.byte	0x3
  1642 0090 5B       		.byte	0x5b
  1643 0091 30000000 		.4byte	0x30
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 45
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 45
 
 
  1644 0095 05       		.uleb128 0x5
- 1645 0096 8B010000 		.4byte	.LASF13
+ 1645 0096 3E010000 		.4byte	.LASF13
  1646 009a 03       		.byte	0x3
  1647 009b 5C       		.byte	0x5c
  1648 009c 3E000000 		.4byte	0x3e
  1649 00a0 05       		.uleb128 0x5
- 1650 00a1 9C010000 		.4byte	.LASF14
+ 1650 00a1 4F010000 		.4byte	.LASF14
  1651 00a5 03       		.byte	0x3
  1652 00a6 5D       		.byte	0x5d
  1653 00a7 71000000 		.4byte	0x71
  1654 00ab 02       		.uleb128 0x2
  1655 00ac 04       		.byte	0x4
  1656 00ad 04       		.byte	0x4
- 1657 00ae CA000000 		.4byte	.LASF15
+ 1657 00ae 7D000000 		.4byte	.LASF15
  1658 00b2 02       		.uleb128 0x2
  1659 00b3 08       		.byte	0x8
  1660 00b4 04       		.byte	0x4
- 1661 00b5 61010000 		.4byte	.LASF16
+ 1661 00b5 14010000 		.4byte	.LASF16
  1662 00b9 05       		.uleb128 0x5
- 1663 00ba EE000000 		.4byte	.LASF17
+ 1663 00ba A1000000 		.4byte	.LASF17
  1664 00be 03       		.byte	0x3
  1665 00bf F0       		.byte	0xf0
  1666 00c0 C4000000 		.4byte	0xc4
@@ -2674,7 +2674,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1674 00d4 06       		.uleb128 0x6
  1675 00d5 95000000 		.4byte	0x95
  1676 00d9 07       		.uleb128 0x7
- 1677 00da 17010000 		.4byte	.LASF19
+ 1677 00da CA000000 		.4byte	.LASF19
  1678 00de 01       		.byte	0x1
  1679 00df 4F       		.byte	0x4f
  1680 00e0 01       		.byte	0x1
@@ -2698,13 +2698,13 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1698 0103 7F000000 		.4byte	0x7f
  1699 0107 02       		.byte	0x2
  1700 0108 91       		.byte	0x91
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 46
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 46
 
 
  1701 0109 70       		.sleb128 -16
  1702 010a 00       		.byte	0
  1703 010b 07       		.uleb128 0x7
- 1704 010c 35030000 		.4byte	.LASF20
+ 1704 010c 49030000 		.4byte	.LASF20
  1705 0110 01       		.byte	0x1
  1706 0111 56       		.byte	0x56
  1707 0112 01       		.byte	0x1
@@ -2714,7 +2714,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1711 011f 01       		.byte	0x1
  1712 0120 4D010000 		.4byte	0x14d
  1713 0124 09       		.uleb128 0x9
- 1714 0125 E4000000 		.4byte	.LASF21
+ 1714 0125 97000000 		.4byte	.LASF21
  1715 0129 01       		.byte	0x1
  1716 012a 56       		.byte	0x56
  1717 012b 6F000000 		.4byte	0x6f
@@ -2743,7 +2743,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1740 014f 53010000 		.4byte	0x153
  1741 0153 0B       		.uleb128 0xb
  1742 0154 07       		.uleb128 0x7
- 1743 0155 33000000 		.4byte	.LASF22
+ 1743 0155 38000000 		.4byte	.LASF22
  1744 0159 01       		.byte	0x1
  1745 015a 5D       		.byte	0x5d
  1746 015b 01       		.byte	0x1
@@ -2753,12 +2753,12 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1750 0168 01       		.byte	0x1
  1751 0169 96010000 		.4byte	0x196
  1752 016d 09       		.uleb128 0x9
- 1753 016e E4000000 		.4byte	.LASF21
+ 1753 016e 97000000 		.4byte	.LASF21
  1754 0172 01       		.byte	0x1
  1755 0173 5D       		.byte	0x5d
  1756 0174 6F000000 		.4byte	0x6f
  1757 0178 02       		.byte	0x2
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 47
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 47
 
 
  1758 0179 91       		.byte	0x91
@@ -2781,7 +2781,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1775 0194 6C       		.sleb128 -20
  1776 0195 00       		.byte	0
  1777 0196 0C       		.uleb128 0xc
- 1778 0197 D0000000 		.4byte	.LASF23
+ 1778 0197 83000000 		.4byte	.LASF23
  1779 019b 01       		.byte	0x1
  1780 019c 7D       		.byte	0x7d
  1781 019d 01       		.byte	0x1
@@ -2791,7 +2791,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1785 01aa 01       		.byte	0x1
  1786 01ab BE010000 		.4byte	0x1be
  1787 01af 09       		.uleb128 0x9
- 1788 01b0 92010000 		.4byte	.LASF24
+ 1788 01b0 45010000 		.4byte	.LASF24
  1789 01b4 01       		.byte	0x1
  1790 01b5 7D       		.byte	0x7d
  1791 01b6 8A000000 		.4byte	0x8a
@@ -2800,7 +2800,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1794 01bc 77       		.sleb128 -9
  1795 01bd 00       		.byte	0
  1796 01be 0D       		.uleb128 0xd
- 1797 01bf 21010000 		.4byte	.LASF25
+ 1797 01bf D4000000 		.4byte	.LASF25
  1798 01c3 01       		.byte	0x1
  1799 01c4 5B01     		.2byte	0x15b
  1800 01c6 01       		.byte	0x1
@@ -2810,15 +2810,15 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1804 01d3 01       		.byte	0x1
  1805 01d4 CF020000 		.4byte	0x2cf
  1806 01d8 0E       		.uleb128 0xe
- 1807 01d9 08020000 		.4byte	.LASF53
+ 1807 01d9 BB010000 		.4byte	.LASF53
  1808 01dd 08       		.byte	0x8
  1809 01de 01       		.byte	0x1
  1810 01df 5E01     		.2byte	0x15e
  1811 01e1 31020000 		.4byte	0x231
  1812 01e5 0F       		.uleb128 0xf
- 1813 01e6 E9000000 		.4byte	.LASF26
+ 1813 01e6 9C000000 		.4byte	.LASF26
  1814 01ea 01       		.byte	0x1
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 48
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 48
 
 
  1815 01eb 5F01     		.2byte	0x15f
@@ -2827,7 +2827,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1818 01f2 23       		.byte	0x23
  1819 01f3 00       		.uleb128 0
  1820 01f4 0F       		.uleb128 0xf
- 1821 01f5 0B010000 		.4byte	.LASF27
+ 1821 01f5 BE000000 		.4byte	.LASF27
  1822 01f9 01       		.byte	0x1
  1823 01fa 6001     		.2byte	0x160
  1824 01fc 8A000000 		.4byte	0x8a
@@ -2835,7 +2835,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1826 0201 23       		.byte	0x23
  1827 0202 02       		.uleb128 0x2
  1828 0203 0F       		.uleb128 0xf
- 1829 0204 B0010000 		.4byte	.LASF28
+ 1829 0204 63010000 		.4byte	.LASF28
  1830 0208 01       		.byte	0x1
  1831 0209 6101     		.2byte	0x161
  1832 020b 8A000000 		.4byte	0x8a
@@ -2851,7 +2851,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1842 021f 23       		.byte	0x23
  1843 0220 04       		.uleb128 0x4
  1844 0221 0F       		.uleb128 0xf
- 1845 0222 E4000000 		.4byte	.LASF21
+ 1845 0222 97000000 		.4byte	.LASF21
  1846 0226 01       		.byte	0x1
  1847 0227 6301     		.2byte	0x163
  1848 0229 95000000 		.4byte	0x95
@@ -2860,7 +2860,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1851 022f 06       		.uleb128 0x6
  1852 0230 00       		.byte	0
  1853 0231 11       		.uleb128 0x11
- 1854 0232 41030000 		.4byte	.LASF29
+ 1854 0232 55030000 		.4byte	.LASF29
  1855 0236 01       		.byte	0x1
  1856 0237 6701     		.2byte	0x167
  1857 0239 DF020000 		.4byte	0x2df
@@ -2868,7 +2868,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1859 023e 03       		.byte	0x3
  1860 023f 90020000 		.4byte	CH1_ADDR_DATA0.4777
  1861 0243 11       		.uleb128 0x11
- 1862 0244 44010000 		.4byte	.LASF30
+ 1862 0244 F7000000 		.4byte	.LASF30
  1863 0248 01       		.byte	0x1
  1864 0249 6A01     		.2byte	0x16a
  1865 024b E4020000 		.4byte	0x2e4
@@ -2876,9 +2876,9 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1867 0250 03       		.byte	0x3
  1868 0251 88020000 		.4byte	CH2_ADDR_DATA0.4778
  1869 0255 11       		.uleb128 0x11
- 1870 0256 2C020000 		.4byte	.LASF31
+ 1870 0256 DF010000 		.4byte	.LASF31
  1871 025a 01       		.byte	0x1
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 49
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 49
 
 
  1872 025b 6D01     		.2byte	0x16d
@@ -2887,7 +2887,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1875 0262 03       		.byte	0x3
  1876 0263 80020000 		.4byte	CH5_ADDR_DATA0.4779
  1877 0267 11       		.uleb128 0x11
- 1878 0268 69000000 		.4byte	.LASF32
+ 1878 0268 6E000000 		.4byte	.LASF32
  1879 026c 01       		.byte	0x1
  1880 026d 7001     		.2byte	0x170
  1881 026f EE020000 		.4byte	0x2ee
@@ -2895,7 +2895,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1883 0274 03       		.byte	0x3
  1884 0275 78020000 		.4byte	CH6_ADDR_DATA0.4780
  1885 0279 11       		.uleb128 0x11
- 1886 027a DA010000 		.4byte	.LASF33
+ 1886 027a 8D010000 		.4byte	.LASF33
  1887 027e 01       		.byte	0x1
  1888 027f 7301     		.2byte	0x173
  1889 0281 03030000 		.4byte	0x303
@@ -2903,7 +2903,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1891 0286 03       		.byte	0x3
  1892 0287 70020000 		.4byte	DMA_TD_START_CMD.4781
  1893 028b 11       		.uleb128 0x11
- 1894 028c 7E010000 		.4byte	.LASF34
+ 1894 028c 31010000 		.4byte	.LASF34
  1895 0290 01       		.byte	0x1
  1896 0291 7501     		.2byte	0x175
  1897 0293 A0000000 		.4byte	0xa0
@@ -2911,7 +2911,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1899 0298 03       		.byte	0x3
  1900 0299 00000000 		.4byte	DMA_ZERO_VAL.4782
  1901 029d 11       		.uleb128 0x11
- 1902 029e 28030000 		.4byte	.LASF35
+ 1902 029e 3C030000 		.4byte	.LASF35
  1903 02a2 01       		.byte	0x1
  1904 02a3 7D01     		.2byte	0x17d
  1905 02a5 18030000 		.4byte	0x318
@@ -2919,7 +2919,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1907 02aa 03       		.byte	0x3
  1908 02ab 00000000 		.4byte	CFG_TD_LIST0.4783
  1909 02af 11       		.uleb128 0x11
- 1910 02b0 26000000 		.4byte	.LASF36
+ 1910 02b0 2B000000 		.4byte	.LASF36
  1911 02b4 01       		.byte	0x1
  1912 02b5 D401     		.2byte	0x1d4
  1913 02b7 2D030000 		.4byte	0x32d
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1926 02cf 13       		.uleb128 0x13
  1927 02d0 8A000000 		.4byte	0x8a
  1928 02d4 DF020000 		.4byte	0x2df
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 50
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 50
 
 
  1929 02d8 14       		.uleb128 0x14
@@ -2981,7 +2981,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1966 032d 15       		.uleb128 0x15
  1967 032e 1D030000 		.4byte	0x31d
  1968 0332 0D       		.uleb128 0xd
- 1969 0333 43000000 		.4byte	.LASF37
+ 1969 0333 48000000 		.4byte	.LASF37
  1970 0337 01       		.byte	0x1
  1971 0338 6502     		.2byte	0x265
  1972 033a 01       		.byte	0x1
@@ -2991,18 +2991,18 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1976 0347 01       		.byte	0x1
  1977 0348 6B030000 		.4byte	0x36b
  1978 034c 11       		.uleb128 0x11
- 1979 034d 24020000 		.4byte	.LASF38
+ 1979 034d D7010000 		.4byte	.LASF38
  1980 0351 01       		.byte	0x1
  1981 0352 6702     		.2byte	0x267
  1982 0354 A0000000 		.4byte	0xa0
  1983 0358 02       		.byte	0x2
  1984 0359 91       		.byte	0x91
  1985 035a 74       		.sleb128 -12
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 51
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 51
 
 
  1986 035b 11       		.uleb128 0x11
- 1987 035c 61000000 		.4byte	.LASF39
+ 1987 035c 66000000 		.4byte	.LASF39
  1988 0360 01       		.byte	0x1
  1989 0361 6802     		.2byte	0x268
  1990 0363 8A000000 		.4byte	0x8a
@@ -3011,7 +3011,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  1993 0369 73       		.sleb128 -13
  1994 036a 00       		.byte	0
  1995 036b 16       		.uleb128 0x16
- 1996 036c 0D000000 		.4byte	.LASF40
+ 1996 036c 12000000 		.4byte	.LASF40
  1997 0370 01       		.byte	0x1
  1998 0371 B602     		.2byte	0x2b6
  1999 0373 01       		.byte	0x1
@@ -3021,7 +3021,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2003 0380 01       		.byte	0x1
  2004 0381 95030000 		.4byte	0x395
  2005 0385 11       		.uleb128 0x11
- 2006 0386 0A030000 		.4byte	.LASF41
+ 2006 0386 1E030000 		.4byte	.LASF41
  2007 038a 01       		.byte	0x1
  2008 038b B802     		.2byte	0x2b8
  2009 038d 8A000000 		.4byte	0x8a
@@ -3031,7 +3031,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2013 0394 00       		.byte	0
  2014 0395 17       		.uleb128 0x17
  2015 0396 01       		.byte	0x1
- 2016 0397 2E010000 		.4byte	.LASF44
+ 2016 0397 E1000000 		.4byte	.LASF44
  2017 039b 01       		.byte	0x1
  2018 039c D202     		.2byte	0x2d2
  2019 039e 01       		.byte	0x1
@@ -3041,7 +3041,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2023 03ab 01       		.byte	0x1
  2024 03ac CF030000 		.4byte	0x3cf
  2025 03b0 18       		.uleb128 0x18
- 2026 03b1 D7020000 		.4byte	.LASF42
+ 2026 03b1 8A020000 		.4byte	.LASF42
  2027 03b5 01       		.byte	0x1
  2028 03b6 D202     		.2byte	0x2d2
  2029 03b8 8A000000 		.4byte	0x8a
@@ -3049,7 +3049,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2031 03bd 91       		.byte	0x91
  2032 03be 6F       		.sleb128 -17
  2033 03bf 11       		.uleb128 0x11
- 2034 03c0 A6020000 		.4byte	.LASF43
+ 2034 03c0 59020000 		.4byte	.LASF43
  2035 03c4 01       		.byte	0x1
  2036 03c5 D402     		.2byte	0x2d4
  2037 03c7 8A000000 		.4byte	0x8a
@@ -3058,11 +3058,11 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2040 03cd 77       		.sleb128 -9
  2041 03ce 00       		.byte	0
  2042 03cf 17       		.uleb128 0x17
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 52
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 52
 
 
  2043 03d0 01       		.byte	0x1
- 2044 03d1 68010000 		.4byte	.LASF45
+ 2044 03d1 1B010000 		.4byte	.LASF45
  2045 03d5 01       		.byte	0x1
  2046 03d6 FC02     		.2byte	0x2fc
  2047 03d8 01       		.byte	0x1
@@ -3072,7 +3072,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2051 03e5 01       		.byte	0x1
  2052 03e6 FA030000 		.4byte	0x3fa
  2053 03ea 18       		.uleb128 0x18
- 2054 03eb 1E000000 		.4byte	.LASF46
+ 2054 03eb 23000000 		.4byte	.LASF46
  2055 03ef 01       		.byte	0x1
  2056 03f0 FC02     		.2byte	0x2fc
  2057 03f2 8A000000 		.4byte	0x8a
@@ -3082,7 +3082,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2061 03f9 00       		.byte	0
  2062 03fa 17       		.uleb128 0x17
  2063 03fb 01       		.byte	0x1
- 2064 03fc 45020000 		.4byte	.LASF47
+ 2064 03fc F8010000 		.4byte	.LASF47
  2065 0400 01       		.byte	0x1
  2066 0401 1203     		.2byte	0x312
  2067 0403 01       		.byte	0x1
@@ -3092,7 +3092,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2071 0410 01       		.byte	0x1
  2072 0411 25040000 		.4byte	0x425
  2073 0415 18       		.uleb128 0x18
- 2074 0416 1E000000 		.4byte	.LASF46
+ 2074 0416 23000000 		.4byte	.LASF46
  2075 041a 01       		.byte	0x1
  2076 041b 1203     		.2byte	0x312
  2077 041d 8A000000 		.4byte	0x8a
@@ -3102,7 +3102,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2081 0424 00       		.byte	0
  2082 0425 19       		.uleb128 0x19
  2083 0426 01       		.byte	0x1
- 2084 0427 B6010000 		.4byte	.LASF54
+ 2084 0427 69010000 		.4byte	.LASF54
  2085 042b 01       		.byte	0x1
  2086 042c 2D03     		.2byte	0x32d
  2087 042e 01       		.byte	0x1
@@ -3118,13 +3118,13 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2097 044a 01       		.byte	0x1
  2098 044b 00       		.byte	0
  2099 044c 0A       		.uleb128 0xa
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 53
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 53
 
 
  2100 044d 04       		.byte	0x4
  2101 044e 8A000000 		.4byte	0x8a
  2102 0452 1A       		.uleb128 0x1a
- 2103 0453 ED020000 		.4byte	.LASF48
+ 2103 0453 01030000 		.4byte	.LASF48
  2104 0457 01       		.byte	0x1
  2105 0458 E302     		.2byte	0x2e3
  2106 045a 65040000 		.4byte	0x465
@@ -3142,7 +3142,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2118 0478 01       		.byte	0x1
  2119 0479 00       		.byte	0
  2120 047a 1A       		.uleb128 0x1a
- 2121 047b EB010000 		.4byte	.LASF49
+ 2121 047b 9E010000 		.4byte	.LASF49
  2122 047f 01       		.byte	0x1
  2123 0480 EA02     		.2byte	0x2ea
  2124 0482 8D040000 		.4byte	0x48d
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2154 0014 00       		.byte	0
  2155 0015 02       		.uleb128 0x2
  2156 0016 24       		.uleb128 0x24
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 54
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 54
 
 
  2157 0017 00       		.byte	0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2211 004d 3B       		.uleb128 0x3b
  2212 004e 0B       		.uleb128 0xb
  2213 004f 27       		.uleb128 0x27
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 55
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 55
 
 
  2214 0050 0C       		.uleb128 0xc
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2268 0087 00       		.byte	0
  2269 0088 00       		.byte	0
  2270 0089 00       		.byte	0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 56
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 56
 
 
  2271 008a 0C       		.uleb128 0xc
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2325 00c2 0B       		.uleb128 0xb
  2326 00c3 3B       		.uleb128 0x3b
  2327 00c4 05       		.uleb128 0x5
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 57
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 57
 
 
  2328 00c5 01       		.uleb128 0x1
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2382 00fb 3A       		.uleb128 0x3a
  2383 00fc 0B       		.uleb128 0xb
  2384 00fd 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 58
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 58
 
 
  2385 00fe 05       		.uleb128 0x5
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2439 0135 00       		.byte	0
  2440 0136 17       		.uleb128 0x17
  2441 0137 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 59
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 59
 
 
  2442 0138 01       		.byte	0x1
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2496 016f 01       		.uleb128 0x1
  2497 0170 40       		.uleb128 0x40
  2498 0171 06       		.uleb128 0x6
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 60
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 60
 
 
  2499 0172 9642     		.uleb128 0x2116
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2553 0048 04000000 		.4byte	.LCFI4
  2554 004c 0200     		.2byte	0x2
  2555 004e 7D       		.byte	0x7d
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 61
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 61
 
 
  2556 004f 08       		.sleb128 8
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2610 00d4 0200     		.2byte	0x2
  2611 00d6 77       		.byte	0x77
  2612 00d7 10       		.sleb128 16
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 62
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 62
 
 
  2613 00d8 00000000 		.4byte	0
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2667 015c 02000000 		.4byte	.LCFI18
  2668 0160 04000000 		.4byte	.LCFI19
  2669 0164 0200     		.2byte	0x2
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 63
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 63
 
 
  2670 0166 7D       		.byte	0x7d
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2724 01e8 4A000000 		.4byte	.LFE8
  2725 01ec 0200     		.2byte	0x2
  2726 01ee 77       		.byte	0x77
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 64
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 64
 
 
  2727 01ef 10       		.sleb128 16
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2781 0018 00000000 		.4byte	.LFB1
  2782 001c 1E000000 		.4byte	.LFE1-.LFB1
  2783 0020 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 65
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 65
 
 
  2784 0024 1E000000 		.4byte	.LFE2-.LFB2
@@ -3896,272 +3896,275 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 1
  2832              	.LASF18:
  2833 0000 72656731 		.ascii	"reg16\000"
  2833      3600
- 2834              	.LASF11:
- 2835 0006 73697A65 		.ascii	"size_t\000"
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 66
+ 2834              	.LASF10:
+ 2835 0006 63686172 		.ascii	"char\000"
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 66
 
 
- 2835      5F7400
- 2836              	.LASF40:
- 2837 000d 416E616C 		.ascii	"AnalogSetDefault\000"
- 2837      6F675365 
- 2837      74446566 
- 2837      61756C74 
- 2837      00
- 2838              	.LASF46:
- 2839 001e 6368616E 		.ascii	"channel\000"
- 2839      6E656C00 
- 2840              	.LASF36:
- 2841 0026 4346475F 		.ascii	"CFG_TD_ADDR0\000"
- 2841      54445F41 
- 2841      44445230 
- 2841      00
- 2842              	.LASF22:
- 2843 0033 4359434F 		.ascii	"CYCONFIGCPYCODE\000"
- 2843      4E464947 
- 2843      43505943 
- 2843      4F444500 
- 2844              	.LASF37:
- 2845 0043 436C6F63 		.ascii	"ClockSetup\000"
- 2845      6B536574 
- 2845      757000
- 2846              	.LASF3:
- 2847 004e 73686F72 		.ascii	"short unsigned int\000"
- 2847      7420756E 
- 2847      7369676E 
- 2847      65642069 
- 2847      6E7400
- 2848              	.LASF39:
- 2849 0061 706C6C4C 		.ascii	"pllLock\000"
- 2849      6F636B00 
- 2850              	.LASF32:
- 2851 0069 4348365F 		.ascii	"CH6_ADDR_DATA0\000"
- 2851      41444452 
- 2851      5F444154 
- 2851      413000
- 2852              	.LASF52:
- 2853 0078 5C5C6D69 		.ascii	"\\\\mightor\\home\\fall2016\\ajs5433\\Documents\\PS"
- 2853      6768746F 
- 2853      725C686F 
- 2853      6D655C66 
- 2853      616C6C32 
- 2854 00a4 6F432043 		.ascii	"oC Creator\\PID\\FW_Fan_Control01.cydsn\000"
- 2854      72656174 
- 2854      6F725C50 
- 2854      49445C46 
- 2854      575F4661 
- 2855              	.LASF15:
- 2856 00ca 666C6F61 		.ascii	"float\000"
- 2856      7400
- 2857              	.LASF23:
- 2858 00d0 4379436C 		.ascii	"CyClockStartupError\000"
- 2858      6F636B53 
- 2858      74617274 
- 2858      75704572 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 67
+ 2835      00
+ 2836              	.LASF11:
+ 2837 000b 73697A65 		.ascii	"size_t\000"
+ 2837      5F7400
+ 2838              	.LASF40:
+ 2839 0012 416E616C 		.ascii	"AnalogSetDefault\000"
+ 2839      6F675365 
+ 2839      74446566 
+ 2839      61756C74 
+ 2839      00
+ 2840              	.LASF46:
+ 2841 0023 6368616E 		.ascii	"channel\000"
+ 2841      6E656C00 
+ 2842              	.LASF36:
+ 2843 002b 4346475F 		.ascii	"CFG_TD_ADDR0\000"
+ 2843      54445F41 
+ 2843      44445230 
+ 2843      00
+ 2844              	.LASF22:
+ 2845 0038 4359434F 		.ascii	"CYCONFIGCPYCODE\000"
+ 2845      4E464947 
+ 2845      43505943 
+ 2845      4F444500 
+ 2846              	.LASF37:
+ 2847 0048 436C6F63 		.ascii	"ClockSetup\000"
+ 2847      6B536574 
+ 2847      757000
+ 2848              	.LASF3:
+ 2849 0053 73686F72 		.ascii	"short unsigned int\000"
+ 2849      7420756E 
+ 2849      7369676E 
+ 2849      65642069 
+ 2849      6E7400
+ 2850              	.LASF39:
+ 2851 0066 706C6C4C 		.ascii	"pllLock\000"
+ 2851      6F636B00 
+ 2852              	.LASF32:
+ 2853 006e 4348365F 		.ascii	"CH6_ADDR_DATA0\000"
+ 2853      41444452 
+ 2853      5F444154 
+ 2853      413000
+ 2854              	.LASF15:
+ 2855 007d 666C6F61 		.ascii	"float\000"
+ 2855      7400
+ 2856              	.LASF23:
+ 2857 0083 4379436C 		.ascii	"CyClockStartupError\000"
+ 2857      6F636B53 
+ 2857      74617274 
+ 2857      75704572 
+ 2857      726F7200 
+ 2858              	.LASF21:
+ 2859 0097 64657374 		.ascii	"dest\000"
+ 2859      00
+ 2860              	.LASF26:
+ 2861 009c 73697A65 		.ascii	"size\000"
+ 2861      00
+ 2862              	.LASF17:
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 67
 
 
- 2858      726F7200 
- 2859              	.LASF21:
- 2860 00e4 64657374 		.ascii	"dest\000"
- 2860      00
- 2861              	.LASF26:
- 2862 00e9 73697A65 		.ascii	"size\000"
- 2862      00
- 2863              	.LASF17:
- 2864 00ee 72656738 		.ascii	"reg8\000"
- 2864      00
- 2865              	.LASF9:
- 2866 00f3 6C6F6E67 		.ascii	"long unsigned int\000"
- 2866      20756E73 
- 2866      69676E65 
- 2866      6420696E 
- 2866      7400
- 2867              	.LASF12:
- 2868 0105 75696E74 		.ascii	"uint8\000"
- 2868      3800
- 2869              	.LASF27:
- 2870 010b 6E657874 		.ascii	"next_td_ptr\000"
- 2870      5F74645F 
- 2870      70747200 
- 2871              	.LASF19:
- 2872 0117 43594D45 		.ascii	"CYMEMZERO\000"
- 2872      4D5A4552 
- 2872      4F00
- 2873              	.LASF25:
- 2874 0121 6366675F 		.ascii	"cfg_dma_init\000"
- 2874      646D615F 
- 2874      696E6974 
- 2874      00
- 2875              	.LASF44:
- 2876 012e 53657441 		.ascii	"SetAnalogRoutingPumps\000"
- 2876      6E616C6F 
- 2876      67526F75 
- 2876      74696E67 
- 2876      50756D70 
- 2877              	.LASF30:
- 2878 0144 4348325F 		.ascii	"CH2_ADDR_DATA0\000"
- 2878      41444452 
- 2878      5F444154 
- 2878      413000
- 2879              	.LASF1:
- 2880 0153 756E7369 		.ascii	"unsigned char\000"
- 2880      676E6564 
- 2880      20636861 
- 2880      7200
- 2881              	.LASF16:
- 2882 0161 646F7562 		.ascii	"double\000"
- 2882      6C6500
- 2883              	.LASF45:
- 2884 0168 4144435F 		.ascii	"ADC_DelSig_1_AMux_Set\000"
- 2884      44656C53 
- 2884      69675F31 
- 2884      5F414D75 
- 2884      785F5365 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 68
+ 2863 00a1 72656738 		.ascii	"reg8\000"
+ 2863      00
+ 2864              	.LASF9:
+ 2865 00a6 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2865      20756E73 
+ 2865      69676E65 
+ 2865      6420696E 
+ 2865      7400
+ 2866              	.LASF12:
+ 2867 00b8 75696E74 		.ascii	"uint8\000"
+ 2867      3800
+ 2868              	.LASF27:
+ 2869 00be 6E657874 		.ascii	"next_td_ptr\000"
+ 2869      5F74645F 
+ 2869      70747200 
+ 2870              	.LASF19:
+ 2871 00ca 43594D45 		.ascii	"CYMEMZERO\000"
+ 2871      4D5A4552 
+ 2871      4F00
+ 2872              	.LASF25:
+ 2873 00d4 6366675F 		.ascii	"cfg_dma_init\000"
+ 2873      646D615F 
+ 2873      696E6974 
+ 2873      00
+ 2874              	.LASF44:
+ 2875 00e1 53657441 		.ascii	"SetAnalogRoutingPumps\000"
+ 2875      6E616C6F 
+ 2875      67526F75 
+ 2875      74696E67 
+ 2875      50756D70 
+ 2876              	.LASF30:
+ 2877 00f7 4348325F 		.ascii	"CH2_ADDR_DATA0\000"
+ 2877      41444452 
+ 2877      5F444154 
+ 2877      413000
+ 2878              	.LASF1:
+ 2879 0106 756E7369 		.ascii	"unsigned char\000"
+ 2879      676E6564 
+ 2879      20636861 
+ 2879      7200
+ 2880              	.LASF16:
+ 2881 0114 646F7562 		.ascii	"double\000"
+ 2881      6C6500
+ 2882              	.LASF45:
+ 2883 011b 4144435F 		.ascii	"ADC_DelSig_1_AMux_Set\000"
+ 2883      44656C53 
+ 2883      69675F31 
+ 2883      5F414D75 
+ 2883      785F5365 
+ 2884              	.LASF34:
+ 2885 0131 444D415F 		.ascii	"DMA_ZERO_VAL\000"
+ 2885      5A45524F 
+ 2885      5F56414C 
+ 2885      00
+ 2886              	.LASF13:
+ 2887 013e 75696E74 		.ascii	"uint16\000"
+ 2887      313600
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 68
 
 
- 2885              	.LASF34:
- 2886 017e 444D415F 		.ascii	"DMA_ZERO_VAL\000"
- 2886      5A45524F 
- 2886      5F56414C 
- 2886      00
- 2887              	.LASF13:
- 2888 018b 75696E74 		.ascii	"uint16\000"
- 2888      313600
- 2889              	.LASF24:
- 2890 0192 6572726F 		.ascii	"errorCode\000"
- 2890      72436F64 
- 2890      6500
- 2891              	.LASF14:
- 2892 019c 75696E74 		.ascii	"uint32\000"
- 2892      333200
- 2893              	.LASF4:
- 2894 01a3 756E7369 		.ascii	"unsigned int\000"
- 2894      676E6564 
- 2894      20696E74 
- 2894      00
- 2895              	.LASF28:
- 2896 01b0 666C6167 		.ascii	"flags\000"
- 2896      7300
- 2897              	.LASF54:
- 2898 01b6 63796669 		.ascii	"cyfitter_cfg\000"
- 2898      74746572 
- 2898      5F636667 
- 2898      00
- 2899              	.LASF6:
- 2900 01c3 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2900      206C6F6E 
- 2900      6720756E 
- 2900      7369676E 
- 2900      65642069 
- 2901              	.LASF33:
- 2902 01da 444D415F 		.ascii	"DMA_TD_START_CMD\000"
- 2902      54445F53 
- 2902      54415254 
- 2902      5F434D44 
- 2902      00
- 2903              	.LASF49:
- 2904 01eb 4144435F 		.ascii	"ADC_DelSig_1_AMux__maskTable\000"
- 2904      44656C53 
- 2904      69675F31 
- 2904      5F414D75 
- 2904      785F5F6D 
- 2905              	.LASF53:
- 2906 0208 74645F74 		.ascii	"td_t\000"
- 2906      00
- 2907              	.LASF8:
- 2908 020d 73697A65 		.ascii	"sizetype\000"
- 2908      74797065 
- 2908      00
- 2909              	.LASF5:
- 2910 0216 6C6F6E67 		.ascii	"long long int\000"
- 2910      206C6F6E 
- 2910      6720696E 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 69
+ 2888              	.LASF24:
+ 2889 0145 6572726F 		.ascii	"errorCode\000"
+ 2889      72436F64 
+ 2889      6500
+ 2890              	.LASF14:
+ 2891 014f 75696E74 		.ascii	"uint32\000"
+ 2891      333200
+ 2892              	.LASF4:
+ 2893 0156 756E7369 		.ascii	"unsigned int\000"
+ 2893      676E6564 
+ 2893      20696E74 
+ 2893      00
+ 2894              	.LASF28:
+ 2895 0163 666C6167 		.ascii	"flags\000"
+ 2895      7300
+ 2896              	.LASF54:
+ 2897 0169 63796669 		.ascii	"cyfitter_cfg\000"
+ 2897      74746572 
+ 2897      5F636667 
+ 2897      00
+ 2898              	.LASF6:
+ 2899 0176 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2899      206C6F6E 
+ 2899      6720756E 
+ 2899      7369676E 
+ 2899      65642069 
+ 2900              	.LASF33:
+ 2901 018d 444D415F 		.ascii	"DMA_TD_START_CMD\000"
+ 2901      54445F53 
+ 2901      54415254 
+ 2901      5F434D44 
+ 2901      00
+ 2902              	.LASF49:
+ 2903 019e 4144435F 		.ascii	"ADC_DelSig_1_AMux__maskTable\000"
+ 2903      44656C53 
+ 2903      69675F31 
+ 2903      5F414D75 
+ 2903      785F5F6D 
+ 2904              	.LASF53:
+ 2905 01bb 74645F74 		.ascii	"td_t\000"
+ 2905      00
+ 2906              	.LASF8:
+ 2907 01c0 73697A65 		.ascii	"sizetype\000"
+ 2907      74797065 
+ 2907      00
+ 2908              	.LASF5:
+ 2909 01c9 6C6F6E67 		.ascii	"long long int\000"
+ 2909      206C6F6E 
+ 2909      6720696E 
+ 2909      7400
+ 2910              	.LASF38:
+ 2911 01d7 74696D65 		.ascii	"timeout\000"
+ 2911      6F757400 
+ 2912              	.LASF31:
+ 2913 01df 4348355F 		.ascii	"CH5_ADDR_DATA0\000"
+ 2913      41444452 
+ 2913      5F444154 
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 69
 
 
- 2910      7400
- 2911              	.LASF38:
- 2912 0224 74696D65 		.ascii	"timeout\000"
- 2912      6F757400 
- 2913              	.LASF31:
- 2914 022c 4348355F 		.ascii	"CH5_ADDR_DATA0\000"
- 2914      41444452 
- 2914      5F444154 
- 2914      413000
- 2915              	.LASF2:
- 2916 023b 73686F72 		.ascii	"short int\000"
- 2916      7420696E 
- 2916      7400
- 2917              	.LASF47:
- 2918 0245 4144435F 		.ascii	"ADC_DelSig_1_AMux_Unset\000"
- 2918      44656C53 
- 2918      69675F31 
- 2918      5F414D75 
- 2918      785F556E 
- 2919              	.LASF50:
- 2920 025d 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
- 2920      4320342E 
- 2920      372E3320 
- 2920      32303133 
- 2920      30333132 
- 2921 0290 616E6368 		.ascii	"anch revision 196615]\000"
- 2921      20726576 
- 2921      6973696F 
- 2921      6E203139 
- 2921      36363135 
- 2922              	.LASF43:
- 2923 02a6 72656756 		.ascii	"regValue\000"
- 2923      616C7565 
- 2923      00
- 2924              	.LASF51:
- 2925 02af 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cyfitter_cfg.c\000"
- 2925      6E657261 
- 2925      7465645F 
- 2925      536F7572 
- 2925      63655C50 
- 2926              	.LASF42:
- 2927 02d7 656E6162 		.ascii	"enabled\000"
- 2927      6C656400 
- 2928              	.LASF7:
- 2929 02df 6C6F6E67 		.ascii	"long int\000"
- 2929      20696E74 
- 2929      00
- 2930              	.LASF10:
- 2931 02e8 63686172 		.ascii	"char\000"
- 2931      00
- 2932              	.LASF48:
- 2933 02ed 4144435F 		.ascii	"ADC_DelSig_1_AMux__addrTable\000"
- 2933      44656C53 
- 2933      69675F31 
- 2933      5F414D75 
- 2933      785F5F61 
- 2934              	.LASF41:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccrSiJGf.s 			page 70
+ 2913      413000
+ 2914              	.LASF2:
+ 2915 01ee 73686F72 		.ascii	"short int\000"
+ 2915      7420696E 
+ 2915      7400
+ 2916              	.LASF47:
+ 2917 01f8 4144435F 		.ascii	"ADC_DelSig_1_AMux_Unset\000"
+ 2917      44656C53 
+ 2917      69675F31 
+ 2917      5F414D75 
+ 2917      785F556E 
+ 2918              	.LASF50:
+ 2919 0210 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
+ 2919      4320342E 
+ 2919      372E3320 
+ 2919      32303133 
+ 2919      30333132 
+ 2920 0243 616E6368 		.ascii	"anch revision 196615]\000"
+ 2920      20726576 
+ 2920      6973696F 
+ 2920      6E203139 
+ 2920      36363135 
+ 2921              	.LASF43:
+ 2922 0259 72656756 		.ascii	"regValue\000"
+ 2922      616C7565 
+ 2922      00
+ 2923              	.LASF51:
+ 2924 0262 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cyfitter_cfg.c\000"
+ 2924      6E657261 
+ 2924      7465645F 
+ 2924      536F7572 
+ 2924      63655C50 
+ 2925              	.LASF42:
+ 2926 028a 656E6162 		.ascii	"enabled\000"
+ 2926      6C656400 
+ 2927              	.LASF7:
+ 2928 0292 6C6F6E67 		.ascii	"long int\000"
+ 2928      20696E74 
+ 2928      00
+ 2929              	.LASF52:
+ 2930 029b 5C5C6D69 		.ascii	"\\\\mightor\\home\\spring2013\\gmh5970\\Documents\\"
+ 2930      6768746F 
+ 2930      725C686F 
+ 2930      6D655C73 
+ 2930      7072696E 
+ 2931 02c7 50536F43 		.ascii	"PSoC Creator\\Fan_And_Potentiometer\\FW_Fan_Control"
+ 2931      20437265 
+ 2931      61746F72 
+ 2931      5C46616E 
+ 2931      5F416E64 
+ 2932 02f8 30312E63 		.ascii	"01.cydsn\000"
+ 2932      7964736E 
+ 2932      00
+ 2933              	.LASF48:
+ 2934 0301 4144435F 		.ascii	"ADC_DelSig_1_AMux__addrTable\000"
+ 2934      44656C53 
+ 2934      69675F31 
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cciaOwp4.s 			page 70
 
 
- 2935 030a 62675F78 		.ascii	"bg_xover_inl_trim\000"
- 2935      6F766572 
- 2935      5F696E6C 
- 2935      5F747269 
- 2935      6D00
- 2936              	.LASF0:
- 2937 031c 7369676E 		.ascii	"signed char\000"
- 2937      65642063 
- 2937      68617200 
- 2938              	.LASF35:
- 2939 0328 4346475F 		.ascii	"CFG_TD_LIST0\000"
- 2939      54445F4C 
- 2939      49535430 
- 2939      00
- 2940              	.LASF20:
- 2941 0335 4359434F 		.ascii	"CYCONFIGCPY\000"
- 2941      4E464947 
- 2941      43505900 
- 2942              	.LASF29:
- 2943 0341 4348315F 		.ascii	"CH1_ADDR_DATA0\000"
- 2943      41444452 
- 2943      5F444154 
- 2943      413000
- 2944              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br
+ 2934      5F414D75 
+ 2934      785F5F61 
+ 2935              	.LASF41:
+ 2936 031e 62675F78 		.ascii	"bg_xover_inl_trim\000"
+ 2936      6F766572 
+ 2936      5F696E6C 
+ 2936      5F747269 
+ 2936      6D00
+ 2937              	.LASF0:
+ 2938 0330 7369676E 		.ascii	"signed char\000"
+ 2938      65642063 
+ 2938      68617200 
+ 2939              	.LASF35:
+ 2940 033c 4346475F 		.ascii	"CFG_TD_LIST0\000"
+ 2940      54445F4C 
+ 2940      49535430 
+ 2940      00
+ 2941              	.LASF20:
+ 2942 0349 4359434F 		.ascii	"CYCONFIGCPY\000"
+ 2942      4E464947 
+ 2942      43505900 
+ 2943              	.LASF29:
+ 2944 0355 4348315F 		.ascii	"CH1_ADDR_DATA0\000"
+ 2944      41444452 
+ 2944      5F444154 
+ 2944      413000
+ 2945              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br

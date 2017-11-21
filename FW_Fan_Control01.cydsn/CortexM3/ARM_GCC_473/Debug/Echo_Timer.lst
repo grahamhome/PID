@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
   23:.\Generated_Source\PSoC5/Echo_Timer.c **** 
   24:.\Generated_Source\PSoC5/Echo_Timer.c **** #include "Echo_Timer.h"
   25:.\Generated_Source\PSoC5/Echo_Timer.c **** 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 2
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 2
 
 
   26:.\Generated_Source\PSoC5/Echo_Timer.c **** uint8 Echo_Timer_initVar = 0u;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
   65:.\Generated_Source\PSoC5/Echo_Timer.c ****             /* Set 3rd bit of Control register to enable one shot mode */
   66:.\Generated_Source\PSoC5/Echo_Timer.c ****             Echo_Timer_CONTROL |= 0x04u;
   67:.\Generated_Source\PSoC5/Echo_Timer.c ****         #endif /* One Shot enabled only when RunModeUsed is not Continuous*/
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 3
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 3
 
 
   68:.\Generated_Source\PSoC5/Echo_Timer.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
   51 000e FFF7FEFF 		bl	Echo_Timer_WritePeriod
  119:.\Generated_Source\PSoC5/Echo_Timer.c ****     Echo_Timer_WriteCounter(Echo_Timer_INIT_PERIOD);
   52              		.loc 1 119 0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 4
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 4
 
 
   53 0012 43F6FF50 		movw	r0, #15871
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  153:.\Generated_Source\PSoC5/Echo_Timer.c **** 		
  154:.\Generated_Source\PSoC5/Echo_Timer.c **** 		
  155:.\Generated_Source\PSoC5/Echo_Timer.c ****         #if (Echo_Timer_InterruptOnCaptureCount && !Echo_Timer_UDB_CONTROL_REG_REMOVED)
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 5
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 5
 
 
  156:.\Generated_Source\PSoC5/Echo_Timer.c ****             Echo_Timer_SetInterruptCount(Echo_Timer_INIT_INT_CAPTURE_COUNT);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  102              		.cfi_offset 7, -4
  103 0002 00AF     		add	r7, sp, #0
  104              	.LCFI4:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 6
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 6
 
 
  105              		.cfi_def_cfa_register 7
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  210:.\Generated_Source\PSoC5/Echo_Timer.c **** * Global variables:
  211:.\Generated_Source\PSoC5/Echo_Timer.c **** *  Echo_Timer_initVar: Is modified when this function is called for the
  212:.\Generated_Source\PSoC5/Echo_Timer.c **** *   first time. Is used to ensure that initialization happens only once.
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 7
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 7
 
 
  213:.\Generated_Source\PSoC5/Echo_Timer.c **** *
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  171              	.LFB3:
  227:.\Generated_Source\PSoC5/Echo_Timer.c **** 
  228:.\Generated_Source\PSoC5/Echo_Timer.c **** 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 8
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 8
 
 
  229:.\Generated_Source\PSoC5/Echo_Timer.c **** /*******************************************************************************
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  195 0020 BD46     		mov	sp, r7
  196 0022 80BC     		pop	{r7}
  197 0024 7047     		bx	lr
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 9
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 9
 
 
  198              		.cfi_endproc
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  230 0014 1A70     		strb	r2, [r3, #0]
  282:.\Generated_Source\PSoC5/Echo_Timer.c **** }
  231              		.loc 1 282 0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 10
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 10
 
 
  232 0016 07F10C07 		add	r7, r7, #12
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  306:.\Generated_Source\PSoC5/Echo_Timer.c ****     /* Capture Data is now in the FIFO */
  307:.\Generated_Source\PSoC5/Echo_Timer.c **** }
  263              		.loc 1 307 0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 11
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 11
 
 
  264 000e BD46     		mov	sp, r7
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  294 000e DBB2     		uxtb	r3, r3
  332:.\Generated_Source\PSoC5/Echo_Timer.c **** }
  295              		.loc 1 332 0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 12
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 12
 
 
  296 0010 1846     		mov	r0, r3
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  327 000e DBB2     		uxtb	r3, r3
  356:.\Generated_Source\PSoC5/Echo_Timer.c ****     #else
  357:.\Generated_Source\PSoC5/Echo_Timer.c ****         return (0);
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 13
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 13
 
 
  358:.\Generated_Source\PSoC5/Echo_Timer.c ****     #endif /* (!Echo_Timer_UDB_CONTROL_REG_REMOVED) */
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  361              		.loc 1 378 0
  362 000a 46F27453 		movw	r3, #25972
  363 000e C4F20003 		movt	r3, 16384
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 14
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 14
 
 
  364 0012 FA79     		ldrb	r2, [r7, #7]
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  403:.\Generated_Source\PSoC5/Echo_Timer.c ****    #if(Echo_Timer_UsingFixedFunction)
  404:.\Generated_Source\PSoC5/Echo_Timer.c ****        return ((uint32)CY_GET_REG16(Echo_Timer_PERIOD_LSB_PTR));
  405:.\Generated_Source\PSoC5/Echo_Timer.c ****    #else
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 15
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 15
 
 
  406:.\Generated_Source\PSoC5/Echo_Timer.c ****        return (CY_GET_REG32(Echo_Timer_PERIOD_LSB_PTR));
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  425              		.cfi_def_cfa_offset 16
  426 0004 00AF     		add	r7, sp, #0
  427              	.LCFI25:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 16
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 16
 
 
  428              		.cfi_def_cfa_register 7
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  457              	.LCFI26:
  458              		.cfi_def_cfa_offset 4
  459              		.cfi_offset 7, -4
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 17
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 17
 
 
  460 0002 00AF     		add	r7, sp, #0
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  490              		.cfi_def_cfa_offset 4
  491              		.cfi_offset 7, -4
  492 0002 83B0     		sub	sp, sp, #12
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 18
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 18
 
 
  493              	.LCFI29:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  505:.\Generated_Source\PSoC5/Echo_Timer.c **** {
  520              		.loc 1 505 0
  521              		.cfi_startproc
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 19
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 19
 
 
  522              		@ args = 0, pretend = 0, frame = 0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  526:.\Generated_Source\PSoC5/Echo_Timer.c ****     
  527:.\Generated_Source\PSoC5/Echo_Timer.c **** /*******************************************************************************
  528:.\Generated_Source\PSoC5/Echo_Timer.c ****  * The functions below this point are only available using the UDB
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 20
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 20
 
 
  529:.\Generated_Source\PSoC5/Echo_Timer.c ****  * implementation.  If a feature is selected, then the API is enabled.
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  583:.\Generated_Source\PSoC5/Echo_Timer.c **** * Function Name: Echo_Timer_SetTriggerMode
  584:.\Generated_Source\PSoC5/Echo_Timer.c **** ********************************************************************************
  585:.\Generated_Source\PSoC5/Echo_Timer.c **** *
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 21
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 21
 
 
  586:.\Generated_Source\PSoC5/Echo_Timer.c **** * Summary:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  640:.\Generated_Source\PSoC5/Echo_Timer.c **** 
  641:.\Generated_Source\PSoC5/Echo_Timer.c **** 
  642:.\Generated_Source\PSoC5/Echo_Timer.c **** /*******************************************************************************
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 22
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 22
 
 
  643:.\Generated_Source\PSoC5/Echo_Timer.c **** * Function Name: Echo_Timer_DisableTrigger
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  697:.\Generated_Source\PSoC5/Echo_Timer.c **** 
  698:.\Generated_Source\PSoC5/Echo_Timer.c **** 
  699:.\Generated_Source\PSoC5/Echo_Timer.c **** #if (Echo_Timer_UsingHWCaptureCounter)
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 23
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 23
 
 
  700:.\Generated_Source\PSoC5/Echo_Timer.c **** 
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  754:.\Generated_Source\PSoC5/Echo_Timer.c **** *
  755:.\Generated_Source\PSoC5/Echo_Timer.c **** * Return:
  756:.\Generated_Source\PSoC5/Echo_Timer.c **** *  void
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 24
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 24
 
 
  757:.\Generated_Source\PSoC5/Echo_Timer.c **** *
@@ -1430,49 +1430,49 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  592 0006 00000000 		.4byte	.Ldebug_abbrev0
  593 000a 04       		.byte	0x4
  594 000b 01       		.uleb128 0x1
- 595 000c 2D020000 		.4byte	.LASF36
+ 595 000c 41020000 		.4byte	.LASF36
  596 0010 01       		.byte	0x1
- 597 0011 AC020000 		.4byte	.LASF37
- 598 0015 82000000 		.4byte	.LASF38
+ 597 0011 C0020000 		.4byte	.LASF37
+ 598 0015 00000000 		.4byte	.LASF38
  599 0019 00000000 		.4byte	.Ldebug_ranges0+0
  600 001d 00000000 		.4byte	0
  601 0021 00000000 		.4byte	0
  602 0025 00000000 		.4byte	.Ldebug_line0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 25
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 25
 
 
  603 0029 02       		.uleb128 0x2
  604 002a 01       		.byte	0x1
  605 002b 06       		.byte	0x6
- 606 002c 0D030000 		.4byte	.LASF0
+ 606 002c 21030000 		.4byte	.LASF0
  607 0030 02       		.uleb128 0x2
  608 0031 01       		.byte	0x1
  609 0032 08       		.byte	0x8
- 610 0033 E2000000 		.4byte	.LASF1
+ 610 0033 F6000000 		.4byte	.LASF1
  611 0037 02       		.uleb128 0x2
  612 0038 02       		.byte	0x2
  613 0039 05       		.byte	0x5
- 614 003a 1D020000 		.4byte	.LASF2
+ 614 003a 31020000 		.4byte	.LASF2
  615 003e 02       		.uleb128 0x2
  616 003f 02       		.byte	0x2
  617 0040 07       		.byte	0x7
- 618 0041 46000000 		.4byte	.LASF3
+ 618 0041 AC000000 		.4byte	.LASF3
  619 0045 02       		.uleb128 0x2
  620 0046 04       		.byte	0x4
  621 0047 05       		.byte	0x5
- 622 0048 D2020000 		.4byte	.LASF4
+ 622 0048 E6020000 		.4byte	.LASF4
  623 004c 02       		.uleb128 0x2
  624 004d 04       		.byte	0x4
  625 004e 07       		.byte	0x7
- 626 004f F5000000 		.4byte	.LASF5
+ 626 004f 09010000 		.4byte	.LASF5
  627 0053 02       		.uleb128 0x2
  628 0054 08       		.byte	0x8
  629 0055 05       		.byte	0x5
- 630 0056 01020000 		.4byte	.LASF6
+ 630 0056 15020000 		.4byte	.LASF6
  631 005a 02       		.uleb128 0x2
  632 005b 08       		.byte	0x8
  633 005c 07       		.byte	0x7
- 634 005d CA010000 		.4byte	.LASF7
+ 634 005d DE010000 		.4byte	.LASF7
  635 0061 03       		.uleb128 0x3
  636 0062 04       		.byte	0x4
  637 0063 05       		.byte	0x5
@@ -1480,41 +1480,41 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  639 0068 02       		.uleb128 0x2
  640 0069 04       		.byte	0x4
  641 006a 07       		.byte	0x7
- 642 006b A8010000 		.4byte	.LASF8
+ 642 006b BC010000 		.4byte	.LASF8
  643 006f 04       		.uleb128 0x4
- 644 0070 27020000 		.4byte	.LASF9
+ 644 0070 3B020000 		.4byte	.LASF9
  645 0074 02       		.byte	0x2
  646 0075 5B       		.byte	0x5b
  647 0076 30000000 		.4byte	0x30
  648 007a 04       		.uleb128 0x4
- 649 007b A1010000 		.4byte	.LASF10
+ 649 007b B5010000 		.4byte	.LASF10
  650 007f 02       		.byte	0x2
  651 0080 5D       		.byte	0x5d
  652 0081 4C000000 		.4byte	0x4c
  653 0085 02       		.uleb128 0x2
  654 0086 04       		.byte	0x4
  655 0087 04       		.byte	0x4
- 656 0088 D4000000 		.4byte	.LASF11
+ 656 0088 E8000000 		.4byte	.LASF11
  657 008c 02       		.uleb128 0x2
  658 008d 08       		.byte	0x8
  659 008e 04       		.byte	0x4
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 26
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 26
 
 
- 660 008f 2B010000 		.4byte	.LASF12
+ 660 008f 3F010000 		.4byte	.LASF12
  661 0093 02       		.uleb128 0x2
  662 0094 01       		.byte	0x1
  663 0095 08       		.byte	0x8
- 664 0096 DB020000 		.4byte	.LASF13
+ 664 0096 EF020000 		.4byte	.LASF13
  665 009a 04       		.uleb128 0x4
- 666 009b F0000000 		.4byte	.LASF14
+ 666 009b 04010000 		.4byte	.LASF14
  667 009f 02       		.byte	0x2
  668 00a0 F0       		.byte	0xf0
  669 00a1 A5000000 		.4byte	0xa5
  670 00a5 05       		.uleb128 0x5
  671 00a6 6F000000 		.4byte	0x6f
  672 00aa 04       		.uleb128 0x4
- 673 00ab 00000000 		.4byte	.LASF15
+ 673 00ab 66000000 		.4byte	.LASF15
  674 00af 02       		.byte	0x2
  675 00b0 F2       		.byte	0xf2
  676 00b1 B5000000 		.4byte	0xb5
@@ -1523,10 +1523,10 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  679 00ba 02       		.uleb128 0x2
  680 00bb 04       		.byte	0x4
  681 00bc 07       		.byte	0x7
- 682 00bd F8010000 		.4byte	.LASF16
+ 682 00bd 0C020000 		.4byte	.LASF16
  683 00c1 06       		.uleb128 0x6
  684 00c2 01       		.byte	0x1
- 685 00c3 19030000 		.4byte	.LASF20
+ 685 00c3 2D030000 		.4byte	.LASF20
  686 00c7 01       		.byte	0x1
  687 00c8 2B       		.byte	0x2b
  688 00c9 01       		.byte	0x1
@@ -1536,7 +1536,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  692 00d6 01       		.byte	0x1
  693 00d7 EA000000 		.4byte	0xea
  694 00db 07       		.uleb128 0x7
- 695 00dc E0020000 		.4byte	.LASF39
+ 695 00dc F4020000 		.4byte	.LASF39
  696 00e0 01       		.byte	0x1
  697 00e1 2F       		.byte	0x2f
  698 00e2 6F000000 		.4byte	0x6f
@@ -1546,7 +1546,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  702 00e9 00       		.byte	0
  703 00ea 08       		.uleb128 0x8
  704 00eb 01       		.byte	0x1
- 705 00ec 70000000 		.4byte	.LASF17
+ 705 00ec D6000000 		.4byte	.LASF17
  706 00f0 01       		.byte	0x1
  707 00f1 B4       		.byte	0xb4
  708 00f2 01       		.byte	0x1
@@ -1556,9 +1556,9 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  712 00ff 01       		.byte	0x1
  713 0100 09       		.uleb128 0x9
  714 0101 01       		.byte	0x1
- 715 0102 1E000000 		.4byte	.LASF18
+ 715 0102 84000000 		.4byte	.LASF18
  716 0106 01       		.byte	0x1
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 27
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 27
 
 
  717 0107 D7       		.byte	0xd7
@@ -1569,7 +1569,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  722 0115 01       		.byte	0x1
  723 0116 08       		.uleb128 0x8
  724 0117 01       		.byte	0x1
- 725 0118 36000000 		.4byte	.LASF19
+ 725 0118 9C000000 		.4byte	.LASF19
  726 011c 01       		.byte	0x1
  727 011d F7       		.byte	0xf7
  728 011e 01       		.byte	0x1
@@ -1579,7 +1579,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  732 012b 01       		.byte	0x1
  733 012c 0A       		.uleb128 0xa
  734 012d 01       		.byte	0x1
- 735 012e 07010000 		.4byte	.LASF21
+ 735 012e 1B010000 		.4byte	.LASF21
  736 0132 01       		.byte	0x1
  737 0133 1701     		.2byte	0x117
  738 0135 01       		.byte	0x1
@@ -1589,7 +1589,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  742 0142 01       		.byte	0x1
  743 0143 57010000 		.4byte	0x157
  744 0147 0B       		.uleb128 0xb
- 745 0148 0F020000 		.4byte	.LASF26
+ 745 0148 23020000 		.4byte	.LASF26
  746 014c 01       		.byte	0x1
  747 014d 1701     		.2byte	0x117
  748 014f 6F000000 		.4byte	0x6f
@@ -1599,7 +1599,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  752 0156 00       		.byte	0
  753 0157 0C       		.uleb128 0xc
  754 0158 01       		.byte	0x1
- 755 0159 67010000 		.4byte	.LASF22
+ 755 0159 7B010000 		.4byte	.LASF22
  756 015d 01       		.byte	0x1
  757 015e 2E01     		.2byte	0x12e
  758 0160 01       		.byte	0x1
@@ -1609,7 +1609,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  762 016d 01       		.byte	0x1
  763 016e 0D       		.uleb128 0xd
  764 016f 01       		.byte	0x1
- 765 0170 49010000 		.4byte	.LASF23
+ 765 0170 5D010000 		.4byte	.LASF23
  766 0174 01       		.byte	0x1
  767 0175 4901     		.2byte	0x149
  768 0177 01       		.byte	0x1
@@ -1618,12 +1618,12 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  771 0180 18000000 		.4byte	.LFE6
  772 0184 20010000 		.4byte	.LLST6
  773 0188 01       		.byte	0x1
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 28
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 28
 
 
  774 0189 0D       		.uleb128 0xd
  775 018a 01       		.byte	0x1
- 776 018b 82010000 		.4byte	.LASF24
+ 776 018b 96010000 		.4byte	.LASF24
  777 018f 01       		.byte	0x1
  778 0190 6001     		.2byte	0x160
  779 0192 01       		.byte	0x1
@@ -1634,7 +1634,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  784 01a3 01       		.byte	0x1
  785 01a4 0A       		.uleb128 0xa
  786 01a5 01       		.byte	0x1
- 787 01a6 76020000 		.4byte	.LASF25
+ 787 01a6 8A020000 		.4byte	.LASF25
  788 01aa 01       		.byte	0x1
  789 01ab 7701     		.2byte	0x177
  790 01ad 01       		.byte	0x1
@@ -1644,7 +1644,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  794 01ba 01       		.byte	0x1
  795 01bb CF010000 		.4byte	0x1cf
  796 01bf 0B       		.uleb128 0xb
- 797 01c0 23010000 		.4byte	.LASF27
+ 797 01c0 37010000 		.4byte	.LASF27
  798 01c4 01       		.byte	0x1
  799 01c5 7701     		.2byte	0x177
  800 01c7 6F000000 		.4byte	0x6f
@@ -1654,7 +1654,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  804 01ce 00       		.byte	0
  805 01cf 0D       		.uleb128 0xd
  806 01d0 01       		.byte	0x1
- 807 01d1 96020000 		.4byte	.LASF28
+ 807 01d1 AA020000 		.4byte	.LASF28
  808 01d5 01       		.byte	0x1
  809 01d6 9101     		.2byte	0x191
  810 01d8 01       		.byte	0x1
@@ -1665,7 +1665,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  815 01e9 01       		.byte	0x1
  816 01ea 0A       		.uleb128 0xa
  817 01eb 01       		.byte	0x1
- 818 01ec E1010000 		.4byte	.LASF29
+ 818 01ec F5010000 		.4byte	.LASF29
  819 01f0 01       		.byte	0x1
  820 01f1 AB01     		.2byte	0x1ab
  821 01f3 01       		.byte	0x1
@@ -1675,10 +1675,10 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  825 0200 01       		.byte	0x1
  826 0201 15020000 		.4byte	0x215
  827 0205 0B       		.uleb128 0xb
- 828 0206 2F000000 		.4byte	.LASF30
+ 828 0206 95000000 		.4byte	.LASF30
  829 020a 01       		.byte	0x1
  830 020b AB01     		.2byte	0x1ab
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 29
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 29
 
 
  831 020d 7A000000 		.4byte	0x7a
@@ -1688,7 +1688,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  835 0214 00       		.byte	0
  836 0215 0D       		.uleb128 0xd
  837 0216 01       		.byte	0x1
- 838 0217 59000000 		.4byte	.LASF31
+ 838 0217 BF000000 		.4byte	.LASF31
  839 021b 01       		.byte	0x1
  840 021c C401     		.2byte	0x1c4
  841 021e 01       		.byte	0x1
@@ -1699,7 +1699,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  846 022f 01       		.byte	0x1
  847 0230 0A       		.uleb128 0xa
  848 0231 01       		.byte	0x1
- 849 0232 06000000 		.4byte	.LASF32
+ 849 0232 6C000000 		.4byte	.LASF32
  850 0236 01       		.byte	0x1
  851 0237 DC01     		.2byte	0x1dc
  852 0239 01       		.byte	0x1
@@ -1709,7 +1709,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  856 0246 01       		.byte	0x1
  857 0247 5B020000 		.4byte	0x25b
  858 024b 0B       		.uleb128 0xb
- 859 024c DA000000 		.4byte	.LASF33
+ 859 024c EE000000 		.4byte	.LASF33
  860 0250 01       		.byte	0x1
  861 0251 DC01     		.2byte	0x1dc
  862 0253 7A000000 		.4byte	0x7a
@@ -1719,7 +1719,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  866 025a 00       		.byte	0
  867 025b 0D       		.uleb128 0xd
  868 025c 01       		.byte	0x1
- 869 025d 32010000 		.4byte	.LASF34
+ 869 025d 46010000 		.4byte	.LASF34
  870 0261 01       		.byte	0x1
  871 0262 F801     		.2byte	0x1f8
  872 0264 01       		.byte	0x1
@@ -1730,7 +1730,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  877 0275 01       		.byte	0x1
  878 0276 0E       		.uleb128 0xe
  879 0277 01       		.byte	0x1
- 880 0278 B5010000 		.4byte	.LASF35
+ 880 0278 C9010000 		.4byte	.LASF35
  881 027c 01       		.byte	0x1
  882 027d F702     		.2byte	0x2f7
  883 027f 01       		.byte	0x1
@@ -1738,11 +1738,11 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  885 0284 1A000000 		.4byte	.LFE14
  886 0288 A4020000 		.4byte	.LLST14
  887 028c 01       		.byte	0x1
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 30
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 30
 
 
  888 028d 0F       		.uleb128 0xf
- 889 028e FA020000 		.4byte	.LASF40
+ 889 028e 0E030000 		.4byte	.LASF40
  890 0292 01       		.byte	0x1
  891 0293 1A       		.byte	0x1a
  892 0294 6F000000 		.4byte	0x6f
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  942 002a 00       		.byte	0
  943 002b 04       		.uleb128 0x4
  944 002c 16       		.uleb128 0x16
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 31
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 31
 
 
  945 002d 00       		.byte	0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  999 0064 02       		.uleb128 0x2
  1000 0065 0A       		.uleb128 0xa
  1001 0066 00       		.byte	0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 32
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 32
 
 
  1002 0067 00       		.byte	0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  1056 009f 3A       		.uleb128 0x3a
  1057 00a0 0B       		.uleb128 0xb
  1058 00a1 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 33
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 33
 
 
  1059 00a2 05       		.uleb128 0x5
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  1113 00da 2E       		.uleb128 0x2e
  1114 00db 00       		.byte	0
  1115 00dc 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 34
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 34
 
 
  1116 00dd 0C       		.uleb128 0xc
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  1170 0115 13       		.uleb128 0x13
  1171 0116 3F       		.uleb128 0x3f
  1172 0117 0C       		.uleb128 0xc
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 35
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 35
 
 
  1173 0118 02       		.uleb128 0x2
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  1227 0070 02000000 		.4byte	.LCFI5
  1228 0074 04000000 		.4byte	.LCFI6
  1229 0078 0200     		.2byte	0x2
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 36
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 36
 
 
  1230 007a 7D       		.byte	0x7d
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  1284 00fe 7D       		.byte	0x7d
  1285 00ff 00       		.sleb128 0
  1286 0100 02000000 		.4byte	.LCFI12
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 37
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 37
 
 
  1287 0104 04000000 		.4byte	.LCFI13
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  1341 0188 04000000 		.4byte	.LCFI19
  1342 018c 0200     		.2byte	0x2
  1343 018e 7D       		.byte	0x7d
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 38
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 38
 
 
  1344 018f 04       		.sleb128 4
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  1398              	.LLST11:
  1399 0214 00000000 		.4byte	.LFB11
  1400 0218 02000000 		.4byte	.LCFI26
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 39
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 39
 
 
  1401 021c 0200     		.2byte	0x2
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  1455 029c 00000000 		.4byte	0
  1456 02a0 00000000 		.4byte	0
  1457              	.LLST14:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 40
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 40
 
 
  1458 02a4 00000000 		.4byte	.LFB14
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  1512 0084 1A000000 		.4byte	.LFE14-.LFB14
  1513 0088 00000000 		.4byte	0
  1514 008c 00000000 		.4byte	0
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 41
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 41
 
 
  1515              		.section	.debug_ranges,"",%progbits
@@ -2442,228 +2442,231 @@ ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 1
  1551      00000201 
  1551      FB0E0D00 
  1551      01010101 
- 1552              	.LASF15:
- 1553 0000 72656733 		.ascii	"reg32\000"
- 1553      3200
- 1554              	.LASF32:
- 1555 0006 4563686F 		.ascii	"Echo_Timer_WriteCounter\000"
- 1555      5F54696D 
- 1555      65725F57 
- 1555      72697465 
- 1555      436F756E 
- 1556              	.LASF18:
- 1557 001e 4563686F 		.ascii	"Echo_Timer_Start\000"
- 1557      5F54696D 
- 1557      65725F53 
- 1557      74617274 
- 1557      00
- 1558              	.LASF30:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 42
+ 1552              	.LASF38:
+ 1553 0000 5C5C6D69 		.ascii	"\\\\mightor\\home\\spring2013\\gmh5970\\Documents\\"
+ 1553      6768746F 
+ 1553      725C686F 
+ 1553      6D655C73 
+ 1553      7072696E 
+ 1554 002c 50536F43 		.ascii	"PSoC Creator\\Fan_And_Potentiometer\\FW_Fan_Control"
+ 1554      20437265 
+ 1554      61746F72 
+ 1554      5C46616E 
+ 1554      5F416E64 
+ 1555 005d 30312E63 		.ascii	"01.cydsn\000"
+ 1555      7964736E 
+ 1555      00
+ 1556              	.LASF15:
+ 1557 0066 72656733 		.ascii	"reg32\000"
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 42
 
 
- 1559 002f 70657269 		.ascii	"period\000"
- 1559      6F6400
- 1560              	.LASF19:
- 1561 0036 4563686F 		.ascii	"Echo_Timer_Stop\000"
+ 1557      3200
+ 1558              	.LASF32:
+ 1559 006c 4563686F 		.ascii	"Echo_Timer_WriteCounter\000"
+ 1559      5F54696D 
+ 1559      65725F57 
+ 1559      72697465 
+ 1559      436F756E 
+ 1560              	.LASF18:
+ 1561 0084 4563686F 		.ascii	"Echo_Timer_Start\000"
  1561      5F54696D 
  1561      65725F53 
- 1561      746F7000 
- 1562              	.LASF3:
- 1563 0046 73686F72 		.ascii	"short unsigned int\000"
- 1563      7420756E 
- 1563      7369676E 
- 1563      65642069 
- 1563      6E7400
- 1564              	.LASF31:
- 1565 0059 4563686F 		.ascii	"Echo_Timer_ReadCapture\000"
+ 1561      74617274 
+ 1561      00
+ 1562              	.LASF30:
+ 1563 0095 70657269 		.ascii	"period\000"
+ 1563      6F6400
+ 1564              	.LASF19:
+ 1565 009c 4563686F 		.ascii	"Echo_Timer_Stop\000"
  1565      5F54696D 
- 1565      65725F52 
- 1565      65616443 
- 1565      61707475 
- 1566              	.LASF17:
- 1567 0070 4563686F 		.ascii	"Echo_Timer_Enable\000"
- 1567      5F54696D 
- 1567      65725F45 
- 1567      6E61626C 
- 1567      6500
- 1568              	.LASF38:
- 1569 0082 5C5C6D69 		.ascii	"\\\\mightor\\home\\fall2016\\ajs5433\\Documents\\PS"
- 1569      6768746F 
- 1569      725C686F 
- 1569      6D655C66 
- 1569      616C6C32 
- 1570 00ae 6F432043 		.ascii	"oC Creator\\PID\\FW_Fan_Control01.cydsn\000"
- 1570      72656174 
- 1570      6F725C50 
- 1570      49445C46 
- 1570      575F4661 
- 1571              	.LASF11:
- 1572 00d4 666C6F61 		.ascii	"float\000"
- 1572      7400
- 1573              	.LASF33:
- 1574 00da 636F756E 		.ascii	"counter\000"
- 1574      74657200 
- 1575              	.LASF1:
- 1576 00e2 756E7369 		.ascii	"unsigned char\000"
- 1576      676E6564 
- 1576      20636861 
- 1576      7200
- 1577              	.LASF14:
- 1578 00f0 72656738 		.ascii	"reg8\000"
- 1578      00
- 1579              	.LASF5:
- 1580 00f5 6C6F6E67 		.ascii	"long unsigned int\000"
- 1580      20756E73 
- 1580      69676E65 
- 1580      6420696E 
- 1580      7400
- 1581              	.LASF21:
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 43
+ 1565      65725F53 
+ 1565      746F7000 
+ 1566              	.LASF3:
+ 1567 00ac 73686F72 		.ascii	"short unsigned int\000"
+ 1567      7420756E 
+ 1567      7369676E 
+ 1567      65642069 
+ 1567      6E7400
+ 1568              	.LASF31:
+ 1569 00bf 4563686F 		.ascii	"Echo_Timer_ReadCapture\000"
+ 1569      5F54696D 
+ 1569      65725F52 
+ 1569      65616443 
+ 1569      61707475 
+ 1570              	.LASF17:
+ 1571 00d6 4563686F 		.ascii	"Echo_Timer_Enable\000"
+ 1571      5F54696D 
+ 1571      65725F45 
+ 1571      6E61626C 
+ 1571      6500
+ 1572              	.LASF11:
+ 1573 00e8 666C6F61 		.ascii	"float\000"
+ 1573      7400
+ 1574              	.LASF33:
+ 1575 00ee 636F756E 		.ascii	"counter\000"
+ 1575      74657200 
+ 1576              	.LASF1:
+ 1577 00f6 756E7369 		.ascii	"unsigned char\000"
+ 1577      676E6564 
+ 1577      20636861 
+ 1577      7200
+ 1578              	.LASF14:
+ 1579 0104 72656738 		.ascii	"reg8\000"
+ 1579      00
+ 1580              	.LASF5:
+ 1581 0109 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1581      20756E73 
+ 1581      69676E65 
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 43
 
 
- 1582 0107 4563686F 		.ascii	"Echo_Timer_SetInterruptMode\000"
- 1582      5F54696D 
- 1582      65725F53 
- 1582      6574496E 
- 1582      74657272 
- 1583              	.LASF27:
- 1584 0123 636F6E74 		.ascii	"control\000"
- 1584      726F6C00 
- 1585              	.LASF12:
- 1586 012b 646F7562 		.ascii	"double\000"
- 1586      6C6500
- 1587              	.LASF34:
- 1588 0132 4563686F 		.ascii	"Echo_Timer_ReadCounter\000"
- 1588      5F54696D 
- 1588      65725F52 
- 1588      65616443 
- 1588      6F756E74 
- 1589              	.LASF23:
- 1590 0149 4563686F 		.ascii	"Echo_Timer_ReadStatusRegister\000"
- 1590      5F54696D 
- 1590      65725F52 
- 1590      65616453 
- 1590      74617475 
- 1591              	.LASF22:
- 1592 0167 4563686F 		.ascii	"Echo_Timer_SoftwareCapture\000"
- 1592      5F54696D 
- 1592      65725F53 
- 1592      6F667477 
- 1592      61726543 
- 1593              	.LASF24:
- 1594 0182 4563686F 		.ascii	"Echo_Timer_ReadControlRegister\000"
- 1594      5F54696D 
- 1594      65725F52 
- 1594      65616443 
- 1594      6F6E7472 
- 1595              	.LASF10:
- 1596 01a1 75696E74 		.ascii	"uint32\000"
- 1596      333200
- 1597              	.LASF8:
- 1598 01a8 756E7369 		.ascii	"unsigned int\000"
- 1598      676E6564 
- 1598      20696E74 
- 1598      00
- 1599              	.LASF35:
- 1600 01b5 4563686F 		.ascii	"Echo_Timer_ClearFIFO\000"
- 1600      5F54696D 
- 1600      65725F43 
- 1600      6C656172 
- 1600      4649464F 
- 1601              	.LASF7:
- 1602 01ca 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1602      206C6F6E 
- 1602      6720756E 
- 1602      7369676E 
- 1602      65642069 
- 1603              	.LASF29:
- 1604 01e1 4563686F 		.ascii	"Echo_Timer_WritePeriod\000"
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 44
+ 1581      6420696E 
+ 1581      7400
+ 1582              	.LASF21:
+ 1583 011b 4563686F 		.ascii	"Echo_Timer_SetInterruptMode\000"
+ 1583      5F54696D 
+ 1583      65725F53 
+ 1583      6574496E 
+ 1583      74657272 
+ 1584              	.LASF27:
+ 1585 0137 636F6E74 		.ascii	"control\000"
+ 1585      726F6C00 
+ 1586              	.LASF12:
+ 1587 013f 646F7562 		.ascii	"double\000"
+ 1587      6C6500
+ 1588              	.LASF34:
+ 1589 0146 4563686F 		.ascii	"Echo_Timer_ReadCounter\000"
+ 1589      5F54696D 
+ 1589      65725F52 
+ 1589      65616443 
+ 1589      6F756E74 
+ 1590              	.LASF23:
+ 1591 015d 4563686F 		.ascii	"Echo_Timer_ReadStatusRegister\000"
+ 1591      5F54696D 
+ 1591      65725F52 
+ 1591      65616453 
+ 1591      74617475 
+ 1592              	.LASF22:
+ 1593 017b 4563686F 		.ascii	"Echo_Timer_SoftwareCapture\000"
+ 1593      5F54696D 
+ 1593      65725F53 
+ 1593      6F667477 
+ 1593      61726543 
+ 1594              	.LASF24:
+ 1595 0196 4563686F 		.ascii	"Echo_Timer_ReadControlRegister\000"
+ 1595      5F54696D 
+ 1595      65725F52 
+ 1595      65616443 
+ 1595      6F6E7472 
+ 1596              	.LASF10:
+ 1597 01b5 75696E74 		.ascii	"uint32\000"
+ 1597      333200
+ 1598              	.LASF8:
+ 1599 01bc 756E7369 		.ascii	"unsigned int\000"
+ 1599      676E6564 
+ 1599      20696E74 
+ 1599      00
+ 1600              	.LASF35:
+ 1601 01c9 4563686F 		.ascii	"Echo_Timer_ClearFIFO\000"
+ 1601      5F54696D 
+ 1601      65725F43 
+ 1601      6C656172 
+ 1601      4649464F 
+ 1602              	.LASF7:
+ 1603 01de 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1603      206C6F6E 
+ 1603      6720756E 
+ 1603      7369676E 
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 44
 
 
- 1604      5F54696D 
- 1604      65725F57 
- 1604      72697465 
- 1604      50657269 
- 1605              	.LASF16:
- 1606 01f8 73697A65 		.ascii	"sizetype\000"
- 1606      74797065 
- 1606      00
- 1607              	.LASF6:
- 1608 0201 6C6F6E67 		.ascii	"long long int\000"
- 1608      206C6F6E 
- 1608      6720696E 
- 1608      7400
- 1609              	.LASF26:
- 1610 020f 696E7465 		.ascii	"interruptMode\000"
- 1610      72727570 
- 1610      744D6F64 
- 1610      6500
- 1611              	.LASF2:
- 1612 021d 73686F72 		.ascii	"short int\000"
- 1612      7420696E 
- 1612      7400
- 1613              	.LASF9:
- 1614 0227 75696E74 		.ascii	"uint8\000"
- 1614      3800
- 1615              	.LASF36:
- 1616 022d 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
- 1616      4320342E 
- 1616      372E3320 
- 1616      32303133 
- 1616      30333132 
- 1617 0260 616E6368 		.ascii	"anch revision 196615]\000"
- 1617      20726576 
- 1617      6973696F 
- 1617      6E203139 
- 1617      36363135 
- 1618              	.LASF25:
- 1619 0276 4563686F 		.ascii	"Echo_Timer_WriteControlRegister\000"
- 1619      5F54696D 
- 1619      65725F57 
- 1619      72697465 
- 1619      436F6E74 
- 1620              	.LASF28:
- 1621 0296 4563686F 		.ascii	"Echo_Timer_ReadPeriod\000"
- 1621      5F54696D 
- 1621      65725F52 
- 1621      65616450 
- 1621      6572696F 
- 1622              	.LASF37:
- 1623 02ac 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Echo_Timer.c\000"
- 1623      6E657261 
- 1623      7465645F 
- 1623      536F7572 
- 1623      63655C50 
- 1624              	.LASF4:
- 1625 02d2 6C6F6E67 		.ascii	"long int\000"
- 1625      20696E74 
-ARM GAS  C:\Users\ajs5433\AppData\Local\Temp\ccIRsHGm.s 			page 45
+ 1603      65642069 
+ 1604              	.LASF29:
+ 1605 01f5 4563686F 		.ascii	"Echo_Timer_WritePeriod\000"
+ 1605      5F54696D 
+ 1605      65725F57 
+ 1605      72697465 
+ 1605      50657269 
+ 1606              	.LASF16:
+ 1607 020c 73697A65 		.ascii	"sizetype\000"
+ 1607      74797065 
+ 1607      00
+ 1608              	.LASF6:
+ 1609 0215 6C6F6E67 		.ascii	"long long int\000"
+ 1609      206C6F6E 
+ 1609      6720696E 
+ 1609      7400
+ 1610              	.LASF26:
+ 1611 0223 696E7465 		.ascii	"interruptMode\000"
+ 1611      72727570 
+ 1611      744D6F64 
+ 1611      6500
+ 1612              	.LASF2:
+ 1613 0231 73686F72 		.ascii	"short int\000"
+ 1613      7420696E 
+ 1613      7400
+ 1614              	.LASF9:
+ 1615 023b 75696E74 		.ascii	"uint8\000"
+ 1615      3800
+ 1616              	.LASF36:
+ 1617 0241 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
+ 1617      4320342E 
+ 1617      372E3320 
+ 1617      32303133 
+ 1617      30333132 
+ 1618 0274 616E6368 		.ascii	"anch revision 196615]\000"
+ 1618      20726576 
+ 1618      6973696F 
+ 1618      6E203139 
+ 1618      36363135 
+ 1619              	.LASF25:
+ 1620 028a 4563686F 		.ascii	"Echo_Timer_WriteControlRegister\000"
+ 1620      5F54696D 
+ 1620      65725F57 
+ 1620      72697465 
+ 1620      436F6E74 
+ 1621              	.LASF28:
+ 1622 02aa 4563686F 		.ascii	"Echo_Timer_ReadPeriod\000"
+ 1622      5F54696D 
+ 1622      65725F52 
+ 1622      65616450 
+ 1622      6572696F 
+ 1623              	.LASF37:
+ 1624 02c0 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Echo_Timer.c\000"
+ 1624      6E657261 
+ 1624      7465645F 
+ 1624      536F7572 
+ 1624      63655C50 
+ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\cc4gTHqH.s 			page 45
 
 
- 1625      00
- 1626              	.LASF13:
- 1627 02db 63686172 		.ascii	"char\000"
- 1627      00
- 1628              	.LASF39:
- 1629 02e0 4563686F 		.ascii	"Echo_Timer_interruptState\000"
- 1629      5F54696D 
- 1629      65725F69 
- 1629      6E746572 
- 1629      72757074 
- 1630              	.LASF40:
- 1631 02fa 4563686F 		.ascii	"Echo_Timer_initVar\000"
- 1631      5F54696D 
- 1631      65725F69 
- 1631      6E697456 
- 1631      617200
- 1632              	.LASF0:
- 1633 030d 7369676E 		.ascii	"signed char\000"
- 1633      65642063 
- 1633      68617200 
- 1634              	.LASF20:
- 1635 0319 4563686F 		.ascii	"Echo_Timer_Init\000"
- 1635      5F54696D 
- 1635      65725F49 
- 1635      6E697400 
- 1636              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br
+ 1625              	.LASF4:
+ 1626 02e6 6C6F6E67 		.ascii	"long int\000"
+ 1626      20696E74 
+ 1626      00
+ 1627              	.LASF13:
+ 1628 02ef 63686172 		.ascii	"char\000"
+ 1628      00
+ 1629              	.LASF39:
+ 1630 02f4 4563686F 		.ascii	"Echo_Timer_interruptState\000"
+ 1630      5F54696D 
+ 1630      65725F69 
+ 1630      6E746572 
+ 1630      72757074 
+ 1631              	.LASF40:
+ 1632 030e 4563686F 		.ascii	"Echo_Timer_initVar\000"
+ 1632      5F54696D 
+ 1632      65725F69 
+ 1632      6E697456 
+ 1632      617200
+ 1633              	.LASF0:
+ 1634 0321 7369676E 		.ascii	"signed char\000"
+ 1634      65642063 
+ 1634      68617200 
+ 1635              	.LASF20:
+ 1636 032d 4563686F 		.ascii	"Echo_Timer_Init\000"
+ 1636      5F54696D 
+ 1636      65725F49 
+ 1636      6E697400 
+ 1637              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br
