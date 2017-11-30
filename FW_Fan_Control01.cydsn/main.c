@@ -70,13 +70,9 @@
 #include <time.h>
 
 
-#define max_32b_int 4294967295u
-
-
 uint8 InterruptCnt;
 uint32 echo=0;
-uint32 min = max_32b_int; 
-uint32 max = 0;
+uint32 max_echo = 0;
 
 CY_ISR(start_echo_IRR_Interrupt)
 {
@@ -86,13 +82,14 @@ CY_ISR(start_echo_IRR_Interrupt)
     Echo_Timer_Init();
     Echo_Timer_Start();
 }
-
-
+uint32 echoSum = 0;
+uint8 factor = 5;
+uint8 echoCount = 0;
 CY_ISR(end_echo_IRR_Interrupt)
 {
 
     end_echo_IRR_ClearPending();    
-    echo = Echo_Timer_ReadCounter();
+    uint32 rawEcho = Echo_Timer_ReadCounter();
     
     Echo_Timer_Stop();
 }
@@ -114,29 +111,16 @@ void main()
     end_echo_IRR_StartEx(end_echo_IRR_Interrupt);
     end_echo_IRR_Start();
     
-    //Echo_Timer_ISR_StartEx(Echo_Timer_ISR_Interrupt);
-    //Echo_Timer_ISR_Start();
-    
-    /* Display TMR-16 on LCD */
-    /*LCD_Start();
-    LCD_Position(0u, 0u);
-    LCD_PrintString("TMR-16"); */
+    /* Start LCD */
+    LCD_Start();
     
     uint16  desiredSpeed = INIT_RPM;
-    uint16  dutyCycle;
-    char    displayString[6];
-    
     
     
     /* Globally Enable Interrupts to the CPU Core */
     CyGlobalIntEnable;
     FanController_Start();
     FanController_SetDesiredSpeed(FAN, desiredSpeed);
-    dutyCycle = FanController_GetDutyCycle(FAN);
-    
-    /*LCD_Start();
-    LCD_Position(0u, 0u);
-    LCD_PrintDecUint16(desiredSpeed);*/
     
     ADC_DelSig_1_Start();
 
@@ -148,52 +132,70 @@ void main()
     //FanController_SetDesiredSpeed(FAN, desiredSpeed);
     
     
-    // TODO: Figure out max. and min. duty cycles by measuring how long it takes the ball to get to the top.
+    // Figure out min. duty cycle by increasing fan speed from 0 until the ball begins to move
     // Start low for the min. and capture the value at which the ball starts to move.
-    // Start high for the max. and capture the value at which the ball moves to the top the fastest.
     uint16 currentDuty = MIN_DUTY;
     FanController_SetDesiredSpeed(FAN, MAX_RPM);
+    // Set the fan to min (not spinning)
     FanController_SetDutyCycle(FAN, currentDuty);
+    // Wait for the ball to reach the bottom of the tube, and store the distance measured by the sensor at this time
+    
+    LCD_Position(0u, 0u); 
+    LCD_PrintInt16(max_echo/2);
+    while (1u) {
+        // Check current distance compared to current max distance
+        if (echo > max_echo) {
+            max_echo = echo;
+            LCD_Position(0u, 0u); 
+            LCD_PrintInt16(max_echo/2);
+        } else {
+            break;
+        }
+        CyDelay(1000u);
+    }
+    
+    while(1u) {
+        LCD_Position(1u, 0u);
+        if (echo > max_echo ) {
+            LCD_PrintInt8(1u);
+        } else {
+            LCD_PrintInt8(0u);
+        }
+    }
+    
+    
     uint16 min_duty = 0;
-    uint16 max_duty = 0;
-    uint8 min_record_counter = 0;
+    
+    // Detect the minimum duty cycle needed to move the ball with this fan.
     while (1u) {
         
         /* Display position */
         //LCD_Position(0u, 0u);
         //LCD_PrintInt16(echo/2u);
         
-        // Check if max rpm should be updated 
-        if (echo>max){
-            max = echo;
-            min_duty = currentDuty;
-            LCD_MAX_ECHO;
-            LCD_PrintInt16(max/2u);
-            LCD_MIN_DUTY;
-            LCD_PrintInt16(min_duty);
-        }
+        /* Synchronize firmware to end-of-cycle pulse from FanController */
+        if(EOC_SR_Read())
+        {
         
-        // Check if min rpm should be updated
-        if (echo<min){
-            min = echo;
-            max_duty = currentDuty;
-            min_record_counter = 0;
-            LCD_MIN_ECHO;
-            LCD_PrintInt16(min/2u);
-            LCD_MAX_DUTY;
-            LCD_PrintInt16(max_duty);
-        }  else {
-            min_record_counter++;
-            if (min_record_counter >= 200) {
+            // Check if min duty should be set (ball has moved)
+            if (echo<max_echo){
+                min_duty = currentDuty;
+                /*LCD_MIN_ECHO;
+                LCD_PrintInt16(min_duty/2u);
+                LCD_MIN_DUTY;
+                LCD_PrintInt16(min_duty);*/
                 break;
             }
-        }
-        
-        currentDuty += DUTY_STEP_COARSE;
-        FanController_SetDutyCycle(FAN, currentDuty);
-		CyDelay(100u);
+            
+            currentDuty += DUTY_STEP_COARSE;
+            FanController_SetDutyCycle(FAN, currentDuty);
+            LCD_Position(0u, 8u); 
+            LCD_PrintInt16(currentDuty);
+    		CyDelay(100u);
+         }
     }
     FanController_SetDutyCycle(FAN, MIN_DUTY);
+    
     
     //while(1u) {
         
