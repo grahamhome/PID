@@ -30,8 +30,8 @@
 * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 *******************************************************************************/
 
-#define LCD_MAX_ECHO (LCD_Position(0u, 8u))
-#define LCD_MIN_ECHO (LCD_Position(0u, 0u))
+#define LCD_CUR_ECHO (LCD_Position(0u, 8u))
+#define LCD_MAX_ECHO (LCD_Position(0u, 0u))
 #define LCD_MIN_DUTY (LCD_Position(1u, 8u))
 #define LCD_MAX_DUTY (LCD_Position(1u, 0u))
 
@@ -62,17 +62,15 @@
 
 #define FAN                 (1u)
 
+// Echo averaging factor
+#define FACTOR              (16u)
+
 #include <device.h>
 #include <end_echo_IRR.h>
 #include <Echo_Timer.h>
 #include <start_echo_IRR.h>
 #include <stdio.h>
 #include <time.h>
-
-
-uint8 InterruptCnt;
-uint32 echo=0;
-uint32 max_echo = 0;
 
 CY_ISR(start_echo_IRR_Interrupt)
 {
@@ -82,17 +80,29 @@ CY_ISR(start_echo_IRR_Interrupt)
     Echo_Timer_Init();
     Echo_Timer_Start();
 }
-uint32 echoSum = 0;
-uint8 factor = 5;
-uint8 echoCount = 0;
+
+uint32 echoes[FACTOR] = {0}; // The most recent echo values
+uint8 position = 0; // The current index in the 'echoes' list
+
 CY_ISR(end_echo_IRR_Interrupt)
 {
 
     end_echo_IRR_ClearPending();    
-    uint32 rawEcho = Echo_Timer_ReadCounter();
-    
+    echoes[position++] = Echo_Timer_ReadCounter();
+    position %= FACTOR;
     Echo_Timer_Stop();
 }
+
+/* Returns the average of the most recent echo values */
+uint32 getEcho() {
+    uint32 sum = 0;
+    int i;
+    for (i=0; i<FACTOR; i++) {
+        sum += echoes[i];
+    }
+    return (sum/FACTOR)>>12; // todo: test this; should be trimmed down to 3 values that are relatively stable
+}
+    
 
 void main()
 {
@@ -115,6 +125,7 @@ void main()
     LCD_Start();
     
     uint16  desiredSpeed = INIT_RPM;
+    uint16 dutyCycle = MIN_DUTY;
     
     
     /* Globally Enable Interrupts to the CPU Core */
@@ -127,115 +138,99 @@ void main()
     /* Start the ADC conversion */
     ADC_DelSig_1_StartConvert();
     
-    
-    // Determine minimum and maximum fan speed and min & max. distance readings
-    //FanController_SetDesiredSpeed(FAN, desiredSpeed);
-    
-    
-    // Figure out min. duty cycle by increasing fan speed from 0 until the ball begins to move
-    // Start low for the min. and capture the value at which the ball starts to move.
-    uint16 currentDuty = MIN_DUTY;
-    FanController_SetDesiredSpeed(FAN, MAX_RPM);
-    // Set the fan to min (not spinning)
-    FanController_SetDutyCycle(FAN, currentDuty);
     // Wait for the ball to reach the bottom of the tube, and store the distance measured by the sensor at this time
+//    uint32 max_echo = 0;
+//    LCD_MAX_ECHO;
+//    LCD_PrintInt16(max_echo/2);
+//    while (1u) {
+//        uint32 echo = getEcho();
+//        // Check current distance compared to current max distance
+//        if (echo > max_echo) {
+//            max_echo = echo;
+//            LCD_MAX_ECHO;
+//            LCD_PrintInt16(max_echo/2);
+//        } else {
+//            break;
+//        }
+//        CyDelay(1000u);
+//    }
     
-    LCD_Position(0u, 0u); 
-    LCD_PrintInt16(max_echo/2);
-    while (1u) {
-        // Check current distance compared to current max distance
-        if (echo > max_echo) {
-            max_echo = echo;
-            LCD_Position(0u, 0u); 
-            LCD_PrintInt16(max_echo/2);
-        } else {
-            break;
-        }
-        CyDelay(1000u);
-    }
-    
-    while(1u) {
+    // Check to see if max distance has been exceeded
+    /*while(1u) {
+        uint32 echo = getEcho();
         LCD_Position(1u, 0u);
         if (echo > max_echo ) {
             LCD_PrintInt8(1u);
         } else {
             LCD_PrintInt8(0u);
         }
-    }
+    }*/
+    
+    // Figure out min. duty cycle by increasing fan speed from 0 until the ball begins to move
+    // Start low for the min. and capture the value at which the ball starts to move.
+//    uint16 minDuty = MIN_DUTY;
+//    FanController_SetDesiredSpeed(FAN, MAX_RPM);
+//    // Set the fan to min (not spinning)
+//    FanController_SetDutyCycle(FAN, minDuty);
+//    
+//    // Detect the minimum duty cycle needed to move the ball with this fan.
+//    while (1u) {
+//        
+//        /* Synchronize firmware to end-of-cycle pulse from FanController */
+//        if(EOC_SR_Read())
+//        {
+//            
+//            uint32 echo = getEcho();
+//        
+//            // Check if min duty should be set (ball has moved)
+//            if (echo<(max_echo-1000)){
+//                break;
+//            }
+//            
+//            minDuty += DUTY_STEP_COARSE;
+//            FanController_SetDutyCycle(FAN, minDuty);
+//            printf(minDuty);
+//            
+//            /* Display position */
+//            LCD_CUR_ECHO;
+//            LCD_PrintInt16(echo/2u);
+//            
+//    		CyDelay(100u);
+//         }
+//    }
+//    FanController_SetDutyCycle(FAN, MIN_DUTY);
     
     
-    uint16 min_duty = 0;
-    
-    // Detect the minimum duty cycle needed to move the ball with this fan.
-    while (1u) {
-        
-        /* Display position */
-        //LCD_Position(0u, 0u);
-        //LCD_PrintInt16(echo/2u);
-        
-        /* Synchronize firmware to end-of-cycle pulse from FanController */
-        if(EOC_SR_Read())
-        {
-        
-            // Check if min duty should be set (ball has moved)
-            if (echo<max_echo){
-                min_duty = currentDuty;
-                /*LCD_MIN_ECHO;
-                LCD_PrintInt16(min_duty/2u);
-                LCD_MIN_DUTY;
-                LCD_PrintInt16(min_duty);*/
-                break;
-            }
-            
-            currentDuty += DUTY_STEP_COARSE;
-            FanController_SetDutyCycle(FAN, currentDuty);
-            LCD_Position(0u, 8u); 
-            LCD_PrintInt16(currentDuty);
-    		CyDelay(100u);
-         }
-    }
-    FanController_SetDutyCycle(FAN, MIN_DUTY);
-    
-    
-    //while(1u) {
+    while(1u) {
         
         /* Update fan speed */
         
         /* Synchronize firmware to end-of-cycle pulse from FanController */
-        //if(EOC_SR_Read())
-        //{
-        
-            /* Display Fan Actual Speeds */
-            /*LCD_Position(0,5u);
-            LCD_PrintDecUint16(FanController_GetActualSpeed(FAN));
-            LCD_PrintString("   ");*/
-
-            /* Display Current Duty Cycle Settings (in 100ths of a percent) */
-           /* LCD_Position(0,10u);
-            sprintf(displayString, "%5.2f", (((float)dutyCycle)/100));
-            LCD_PrintString(displayString);
-            LCD_PrintString("%    ");*/
+        if(EOC_SR_Read())
+        {
             
-            
-            // Check for potentiometer reading to change speed
-            //if(ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_RETURN_STATUS))
-            //{
-                //uint16 output = ADC_DelSig_1_GetResult16() + 1; // Add one to overflow int at minimum value (was being read as max in value)
-                //LCD_Position(1u, 8u);
-                //LCD_PrintInt16(output);
-                //float speed = (((float) output)/(float)256 * (((float)MAX_RPM) - ((float)MIN_RPM))) + (float)MIN_RPM;
-                //float duty = (((float) output)/(float)256 * (((float)MAX_DUTY) - ((float)MIN_DUTY))) + (float)MIN_DUTY;
-               // dutyCycle = (uint16) duty;
-               // desiredSpeed = (uint16) speed;
+             // Check for potentiometer reading to change speed
+            if(ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_RETURN_STATUS))
+            {
+                uint16 output = ADC_DelSig_1_GetResult16() + 1; // Add one to overflow int at minimum value (was being read as max in value)
+                LCD_Position(1u, 8u);
+                LCD_PrintInt16(output);
+                float speed = (((float) output)/(float)256 * (((float)MAX_RPM) - ((float)MIN_RPM))) + (float)MIN_RPM;
+                float duty = (((float) output)/(float)256 * (((float)MAX_DUTY) - ((float)MIN_DUTY))) + (float)MIN_DUTY;
+                dutyCycle = (uint16) duty;
+                desiredSpeed = (uint16) speed;
                 /* Display Updated Desired Speed */
-                //LCD_Position(1u, 0u);
-                //LCD_PrintDecUint16(desiredSpeed);
-                //FanController_SetDesiredSpeed(FAN, desiredSpeed);
-                //FanController_SetDutyCycle(FAN, dutyCycle);
+                LCD_Position(1u, 0u);
+                LCD_PrintDecUint16(desiredSpeed);
+                FanController_SetDesiredSpeed(FAN, desiredSpeed);
+                FanController_SetDutyCycle(FAN, dutyCycle);
+                /* Display echo */
+                LCD_Position(0u, 0u);
+                LCD_PrintInt32(getEcho());
                 
-            //}
-        //}
-    //}
+            }
+        }
+    }
 }
 
 
