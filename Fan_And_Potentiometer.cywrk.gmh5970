@@ -247,52 +247,6 @@
 <VisibleNodeIds>
 <v>HelloWorld_Blinky01</v>
 <v>HelloWorld_Blinky01\FW_Fan_Control01</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\ADC_DelSig_1.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\ADC_DelSig_1_AMux.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\ADC_DelSig_1_Ext_CP_Clk.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\ADC_DelSig_1_INT.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\ADC_DelSig_1_IRQ.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\ADC_DelSig_1_PM.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\ADC_DelSig_1_theACLK.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\Clock_1.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\Clock_2.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\clock_3.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\clock_4.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\Cm3Start.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\CyDmac.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\CyFlash.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\CyLib.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\cymetadata.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\cyPm.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\CySpc.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\cyutils.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\Echo_Timer.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\Echo_Timer_PM.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\end_echo_IRR.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\EOC_SR.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\FanController.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\FanController_INT.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\LCD.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\LCD_LCDPort.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\LCD_PM.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\main.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\P0_1.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\Pin_1.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\Pin_2.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\pwm_1.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\start_echo_IRR.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\tach_1.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\Trigger_Timer.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\Listing Files\Trigger_Timer_PM.lst</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\FW_Fan_Control01.elf</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\FW_Fan_Control01.hex</v>
-<v>HelloWorld_Blinky01\FW_Fan_Control01\CortexM3\ARM_GCC_473\Debug\FW_Fan_Control01.map</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
