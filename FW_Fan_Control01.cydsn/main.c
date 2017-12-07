@@ -141,7 +141,7 @@ void main()
     // Wait for the ball to reach the bottom of the tube, and store the distance measured by the sensor at this time
     CyDelay(4000);
     uint16 min_echo = getEcho();
-    LCD_Position(0u, 12u);
+    LCD_Position(0u, 0u);
     LCD_PrintInt16(min_echo);
     
     // Figure out min. duty cycle by increasing fan speed from 0 until the ball begins to move
@@ -161,7 +161,7 @@ void main()
             // Increase fan speed
             minDuty += DUTY_STEP_COARSE;
             FanController_SetDutyCycle(FAN, minDuty);
-            
+            CyDelay(500u);
             uint16 echo = getEcho();
         
             // Check if min duty should be set (ball has moved)
@@ -170,15 +170,17 @@ void main()
             }
             
             /* Display duty */
-            LCD_Position(0u, 0u);
+            LCD_Position(1u, 0u);
             LCD_PrintInt16(minDuty);
             
     		CyDelay(100u);
          }
     }
     
+    uint16 zero_point = minDuty + DUTY_STEP_COARSE;
     
-    //Let the ball move upwards until the minimum distance reading is found, then stop the fan & wait 4 sec before continuing.
+    
+    //Let the ball move upwards until the maximum echo (minimum distance) reading is found, then stop the fan & wait 4 sec before continuing.
     uint16 max_echo = min_echo;
     uint16 no_change_counter = 0;
     while(1u) {
@@ -194,7 +196,7 @@ void main()
         }
     }
     
-    LCD_Position(0u, 8u);
+    LCD_Position(0u, 6u);
     LCD_PrintInt16(max_echo);
     
     FanController_SetDutyCycle(FAN, MIN_DUTY);
@@ -215,17 +217,16 @@ void main()
                 uint16 output = ADC_DelSig_1_GetResult16() + 1; // Add one to overflow int at minimum value (was being read as max in value)
                 LCD_Position(1u, 8u);
                 LCD_PrintInt16(output);
-                float speed = (((float) output)/(float)256 * (((float)MAX_RPM) - ((float)MIN_RPM))) + (float)MIN_RPM;
-                float duty = (((float) output)/(float)256 * (((float)MAX_DUTY) - ((float)MIN_DUTY))) + (float)MIN_DUTY;
+                uint16 duty = (uint16) (((float) output)/(float)256 * (((float)MAX_DUTY) - ((float)MIN_DUTY))) + (float)MIN_DUTY;
+                uint16 setPoint = (uint16)((((float) output)/(float)256 * (((float)max_echo) - ((float)min_echo))) + (float) min_echo);
+                LCD_Position(0u, 12u);
+                LCD_PrintInt16(setPoint);
                 dutyCycle = (uint16) duty;
-                desiredSpeed = (uint16) speed;
-                /* Display Updated Desired Speed */
-                LCD_Position(1u, 0u);
-                LCD_PrintDecUint16(desiredSpeed);
-                //FanController_SetDesiredSpeed(FAN, desiredSpeed);
                 FanController_SetDutyCycle(FAN, dutyCycle);
+                LCD_Position(1u, 5u);
+                LCD_PrintInt16(duty);
                 /* Display echo */
-                LCD_Position(0u, 0u);
+                LCD_Position(1u, 12u);
                 LCD_PrintInt16(getEcho());
                 
             }
