@@ -102,6 +102,11 @@ uint16 getEcho() {
     }
     return (sum/FACTOR)>>12; // Reduce the result to the significant digits only
 }
+
+// Constants for proportinal, integral and derivative terms
+uint16 kP = 1;
+uint16 kI = 0;
+uint16 kD = 0;
     
 
 void main()
@@ -170,14 +175,18 @@ void main()
             }
             
             /* Display duty */
-            LCD_Position(1u, 0u);
+            LCD_Position(0u, 12u);
             LCD_PrintInt16(minDuty);
             
     		CyDelay(100u);
          }
     }
-    
-    uint16 zero_point = minDuty + DUTY_STEP_COARSE;
+    // The duty cycle at which the ball will neither rise nor fall.
+    // This duty cycle will be used when the control signal is 0.
+    uint16 zero_point = minDuty - DUTY_STEP_COARSE;
+    // The duty cycle at which the ball will fall as slowly as possible.
+    // This duty cycle will be used whenever the control signal is negative
+    uint16 negative_point = zero_point - DUTY_STEP_COARSE;
     
     
     //Let the ball move upwards until the maximum echo (minimum distance) reading is found, then stop the fan & wait 4 sec before continuing.
@@ -215,20 +224,25 @@ void main()
             if(ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_RETURN_STATUS))
             {
                 uint16 output = ADC_DelSig_1_GetResult16() + 1; // Add one to overflow int at minimum value (was being read as max in value)
-                LCD_Position(1u, 8u);
-                LCD_PrintInt16(output);
-                uint16 duty = (uint16) (((float) output)/(float)256 * (((float)MAX_DUTY) - ((float)MIN_DUTY))) + (float)MIN_DUTY;
+                //uint16 duty = (uint16) (((float) output)/(float)256 * (((float)MAX_DUTY) - ((float)MIN_DUTY))) + (float)MIN_DUTY;
                 uint16 setPoint = (uint16)((((float) output)/(float)256 * (((float)max_echo) - ((float)min_echo))) + (float) min_echo);
-                LCD_Position(0u, 12u);
-                LCD_PrintInt16(setPoint);
-                dutyCycle = (uint16) duty;
-                FanController_SetDutyCycle(FAN, dutyCycle);
-                LCD_Position(1u, 5u);
-                LCD_PrintInt16(duty);
-                /* Display echo */
-                LCD_Position(1u, 12u);
-                LCD_PrintInt16(getEcho());
+                uint16 echo = getEcho();
+                uint16 delta = setPoint - echo;
+                uint16 control = kP*delta;
                 
+                LCD_Position(1u, 0u);
+                LCD_PrintInt16(setPoint);
+                LCD_Position(1u, 6u);
+                LCD_PrintInt16(delta);
+                LCD_Position(1u, 12u);
+                LCD_PrintInt16(control);
+                if (control > 0) {
+                    FanController_SetDutyCycle(FAN, control);
+                } else if (control < 0) {
+                    FanController_SetDutyCycle(FAN, negative_point);
+                } else {
+                    FanController_SetDutyCycle(FAN, zero_point);
+                }
             }
         }
     }
