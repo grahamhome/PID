@@ -104,7 +104,7 @@ uint16 getEcho() {
 }
 
 // Constants for proportinal, integral and derivative terms
-uint16 kP = 1;
+uint16 kP = 100;
 uint16 kI = 0;
 uint16 kD = 0;
     
@@ -151,7 +151,7 @@ void main()
     
     // Figure out min. duty cycle by increasing fan speed from 0 until the ball begins to move
     // Start low for the min. and capture the value at which the ball starts to move.
-    uint16 minDuty = MIN_DUTY;
+    uint16 minDuty = 4608u; // Determined in testing to be low enough to not quite move the ball
     FanController_SetDesiredSpeed(FAN, MAX_RPM);
     // Set the fan to min (not spinning)
     FanController_SetDutyCycle(FAN, minDuty);
@@ -166,11 +166,11 @@ void main()
             // Increase fan speed
             minDuty += DUTY_STEP_COARSE;
             FanController_SetDutyCycle(FAN, minDuty);
-            CyDelay(500u);
+            CyDelay(1000u);
             uint16 echo = getEcho();
         
             // Check if min duty should be set (ball has moved)
-            if ((echo)>((min_echo))){
+            if (echo>(min_echo+2)){
                 break;
             }
             
@@ -186,7 +186,7 @@ void main()
     uint16 zero_point = minDuty - DUTY_STEP_COARSE;
     // The duty cycle at which the ball will fall as slowly as possible.
     // This duty cycle will be used whenever the control signal is negative
-    uint16 negative_point = zero_point - DUTY_STEP_COARSE;
+    uint16 negative_point = MIN_DUTY;
     
     
     //Let the ball move upwards until the maximum echo (minimum distance) reading is found, then stop the fan & wait 4 sec before continuing.
@@ -227,8 +227,8 @@ void main()
                 //uint16 duty = (uint16) (((float) output)/(float)256 * (((float)MAX_DUTY) - ((float)MIN_DUTY))) + (float)MIN_DUTY;
                 uint16 setPoint = (uint16)((((float) output)/(float)256 * (((float)max_echo) - ((float)min_echo))) + (float) min_echo);
                 uint16 echo = getEcho();
-                uint16 delta = setPoint - echo;
-                uint16 control = kP*delta;
+                int16 delta = setPoint - echo;
+                int16 control = kP*delta;
                 
                 LCD_Position(1u, 0u);
                 LCD_PrintInt16(setPoint);
@@ -236,12 +236,10 @@ void main()
                 LCD_PrintInt16(delta);
                 LCD_Position(1u, 12u);
                 LCD_PrintInt16(control);
-                if (control > 0) {
-                    FanController_SetDutyCycle(FAN, control);
-                } else if (control < 0) {
-                    FanController_SetDutyCycle(FAN, negative_point);
+                if (control >= 0) {
+                    FanController_SetDutyCycle(FAN, control + MIN_DUTY);
                 } else {
-                    FanController_SetDutyCycle(FAN, zero_point);
+                    FanController_SetDutyCycle(FAN, MIN_DUTY);
                 }
             }
         }
