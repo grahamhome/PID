@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.641ms
-Initializing data phase: Elapsed time ==> 2s.381ms
+Loading plugins phase: Elapsed time ==> 0s.708ms
+Initializing data phase: Elapsed time ==> 12s.926ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -d CY8C5868AXI-LP035 -s \\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\Generated_Source\PSoC5 -- -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE</CYPRESSTAG>
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -d CY8C5868AXI-LP035 -s D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\Generated_Source\PSoC5 -- -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 4s.017ms
+Elaboration phase: Elapsed time ==> 13s.050ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.177ms
+HDL generation phase: Elapsed time ==> 0s.500ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -25,23 +25,23 @@ HDL generation phase: Elapsed time ==> 0s.177ms
 ======================================================================
 Compiling:  FW_Fan_Control01.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\bin/warp.exe
-Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -dcpsoc3 FW_Fan_Control01.v -verilog
+Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -dcpsoc3 FW_Fan_Control01.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  FW_Fan_Control01.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\bin/warp.exe
-Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -dcpsoc3 FW_Fan_Control01.v -verilog
+Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -dcpsoc3 FW_Fan_Control01.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  FW_Fan_Control01.v
 Program  :   vlogfe
-Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -dcpsoc3 -verilog FW_Fan_Control01.v
+Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -dcpsoc3 -verilog FW_Fan_Control01.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Tue Dec 05 16:25:06 2017
+Wed Dec 13 20:05:01 2017
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 FW_Fan_Control01.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Tue Dec 05 16:25:06 2017
+Wed Dec 13 20:05:01 2017
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\..\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_FanTach_v3_0\B_FanTach_v3_0.v'
@@ -70,7 +70,6 @@ Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\wa
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\..\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Timer_v2_60\B_Timer_v2_60.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\cypress.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'
-Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'
 
 vpp:  No errors.
 
@@ -98,11 +97,11 @@ vlogfe:  No errors.
 ======================================================================
 Compiling:  FW_Fan_Control01.v
 Program  :   tovif
-Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -dcpsoc3 -verilog FW_Fan_Control01.v
+Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -dcpsoc3 -verilog FW_Fan_Control01.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Tue Dec 05 16:25:08 2017
+Wed Dec 13 20:05:03 2017
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -113,8 +112,8 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\codegentemp\FW_Fan_Control01.ctl'.
-Linking '\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\codegentemp\FW_Fan_Control01.v'.
+Linking 'D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\FW_Fan_Control01.ctl'.
+Linking 'D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\FW_Fan_Control01.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_FanTach_v3_0\B_FanTach_v3_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\cypress.v'.
@@ -128,9 +127,10 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\conte
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Timer_v2_60\B_Timer_v2_60.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\stdlogic\mcompare.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\lcpsoc3\stdlogic\mod_cnst.vif'.
 
 tovif:  No errors.
 
@@ -138,11 +138,11 @@ tovif:  No errors.
 ======================================================================
 Compiling:  FW_Fan_Control01.v
 Program  :   topld
-Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -dcpsoc3 -verilog FW_Fan_Control01.v
+Options  :    -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -dcpsoc3 -verilog FW_Fan_Control01.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Tue Dec 05 16:25:09 2017
+Wed Dec 13 20:05:08 2017
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -153,8 +153,8 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\codegentemp\FW_Fan_Control01.ctl'.
-Linking '\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\codegentemp\FW_Fan_Control01.v'.
+Linking 'D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\FW_Fan_Control01.ctl'.
+Linking 'D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\FW_Fan_Control01.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_FanTach_v3_0\B_FanTach_v3_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\cypress.v'.
@@ -168,9 +168,10 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\conte
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Timer_v2_60\B_Timer_v2_60.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v'.
-Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\common\stdlogic\mcompare.vif'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\lcpsoc3\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
 
 ----------------------------------------------------------
@@ -264,32 +265,52 @@ Detecting unused logic.
 	\ADC_DelSig_1:Net_268\
 	\ADC_DelSig_1:Net_270\
 	\Trigger_Timer:Net_260\
-	Net_149
+	Net_175
 	\Trigger_Timer:TimerUDB:ctrl_ten\
 	\Trigger_Timer:TimerUDB:ctrl_cmode_0\
 	\Trigger_Timer:TimerUDB:ctrl_tmode_1\
 	\Trigger_Timer:TimerUDB:ctrl_tmode_0\
 	\Trigger_Timer:TimerUDB:ctrl_ic_1\
 	\Trigger_Timer:TimerUDB:ctrl_ic_0\
-	Net_153
+	Net_179
 	\Trigger_Timer:Net_102\
 	\Trigger_Timer:Net_266\
 	\Echo_Timer:Net_260\
-	Net_155
 	Net_160
 	\Echo_Timer:Net_53\
 	\Echo_Timer:TimerUDB:ctrl_ten\
-	\Echo_Timer:TimerUDB:ctrl_cmode_0\
 	\Echo_Timer:TimerUDB:ctrl_tmode_1\
 	\Echo_Timer:TimerUDB:ctrl_tmode_0\
-	\Echo_Timer:TimerUDB:ctrl_ic_1\
-	\Echo_Timer:TimerUDB:ctrl_ic_0\
 	Net_159
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:albi_1\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:agbi_1\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:lt_0\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:gt_0\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:lt_1\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:gt_1\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:lti_0\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:gti_0\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:albi_0\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:agbi_0\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xneq\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xlt\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xlte\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xgt\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xgte\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:lt\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:gt\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:gte\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:lte\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:neq\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:b_1\
+	\Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:b_0\
+	\Echo_Timer:TimerUDB:zeros_3\
+	\Echo_Timer:TimerUDB:zeros_2\
 	\Echo_Timer:Net_102\
 	\Echo_Timer:Net_266\
 
 
-Deleted 110 User equations/components.
+Deleted 130 User equations/components.
 Deleted 0 Synthesized equations/components.
 
 ------------------------------------------------------
@@ -362,9 +383,14 @@ Aliasing \Trigger_Timer:TimerUDB:status_4\ to zero
 Aliasing \Trigger_Timer:TimerUDB:status_0\ to \Trigger_Timer:TimerUDB:tc_i\
 Aliasing Net_135 to zero
 Aliasing tmpOE__P0_1_net_0 to \LCD:tmpOE__LCDPort_net_6\
-Aliasing \Echo_Timer:TimerUDB:ctrl_cmode_1\ to zero
+Aliasing \Echo_Timer:TimerUDB:ctrl_cmode_1\ to \LCD:tmpOE__LCDPort_net_6\
+Aliasing \Echo_Timer:TimerUDB:ctrl_cmode_0\ to zero
 Aliasing \Echo_Timer:TimerUDB:trigger_enable\ to \LCD:tmpOE__LCDPort_net_6\
 Aliasing Net_284 to zero
+Aliasing \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:aeqb_0\ to \LCD:tmpOE__LCDPort_net_6\
+Aliasing \Echo_Timer:TimerUDB:sIntCapCount:MODIN3_1\ to \Echo_Timer:TimerUDB:sIntCapCount:MODIN1_1\
+Aliasing \Echo_Timer:TimerUDB:sIntCapCount:MODIN3_0\ to \Echo_Timer:TimerUDB:sIntCapCount:MODIN1_0\
+Aliasing \Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_0\ to \LCD:tmpOE__LCDPort_net_6\
 Aliasing \Echo_Timer:TimerUDB:status_6\ to zero
 Aliasing \Echo_Timer:TimerUDB:status_5\ to zero
 Aliasing \Echo_Timer:TimerUDB:status_4\ to zero
@@ -373,8 +399,6 @@ Aliasing tmpOE__Pin_2_net_0 to \LCD:tmpOE__LCDPort_net_6\
 Aliasing \Trigger_Timer:TimerUDB:capture_last\\D\ to zero
 Aliasing \Trigger_Timer:TimerUDB:hwEnable_reg\\D\ to \Trigger_Timer:TimerUDB:run_mode\
 Aliasing \Trigger_Timer:TimerUDB:capture_out_reg_i\\D\ to \Trigger_Timer:TimerUDB:capt_fifo_load_int\
-Aliasing \Echo_Timer:TimerUDB:capture_last\\D\ to zero
-Aliasing \Echo_Timer:TimerUDB:capture_out_reg_i\\D\ to \Echo_Timer:TimerUDB:capt_fifo_load_int\
 Removing Lhs of wire \LCD:tmpOE__LCDPort_net_5\[2] = \LCD:tmpOE__LCDPort_net_6\[1]
 Removing Lhs of wire \LCD:tmpOE__LCDPort_net_4\[3] = \LCD:tmpOE__LCDPort_net_6\[1]
 Removing Lhs of wire \LCD:tmpOE__LCDPort_net_3\[4] = \LCD:tmpOE__LCDPort_net_6\[1]
@@ -503,37 +527,70 @@ Removing Lhs of wire \Trigger_Timer:TimerUDB:cs_addr_2\[624] = zero[8]
 Removing Lhs of wire \Trigger_Timer:TimerUDB:cs_addr_1\[625] = \Trigger_Timer:TimerUDB:trig_reg\[612]
 Removing Lhs of wire \Trigger_Timer:TimerUDB:cs_addr_0\[626] = \Trigger_Timer:TimerUDB:per_zero\[604]
 Removing Lhs of wire tmpOE__P0_1_net_0[805] = one[24]
+Removing Rhs of wire Net_155[811] = \Echo_Timer:Net_55\[812]
 Removing Lhs of wire \Echo_Timer:TimerUDB:ctrl_enable\[829] = \Echo_Timer:TimerUDB:control_7\[821]
-Removing Lhs of wire \Echo_Timer:TimerUDB:ctrl_cmode_1\[831] = zero[8]
-Removing Rhs of wire \Echo_Timer:TimerUDB:timer_enable\[840] = \Echo_Timer:TimerUDB:runmode_enable\[852]
-Removing Rhs of wire \Echo_Timer:TimerUDB:run_mode\[841] = \Echo_Timer:TimerUDB:hwEnable_reg\[842]
-Removing Lhs of wire \Echo_Timer:TimerUDB:trigger_enable\[844] = one[24]
-Removing Lhs of wire \Echo_Timer:TimerUDB:tc_i\[846] = \Echo_Timer:TimerUDB:status_tc\[843]
-Removing Lhs of wire \Echo_Timer:TimerUDB:hwEnable\[848] = \Echo_Timer:TimerUDB:control_7\[821]
-Removing Lhs of wire \Echo_Timer:TimerUDB:capt_fifo_load_int\[851] = \Echo_Timer:TimerUDB:capt_fifo_load\[839]
+Removing Lhs of wire \Echo_Timer:TimerUDB:ctrl_cmode_1\[831] = one[24]
+Removing Lhs of wire \Echo_Timer:TimerUDB:ctrl_cmode_0\[832] = zero[8]
+Removing Lhs of wire \Echo_Timer:TimerUDB:ctrl_ic_1\[835] = \Echo_Timer:TimerUDB:control_1\[827]
+Removing Lhs of wire \Echo_Timer:TimerUDB:ctrl_ic_0\[836] = \Echo_Timer:TimerUDB:control_0\[828]
+Removing Rhs of wire \Echo_Timer:TimerUDB:timer_enable\[841] = \Echo_Timer:TimerUDB:runmode_enable\[915]
+Removing Rhs of wire \Echo_Timer:TimerUDB:run_mode\[842] = \Echo_Timer:TimerUDB:hwEnable_reg\[843]
+Removing Lhs of wire \Echo_Timer:TimerUDB:trigger_enable\[845] = one[24]
+Removing Lhs of wire \Echo_Timer:TimerUDB:tc_i\[847] = \Echo_Timer:TimerUDB:status_tc\[844]
+Removing Lhs of wire \Echo_Timer:TimerUDB:hwEnable\[849] = \Echo_Timer:TimerUDB:control_7\[821]
 Removing Lhs of wire Net_284[853] = zero[8]
-Removing Lhs of wire \Echo_Timer:TimerUDB:status_6\[856] = zero[8]
-Removing Lhs of wire \Echo_Timer:TimerUDB:status_5\[857] = zero[8]
-Removing Lhs of wire \Echo_Timer:TimerUDB:status_4\[858] = zero[8]
-Removing Lhs of wire \Echo_Timer:TimerUDB:status_0\[859] = \Echo_Timer:TimerUDB:status_tc\[843]
-Removing Lhs of wire \Echo_Timer:TimerUDB:status_1\[860] = \Echo_Timer:TimerUDB:capt_fifo_load\[839]
-Removing Rhs of wire \Echo_Timer:TimerUDB:status_2\[861] = \Echo_Timer:TimerUDB:fifo_full\[862]
-Removing Rhs of wire \Echo_Timer:TimerUDB:status_3\[863] = \Echo_Timer:TimerUDB:fifo_nempty\[864]
-Removing Lhs of wire \Echo_Timer:TimerUDB:cs_addr_2\[866] = zero[8]
-Removing Lhs of wire \Echo_Timer:TimerUDB:cs_addr_1\[867] = \Echo_Timer:TimerUDB:trig_reg\[855]
-Removing Lhs of wire \Echo_Timer:TimerUDB:cs_addr_0\[868] = \Echo_Timer:TimerUDB:per_zero\[845]
-Removing Lhs of wire tmpOE__Pin_2_net_0[1047] = one[24]
-Removing Lhs of wire \Trigger_Timer:TimerUDB:capture_last\\D\[1075] = zero[8]
-Removing Lhs of wire \Trigger_Timer:TimerUDB:tc_reg_i\\D\[1076] = \Trigger_Timer:TimerUDB:status_tc\[602]
-Removing Lhs of wire \Trigger_Timer:TimerUDB:hwEnable_reg\\D\[1077] = \Trigger_Timer:TimerUDB:control_7\[580]
-Removing Lhs of wire \Trigger_Timer:TimerUDB:capture_out_reg_i\\D\[1078] = \Trigger_Timer:TimerUDB:capt_fifo_load\[598]
-Removing Lhs of wire \Echo_Timer:TimerUDB:capture_last\\D\[1079] = zero[8]
-Removing Lhs of wire \Echo_Timer:TimerUDB:hwEnable_reg\\D\[1080] = \Echo_Timer:TimerUDB:control_7\[821]
-Removing Lhs of wire \Echo_Timer:TimerUDB:tc_reg_i\\D\[1081] = \Echo_Timer:TimerUDB:status_tc\[843]
-Removing Lhs of wire \Echo_Timer:TimerUDB:capture_out_reg_i\\D\[1082] = \Echo_Timer:TimerUDB:capt_fifo_load\[839]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:cmp_vv_vv_MODGEN_1\[854] = \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xeq\[893]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:add_vv_vv_MODGEN_2_1\[855] = \Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:s_1\[910]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:add_vv_vv_MODGEN_2_0\[857] = \Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:s_0\[911]
+Removing Lhs of wire \Echo_Timer:TimerUDB:capt_fifo_load_int\[859] = \Echo_Timer:TimerUDB:capt_int_temp\[858]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:newa_1\[860] = \Echo_Timer:TimerUDB:sIntCapCount:MODIN1_1\[861]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODIN1_1\[861] = \Echo_Timer:TimerUDB:int_capt_count_1\[852]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:newa_0\[862] = \Echo_Timer:TimerUDB:sIntCapCount:MODIN1_0\[863]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODIN1_0\[863] = \Echo_Timer:TimerUDB:int_capt_count_0\[856]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:newb_1\[864] = \Echo_Timer:TimerUDB:sIntCapCount:MODIN2_1\[865]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODIN2_1\[865] = \Echo_Timer:TimerUDB:control_1\[827]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:newb_0\[866] = \Echo_Timer:TimerUDB:sIntCapCount:MODIN2_0\[867]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODIN2_0\[867] = \Echo_Timer:TimerUDB:control_0\[828]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:dataa_1\[868] = \Echo_Timer:TimerUDB:int_capt_count_1\[852]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:dataa_0\[869] = \Echo_Timer:TimerUDB:int_capt_count_0\[856]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:datab_1\[870] = \Echo_Timer:TimerUDB:control_1\[827]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:datab_0\[871] = \Echo_Timer:TimerUDB:control_0\[828]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:a_1\[872] = \Echo_Timer:TimerUDB:int_capt_count_1\[852]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:a_0\[873] = \Echo_Timer:TimerUDB:int_capt_count_0\[856]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:b_1\[874] = \Echo_Timer:TimerUDB:control_1\[827]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:b_0\[875] = \Echo_Timer:TimerUDB:control_0\[828]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:aeqb_0\[878] = one[24]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:eq_0\[879] = \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:xnor_array_0\[877]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:eqi_0\[881] = \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:eq_1\[880]
+Removing Rhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xeq\[893] = \Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:aeqb_1\[882]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:a_1\[904] = \Echo_Timer:TimerUDB:int_capt_count_1\[852]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODIN3_1\[905] = \Echo_Timer:TimerUDB:int_capt_count_1\[852]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:a_0\[906] = \Echo_Timer:TimerUDB:int_capt_count_0\[856]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODIN3_0\[907] = \Echo_Timer:TimerUDB:int_capt_count_0\[856]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_0\[913] = one[24]
+Removing Lhs of wire \Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_0\[914] = one[24]
+Removing Lhs of wire \Echo_Timer:TimerUDB:status_6\[918] = zero[8]
+Removing Lhs of wire \Echo_Timer:TimerUDB:status_5\[919] = zero[8]
+Removing Lhs of wire \Echo_Timer:TimerUDB:status_4\[920] = zero[8]
+Removing Lhs of wire \Echo_Timer:TimerUDB:status_0\[921] = \Echo_Timer:TimerUDB:status_tc\[844]
+Removing Lhs of wire \Echo_Timer:TimerUDB:status_1\[922] = \Echo_Timer:TimerUDB:capt_int_temp\[858]
+Removing Rhs of wire \Echo_Timer:TimerUDB:status_2\[923] = \Echo_Timer:TimerUDB:fifo_full\[924]
+Removing Rhs of wire \Echo_Timer:TimerUDB:status_3\[925] = \Echo_Timer:TimerUDB:fifo_nempty\[926]
+Removing Lhs of wire \Echo_Timer:TimerUDB:cs_addr_2\[928] = zero[8]
+Removing Lhs of wire \Echo_Timer:TimerUDB:cs_addr_1\[929] = \Echo_Timer:TimerUDB:trig_reg\[917]
+Removing Lhs of wire \Echo_Timer:TimerUDB:cs_addr_0\[930] = \Echo_Timer:TimerUDB:per_zero\[846]
+Removing Lhs of wire tmpOE__Pin_2_net_0[1015] = one[24]
+Removing Lhs of wire \Trigger_Timer:TimerUDB:capture_last\\D\[1041] = zero[8]
+Removing Lhs of wire \Trigger_Timer:TimerUDB:tc_reg_i\\D\[1042] = \Trigger_Timer:TimerUDB:status_tc\[602]
+Removing Lhs of wire \Trigger_Timer:TimerUDB:hwEnable_reg\\D\[1043] = \Trigger_Timer:TimerUDB:control_7\[580]
+Removing Lhs of wire \Trigger_Timer:TimerUDB:capture_out_reg_i\\D\[1044] = \Trigger_Timer:TimerUDB:capt_fifo_load\[598]
+Removing Lhs of wire \Echo_Timer:TimerUDB:capture_last\\D\[1045] = Net_914[838]
+Removing Lhs of wire \Echo_Timer:TimerUDB:hwEnable_reg\\D\[1046] = \Echo_Timer:TimerUDB:control_7\[821]
+Removing Lhs of wire \Echo_Timer:TimerUDB:tc_reg_i\\D\[1047] = \Echo_Timer:TimerUDB:status_tc\[844]
+Removing Lhs of wire \Echo_Timer:TimerUDB:capture_out_reg_i\\D\[1048] = \Echo_Timer:TimerUDB:capt_fifo_load\[840]
 
 ------------------------------------------------------
-Aliased 0 equations, 156 wires.
+Aliased 0 equations, 189 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -558,20 +615,56 @@ Note:  Expanding virtual equation for '\Trigger_Timer:TimerUDB:fifo_load_polariz
 Note:  Expanding virtual equation for '\Trigger_Timer:TimerUDB:timer_enable\' (cost = 0):
 \Trigger_Timer:TimerUDB:timer_enable\ <= (\Trigger_Timer:TimerUDB:control_7\);
 
-Note:  Expanding virtual equation for '\Echo_Timer:TimerUDB:fifo_load_polarized\' (cost = 0):
-\Echo_Timer:TimerUDB:fifo_load_polarized\ <=  ('0') ;
+Note:  Expanding virtual equation for '\Echo_Timer:TimerUDB:fifo_load_polarized\' (cost = 1):
+\Echo_Timer:TimerUDB:fifo_load_polarized\ <= ((not Net_914 and \Echo_Timer:TimerUDB:capture_last\));
+
+Note:  Expanding virtual equation for '\Echo_Timer:TimerUDB:capt_fifo_load\' (cost = 9):
+\Echo_Timer:TimerUDB:capt_fifo_load\ <= ((not Net_914 and \Echo_Timer:TimerUDB:capture_last\ and \Echo_Timer:TimerUDB:timer_enable\));
 
 Note:  Expanding virtual equation for '\Echo_Timer:TimerUDB:status_tc\' (cost = 3):
 \Echo_Timer:TimerUDB:status_tc\ <= ((\Echo_Timer:TimerUDB:run_mode\ and \Echo_Timer:TimerUDB:per_zero\));
 
+Note:  Expanding virtual equation for '\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:xnor_array_1\' (cost = 2):
+\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:xnor_array_1\ <= ((not \Echo_Timer:TimerUDB:control_1\ and not \Echo_Timer:TimerUDB:int_capt_count_1\)
+	OR (\Echo_Timer:TimerUDB:control_1\ and \Echo_Timer:TimerUDB:int_capt_count_1\));
+
+Note:  Expanding virtual equation for '\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:xnor_array_0\' (cost = 4):
+\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:xnor_array_0\ <= ((not \Echo_Timer:TimerUDB:control_0\ and not \Echo_Timer:TimerUDB:int_capt_count_0\)
+	OR (\Echo_Timer:TimerUDB:control_0\ and \Echo_Timer:TimerUDB:int_capt_count_0\));
+
+Note:  Expanding virtual equation for '\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:eq_1\' (cost = 4):
+\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:gx:u0:eq_1\ <= ((not \Echo_Timer:TimerUDB:control_1\ and not \Echo_Timer:TimerUDB:control_0\ and not \Echo_Timer:TimerUDB:int_capt_count_1\ and not \Echo_Timer:TimerUDB:int_capt_count_0\)
+	OR (not \Echo_Timer:TimerUDB:control_1\ and not \Echo_Timer:TimerUDB:int_capt_count_1\ and \Echo_Timer:TimerUDB:control_0\ and \Echo_Timer:TimerUDB:int_capt_count_0\)
+	OR (not \Echo_Timer:TimerUDB:control_0\ and not \Echo_Timer:TimerUDB:int_capt_count_0\ and \Echo_Timer:TimerUDB:control_1\ and \Echo_Timer:TimerUDB:int_capt_count_1\)
+	OR (\Echo_Timer:TimerUDB:control_1\ and \Echo_Timer:TimerUDB:control_0\ and \Echo_Timer:TimerUDB:int_capt_count_1\ and \Echo_Timer:TimerUDB:int_capt_count_0\));
+
+Note:  Expanding virtual equation for '\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xeq\' (cost = 60):
+\Echo_Timer:TimerUDB:sIntCapCount:MODULE_1:g1:a0:xeq\ <= ((not \Echo_Timer:TimerUDB:control_1\ and not \Echo_Timer:TimerUDB:control_0\ and not \Echo_Timer:TimerUDB:int_capt_count_1\ and not \Echo_Timer:TimerUDB:int_capt_count_0\)
+	OR (not \Echo_Timer:TimerUDB:control_1\ and not \Echo_Timer:TimerUDB:int_capt_count_1\ and \Echo_Timer:TimerUDB:control_0\ and \Echo_Timer:TimerUDB:int_capt_count_0\)
+	OR (not \Echo_Timer:TimerUDB:control_0\ and not \Echo_Timer:TimerUDB:int_capt_count_0\ and \Echo_Timer:TimerUDB:control_1\ and \Echo_Timer:TimerUDB:int_capt_count_1\)
+	OR (\Echo_Timer:TimerUDB:control_1\ and \Echo_Timer:TimerUDB:control_0\ and \Echo_Timer:TimerUDB:int_capt_count_1\ and \Echo_Timer:TimerUDB:int_capt_count_0\));
+
+Note:  Expanding virtual equation for '\Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_1\' (cost = 0):
+\Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_1\ <= (\Echo_Timer:TimerUDB:int_capt_count_0\);
+
+Note:  Expanding virtual equation for '\Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:s_0\' (cost = 0):
+\Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:s_0\ <= (not \Echo_Timer:TimerUDB:int_capt_count_0\);
+
 
 Substituting virtuals - pass 2:
+
+Note:  Expanding virtual equation for '\Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:s_1\' (cost = 8):
+\Echo_Timer:TimerUDB:sIntCapCount:MODULE_2:g2:a0:s_1\ <= ((not \Echo_Timer:TimerUDB:int_capt_count_0\ and \Echo_Timer:TimerUDB:int_capt_count_1\)
+	OR (not \Echo_Timer:TimerUDB:int_capt_count_1\ and \Echo_Timer:TimerUDB:int_capt_count_0\));
+
+
+Substituting virtuals - pass 3:
 
 
 ----------------------------------------------------------
 Circuit simplification results:
 
-	Expanded 7 signals.
+	Expanded 15 signals.
 	Turned 0 signals into soft nodes.
 	Maximum default expansion cost was set at 3.
 ----------------------------------------------------------
@@ -580,15 +673,13 @@ Circuit simplification results:
 Alias Detection
 ------------------------------------------------------
 Aliasing \Trigger_Timer:TimerUDB:capt_fifo_load\ to zero
-Aliasing \Echo_Timer:TimerUDB:capt_fifo_load\ to zero
 Removing Lhs of wire \Trigger_Timer:TimerUDB:capt_fifo_load\[598] = zero[8]
 Removing Lhs of wire \Trigger_Timer:TimerUDB:trig_reg\[612] = \Trigger_Timer:TimerUDB:control_7\[580]
-Removing Lhs of wire \Echo_Timer:TimerUDB:capt_fifo_load\[839] = zero[8]
-Removing Lhs of wire \Echo_Timer:TimerUDB:trig_reg\[855] = \Echo_Timer:TimerUDB:timer_enable\[840]
-Removing Lhs of wire \FanController:B_FanCtrl:stall_alrt\\D\[1073] = \FanController:Net_6149_0\[140]
+Removing Lhs of wire \Echo_Timer:TimerUDB:trig_reg\[917] = \Echo_Timer:TimerUDB:timer_enable\[841]
+Removing Lhs of wire \FanController:B_FanCtrl:stall_alrt\\D\[1039] = \FanController:Net_6149_0\[140]
 
 ------------------------------------------------------
-Aliased 0 equations, 5 wires.
+Aliased 0 equations, 4 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -616,36 +707,33 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\warp\bin/warp.exe
-Warp Arguments : -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya "-.fftprj=\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj" -dcpsoc3 FW_Fan_Control01.v -verilog
+Warp Arguments : -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -dcpsoc3 FW_Fan_Control01.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 4s.022ms
+Warp synthesis phase: Elapsed time ==> 10s.223ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V3.0.0.3140, Family: PSoC3, Started at: Tuesday, 05 December 2017 16:25:10
-Options: -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -d CY8C5868AXI-LP035 FW_Fan_Control01.v -verilog
+cyp3fit: V3.0.0.3140, Family: PSoC3, Started at: Wednesday, 13 December 2017 20:05:10
+Options: -yv2 -v3 -ygs -q10 -o2 -.fftcfgtype=LE -ya -.fftprj=D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\FW_Fan_Control01.cyprj -d CY8C5868AXI-LP035 FW_Fan_Control01.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.113ms
+Design parsing phase: Elapsed time ==> 0s.084ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
-    Converted constant MacroCell: \Echo_Timer:TimerUDB:capture_last\ from registered to combinatorial
-    Converted constant MacroCell: \Echo_Timer:TimerUDB:capture_out_reg_i\ from registered to combinatorial
     Converted constant MacroCell: \Trigger_Timer:TimerUDB:capture_last\ from registered to combinatorial
     Converted constant MacroCell: \Trigger_Timer:TimerUDB:capture_out_reg_i\ from registered to combinatorial
 Assigning clock FanController_BUS_CLK to clock BUS_CLK because it is a pass-through
 <CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
     Digital Clock 0: Automatic-assigning  clock 'ADC_DelSig_1_Ext_CP_Clk'. Fanout=1, Signal=\ADC_DelSig_1:Net_93\
-    Digital Clock 1: Automatic-assigning  clock 'clock_4'. Fanout=2, Signal=Net_291
-    Digital Clock 2: Automatic-assigning  clock 'Clock_1'. Fanout=1, Signal=Net_122
-    Digital Clock 3: Automatic-assigning  clock 'Clock_2'. Fanout=2, Signal=Net_83
-    Digital Clock 4: Automatic-assigning  clock 'FanController_TACH_CLK_500K'. Fanout=1, Signal=\FanController:tach_clk\
+    Digital Clock 1: Automatic-assigning  clock 'Clock_1'. Fanout=1, Signal=Net_122
+    Digital Clock 2: Automatic-assigning  clock 'Clock_2'. Fanout=2, Signal=Net_83
+    Digital Clock 3: Automatic-assigning  clock 'FanController_TACH_CLK_500K'. Fanout=1, Signal=\FanController:tach_clk\
+    Digital Clock 4: Automatic-assigning  clock 'clock_4'. Fanout=2, Signal=Net_291
     Analog  Clock 0: Automatic-assigning  clock 'ADC_DelSig_1_theACLK'. Fanout=1, Signal=\ADC_DelSig_1:Net_488\
     Digital Clock 5: Automatic-assigning  clock 'clock_3'. Fanout=2, Signal=Net_257
 </CYPRESSTAG>
 
 Removing unused cells resulting from optimization
-    Removed unused cell/equation '\Echo_Timer:TimerUDB:capture_last\:macrocell'
     Removed unused cell/equation '\Echo_Timer:TimerUDB:capture_out_reg_i\:macrocell'
     Removed unused cell/equation '\Echo_Timer:TimerUDB:tc_reg_i\:macrocell'
     Removed unused cell/equation '\FanController:pwm_2\:macrocell'
@@ -686,6 +774,9 @@ Done removing unused cells.
 </CYPRESSTAG>
 
 Removing unused cells resulting from optimization
+    Removed unused cell/equation '\Echo_Timer:TimerUDB:capt_int_temp\\D\:macrocell'
+    Removed unused cell/equation '\Echo_Timer:TimerUDB:int_capt_count_0\\D\:macrocell'
+    Removed unused cell/equation '\Echo_Timer:TimerUDB:int_capt_count_1\\D\:macrocell'
     Removed unused cell/equation '\Echo_Timer:TimerUDB:runmode_enable\\D\:macrocell'
     Removed unused cell/equation '\Echo_Timer:TimerUDB:trig_disable\\D\:macrocell'
     Removed unused cell/equation '\FanController:B_FanCtrl:alert_reg\\D\:macrocell'
@@ -1195,16 +1286,6 @@ Design Equations
     Macrocell listing
     ------------------------------------------------------------
 
-    MacroCell: Name=Net_162, Mode=(Combinatorial)
-        Total # of inputs        : 1
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !Net_914
-        );
-        Output = Net_162 (fanout=1)
-
     MacroCell: Name=Net_357, Mode=(D-Register)
         Total # of inputs        : 3
         Total # of product terms : 1
@@ -1246,6 +1327,117 @@ Design Equations
         );
         Output = Net_947 (fanout=2)
 
+    MacroCell: Name=\Echo_Timer:TimerUDB:capt_fifo_load\, Mode=(Combinatorial)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !Net_914 * \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\
+        );
+        Output = \Echo_Timer:TimerUDB:capt_fifo_load\ (fanout=2)
+
+    MacroCell: Name=\Echo_Timer:TimerUDB:capt_int_temp\, Mode=(D-Register)
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (Net_291) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\Echo_Timer:TimerUDB:control_1\ * 
+              !\Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              !\Echo_Timer:TimerUDB:int_capt_count_1\ * 
+              !\Echo_Timer:TimerUDB:int_capt_count_0\
+            + !\Echo_Timer:TimerUDB:control_1\ * 
+              \Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              !\Echo_Timer:TimerUDB:int_capt_count_1\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_0\
+            + \Echo_Timer:TimerUDB:control_1\ * 
+              !\Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_1\ * 
+              !\Echo_Timer:TimerUDB:int_capt_count_0\
+            + \Echo_Timer:TimerUDB:control_1\ * 
+              \Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_1\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_0\
+        );
+        Output = \Echo_Timer:TimerUDB:capt_int_temp\ (fanout=1)
+
+    MacroCell: Name=\Echo_Timer:TimerUDB:capture_last\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_291) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_914
+        );
+        Output = \Echo_Timer:TimerUDB:capture_last\ (fanout=4)
+
+    MacroCell: Name=\Echo_Timer:TimerUDB:int_capt_count_0\, Mode=(T-Register)
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (Net_291) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\Echo_Timer:TimerUDB:control_1\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_1\
+            + \Echo_Timer:TimerUDB:control_1\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              !\Echo_Timer:TimerUDB:int_capt_count_1\
+            + \Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\
+            + !Net_914 * \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_0\
+        );
+        Output = \Echo_Timer:TimerUDB:int_capt_count_0\ (fanout=3)
+
+    MacroCell: Name=\Echo_Timer:TimerUDB:int_capt_count_1\, Mode=(T-Register)
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (Net_291) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              \Echo_Timer:TimerUDB:control_1\ * 
+              !\Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_1\
+            + \Echo_Timer:TimerUDB:control_1\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_0\
+            + !\Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_0\
+            + !Net_914 * \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_1\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_0\
+        );
+        Output = \Echo_Timer:TimerUDB:int_capt_count_1\ (fanout=3)
+
     MacroCell: Name=\Echo_Timer:TimerUDB:run_mode\, Mode=(D-Register)
         Total # of inputs        : 1
         Total # of product terms : 1
@@ -1286,7 +1478,7 @@ Design Equations
               !\Echo_Timer:TimerUDB:per_zero\ * 
               !\Echo_Timer:TimerUDB:trig_disable\
         );
-        Output = \Echo_Timer:TimerUDB:timer_enable\ (fanout=6)
+        Output = \Echo_Timer:TimerUDB:timer_enable\ (fanout=8)
 
     MacroCell: Name=\Echo_Timer:TimerUDB:trig_disable\, Mode=(T-Register)
         Total # of inputs        : 4
@@ -1685,12 +1877,13 @@ Design Equations
     Datapath listing
     ------------------------------------------------------------
 
-    datapathcell: Name =\Echo_Timer:TimerUDB:sT32:timerdp:u0\
+    datapathcell: Name =\Echo_Timer:TimerUDB:sT16:timerdp:u0\
         PORT MAP (
             clock => Net_291 ,
             cs_addr_1 => \Echo_Timer:TimerUDB:timer_enable\ ,
             cs_addr_0 => \Echo_Timer:TimerUDB:per_zero\ ,
-            chain_out => \Echo_Timer:TimerUDB:sT32:timerdp:carry0\ );
+            f0_load => \Echo_Timer:TimerUDB:capt_fifo_load\ ,
+            chain_out => \Echo_Timer:TimerUDB:sT16:timerdp:carry\ );
         Properties:
         {
             a0_init = "00000000"
@@ -1717,89 +1910,18 @@ Design Equations
         }
         Clock Polarity: Active High
         Clock Enable: True
-        Next in chain : \Echo_Timer:TimerUDB:sT32:timerdp:u1\
+        Next in chain : \Echo_Timer:TimerUDB:sT16:timerdp:u1\
 
-    datapathcell: Name =\Echo_Timer:TimerUDB:sT32:timerdp:u1\
+    datapathcell: Name =\Echo_Timer:TimerUDB:sT16:timerdp:u1\
         PORT MAP (
             clock => Net_291 ,
             cs_addr_1 => \Echo_Timer:TimerUDB:timer_enable\ ,
             cs_addr_0 => \Echo_Timer:TimerUDB:per_zero\ ,
-            chain_in => \Echo_Timer:TimerUDB:sT32:timerdp:carry0\ ,
-            chain_out => \Echo_Timer:TimerUDB:sT32:timerdp:carry1\ );
-        Properties:
-        {
-            a0_init = "00000000"
-            a1_init = "00000000"
-            ce0_sync = 1
-            ce1_sync = 1
-            cl0_sync = 1
-            cl1_sync = 1
-            cmsb_sync = 1
-            co_msb_sync = 1
-            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
-            d0_init = "00000000"
-            d1_init = "00000000"
-            f0_blk_sync = 1
-            f0_bus_sync = 1
-            f1_blk_sync = 1
-            f1_bus_sync = 1
-            ff0_sync = 1
-            ff1_sync = 1
-            ov_msb_sync = 1
-            so_sync = 1
-            z0_sync = 1
-            z1_sync = 1
-        }
-        Clock Polarity: Active High
-        Clock Enable: True
-        Previous in chain : \Echo_Timer:TimerUDB:sT32:timerdp:u0\
-        Next in chain : \Echo_Timer:TimerUDB:sT32:timerdp:u2\
-
-    datapathcell: Name =\Echo_Timer:TimerUDB:sT32:timerdp:u2\
-        PORT MAP (
-            clock => Net_291 ,
-            cs_addr_1 => \Echo_Timer:TimerUDB:timer_enable\ ,
-            cs_addr_0 => \Echo_Timer:TimerUDB:per_zero\ ,
-            chain_in => \Echo_Timer:TimerUDB:sT32:timerdp:carry1\ ,
-            chain_out => \Echo_Timer:TimerUDB:sT32:timerdp:carry2\ );
-        Properties:
-        {
-            a0_init = "00000000"
-            a1_init = "00000000"
-            ce0_sync = 1
-            ce1_sync = 1
-            cl0_sync = 1
-            cl1_sync = 1
-            cmsb_sync = 1
-            co_msb_sync = 1
-            cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
-            d0_init = "00000000"
-            d1_init = "00000000"
-            f0_blk_sync = 1
-            f0_bus_sync = 1
-            f1_blk_sync = 1
-            f1_bus_sync = 1
-            ff0_sync = 1
-            ff1_sync = 1
-            ov_msb_sync = 1
-            so_sync = 1
-            z0_sync = 1
-            z1_sync = 1
-        }
-        Clock Polarity: Active High
-        Clock Enable: True
-        Previous in chain : \Echo_Timer:TimerUDB:sT32:timerdp:u1\
-        Next in chain : \Echo_Timer:TimerUDB:sT32:timerdp:u3\
-
-    datapathcell: Name =\Echo_Timer:TimerUDB:sT32:timerdp:u3\
-        PORT MAP (
-            clock => Net_291 ,
-            cs_addr_1 => \Echo_Timer:TimerUDB:timer_enable\ ,
-            cs_addr_0 => \Echo_Timer:TimerUDB:per_zero\ ,
+            f0_load => \Echo_Timer:TimerUDB:capt_fifo_load\ ,
             z0_comb => \Echo_Timer:TimerUDB:per_zero\ ,
             f0_bus_stat_comb => \Echo_Timer:TimerUDB:status_3\ ,
             f0_blk_stat_comb => \Echo_Timer:TimerUDB:status_2\ ,
-            chain_in => \Echo_Timer:TimerUDB:sT32:timerdp:carry2\ );
+            chain_in => \Echo_Timer:TimerUDB:sT16:timerdp:carry\ );
         Properties:
         {
             a0_init = "00000000"
@@ -1826,7 +1948,7 @@ Design Equations
         }
         Clock Polarity: Active High
         Clock Enable: True
-        Previous in chain : \Echo_Timer:TimerUDB:sT32:timerdp:u2\
+        Previous in chain : \Echo_Timer:TimerUDB:sT16:timerdp:u0\
 
     datapathcell: Name =\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u0\
         PORT MAP (
@@ -2196,7 +2318,9 @@ Design Equations
             clock => Net_291 ,
             status_3 => \Echo_Timer:TimerUDB:status_3\ ,
             status_2 => \Echo_Timer:TimerUDB:status_2\ ,
-            status_0 => \Echo_Timer:TimerUDB:status_tc\ );
+            status_1 => \Echo_Timer:TimerUDB:capt_int_temp\ ,
+            status_0 => \Echo_Timer:TimerUDB:status_tc\ ,
+            interrupt => Net_155 );
         Properties:
         {
             cy_force_order = 1
@@ -2394,7 +2518,7 @@ Design Equations
 
     interrupt: Name =end_echo_IRR
         PORT MAP (
-            interrupt => Net_162 );
+            interrupt => Net_155 );
         Properties:
         {
             int_type = "00"
@@ -2420,10 +2544,10 @@ Resource Type                 : Used : Free :  Max :  % Used
 Digital clock dividers        :    6 :    2 :    8 :  75.00%
 Analog clock dividers         :    1 :    3 :    4 :  25.00%
 Pins                          :   15 :   57 :   72 :  20.83%
-UDB Macrocells                :   31 :  161 :  192 :  16.15%
-UDB Unique Pterms             :   48 :  336 :  384 :  12.50%
-UDB Total Pterms              :   54 :      :      : 
-UDB Datapath Cells            :   13 :   11 :   24 :  54.17%
+UDB Macrocells                :   35 :  157 :  192 :  18.23%
+UDB Unique Pterms             :   61 :  323 :  384 :  15.89%
+UDB Total Pterms              :   67 :      :      : 
+UDB Datapath Cells            :   11 :   13 :   24 :  45.83%
 UDB Status Cells              :    5 :   19 :   24 :  20.83%
              Status Registers :    2 
             StatusI Registers :    3 
@@ -2449,9 +2573,9 @@ EMIF Fixed Blocks             :    0 :    1 :    1 :   0.00%
 LPF Fixed Blocks              :    0 :    2 :    2 :   0.00%
 SAR Fixed Blocks              :    0 :    2 :    2 :   0.00%
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.567ms
+Technology Mapping: Elapsed time ==> 1s.457ms
 Info: mpr.M0037: Unused pieces of the design have been optimized out. See the Tech mapping section of the report file for details. (App=cydsfit)
-Tech mapping phase: Elapsed time ==> 0s.671ms
+Tech mapping phase: Elapsed time ==> 1s.820ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 Info: apr.M0002: Analog signal "\ADC_DelSig_1:Net_690\" is connected to one terminal only. (App=cydsfit)
@@ -2486,10 +2610,10 @@ IO_1@[IOP=(3)][IoId=(1)] : tach_1(0) (fixed)
 DSM[0]@[FFB(DSM,0)] : \ADC_DelSig_1:DSM\
 Vref[6]@[FFB(Vref,6)] : \ADC_DelSig_1:vRef_2\
 
-Analog Placement phase: Elapsed time ==> 0s.204ms
+Analog Placement phase: Elapsed time ==> 0s.146ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
-Analog Routing phase: Elapsed time ==> 0s.011ms
+Analog Routing phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -2567,11 +2691,11 @@ Dump of CyP35AnalogRoutingResultsDB
 IsVddaHalfUsedForComp = False
 IsVddaHalfUsedForSar0 = False
 IsVddaHalfUsedForSar1 = False
-Analog Code Generation phase: Elapsed time ==> 0s.387ms
+Analog Code Generation phase: Elapsed time ==> 1s.425ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
-I2076: Total run-time: 1.5 sec.
+I2076: Total run-time: 4.4 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -2582,33 +2706,33 @@ PLD Packing Summary
 ------------------------------------------------------------
             Resource Type : Used : Free :  Max :  % Used
     ====================================================
-                     PLDs :   16 :   32 :   48 :  33.33%
+                     PLDs :   23 :   25 :   48 :  47.92%
 
 <CYPRESSTAG name="PLD Statistics">
 
         PLD Resource Type :     Average/LAB
     =======================================
-                   Inputs :            5.19
-                   Pterms :            3.31
-               Macrocells :            1.94
+                   Inputs :            4.78
+                   Pterms :            2.87
+               Macrocells :            1.52
 </CYPRESSTAG>
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.029ms
+PLD Packing: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.192ms
+Partitioning: Elapsed time ==> 0s.279ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Simulated Annealing">
-Annealing: Elapsed time ==> 0s.031ms
+Annealing: Elapsed time ==> 0s.001ms
 <CYPRESSTAG name="Simulated Annealing Results">
 The seed used for moves was 114161200.
-Inital cost was 287, final cost is 287 (0.00% improvement).</CYPRESSTAG>
+Inital cost was 315, final cost is 315 (0.00% improvement).</CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -2618,19 +2742,76 @@ Final Placement Summary
 
        Resource Type :      Count : Avg Inputs : Avg Outputs
     ========================================================
-                 UDB :         14 :       4.64 :       2.21
+                 UDB :         15 :       5.60 :       2.33
 <CYPRESSTAG name="Final Placement Details">
 <CYPRESSTAG name="Component Details">
 
 ------------------------------------------------------------
 Component Placement Details
 ------------------------------------------------------------
-UDB [UDB=(0,0)] is empty.
-UDB [UDB=(0,1)] is empty.
-UDB [UDB=(0,2)] contents:
-LAB@[UDB=(0,2)][LB=0] #macrocells=2, #inputs=3, #pterms=2
+UDB [UDB=(0,0)] contents:
+datapathcell: Name =\Trigger_Timer:TimerUDB:sT32:timerdp:u2\
+    PORT MAP (
+        clock => Net_257 ,
+        cs_addr_1 => \Trigger_Timer:TimerUDB:control_7\ ,
+        cs_addr_0 => \Trigger_Timer:TimerUDB:per_zero\ ,
+        chain_in => \Trigger_Timer:TimerUDB:sT32:timerdp:carry1\ ,
+        chain_out => \Trigger_Timer:TimerUDB:sT32:timerdp:carry2\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Previous in chain : \Trigger_Timer:TimerUDB:sT32:timerdp:u1\
+    Next in chain : \Trigger_Timer:TimerUDB:sT32:timerdp:u3\
+
+controlcell: Name =\Trigger_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
+    PORT MAP (
+        clock => Net_257 ,
+        control_7 => \Trigger_Timer:TimerUDB:control_7\ ,
+        control_6 => \Trigger_Timer:TimerUDB:control_6\ ,
+        control_5 => \Trigger_Timer:TimerUDB:control_5\ ,
+        control_4 => \Trigger_Timer:TimerUDB:control_4\ ,
+        control_3 => \Trigger_Timer:TimerUDB:control_3\ ,
+        control_2 => \Trigger_Timer:TimerUDB:control_2\ ,
+        control_1 => \Trigger_Timer:TimerUDB:control_1\ ,
+        control_0 => \Trigger_Timer:TimerUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(0,1)] contents:
+LAB@[UDB=(0,1)][LB=0] #macrocells=1, #inputs=2, #pterms=1
 {
-    [McSlotId=0]:     MacroCell: Name=Net_541, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=0]
+    [McSlotId=0]:     MacroCell: Name=Net_541, Mode=(D-Register) @ [UDB=(0,1)][LB=0][MC=0]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -2648,18 +2829,72 @@ LAB@[UDB=(0,2)][LB=0] #macrocells=2, #inputs=3, #pterms=2
 
     [McSlotId=1]: (empty)
     [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=Net_162, Mode=(Combinatorial) @ [UDB=(0,2)][LB=0][MC=3]
-        Total # of inputs        : 1
-        Total # of product terms : 1
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(0,1)][LB=1] #macrocells=2, #inputs=7, #pterms=8
+{
+    [McSlotId=0]:     MacroCell: Name=\Echo_Timer:TimerUDB:int_capt_count_1\, Mode=(T-Register) @ [UDB=(0,1)][LB=1][MC=0]
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (Net_291) => Global
             Clock Enable: True
-        Main Equation            : 1 pterm
+        Main Equation            : 4 pterms
         (
-              !Net_914
+              \Echo_Timer:TimerUDB:control_1\ * 
+              !\Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_1\
+            + \Echo_Timer:TimerUDB:control_1\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_0\
+            + !\Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_0\
+            + !Net_914 * \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_1\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_0\
         );
-        Output = Net_162 (fanout=1)
+        Output = \Echo_Timer:TimerUDB:int_capt_count_1\ (fanout=3)
         Properties               : 
         {
         }
+
+    [McSlotId=1]:     MacroCell: Name=\Echo_Timer:TimerUDB:int_capt_count_0\, Mode=(T-Register) @ [UDB=(0,1)][LB=1][MC=1]
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (Net_291) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\Echo_Timer:TimerUDB:control_1\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_1\
+            + \Echo_Timer:TimerUDB:control_1\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              !\Echo_Timer:TimerUDB:int_capt_count_1\
+            + \Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\
+            + !Net_914 * \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_0\
+        );
+        Output = \Echo_Timer:TimerUDB:int_capt_count_0\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
 }
 
 datapathcell: Name =\Trigger_Timer:TimerUDB:sT32:timerdp:u1\
@@ -2698,14 +2933,131 @@ datapathcell: Name =\Trigger_Timer:TimerUDB:sT32:timerdp:u1\
     Previous in chain : \Trigger_Timer:TimerUDB:sT32:timerdp:u0\
     Next in chain : \Trigger_Timer:TimerUDB:sT32:timerdp:u2\
 
-UDB [UDB=(0,3)] contents:
-datapathcell: Name =\Trigger_Timer:TimerUDB:sT32:timerdp:u2\
+controlcell: Name =\Echo_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
     PORT MAP (
-        clock => Net_257 ,
-        cs_addr_1 => \Trigger_Timer:TimerUDB:control_7\ ,
-        cs_addr_0 => \Trigger_Timer:TimerUDB:per_zero\ ,
-        chain_in => \Trigger_Timer:TimerUDB:sT32:timerdp:carry1\ ,
-        chain_out => \Trigger_Timer:TimerUDB:sT32:timerdp:carry2\ );
+        clock => Net_291 ,
+        control_7 => \Echo_Timer:TimerUDB:control_7\ ,
+        control_6 => \Echo_Timer:TimerUDB:control_6\ ,
+        control_5 => \Echo_Timer:TimerUDB:control_5\ ,
+        control_4 => \Echo_Timer:TimerUDB:control_4\ ,
+        control_3 => \Echo_Timer:TimerUDB:control_3\ ,
+        control_2 => \Echo_Timer:TimerUDB:control_2\ ,
+        control_1 => \Echo_Timer:TimerUDB:control_1\ ,
+        control_0 => \Echo_Timer:TimerUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(0,2)] contents:
+LAB@[UDB=(0,2)][LB=0] #macrocells=3, #inputs=7, #pterms=6
+{
+    [McSlotId=0]:     MacroCell: Name=\Echo_Timer:TimerUDB:capt_fifo_load\, Mode=(Combinatorial) @ [UDB=(0,2)][LB=0][MC=0]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !Net_914 * \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\
+        );
+        Output = \Echo_Timer:TimerUDB:capt_fifo_load\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\Echo_Timer:TimerUDB:capture_last\, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=1]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_291) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_914
+        );
+        Output = \Echo_Timer:TimerUDB:capture_last\ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\Echo_Timer:TimerUDB:capt_int_temp\, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=2]
+        Total # of inputs        : 7
+        Total # of product terms : 4
+        List of special equations: 
+            Clock  = (Net_291) => Global
+            Clock Enable: True
+        Main Equation            : 4 pterms
+        (
+              !\Echo_Timer:TimerUDB:control_1\ * 
+              !\Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              !\Echo_Timer:TimerUDB:int_capt_count_1\ * 
+              !\Echo_Timer:TimerUDB:int_capt_count_0\
+            + !\Echo_Timer:TimerUDB:control_1\ * 
+              \Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              !\Echo_Timer:TimerUDB:int_capt_count_1\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_0\
+            + \Echo_Timer:TimerUDB:control_1\ * 
+              !\Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_1\ * 
+              !\Echo_Timer:TimerUDB:int_capt_count_0\
+            + \Echo_Timer:TimerUDB:control_1\ * 
+              \Echo_Timer:TimerUDB:control_0\ * !Net_914 * 
+              \Echo_Timer:TimerUDB:capture_last\ * 
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_1\ * 
+              \Echo_Timer:TimerUDB:int_capt_count_0\
+        );
+        Output = \Echo_Timer:TimerUDB:capt_int_temp\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(0,2)][LB=1] #macrocells=1, #inputs=2, #pterms=1
+{
+    [McSlotId=0]:     MacroCell: Name=\Echo_Timer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(0,2)][LB=1][MC=0]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Echo_Timer:TimerUDB:run_mode\ * \Echo_Timer:TimerUDB:per_zero\
+        );
+        Output = \Echo_Timer:TimerUDB:status_tc\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\Echo_Timer:TimerUDB:sT16:timerdp:u1\
+    PORT MAP (
+        clock => Net_291 ,
+        cs_addr_1 => \Echo_Timer:TimerUDB:timer_enable\ ,
+        cs_addr_0 => \Echo_Timer:TimerUDB:per_zero\ ,
+        f0_load => \Echo_Timer:TimerUDB:capt_fifo_load\ ,
+        z0_comb => \Echo_Timer:TimerUDB:per_zero\ ,
+        f0_bus_stat_comb => \Echo_Timer:TimerUDB:status_3\ ,
+        f0_blk_stat_comb => \Echo_Timer:TimerUDB:status_2\ ,
+        chain_in => \Echo_Timer:TimerUDB:sT16:timerdp:carry\ );
     Properties:
     {
         a0_init = "00000000"
@@ -2732,77 +3084,55 @@ datapathcell: Name =\Trigger_Timer:TimerUDB:sT32:timerdp:u2\
     }
     Clock Polarity: Active High
     Clock Enable: True
-    Previous in chain : \Trigger_Timer:TimerUDB:sT32:timerdp:u1\
-    Next in chain : \Trigger_Timer:TimerUDB:sT32:timerdp:u3\
+    Previous in chain : \Echo_Timer:TimerUDB:sT16:timerdp:u0\
+
+statusicell: Name =\Echo_Timer:TimerUDB:rstSts:stsreg\
+    PORT MAP (
+        clock => Net_291 ,
+        status_3 => \Echo_Timer:TimerUDB:status_3\ ,
+        status_2 => \Echo_Timer:TimerUDB:status_2\ ,
+        status_1 => \Echo_Timer:TimerUDB:capt_int_temp\ ,
+        status_0 => \Echo_Timer:TimerUDB:status_tc\ ,
+        interrupt => Net_155 );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0000011"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(0,3)] contents:
+LAB@[UDB=(0,3)][LB=1] #macrocells=1, #inputs=0, #pterms=0
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=__ONE__, Mode=(Combinatorial) @ [UDB=(0,3)][LB=1][MC=2]
+        Total # of inputs        : 0
+        Total # of product terms : 0
+            Clock Enable: True
+        Main Equation            : 0 pterms
+        !(
+            0
+        );
+        Output = __ONE__ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
 
 UDB [UDB=(0,4)] is empty.
 UDB [UDB=(0,5)] is empty.
-UDB [UDB=(1,0)] is empty.
-UDB [UDB=(1,1)] is empty.
-UDB [UDB=(1,2)] contents:
-datapathcell: Name =\Trigger_Timer:TimerUDB:sT32:timerdp:u0\
-    PORT MAP (
-        clock => Net_257 ,
-        cs_addr_1 => \Trigger_Timer:TimerUDB:control_7\ ,
-        cs_addr_0 => \Trigger_Timer:TimerUDB:per_zero\ ,
-        chain_out => \Trigger_Timer:TimerUDB:sT32:timerdp:carry0\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-    Next in chain : \Trigger_Timer:TimerUDB:sT32:timerdp:u1\
-
-controlcell: Name =\Trigger_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
-    PORT MAP (
-        clock => Net_257 ,
-        control_7 => \Trigger_Timer:TimerUDB:control_7\ ,
-        control_6 => \Trigger_Timer:TimerUDB:control_6\ ,
-        control_5 => \Trigger_Timer:TimerUDB:control_5\ ,
-        control_4 => \Trigger_Timer:TimerUDB:control_4\ ,
-        control_3 => \Trigger_Timer:TimerUDB:control_3\ ,
-        control_2 => \Trigger_Timer:TimerUDB:control_2\ ,
-        control_1 => \Trigger_Timer:TimerUDB:control_1\ ,
-        control_0 => \Trigger_Timer:TimerUDB:control_0\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "11111111"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-UDB [UDB=(1,3)] contents:
-LAB@[UDB=(1,3)][LB=0] #macrocells=1, #inputs=2, #pterms=1
+UDB [UDB=(1,0)] contents:
+LAB@[UDB=(1,0)][LB=0] #macrocells=1, #inputs=2, #pterms=1
 {
     [McSlotId=0]: (empty)
     [McSlotId=1]: (empty)
     [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=\Trigger_Timer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(1,3)][LB=0][MC=3]
+    [McSlotId=3]:     MacroCell: Name=\Trigger_Timer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(1,0)][LB=0][MC=3]
         Total # of inputs        : 2
         Total # of product terms : 1
             Clock Enable: True
@@ -2869,12 +3199,48 @@ statusicell: Name =\Trigger_Timer:TimerUDB:rstSts:stsreg\
     Clock Polarity: Active High
     Clock Enable: True
 
-UDB [UDB=(1,4)] is empty.
-UDB [UDB=(1,5)] is empty.
-UDB [UDB=(2,0)] contents:
-LAB@[UDB=(2,0)][LB=0] #macrocells=4, #inputs=5, #pterms=6
+UDB [UDB=(1,1)] contents:
+LAB@[UDB=(1,1)][LB=0] #macrocells=2, #inputs=5, #pterms=2
 {
-    [McSlotId=0]:     MacroCell: Name=\Echo_Timer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=0]
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=\Echo_Timer:TimerUDB:trig_disable\, Mode=(T-Register) @ [UDB=(1,1)][LB=0][MC=2]
+        Total # of inputs        : 4
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_291) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Echo_Timer:TimerUDB:timer_enable\ * 
+              \Echo_Timer:TimerUDB:run_mode\ * \Echo_Timer:TimerUDB:per_zero\ * 
+              !\Echo_Timer:TimerUDB:trig_disable\
+        );
+        Output = \Echo_Timer:TimerUDB:trig_disable\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\Echo_Timer:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(1,1)][LB=0][MC=3]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_291) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Echo_Timer:TimerUDB:control_7\
+        );
+        Output = \Echo_Timer:TimerUDB:run_mode\ (fanout=3)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(1,1)][LB=1] #macrocells=1, #inputs=5, #pterms=3
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\Echo_Timer:TimerUDB:timer_enable\, Mode=(D-Register) @ [UDB=(1,1)][LB=1][MC=1]
         Total # of inputs        : 5
         Total # of product terms : 3
         List of special equations: 
@@ -2892,63 +3258,21 @@ LAB@[UDB=(2,0)][LB=0] #macrocells=4, #inputs=5, #pterms=6
               !\Echo_Timer:TimerUDB:per_zero\ * 
               !\Echo_Timer:TimerUDB:trig_disable\
         );
-        Output = \Echo_Timer:TimerUDB:timer_enable\ (fanout=6)
+        Output = \Echo_Timer:TimerUDB:timer_enable\ (fanout=8)
         Properties               : 
         {
         }
 
-    [McSlotId=1]:     MacroCell: Name=\Echo_Timer:TimerUDB:trig_disable\, Mode=(T-Register) @ [UDB=(2,0)][LB=0][MC=1]
-        Total # of inputs        : 4
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_291) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Echo_Timer:TimerUDB:timer_enable\ * 
-              \Echo_Timer:TimerUDB:run_mode\ * \Echo_Timer:TimerUDB:per_zero\ * 
-              !\Echo_Timer:TimerUDB:trig_disable\
-        );
-        Output = \Echo_Timer:TimerUDB:trig_disable\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\Echo_Timer:TimerUDB:run_mode\, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_291) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Echo_Timer:TimerUDB:control_7\
-        );
-        Output = \Echo_Timer:TimerUDB:run_mode\ (fanout=3)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\Echo_Timer:TimerUDB:status_tc\, Mode=(Combinatorial) @ [UDB=(2,0)][LB=0][MC=3]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Echo_Timer:TimerUDB:run_mode\ * \Echo_Timer:TimerUDB:per_zero\
-        );
-        Output = \Echo_Timer:TimerUDB:status_tc\ (fanout=1)
-        Properties               : 
-        {
-        }
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
 }
 
-datapathcell: Name =\Echo_Timer:TimerUDB:sT32:timerdp:u0\
+datapathcell: Name =\Trigger_Timer:TimerUDB:sT32:timerdp:u0\
     PORT MAP (
-        clock => Net_291 ,
-        cs_addr_1 => \Echo_Timer:TimerUDB:timer_enable\ ,
-        cs_addr_0 => \Echo_Timer:TimerUDB:per_zero\ ,
-        chain_out => \Echo_Timer:TimerUDB:sT32:timerdp:carry0\ );
+        clock => Net_257 ,
+        cs_addr_1 => \Trigger_Timer:TimerUDB:control_7\ ,
+        cs_addr_0 => \Trigger_Timer:TimerUDB:per_zero\ ,
+        chain_out => \Trigger_Timer:TimerUDB:sT32:timerdp:carry0\ );
     Properties:
     {
         a0_init = "00000000"
@@ -2975,55 +3299,16 @@ datapathcell: Name =\Echo_Timer:TimerUDB:sT32:timerdp:u0\
     }
     Clock Polarity: Active High
     Clock Enable: True
-    Next in chain : \Echo_Timer:TimerUDB:sT32:timerdp:u1\
+    Next in chain : \Trigger_Timer:TimerUDB:sT32:timerdp:u1\
 
-statusicell: Name =\Echo_Timer:TimerUDB:rstSts:stsreg\
-    PORT MAP (
-        clock => Net_291 ,
-        status_3 => \Echo_Timer:TimerUDB:status_3\ ,
-        status_2 => \Echo_Timer:TimerUDB:status_2\ ,
-        status_0 => \Echo_Timer:TimerUDB:status_tc\ );
-    Properties:
-    {
-        cy_force_order = 1
-        cy_int_mask = "1111111"
-        cy_md_select = "0000011"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-controlcell: Name =\Echo_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\
-    PORT MAP (
-        clock => Net_291 ,
-        control_7 => \Echo_Timer:TimerUDB:control_7\ ,
-        control_6 => \Echo_Timer:TimerUDB:control_6\ ,
-        control_5 => \Echo_Timer:TimerUDB:control_5\ ,
-        control_4 => \Echo_Timer:TimerUDB:control_4\ ,
-        control_3 => \Echo_Timer:TimerUDB:control_3\ ,
-        control_2 => \Echo_Timer:TimerUDB:control_2\ ,
-        control_1 => \Echo_Timer:TimerUDB:control_1\ ,
-        control_0 => \Echo_Timer:TimerUDB:control_0\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "11111111"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-UDB [UDB=(2,1)] contents:
-datapathcell: Name =\Echo_Timer:TimerUDB:sT32:timerdp:u3\
+UDB [UDB=(1,2)] contents:
+datapathcell: Name =\Echo_Timer:TimerUDB:sT16:timerdp:u0\
     PORT MAP (
         clock => Net_291 ,
         cs_addr_1 => \Echo_Timer:TimerUDB:timer_enable\ ,
         cs_addr_0 => \Echo_Timer:TimerUDB:per_zero\ ,
-        z0_comb => \Echo_Timer:TimerUDB:per_zero\ ,
-        f0_bus_stat_comb => \Echo_Timer:TimerUDB:status_3\ ,
-        f0_blk_stat_comb => \Echo_Timer:TimerUDB:status_2\ ,
-        chain_in => \Echo_Timer:TimerUDB:sT32:timerdp:carry2\ );
+        f0_load => \Echo_Timer:TimerUDB:capt_fifo_load\ ,
+        chain_out => \Echo_Timer:TimerUDB:sT16:timerdp:carry\ );
     Properties:
     {
         a0_init = "00000000"
@@ -3034,7 +3319,7 @@ datapathcell: Name =\Echo_Timer:TimerUDB:sT32:timerdp:u3\
         cl1_sync = 1
         cmsb_sync = 1
         co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
+        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000"
         d0_init = "00000000"
         d1_init = "00000000"
         f0_blk_sync = 1
@@ -3050,157 +3335,57 @@ datapathcell: Name =\Echo_Timer:TimerUDB:sT32:timerdp:u3\
     }
     Clock Polarity: Active High
     Clock Enable: True
-    Previous in chain : \Echo_Timer:TimerUDB:sT32:timerdp:u2\
+    Next in chain : \Echo_Timer:TimerUDB:sT16:timerdp:u1\
 
-UDB [UDB=(2,2)] contents:
-LAB@[UDB=(2,2)][LB=0] #macrocells=1, #inputs=3, #pterms=1
+UDB [UDB=(1,3)] is empty.
+UDB [UDB=(1,4)] is empty.
+UDB [UDB=(1,5)] is empty.
+UDB [UDB=(2,0)] contents:
+LAB@[UDB=(2,0)][LB=0] #macrocells=1, #inputs=6, #pterms=5
 {
     [McSlotId=0]: (empty)
     [McSlotId=1]: (empty)
-    [McSlotId=2]:     MacroCell: Name=Net_357, Mode=(D-Register) @ [UDB=(2,2)][LB=0][MC=2]
-        Total # of inputs        : 3
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_83) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        !(
-              \FanController:enable\ * 
-              !\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:cl0\ * 
-              !\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:ce0\
-        );
-        Output = Net_357 (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(2,2)][LB=1] #macrocells=1, #inputs=5, #pterms=2
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]: (empty)
-    [McSlotId=2]:     MacroCell: Name=\FanController:Net_6505\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=2]
-        Total # of inputs        : 5
-        Total # of product terms : 2
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\FanController:FanTach:tach_state_1\, Mode=(T-Register) @ [UDB=(2,0)][LB=0][MC=3]
+        Total # of inputs        : 6
+        Total # of product terms : 5
         List of special equations: 
             Clock  = (\FanController:tach_clk\) => Global
             Clock Enable: PosEdge(\FanController:enable\)
-        Main Equation            : 2 pterms
+        Main Equation            : 5 pterms
         (
+              !\FanController:FanTach:filtered_rising_tach\ * 
               \FanController:FanTach:tach_state_2\ * 
-              \FanController:FanTach:tach_state_1\ * 
+              !\FanController:FanTach:tach_state_1\ * 
               !\FanController:FanTach:tach_state_3\ * 
-              \FanController:Net_6505\
+              \FanController:FanTach:co_1\
+            + \FanController:FanTach:filtered_rising_tach\ * 
+              !\FanController:FanTach:tach_state_2\ * 
+              \FanController:FanTach:tach_state_0\ * 
+              !\FanController:FanTach:tach_state_3\
             + \FanController:FanTach:tach_state_2\ * 
+              !\FanController:FanTach:tach_state_1\ * 
+              \FanController:FanTach:tach_state_0\ * 
+              !\FanController:FanTach:tach_state_3\
+            + !\FanController:FanTach:tach_state_1\ * 
               \FanController:FanTach:tach_state_0\ * 
               !\FanController:FanTach:tach_state_3\ * 
-              \FanController:Net_6505\
+              \FanController:FanTach:co_1\
+            + \FanController:FanTach:tach_state_1\ * 
+              \FanController:FanTach:tach_state_3\
         );
-        Output = \FanController:Net_6505\ (fanout=1)
+        Output = \FanController:FanTach:tach_state_1\ (fanout=11)
         Properties               : 
         {
         }
-
-    [McSlotId=3]: (empty)
 }
 
-datapathcell: Name =\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u1\
-    PORT MAP (
-        clock => Net_83 ,
-        cs_addr_0 => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:z0\ ,
-        d0_load => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:z0\ ,
-        d1_load => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:z0\ ,
-        ce0_comb => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:ce0\ ,
-        cl0_comb => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:cl0\ ,
-        z0_comb => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:z0\ ,
-        ce1_comb => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:ce1\ ,
-        cl1_comb => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:cl1\ ,
-        chain_in => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:carry\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0100000001000000011011000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111111111111001011110000111100000000000011110000000000000000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-    Previous in chain : \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u0\
-
-UDB [UDB=(2,3)] contents:
-LAB@[UDB=(2,3)][LB=1] #macrocells=4, #inputs=8, #pterms=5
+LAB@[UDB=(2,0)][LB=1] #macrocells=1, #inputs=2, #pterms=1
 {
-    [McSlotId=0]:     MacroCell: Name=\FanController:FanTach:tach\, Mode=(D-Register) @ [UDB=(2,3)][LB=1][MC=0]
-        Total # of inputs        : 5
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\FanController:tach_clk\) => Global
-            Clock Enable: PosEdge(\FanController:enable\)
-        Main Equation            : 1 pterm
-        (
-              !\FanController:address_3\ * !\FanController:address_2\ * 
-              !\FanController:address_1\ * !\FanController:address_0\ * 
-              Net_714
-        );
-        Output = \FanController:FanTach:tach\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\FanController:FanTach:glitch_filter_ld\, Mode=(D-Register) @ [UDB=(2,3)][LB=1][MC=1]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (\FanController:tach_clk\) => Global
-            Clock Enable: PosEdge(\FanController:enable\)
-        Main Equation            : 1 pterm
-        !(
-              \FanController:FanTach:tach\ * 
-              !\FanController:FanTach:glitch_filter_state\
-        );
-        Output = \FanController:FanTach:glitch_filter_ld\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\FanController:FanTach:glitch_filter_state\, Mode=(D-Register) @ [UDB=(2,3)][LB=1][MC=2]
-        Total # of inputs        : 3
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\FanController:tach_clk\) => Global
-            Clock Enable: PosEdge(\FanController:enable\)
-        Main Equation            : 2 pterms
-        (
-              \FanController:FanTach:tach\ * 
-              \FanController:FanTach:glitch_filter_state\
-            + !\FanController:FanTach:glitch_filter_state\ * 
-              \FanController:FanTach:glitch_filter_tc\
-        );
-        Output = \FanController:FanTach:glitch_filter_state\ (fanout=3)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\FanController:FanTach:filtered_rising_tach\, Mode=(D-Register) @ [UDB=(2,3)][LB=1][MC=3]
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\FanController:drq\, Mode=(D-Register) @ [UDB=(2,0)][LB=1][MC=3]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -3208,10 +3393,10 @@ LAB@[UDB=(2,3)][LB=1] #macrocells=4, #inputs=8, #pterms=5
             Clock Enable: PosEdge(\FanController:enable\)
         Main Equation            : 1 pterm
         (
-              \FanController:FanTach:glitch_filter_state\ * 
-              \FanController:FanTach:glitch_filter_tc\
+              \FanController:FanTach:tach_state_2\ * 
+              \FanController:FanTach:tach_state_0\
         );
-        Output = \FanController:FanTach:filtered_rising_tach\ (fanout=3)
+        Output = \FanController:drq\ (fanout=1)
         Properties               : 
         {
         }
@@ -3253,75 +3438,10 @@ datapathcell: Name =\FanController:FanTach:FanTachCounter:u0\
     Clock Enable: PosEdge(\FanController:enable\)
     Next in chain : \FanController:FanTach:FanTachCounter:u1\
 
-count7cell: Name =\FanController:FanTach:FanCounter\
-    PORT MAP (
-        clock => \FanController:tach_clk\ ,
-        enable => \FanController:FanTach:next_fan\ ,
-        count_6 => \FanController:FanTach:fan_count_6\ ,
-        count_5 => \FanController:FanTach:fan_count_5\ ,
-        count_4 => \FanController:FanTach:fan_count_4\ ,
-        count_3 => \FanController:address_3\ ,
-        count_2 => \FanController:address_2\ ,
-        count_1 => \FanController:address_1\ ,
-        count_0 => \FanController:address_0\ ,
-        tc => \FanController:FanTach:fan_count_tc\ ,
-        clk_en => \FanController:enable\ );
-    Properties:
-    {
-        cy_alt_mode = 0
-        cy_init_value = "0000000"
-        cy_period = "0000000"
-        cy_route_en = 1
-        cy_route_ld = 0
-    }
-    Clock Polarity: Active High
-    Clock Enable: PosEdge(\FanController:enable\)
-
-UDB [UDB=(2,4)] contents:
-LAB@[UDB=(2,4)][LB=0] #macrocells=2, #inputs=5, #pterms=2
+UDB [UDB=(2,1)] contents:
+LAB@[UDB=(2,1)][LB=1] #macrocells=4, #inputs=5, #pterms=5
 {
-    [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\FanController:FanTach:stall_det\, Mode=(D-Register) @ [UDB=(2,4)][LB=0][MC=1]
-        Total # of inputs        : 5
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (\FanController:tach_clk\) => Global
-            Clock Enable: PosEdge(\FanController:enable\)
-        Main Equation            : 2 pterms
-        (
-              \FanController:FanTach:tach_state_2\ * 
-              \FanController:FanTach:tach_state_1\ * 
-              \FanController:FanTach:tach_state_0\ * 
-              !\FanController:FanTach:tach_state_3\
-            + \FanController:FanTach:tach_state_2\ * 
-              \FanController:FanTach:tach_state_0\ * 
-              !\FanController:FanTach:tach_state_3\ * 
-              \FanController:FanTach:stall_det\
-        );
-        Output = \FanController:FanTach:stall_det\ (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=__ONE__, Mode=(Combinatorial) @ [UDB=(2,4)][LB=0][MC=2]
-        Total # of inputs        : 0
-        Total # of product terms : 0
-            Clock Enable: True
-        Main Equation            : 0 pterms
-        !(
-            0
-        );
-        Output = __ONE__ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(2,4)][LB=1] #macrocells=3, #inputs=12, #pterms=6
-{
-    [McSlotId=0]:     MacroCell: Name=\FanController:FanTach:gf_dmp_state\, Mode=(D-Register) @ [UDB=(2,4)][LB=1][MC=0]
+    [McSlotId=0]:     MacroCell: Name=\FanController:FanTach:gf_dmp_state\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=0]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -3336,47 +3456,55 @@ LAB@[UDB=(2,4)][LB=1] #macrocells=3, #inputs=12, #pterms=6
         {
         }
 
-    [McSlotId=1]:     MacroCell: Name=\FanController:Net_6149_0\, Mode=(D-Register) @ [UDB=(2,4)][LB=1][MC=1]
-        Total # of inputs        : 5
-        Total # of product terms : 3
+    [McSlotId=1]:     MacroCell: Name=\FanController:FanTach:glitch_filter_ld\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
         List of special equations: 
             Clock  = (\FanController:tach_clk\) => Global
             Clock Enable: PosEdge(\FanController:enable\)
-        Main Equation            : 3 pterms
-        (
-              !\FanController:address_1\ * !\FanController:address_0\ * 
-              \FanController:FanTach:stall_det\ * 
-              \FanController:alert_mask_0\
-            + \FanController:address_1\ * \FanController:Net_6149_0\
-            + \FanController:address_0\ * \FanController:Net_6149_0\
+        Main Equation            : 1 pterm
+        !(
+              \FanController:FanTach:tach\ * 
+              !\FanController:FanTach:glitch_filter_state\
         );
-        Output = \FanController:Net_6149_0\ (fanout=3)
+        Output = \FanController:FanTach:glitch_filter_ld\ (fanout=1)
         Properties               : 
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=\FanController:FanTach:next_fan\, Mode=(D-Register) @ [UDB=(2,4)][LB=1][MC=2]
-        Total # of inputs        : 5
+    [McSlotId=2]:     MacroCell: Name=\FanController:FanTach:glitch_filter_state\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=2]
+        Total # of inputs        : 3
         Total # of product terms : 2
         List of special equations: 
             Clock  = (\FanController:tach_clk\) => Global
             Clock Enable: PosEdge(\FanController:enable\)
         Main Equation            : 2 pterms
         (
-              \FanController:FanTach:next_fan\ * 
-              \FanController:FanTach:tach_state_2\ * 
-              \FanController:FanTach:tach_state_0\ * 
-              !\FanController:FanTach:tach_state_3\
-            + \FanController:FanTach:tach_state_2\ * 
-              \FanController:FanTach:tach_state_1\ * 
-              !\FanController:FanTach:tach_state_3\
+              \FanController:FanTach:tach\ * 
+              \FanController:FanTach:glitch_filter_state\
+            + !\FanController:FanTach:glitch_filter_state\ * 
+              \FanController:FanTach:glitch_filter_tc\
         );
-        Output = \FanController:FanTach:next_fan\ (fanout=3)
+        Output = \FanController:FanTach:glitch_filter_state\ (fanout=3)
         Properties               : 
         {
         }
 
-    [McSlotId=3]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\FanController:FanTach:filtered_rising_tach\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\FanController:tach_clk\) => Global
+            Clock Enable: PosEdge(\FanController:enable\)
+        Main Equation            : 1 pterm
+        (
+              \FanController:FanTach:glitch_filter_state\ * 
+              \FanController:FanTach:glitch_filter_tc\
+        );
+        Output = \FanController:FanTach:filtered_rising_tach\ (fanout=3)
+        Properties               : 
+        {
+        }
 }
 
 datapathcell: Name =\FanController:FanTach:GlitchFilterTimer:u0\
@@ -3427,255 +3555,127 @@ statuscell: Name =\FanController:B_FanCtrl:StallError_LSB\
     Clock Polarity: Active High
     Clock Enable: True
 
-controlcell: Name =\FanController:B_FanCtrl:AlertMaskLSB\
-    PORT MAP (
-        clock => Net_83 ,
-        control_7 => \FanController:B_FanCtrl:alert_mask_control_lsb_7\ ,
-        control_6 => \FanController:B_FanCtrl:alert_mask_control_lsb_6\ ,
-        control_5 => \FanController:B_FanCtrl:alert_mask_control_lsb_5\ ,
-        control_4 => \FanController:B_FanCtrl:alert_mask_control_lsb_4\ ,
-        control_3 => \FanController:B_FanCtrl:alert_mask_control_lsb_3\ ,
-        control_2 => \FanController:B_FanCtrl:alert_mask_control_lsb_2\ ,
-        control_1 => \FanController:B_FanCtrl:alert_mask_control_lsb_1\ ,
-        control_0 => \FanController:alert_mask_0\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "11111111"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-UDB [UDB=(2,5)] is empty.
-UDB [UDB=(3,0)] contents:
-datapathcell: Name =\Echo_Timer:TimerUDB:sT32:timerdp:u1\
-    PORT MAP (
-        clock => Net_291 ,
-        cs_addr_1 => \Echo_Timer:TimerUDB:timer_enable\ ,
-        cs_addr_0 => \Echo_Timer:TimerUDB:per_zero\ ,
-        chain_in => \Echo_Timer:TimerUDB:sT32:timerdp:carry0\ ,
-        chain_out => \Echo_Timer:TimerUDB:sT32:timerdp:carry1\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-    Previous in chain : \Echo_Timer:TimerUDB:sT32:timerdp:u0\
-    Next in chain : \Echo_Timer:TimerUDB:sT32:timerdp:u2\
-
-UDB [UDB=(3,1)] contents:
-LAB@[UDB=(3,1)][LB=0] #macrocells=3, #inputs=7, #pterms=5
-{
-    [McSlotId=0]:     MacroCell: Name=\FanController:B_FanCtrl:alert_reg\, Mode=(D-Register) @ [UDB=(3,1)][LB=0][MC=0]
-        Total # of inputs        : 4
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (Net_83) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              \FanController:B_FanCtrl:control_0\ * 
-              \FanController:B_FanCtrl:interrupt\ * Net_947
-            + \FanController:B_FanCtrl:interrupt\ * 
-              \FanController:B_FanCtrl:alert_reg\ * !Net_947
-        );
-        Output = \FanController:B_FanCtrl:alert_reg\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=Net_947, Mode=(D-Register) @ [UDB=(3,1)][LB=0][MC=1]
-        Total # of inputs        : 3
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (Net_83) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              \FanController:Net_6081\ * !\FanController:B_FanCtrl:sync_nrq\
-            + !\FanController:B_FanCtrl:sync_nrq\ * 
-              \FanController:B_FanCtrl:continuous_nrq\
-        );
-        Output = Net_947 (fanout=2)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\FanController:B_FanCtrl:sync_nrq\, Mode=(D-Register) @ [UDB=(3,1)][LB=0][MC=2]
-        Total # of inputs        : 3
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (Net_83) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              \FanController:Net_6081\
-            + !\FanController:B_FanCtrl:sync_nrq\ * 
-              \FanController:B_FanCtrl:continuous_nrq\
-        );
-        Output = \FanController:B_FanCtrl:sync_nrq\ (fanout=3)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(3,1)][LB=1] #macrocells=1, #inputs=3, #pterms=2
-{
-    [McSlotId=0]:     MacroCell: Name=\FanController:B_FanCtrl:continuous_nrq\, Mode=(D-Register) @ [UDB=(3,1)][LB=1][MC=0]
-        Total # of inputs        : 3
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (ClockBlock_BUS_CLK) => Global
-            Clock Enable: True
-        Main Equation            : 2 pterms
-        (
-              \FanController:Net_6081\
-            + !\FanController:B_FanCtrl:sync_nrq\ * 
-              \FanController:B_FanCtrl:continuous_nrq\
-        );
-        Output = \FanController:B_FanCtrl:continuous_nrq\ (fanout=3)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-datapathcell: Name =\Echo_Timer:TimerUDB:sT32:timerdp:u2\
-    PORT MAP (
-        clock => Net_291 ,
-        cs_addr_1 => \Echo_Timer:TimerUDB:timer_enable\ ,
-        cs_addr_0 => \Echo_Timer:TimerUDB:per_zero\ ,
-        chain_in => \Echo_Timer:TimerUDB:sT32:timerdp:carry1\ ,
-        chain_out => \Echo_Timer:TimerUDB:sT32:timerdp:carry2\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-    Previous in chain : \Echo_Timer:TimerUDB:sT32:timerdp:u1\
-    Next in chain : \Echo_Timer:TimerUDB:sT32:timerdp:u3\
-
-statuscell: Name =\EOC_SR:sts:sts_reg\
-    PORT MAP (
-        clock => Net_122 ,
-        status_0 => Net_947 );
-    Properties:
-    {
-        cy_force_order = 1
-        cy_md_select = "00000001"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-UDB [UDB=(3,2)] contents:
-LAB@[UDB=(3,2)][LB=0] #macrocells=2, #inputs=4, #pterms=2
+UDB [UDB=(2,2)] contents:
+LAB@[UDB=(2,2)][LB=0] #macrocells=2, #inputs=10, #pterms=3
 {
     [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\FanController:drq\, Mode=(D-Register) @ [UDB=(3,2)][LB=0][MC=1]
-        Total # of inputs        : 2
+    [McSlotId=1]:     MacroCell: Name=\FanController:FanTach:tach\, Mode=(D-Register) @ [UDB=(2,2)][LB=0][MC=1]
+        Total # of inputs        : 5
         Total # of product terms : 1
         List of special equations: 
             Clock  = (\FanController:tach_clk\) => Global
             Clock Enable: PosEdge(\FanController:enable\)
         Main Equation            : 1 pterm
         (
-              \FanController:FanTach:tach_state_2\ * 
-              \FanController:FanTach:tach_state_0\
+              !\FanController:address_3\ * !\FanController:address_2\ * 
+              !\FanController:address_1\ * !\FanController:address_0\ * 
+              Net_714
         );
-        Output = \FanController:drq\ (fanout=1)
+        Output = \FanController:FanTach:tach\ (fanout=2)
         Properties               : 
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=\FanController:FanTach:tach_state_3\, Mode=(D-Register) @ [UDB=(3,2)][LB=0][MC=2]
-        Total # of inputs        : 3
-        Total # of product terms : 1
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\FanController:FanTach:stall_det\, Mode=(D-Register) @ [UDB=(2,2)][LB=0][MC=3]
+        Total # of inputs        : 5
+        Total # of product terms : 2
         List of special equations: 
             Clock  = (\FanController:tach_clk\) => Global
             Clock Enable: PosEdge(\FanController:enable\)
-        Main Equation            : 1 pterm
+        Main Equation            : 2 pterms
         (
               \FanController:FanTach:tach_state_2\ * 
               \FanController:FanTach:tach_state_1\ * 
+              \FanController:FanTach:tach_state_0\ * 
               !\FanController:FanTach:tach_state_3\
+            + \FanController:FanTach:tach_state_2\ * 
+              \FanController:FanTach:tach_state_0\ * 
+              !\FanController:FanTach:tach_state_3\ * 
+              \FanController:FanTach:stall_det\
         );
-        Output = \FanController:FanTach:tach_state_3\ (fanout=9)
+        Output = \FanController:FanTach:stall_det\ (fanout=2)
         Properties               : 
         {
         }
-
-    [McSlotId=3]: (empty)
 }
 
-LAB@[UDB=(3,2)][LB=1] #macrocells=2, #inputs=7, #pterms=3
+LAB@[UDB=(2,2)][LB=1] #macrocells=2, #inputs=10, #pterms=5
 {
-    [McSlotId=0]:     MacroCell: Name=\FanController:B_FanCtrl:stall_status\, Mode=(Combinatorial) @ [UDB=(3,2)][LB=1][MC=0]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\FanController:Net_6149_0\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=1]
+        Total # of inputs        : 5
+        Total # of product terms : 3
+        List of special equations: 
+            Clock  = (\FanController:tach_clk\) => Global
+            Clock Enable: PosEdge(\FanController:enable\)
+        Main Equation            : 3 pterms
         (
-              \FanController:B_FanCtrl:control_1\ * 
-              \FanController:B_FanCtrl:stall_alrt\
+              !\FanController:address_1\ * !\FanController:address_0\ * 
+              \FanController:FanTach:stall_det\ * 
+              \FanController:alert_mask_0\
+            + \FanController:address_1\ * \FanController:Net_6149_0\
+            + \FanController:address_0\ * \FanController:Net_6149_0\
         );
-        Output = \FanController:B_FanCtrl:stall_status\ (fanout=1)
+        Output = \FanController:Net_6149_0\ (fanout=3)
         Properties               : 
         {
         }
 
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\FanController:FanTach:next_fan\, Mode=(D-Register) @ [UDB=(2,2)][LB=1][MC=3]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\FanController:tach_clk\) => Global
+            Clock Enable: PosEdge(\FanController:enable\)
+        Main Equation            : 2 pterms
+        (
+              \FanController:FanTach:next_fan\ * 
+              \FanController:FanTach:tach_state_2\ * 
+              \FanController:FanTach:tach_state_0\ * 
+              !\FanController:FanTach:tach_state_3\
+            + \FanController:FanTach:tach_state_2\ * 
+              \FanController:FanTach:tach_state_1\ * 
+              !\FanController:FanTach:tach_state_3\
+        );
+        Output = \FanController:FanTach:next_fan\ (fanout=3)
+        Properties               : 
+        {
+        }
+}
+
+count7cell: Name =\FanController:FanTach:FanCounter\
+    PORT MAP (
+        clock => \FanController:tach_clk\ ,
+        enable => \FanController:FanTach:next_fan\ ,
+        count_6 => \FanController:FanTach:fan_count_6\ ,
+        count_5 => \FanController:FanTach:fan_count_5\ ,
+        count_4 => \FanController:FanTach:fan_count_4\ ,
+        count_3 => \FanController:address_3\ ,
+        count_2 => \FanController:address_2\ ,
+        count_1 => \FanController:address_1\ ,
+        count_0 => \FanController:address_0\ ,
+        tc => \FanController:FanTach:fan_count_tc\ ,
+        clk_en => \FanController:enable\ );
+    Properties:
+    {
+        cy_alt_mode = 0
+        cy_init_value = "0000000"
+        cy_period = "0000000"
+        cy_route_en = 1
+        cy_route_ld = 0
+    }
+    Clock Polarity: Active High
+    Clock Enable: PosEdge(\FanController:enable\)
+
+UDB [UDB=(2,3)] contents:
+LAB@[UDB=(2,3)][LB=0] #macrocells=1, #inputs=5, #pterms=2
+{
+    [McSlotId=0]: (empty)
     [McSlotId=1]: (empty)
     [McSlotId=2]: (empty)
-    [McSlotId=3]:     MacroCell: Name=\FanController:FanTach:pulse_tc\, Mode=(D-Register) @ [UDB=(3,2)][LB=1][MC=3]
+    [McSlotId=3]:     MacroCell: Name=\FanController:FanTach:pulse_tc\, Mode=(D-Register) @ [UDB=(2,3)][LB=0][MC=3]
         Total # of inputs        : 5
         Total # of product terms : 2
         List of special equations: 
@@ -3696,6 +3696,30 @@ LAB@[UDB=(3,2)][LB=1] #macrocells=2, #inputs=7, #pterms=3
         Properties               : 
         {
         }
+}
+
+LAB@[UDB=(2,3)][LB=1] #macrocells=1, #inputs=3, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=\FanController:FanTach:tach_state_3\, Mode=(D-Register) @ [UDB=(2,3)][LB=1][MC=2]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (\FanController:tach_clk\) => Global
+            Clock Enable: PosEdge(\FanController:enable\)
+        Main Equation            : 1 pterm
+        (
+              \FanController:FanTach:tach_state_2\ * 
+              \FanController:FanTach:tach_state_1\ * 
+              !\FanController:FanTach:tach_state_3\
+        );
+        Output = \FanController:FanTach:tach_state_3\ (fanout=9)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
 }
 
 datapathcell: Name =\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u0\
@@ -3733,35 +3757,21 @@ datapathcell: Name =\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoop
     Clock Enable: True
     Next in chain : \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u1\
 
-statusicell: Name =\FanController:B_FanCtrl:AlertStatusReg\
+controlcell: Name =\FanController:B_FanCtrl:AlertMaskLSB\
     PORT MAP (
         clock => Net_83 ,
-        status_0 => \FanController:B_FanCtrl:stall_status\ ,
-        interrupt => \FanController:B_FanCtrl:interrupt\ );
-    Properties:
-    {
-        cy_force_order = 1
-        cy_int_mask = "1111111"
-        cy_md_select = "0000011"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-controlcell: Name =\FanController:B_FanCtrl:GlobalControlReg\
-    PORT MAP (
-        clock => Net_83 ,
-        control_7 => \FanController:B_FanCtrl:control_7\ ,
-        control_6 => \FanController:B_FanCtrl:control_6\ ,
-        control_5 => \FanController:enable\ ,
-        control_4 => \FanController:B_FanCtrl:control_4\ ,
-        control_3 => \FanController:B_FanCtrl:control_3\ ,
-        control_2 => \FanController:B_FanCtrl:control_2\ ,
-        control_1 => \FanController:B_FanCtrl:control_1\ ,
-        control_0 => \FanController:B_FanCtrl:control_0\ );
+        control_7 => \FanController:B_FanCtrl:alert_mask_control_lsb_7\ ,
+        control_6 => \FanController:B_FanCtrl:alert_mask_control_lsb_6\ ,
+        control_5 => \FanController:B_FanCtrl:alert_mask_control_lsb_5\ ,
+        control_4 => \FanController:B_FanCtrl:alert_mask_control_lsb_4\ ,
+        control_3 => \FanController:B_FanCtrl:alert_mask_control_lsb_3\ ,
+        control_2 => \FanController:B_FanCtrl:alert_mask_control_lsb_2\ ,
+        control_1 => \FanController:B_FanCtrl:alert_mask_control_lsb_1\ ,
+        control_0 => \FanController:alert_mask_0\ );
     Properties:
     {
         cy_ctrl_mode_0 = "11111111"
-        cy_ctrl_mode_1 = "00011000"
+        cy_ctrl_mode_1 = "00000000"
         cy_ext_reset = 0
         cy_force_order = 1
         cy_init_value = "00000000"
@@ -3769,10 +3779,15 @@ controlcell: Name =\FanController:B_FanCtrl:GlobalControlReg\
     Clock Polarity: Active High
     Clock Enable: True
 
-UDB [UDB=(3,3)] contents:
-LAB@[UDB=(3,3)][LB=0] #macrocells=2, #inputs=7, #pterms=8
+UDB [UDB=(2,4)] is empty.
+UDB [UDB=(2,5)] is empty.
+UDB [UDB=(3,0)] contents:
+LAB@[UDB=(3,0)][LB=0] #macrocells=1, #inputs=7, #pterms=5
 {
-    [McSlotId=0]:     MacroCell: Name=\FanController:FanTach:tach_state_0\, Mode=(D-Register) @ [UDB=(3,3)][LB=0][MC=0]
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=\FanController:FanTach:tach_state_0\, Mode=(D-Register) @ [UDB=(3,0)][LB=0][MC=3]
         Total # of inputs        : 7
         Total # of product terms : 5
         List of special equations: 
@@ -3806,8 +3821,12 @@ LAB@[UDB=(3,3)][LB=0] #macrocells=2, #inputs=7, #pterms=8
         Properties               : 
         {
         }
+}
 
-    [McSlotId=1]:     MacroCell: Name=\FanController:FanTach:tach_state_2\, Mode=(D-Register) @ [UDB=(3,3)][LB=0][MC=1]
+LAB@[UDB=(3,0)][LB=1] #macrocells=1, #inputs=6, #pterms=3
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\FanController:FanTach:tach_state_2\, Mode=(D-Register) @ [UDB=(3,0)][LB=1][MC=1]
         Total # of inputs        : 6
         Total # of product terms : 3
         List of special equations: 
@@ -3830,46 +3849,6 @@ LAB@[UDB=(3,3)][LB=0] #macrocells=2, #inputs=7, #pterms=8
               !\FanController:FanTach:tach_state_3\
         );
         Output = \FanController:FanTach:tach_state_2\ (fanout=12)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(3,3)][LB=1] #macrocells=1, #inputs=6, #pterms=5
-{
-    [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\FanController:FanTach:tach_state_1\, Mode=(T-Register) @ [UDB=(3,3)][LB=1][MC=1]
-        Total # of inputs        : 6
-        Total # of product terms : 5
-        List of special equations: 
-            Clock  = (\FanController:tach_clk\) => Global
-            Clock Enable: PosEdge(\FanController:enable\)
-        Main Equation            : 5 pterms
-        (
-              !\FanController:FanTach:filtered_rising_tach\ * 
-              \FanController:FanTach:tach_state_2\ * 
-              !\FanController:FanTach:tach_state_1\ * 
-              !\FanController:FanTach:tach_state_3\ * 
-              \FanController:FanTach:co_1\
-            + \FanController:FanTach:filtered_rising_tach\ * 
-              !\FanController:FanTach:tach_state_2\ * 
-              \FanController:FanTach:tach_state_0\ * 
-              !\FanController:FanTach:tach_state_3\
-            + \FanController:FanTach:tach_state_2\ * 
-              !\FanController:FanTach:tach_state_1\ * 
-              \FanController:FanTach:tach_state_0\ * 
-              !\FanController:FanTach:tach_state_3\
-            + !\FanController:FanTach:tach_state_1\ * 
-              \FanController:FanTach:tach_state_0\ * 
-              !\FanController:FanTach:tach_state_3\ * 
-              \FanController:FanTach:co_1\
-            + \FanController:FanTach:tach_state_1\ * 
-              \FanController:FanTach:tach_state_3\
-        );
-        Output = \FanController:FanTach:tach_state_1\ (fanout=11)
         Properties               : 
         {
         }
@@ -3915,11 +3894,231 @@ datapathcell: Name =\FanController:FanTach:FanTachCounter:u1\
     Clock Enable: PosEdge(\FanController:enable\)
     Previous in chain : \FanController:FanTach:FanTachCounter:u0\
 
-UDB [UDB=(3,4)] contents:
-LAB@[UDB=(3,4)][LB=0] #macrocells=1, #inputs=5, #pterms=2
+UDB [UDB=(3,1)] contents:
+LAB@[UDB=(3,1)][LB=0] #macrocells=2, #inputs=5, #pterms=3
 {
     [McSlotId=0]: (empty)
-    [McSlotId=1]:     MacroCell: Name=\FanController:Net_6146\, Mode=(D-Register) @ [UDB=(3,4)][LB=0][MC=1]
+    [McSlotId=1]:     MacroCell: Name=\FanController:B_FanCtrl:alert_reg\, Mode=(D-Register) @ [UDB=(3,1)][LB=0][MC=1]
+        Total # of inputs        : 4
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_83) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \FanController:B_FanCtrl:control_0\ * 
+              \FanController:B_FanCtrl:interrupt\ * Net_947
+            + \FanController:B_FanCtrl:interrupt\ * 
+              \FanController:B_FanCtrl:alert_reg\ * !Net_947
+        );
+        Output = \FanController:B_FanCtrl:alert_reg\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\FanController:B_FanCtrl:stall_alrt\, Mode=(D-Register) @ [UDB=(3,1)][LB=0][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_83) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \FanController:Net_6149_0\
+        );
+        Output = \FanController:B_FanCtrl:stall_alrt\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(3,1)][LB=1] #macrocells=2, #inputs=7, #pterms=3
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\FanController:B_FanCtrl:stall_status\, Mode=(Combinatorial) @ [UDB=(3,1)][LB=1][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \FanController:B_FanCtrl:control_1\ * 
+              \FanController:B_FanCtrl:stall_alrt\
+        );
+        Output = \FanController:B_FanCtrl:stall_status\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\FanController:Net_6505\, Mode=(D-Register) @ [UDB=(3,1)][LB=1][MC=2]
+        Total # of inputs        : 5
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (\FanController:tach_clk\) => Global
+            Clock Enable: PosEdge(\FanController:enable\)
+        Main Equation            : 2 pterms
+        (
+              \FanController:FanTach:tach_state_2\ * 
+              \FanController:FanTach:tach_state_1\ * 
+              !\FanController:FanTach:tach_state_3\ * 
+              \FanController:Net_6505\
+            + \FanController:FanTach:tach_state_2\ * 
+              \FanController:FanTach:tach_state_0\ * 
+              !\FanController:FanTach:tach_state_3\ * 
+              \FanController:Net_6505\
+        );
+        Output = \FanController:Net_6505\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+statusicell: Name =\FanController:B_FanCtrl:AlertStatusReg\
+    PORT MAP (
+        clock => Net_83 ,
+        status_0 => \FanController:B_FanCtrl:stall_status\ ,
+        interrupt => \FanController:B_FanCtrl:interrupt\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0000011"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+controlcell: Name =\FanController:B_FanCtrl:GlobalControlReg\
+    PORT MAP (
+        clock => Net_83 ,
+        control_7 => \FanController:B_FanCtrl:control_7\ ,
+        control_6 => \FanController:B_FanCtrl:control_6\ ,
+        control_5 => \FanController:enable\ ,
+        control_4 => \FanController:B_FanCtrl:control_4\ ,
+        control_3 => \FanController:B_FanCtrl:control_3\ ,
+        control_2 => \FanController:B_FanCtrl:control_2\ ,
+        control_1 => \FanController:B_FanCtrl:control_1\ ,
+        control_0 => \FanController:B_FanCtrl:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00011000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(3,2)] contents:
+LAB@[UDB=(3,2)][LB=0] #macrocells=2, #inputs=3, #pterms=3
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=Net_947, Mode=(D-Register) @ [UDB=(3,2)][LB=0][MC=1]
+        Total # of inputs        : 3
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_83) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \FanController:Net_6081\ * !\FanController:B_FanCtrl:sync_nrq\
+            + !\FanController:B_FanCtrl:sync_nrq\ * 
+              \FanController:B_FanCtrl:continuous_nrq\
+        );
+        Output = Net_947 (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\FanController:B_FanCtrl:sync_nrq\, Mode=(D-Register) @ [UDB=(3,2)][LB=0][MC=2]
+        Total # of inputs        : 3
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_83) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \FanController:Net_6081\
+            + !\FanController:B_FanCtrl:sync_nrq\ * 
+              \FanController:B_FanCtrl:continuous_nrq\
+        );
+        Output = \FanController:B_FanCtrl:sync_nrq\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(3,2)][LB=1] #macrocells=1, #inputs=3, #pterms=2
+{
+    [McSlotId=0]:     MacroCell: Name=\FanController:B_FanCtrl:continuous_nrq\, Mode=(D-Register) @ [UDB=(3,2)][LB=1][MC=0]
+        Total # of inputs        : 3
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (ClockBlock_BUS_CLK) => Global
+            Clock Enable: True
+        Main Equation            : 2 pterms
+        (
+              \FanController:Net_6081\
+            + !\FanController:B_FanCtrl:sync_nrq\ * 
+              \FanController:B_FanCtrl:continuous_nrq\
+        );
+        Output = \FanController:B_FanCtrl:continuous_nrq\ (fanout=3)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+statuscell: Name =\EOC_SR:sts:sts_reg\
+    PORT MAP (
+        clock => Net_122 ,
+        status_0 => Net_947 );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_md_select = "00000001"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(3,3)] contents:
+LAB@[UDB=(3,3)][LB=0] #macrocells=1, #inputs=3, #pterms=1
+{
+    [McSlotId=0]:     MacroCell: Name=Net_357, Mode=(D-Register) @ [UDB=(3,3)][LB=0][MC=0]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_83) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        !(
+              \FanController:enable\ * 
+              !\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:cl0\ * 
+              !\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:ce0\
+        );
+        Output = Net_357 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(3,3)][LB=1] #macrocells=1, #inputs=5, #pterms=2
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=\FanController:Net_6146\, Mode=(D-Register) @ [UDB=(3,3)][LB=1][MC=2]
         Total # of inputs        : 5
         Total # of product terms : 2
         List of special equations: 
@@ -3941,38 +4140,56 @@ LAB@[UDB=(3,4)][LB=0] #macrocells=1, #inputs=5, #pterms=2
         {
         }
 
-    [McSlotId=2]: (empty)
     [McSlotId=3]: (empty)
 }
 
-LAB@[UDB=(3,4)][LB=1] #macrocells=1, #inputs=1, #pterms=1
-{
-    [McSlotId=0]:     MacroCell: Name=\FanController:B_FanCtrl:stall_alrt\, Mode=(D-Register) @ [UDB=(3,4)][LB=1][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_83) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \FanController:Net_6149_0\
-        );
-        Output = \FanController:B_FanCtrl:stall_alrt\ (fanout=1)
-        Properties               : 
-        {
-        }
+datapathcell: Name =\FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u1\
+    PORT MAP (
+        clock => Net_83 ,
+        cs_addr_0 => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:z0\ ,
+        d0_load => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:z0\ ,
+        d1_load => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:z0\ ,
+        ce0_comb => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:ce0\ ,
+        cl0_comb => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:cl0\ ,
+        z0_comb => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:z0\ ,
+        ce1_comb => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:ce1\ ,
+        cl1_comb => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:cl1\ ,
+        chain_in => \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0100000001000000011011000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111111111111001011110000111100000000000011110000000000000000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Previous in chain : \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u0\
 
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
+UDB [UDB=(3,4)] is empty.
 UDB [UDB=(3,5)] is empty.
 Intr hod @ [IntrHod=(0)]: 
   Intr@ [IntrHod=(0)][IntrId=(0)] 
     interrupt: Name =end_echo_IRR
         PORT MAP (
-            interrupt => Net_162 );
+            interrupt => Net_155 );
         Properties:
         {
             int_type = "00"
@@ -4509,14 +4726,14 @@ Fixed Function block hod @ [FFB(Clock,0)]:
             imo => ClockBlock_IMO ,
             dclk_glb_0 => \ADC_DelSig_1:Net_93\ ,
             dclk_0 => \ADC_DelSig_1:Net_93_local\ ,
-            dclk_glb_1 => Net_291 ,
-            dclk_1 => Net_291_local ,
-            dclk_glb_2 => Net_122 ,
-            dclk_2 => Net_122_local ,
-            dclk_glb_3 => Net_83 ,
-            dclk_3 => Net_83_local ,
-            dclk_glb_4 => \FanController:tach_clk\ ,
-            dclk_4 => \FanController:tach_clk_local\ ,
+            dclk_glb_1 => Net_122 ,
+            dclk_1 => Net_122_local ,
+            dclk_glb_2 => Net_83 ,
+            dclk_2 => Net_83_local ,
+            dclk_glb_3 => \FanController:tach_clk\ ,
+            dclk_3 => \FanController:tach_clk_local\ ,
+            dclk_glb_4 => Net_291 ,
+            dclk_4 => Net_291_local ,
             aclk_glb_0 => \ADC_DelSig_1:Net_488\ ,
             aclk_0 => \ADC_DelSig_1:Net_488_local\ ,
             clk_a_dig_glb_0 => \ADC_DelSig_1:Net_488_adig\ ,
@@ -4647,32 +4864,32 @@ Port | Pin | Fixed |      Type |       Drive Mode |             Name | Connectio
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.036ms
-Digital Placement phase: Elapsed time ==> 2s.413ms
+Digital component placer commit/Report: Elapsed time ==> 0s.015ms
+Digital Placement phase: Elapsed time ==> 5s.717ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 2s.916ms
+Digital Routing phase: Elapsed time ==> 6s.630ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
-Bitstream and API generation phase: Elapsed time ==> 0s.699ms
+Bitstream and API generation phase: Elapsed time ==> 0s.931ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
-Bitstream verification phase: Elapsed time ==> 0s.107ms
+Bitstream verification phase: Elapsed time ==> 0s.216ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in FW_Fan_Control01_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.813ms
+Static timing analysis phase: Elapsed time ==> 1s.943ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
-Data reporting phase: Elapsed time ==> 0s.005ms
+Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.211ms
+Design database save phase: Elapsed time ==> 0s.915ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 8s.651ms
+cydsfit: Elapsed time ==> 19s.912ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 8s.704ms
-API generation phase: Elapsed time ==> 3s.069ms
-Dependency generation phase: Elapsed time ==> 0s.029ms
-Cleanup phase: Elapsed time ==> 0s.011ms
+Fitter phase: Elapsed time ==> 20s.013ms
+API generation phase: Elapsed time ==> 4s.431ms
+Dependency generation phase: Elapsed time ==> 0s.037ms
+Cleanup phase: Elapsed time ==> 0s.000ms

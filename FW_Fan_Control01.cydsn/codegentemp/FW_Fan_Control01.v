@@ -1,6 +1,6 @@
 // ======================================================================
 // FW_Fan_Control01.v generated from TopDesign.cysch
-// 12/05/2017 at 16:25
+// 12/13/2017 at 20:04
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -906,7 +906,7 @@ module Timer_v2_60_3 (
 
 endmodule
 
-// Timer_v2_60(CaptureAlternatingFall=false, CaptureAlternatingRise=false, CaptureCount=2, CaptureCounterEnabled=false, CaptureInputEnabled=false, CaptureMode=0, CONTROL3=0, ControlRegRemoved=0, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG32, CySetRegReplacementString=CY_SET_REG32, DeviceFamily=PSoC5, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, HWCaptureCounterEnabled=false, InterruptOnCapture=false, InterruptOnFIFOFull=false, InterruptOnTC=false, IntOnCapture=0, IntOnFIFOFull=0, IntOnTC=0, NumberOfCaptures=1, param45=1, Period=4799999, RegDefReplacementString=reg32, RegSizeReplacementString=uint32, Resolution=32, RstStatusReplacementString=rstSts, RunMode=1, SiliconRevision=0, SoftwareCaptureModeEnabled=false, SoftwareTriggerModeEnabled=false, TriggerInputEnabled=false, TriggerMode=0, UDB16=false, UDB24=false, UDB32=true, UDB8=false, UDBControlReg=true, UsesHWEnable=0, VerilogSectionReplacementString=sT32, CY_COMPONENT_NAME=Timer_v2_60, CY_CONTROL_FILE=<:default:>, CY_FITTER_NAME=Echo_Timer, CY_INSTANCE_SHORT_NAME=Echo_Timer, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=60, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=cydsfit No Version Information Found, INSTANCE_NAME=Echo_Timer, )
+// Timer_v2_60(CaptureAlternatingFall=false, CaptureAlternatingRise=false, CaptureCount=2, CaptureCounterEnabled=false, CaptureInputEnabled=true, CaptureMode=2, CONTROL3=0, ControlRegRemoved=0, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DeviceFamily=PSoC5, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, HWCaptureCounterEnabled=false, InterruptOnCapture=true, InterruptOnFIFOFull=false, InterruptOnTC=false, IntOnCapture=1, IntOnFIFOFull=0, IntOnTC=0, NumberOfCaptures=1, param45=1, Period=65535, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, Resolution=16, RstStatusReplacementString=rstSts, RunMode=1, SiliconRevision=0, SoftwareCaptureModeEnabled=false, SoftwareTriggerModeEnabled=false, TriggerInputEnabled=false, TriggerMode=0, UDB16=true, UDB24=false, UDB32=false, UDB8=false, UDBControlReg=true, UsesHWEnable=0, VerilogSectionReplacementString=sT16, CY_COMPONENT_NAME=Timer_v2_60, CY_CONTROL_FILE=<:default:>, CY_FITTER_NAME=Echo_Timer, CY_INSTANCE_SHORT_NAME=Echo_Timer, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=60, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=cydsfit No Version Information Found, INSTANCE_NAME=Echo_Timer, )
 module Timer_v2_60_4 (
     clock,
     reset,
@@ -928,9 +928,9 @@ module Timer_v2_60_4 (
     parameter CaptureCount = 2;
     parameter CaptureCounterEnabled = 0;
     parameter DeviceFamily = "PSoC5";
-    parameter InterruptOnCapture = 0;
+    parameter InterruptOnCapture = 1;
     parameter InterruptOnTC = 0;
-    parameter Resolution = 32;
+    parameter Resolution = 16;
     parameter SiliconRevision = "0";
 
           wire  Net_261;
@@ -962,10 +962,10 @@ module Timer_v2_60_4 (
         .clock(clock));
     defparam TimerUDB.Capture_Count = 2;
     defparam TimerUDB.CaptureCounterEnabled = 0;
-    defparam TimerUDB.CaptureMode = 0;
+    defparam TimerUDB.CaptureMode = 2;
     defparam TimerUDB.EnableMode = 0;
-    defparam TimerUDB.InterruptOnCapture = 0;
-    defparam TimerUDB.Resolution = 32;
+    defparam TimerUDB.InterruptOnCapture = 1;
+    defparam TimerUDB.Resolution = 16;
     defparam TimerUDB.RunMode = 1;
     defparam TimerUDB.TriggerMode = 0;
 
@@ -979,36 +979,20 @@ module Timer_v2_60_4 (
 
 endmodule
 
-// Component: not_v1_0
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "$CYPRESS_DIR\..\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0"
-`include "$CYPRESS_DIR\..\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v"
-`endif
-
 // top
 module top ;
 
-          wire  Net_162;
           wire  Net_164;
           wire  Net_160;
           wire  Net_159;
-          wire  Net_158;
           wire  Net_157;
           wire  Net_156;
-          wire  Net_155;
           wire  Net_163;
-          wire  Net_153;
-          wire  Net_152;
-          wire  Net_151;
-          wire  Net_150;
-          wire  Net_149;
+          wire  Net_179;
+          wire  Net_178;
+          wire  Net_177;
+          wire  Net_176;
+          wire  Net_175;
           wire  Net_145;
     electrical  Net_144;
           wire  Net_143;
@@ -1086,9 +1070,10 @@ module top ;
           wire  Net_46;
           wire  Net_45;
           wire  Net_599;
-          wire  Net_914;
-          wire  Net_291;
+          wire  Net_155;
           wire  Net_284;
+          wire  Net_291;
+          wire  Net_914;
           wire  Net_541;
           wire  Net_257;
           wire  Net_135;
@@ -1468,11 +1453,11 @@ module top ;
 
     Timer_v2_60_3 Trigger_Timer (
         .reset(Net_135),
-        .interrupt(Net_149),
+        .interrupt(Net_175),
         .enable(1'b1),
         .trigger(1'b1),
         .capture(1'b0),
-        .capture_out(Net_153),
+        .capture_out(Net_179),
         .tc(Net_541),
         .clock(Net_257));
     defparam Trigger_Timer.CaptureCount = 2;
@@ -1572,16 +1557,16 @@ module top ;
         .interrupt(Net_155),
         .enable(1'b1),
         .trigger(1'b1),
-        .capture(1'b0),
+        .capture(Net_914),
         .capture_out(Net_159),
         .tc(Net_160),
         .clock(Net_291));
     defparam Echo_Timer.CaptureCount = 2;
     defparam Echo_Timer.CaptureCounterEnabled = 0;
     defparam Echo_Timer.DeviceFamily = "PSoC5";
-    defparam Echo_Timer.InterruptOnCapture = 0;
+    defparam Echo_Timer.InterruptOnCapture = 1;
     defparam Echo_Timer.InterruptOnTC = 0;
-    defparam Echo_Timer.Resolution = 32;
+    defparam Echo_Timer.Resolution = 16;
     defparam Echo_Timer.SiliconRevision = "0";
 
 
@@ -1589,7 +1574,7 @@ module top ;
 		#(.id("4621dd2b-9156-4c0c-80ff-9afaeff5d0fa"),
 		  .source_clock_id(""),
 		  .divisor(0),
-		  .period("41666666.6666667"),
+		  .period("3125000000"),
 		  .is_direct(0),
 		  .is_digital(1))
 		clock_4
@@ -1671,7 +1656,7 @@ module top ;
 	cy_isr_v1_0
 		#(.int_type(2'b00))
 		end_echo_IRR
-		 (.int_signal(Net_162));
+		 (.int_signal(Net_155));
 
 
 
@@ -1680,9 +1665,6 @@ module top ;
 		start_echo_IRR
 		 (.int_signal(Net_914));
 
-
-
-    assign Net_162 = ~Net_914;
 
 
 

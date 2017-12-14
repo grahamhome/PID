@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
   21:.\Generated_Source\PSoC5/FanController.c **** * disclaimers, and limitations in the end user license agreement accompanying
   22:.\Generated_Source\PSoC5/FanController.c **** * the software package with which this file was provided.
   23:.\Generated_Source\PSoC5/FanController.c **** ********************************************************************************/
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 2
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 2
 
 
   24:.\Generated_Source\PSoC5/FanController.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
   78:.\Generated_Source\PSoC5/FanController.c **** 
   79:.\Generated_Source\PSoC5/FanController.c **** #endif /* (!CY_PSOC4) */
   80:.\Generated_Source\PSoC5/FanController.c **** 
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 3
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 3
 
 
   81:.\Generated_Source\PSoC5/FanController.c **** /* Arrays for storing PID parameters and saturation ranges */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  135:.\Generated_Source\PSoC5/FanController.c **** {
   35              		.loc 1 135 0
   36              		.cfi_startproc
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 4
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 4
 
 
   37              		@ args = 0, pretend = 0, frame = 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  151:.\Generated_Source\PSoC5/FanController.c **** *  Stop the fan controller component.  Disables all hardware sub-components,
  152:.\Generated_Source\PSoC5/FanController.c **** *  drives fan outputs high and de-asserts the alert pin.
  153:.\Generated_Source\PSoC5/FanController.c **** *
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 5
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 5
 
 
  154:.\Generated_Source\PSoC5/FanController.c **** * Parameters:
@@ -269,7 +269,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  167:.\Generated_Source\PSoC5/FanController.c ****     /* Turn off the hardware sub-components */
  168:.\Generated_Source\PSoC5/FanController.c ****     FanController_GLOBAL_CONTROL_REG = 0u;
   88              		.loc 1 168 0
-  89 0004 46F27643 		movw	r3, #25718
+  89 0004 46F27653 		movw	r3, #25974
   90 0008 C4F20003 		movt	r3, 16384
   91 000c 4FF00002 		mov	r2, #0
   92 0010 1A70     		strb	r2, [r3, #0]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  187:.\Generated_Source\PSoC5/FanController.c ****         #elif(FanController_NUMBER_OF_FAN_OUTPUTS == 2u)
  188:.\Generated_Source\PSoC5/FanController.c ****             FanController_FW_PWM1_Stop();
  189:.\Generated_Source\PSoC5/FanController.c ****             FanController_FW_PWM2_Stop();
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 6
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 6
 
 
  190:.\Generated_Source\PSoC5/FanController.c ****         #elif(FanController_NUMBER_OF_FAN_OUTPUTS == 3u)
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  115              	.LCFI4:
  116              		.cfi_def_cfa_offset 8
  117              		.cfi_offset 7, -8
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 7
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 7
 
 
  118              		.cfi_offset 14, -4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  128 000a 4FF00003 		mov	r3, #0
  129 000e FB71     		strb	r3, [r7, #7]
  130 0010 30E0     		b	.L5
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 8
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 8
 
 
  131              	.L6:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  292:.\Generated_Source\PSoC5/FanController.c **** 
  293:.\Generated_Source\PSoC5/FanController.c ****                     CyExitCriticalSection(interruptState);
  163              		.loc 1 293 0 discriminator 2
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 9
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 9
 
 
  164 0064 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  302:.\Generated_Source\PSoC5/FanController.c ****             }
  303:.\Generated_Source\PSoC5/FanController.c **** 
  304:.\Generated_Source\PSoC5/FanController.c ****         #endif /* ((FanController_IS_AUTO_HARDWARE_MODE) || (FanController_IS_AUTO_FIRMWARE_MODE)) 
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 10
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 10
 
 
  305:.\Generated_Source\PSoC5/FanController.c **** 
@@ -595,10 +595,10 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  352:.\Generated_Source\PSoC5/FanController.c ****     /* Enable count7 hardware block to drive fan address */
  353:.\Generated_Source\PSoC5/FanController.c ****     FanController_TACH_FAN_COUNTR_AUX_CTL_REG   |= FanController_COUNT7_ENABLE;
  210              		.loc 1 353 0
- 211 00c4 46F29443 		movw	r3, #25748
+ 211 00c4 46F29743 		movw	r3, #25751
  212 00c8 C4F20003 		movt	r3, 16384
- 213 00cc 46F29442 		movw	r2, #25748
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 11
+ 213 00cc 46F29742 		movw	r2, #25751
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 11
 
 
  214 00d0 C4F20002 		movt	r2, 16384
@@ -617,7 +617,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  357:.\Generated_Source\PSoC5/FanController.c ****     /* Initialize glitch filter counter */
  358:.\Generated_Source\PSoC5/FanController.c ****     FanController_TACH_GLITCH_FILTER_PERIOD_REG = FanController_GLITCH_FILTER_VAL;
  224              		.loc 1 358 0
- 225 00e8 46F22343 		movw	r3, #25635
+ 225 00e8 46F22753 		movw	r3, #25895
  226 00ec C4F20003 		movt	r3, 16384
  227 00f0 4FF03C02 		mov	r2, #60
  228 00f4 1A70     		strb	r2, [r3, #0]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  390:.\Generated_Source\PSoC5/FanController.c ****             FanController_pidA1[counti] = FanController_PID_A1;
  391:.\Generated_Source\PSoC5/FanController.c ****             FanController_pidA2[counti] = FanController_PID_A2;
  392:.\Generated_Source\PSoC5/FanController.c ****             FanController_pidA3[counti] = FanController_PID_A3;
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 12
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 12
 
 
  393:.\Generated_Source\PSoC5/FanController.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  247              		.loc 1 431 0
  248              		.cfi_startproc
  249              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 13
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 13
 
 
  250              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -758,7 +758,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  454:.\Generated_Source\PSoC5/FanController.c ****     /* Write to control register based on customizer defaults */
  455:.\Generated_Source\PSoC5/FanController.c ****     FanController_GLOBAL_CONTROL_REG = FanController_ENABLE | FanController_ALERT_PIN_ENABLE |
  262              		.loc 1 455 0
- 263 0006 46F27643 		movw	r3, #25718
+ 263 0006 46F27653 		movw	r3, #25974
  264 000a C4F20003 		movt	r3, 16384
  265 000e 4FF02302 		mov	r2, #35
  266 0012 1A70     		strb	r2, [r3, #0]
@@ -773,12 +773,12 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  460:.\Generated_Source\PSoC5/FanController.c ****     /* Enable alerts from the Alert Status register */
  461:.\Generated_Source\PSoC5/FanController.c ****     FanController_STATUS_ALERT_AUX_CTL_REG |= FanController_STATUS_ALERT_ENABLE ;
  271              		.loc 1 461 0
- 272 001c 46F29643 		movw	r3, #25750
+ 272 001c 46F29653 		movw	r3, #26006
  273 0020 C4F20003 		movt	r3, 16384
- 274 0024 46F29642 		movw	r2, #25750
+ 274 0024 46F29652 		movw	r2, #26006
  275 0028 C4F20002 		movt	r2, 16384
  276 002c 1278     		ldrb	r2, [r2, #0]
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 14
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 14
 
 
  277 002e D2B2     		uxtb	r2, r2
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  486:.\Generated_Source\PSoC5/FanController.c **** *  Alert output pin.
  487:.\Generated_Source\PSoC5/FanController.c **** *
  488:.\Generated_Source\PSoC5/FanController.c **** * Parameters:
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 15
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 15
 
 
  489:.\Generated_Source\PSoC5/FanController.c **** *  None
@@ -875,9 +875,9 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  501:.\Generated_Source\PSoC5/FanController.c **** 
  502:.\Generated_Source\PSoC5/FanController.c ****     FanController_GLOBAL_CONTROL_REG |= FanController_ALERT_PIN_ENABLE;
  326              		.loc 1 502 0
- 327 000e 46F27643 		movw	r3, #25718
+ 327 000e 46F27653 		movw	r3, #25974
  328 0012 C4F20003 		movt	r3, 16384
- 329 0016 46F27642 		movw	r2, #25718
+ 329 0016 46F27652 		movw	r2, #25974
  330 001a C4F20002 		movt	r2, 16384
  331 001e 1278     		ldrb	r2, [r2, #0]
  332 0020 D2B2     		uxtb	r2, r2
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  344              		.cfi_endproc
  345              	.LFE4:
  346              		.size	FanController_EnableAlert, .-FanController_EnableAlert
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 16
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 16
 
 
  347 003a 00BF     		.section	.text.FanController_DisableAlert,"ax",%progbits
@@ -954,11 +954,11 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  529:.\Generated_Source\PSoC5/FanController.c **** 
  530:.\Generated_Source\PSoC5/FanController.c ****     FanController_GLOBAL_CONTROL_REG &= (uint8) ~FanController_ALERT_PIN_ENABLE;
  374              		.loc 1 530 0
- 375 000e 46F27643 		movw	r3, #25718
+ 375 000e 46F27653 		movw	r3, #25974
  376 0012 C4F20003 		movt	r3, 16384
- 377 0016 46F27642 		movw	r2, #25718
+ 377 0016 46F27652 		movw	r2, #25974
  378 001a C4F20002 		movt	r2, 16384
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 17
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 17
 
 
  379 001e 1278     		ldrb	r2, [r2, #0]
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  406              		@ frame_needed = 1, uses_anonymous_args = 0
  407 0000 80B5     		push	{r7, lr}
  408              	.LCFI16:
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 18
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 18
 
 
  409              		.cfi_def_cfa_offset 8
@@ -1040,9 +1040,9 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  559:.\Generated_Source\PSoC5/FanController.c **** 
  560:.\Generated_Source\PSoC5/FanController.c ****     FanController_GLOBAL_CONTROL_REG = (FanController_GLOBAL_CONTROL_REG &
  424              		.loc 1 560 0
- 425 0012 46F27643 		movw	r3, #25718
+ 425 0012 46F27653 		movw	r3, #25974
  426 0016 C4F20003 		movt	r3, 16384
- 427 001a 46F27642 		movw	r2, #25718
+ 427 001a 46F27652 		movw	r2, #25974
  428 001e C4F20002 		movt	r2, 16384
  429 0022 1278     		ldrb	r2, [r2, #0]
  430 0024 D2B2     		uxtb	r2, r2
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  454              		.cfi_endproc
  455              	.LFE6:
  456              		.size	FanController_SetAlertMode, .-FanController_SetAlertMode
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 19
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 19
 
 
  457 0056 00BF     		.section	.text.FanController_GetAlertMode,"ax",%progbits
@@ -1127,7 +1127,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  476              		.cfi_def_cfa_register 7
  590:.\Generated_Source\PSoC5/FanController.c ****     return((FanController_GLOBAL_CONTROL_REG & FanController_ALERT_ENABLE_MASK) >>
  477              		.loc 1 590 0
- 478 0004 46F27643 		movw	r3, #25718
+ 478 0004 46F27653 		movw	r3, #25974
  479 0008 C4F20003 		movt	r3, 16384
  480 000c 1B78     		ldrb	r3, [r3, #0]
  481 000e DBB2     		uxtb	r3, r3
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  592:.\Generated_Source\PSoC5/FanController.c **** }
  485              		.loc 1 592 0
  486 001a 1846     		mov	r0, r3
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 20
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 20
 
 
  487 001c BD46     		mov	sp, r7
@@ -1198,11 +1198,11 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  516 0006 0346     		mov	r3, r0
  517 0008 FB80     		strh	r3, [r7, #6]	@ movhi
  618:.\Generated_Source\PSoC5/FanController.c ****     FanController_ALERT_MASK_LSB_CONTROL_REG = LO8(alertMask);
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 21
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 21
 
 
  518              		.loc 1 618 0
- 519 000a 46F27343 		movw	r3, #25715
+ 519 000a 46F27443 		movw	r3, #25716
  520 000e C4F20003 		movt	r3, 16384
  521 0012 FA88     		ldrh	r2, [r7, #6]	@ movhi
  522 0014 D2B2     		uxtb	r2, r2
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  542              		@ args = 0, pretend = 0, frame = 8
  543              		@ frame_needed = 1, uses_anonymous_args = 0
  544              		@ link register save eliminated.
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 22
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 22
 
 
  545 0000 80B4     		push	{r7}
@@ -1279,7 +1279,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  654:.\Generated_Source\PSoC5/FanController.c ****     #else
  655:.\Generated_Source\PSoC5/FanController.c ****         alertMask = (uint16)FanController_ALERT_MASK_LSB_CONTROL_REG;
  555              		.loc 1 655 0
- 556 0006 46F27343 		movw	r3, #25715
+ 556 0006 46F27443 		movw	r3, #25716
  557 000a C4F20003 		movt	r3, 16384
  558 000e 1B78     		ldrb	r3, [r3, #0]
  559 0010 DBB2     		uxtb	r3, r3
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  668:.\Generated_Source\PSoC5/FanController.c **** *  this API call. If this API call returns a non-zero value, call the
  669:.\Generated_Source\PSoC5/FanController.c **** *  GetFanStallStatus() or GetFanSpeedStatus() APIs to determine the exact
  670:.\Generated_Source\PSoC5/FanController.c **** *  source of the alert and simultaneously de-assert the pending alert and
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 23
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 23
 
 
  671:.\Generated_Source\PSoC5/FanController.c **** *  alert pin.
@@ -1352,7 +1352,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  591              		.cfi_def_cfa_register 7
  688:.\Generated_Source\PSoC5/FanController.c ****     return ((FanController_ALERT_STATUS_REG & FanController_ALERT_STATUS_MASK));
  592              		.loc 1 688 0
- 593 0004 46F26643 		movw	r3, #25702
+ 593 0004 46F26653 		movw	r3, #25958
  594 0008 C4F20003 		movt	r3, 16384
  595 000c 1B78     		ldrb	r3, [r3, #0]
  596 000e DBB2     		uxtb	r3, r3
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  690:.\Generated_Source\PSoC5/FanController.c **** 
  691:.\Generated_Source\PSoC5/FanController.c **** 
  692:.\Generated_Source\PSoC5/FanController.c **** /******************************************************************************
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 24
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 24
 
 
  693:.\Generated_Source\PSoC5/FanController.c **** * Function Name: FanController_GetFanStallStatus
@@ -1427,7 +1427,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  721:.\Generated_Source\PSoC5/FanController.c ****     #else
  722:.\Generated_Source\PSoC5/FanController.c ****         stallStatus = (uint16)FanController_STALL_ERROR_LSB_STATUS_REG;
  630              		.loc 1 722 0
- 631 0006 46F26343 		movw	r3, #25699
+ 631 0006 46F26753 		movw	r3, #25959
  632 000a C4F20003 		movt	r3, 16384
  633 000e 1B78     		ldrb	r3, [r3, #0]
  634 0010 DBB2     		uxtb	r3, r3
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  636              		.loc 1 725 0
  637 0014 FB88     		ldrh	r3, [r7, #6]
  726:.\Generated_Source\PSoC5/FanController.c **** }
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 25
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 25
 
 
  638              		.loc 1 726 0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  764:.\Generated_Source\PSoC5/FanController.c ****                     ((uint16)FanController_SPEED_ERROR_MSB_STATUS_REG << 8u);
  765:.\Generated_Source\PSoC5/FanController.c ****             #else
  766:.\Generated_Source\PSoC5/FanController.c ****                 speedStatus = (uint16)FanController_SPEED_ERROR_LSB_STATUS_REG;
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 26
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 26
 
 
  767:.\Generated_Source\PSoC5/FanController.c ****             #endif /* FanController_NUMBER_OF_FANS > 8u */
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  662              		.cfi_def_cfa_offset 4
  663              		.cfi_offset 7, -4
  664 0002 85B0     		sub	sp, sp, #20
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 27
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 27
 
 
  665              	.LCFI33:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  702 0054 1A80     		strh	r2, [r3, #0]	@ movhi
  703              	.L22:
  831:.\Generated_Source\PSoC5/FanController.c ****                 #endif /* FanController_PWMRES == FanController_PWMRES_EIGHTBIT */
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 28
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 28
 
 
  832:.\Generated_Source\PSoC5/FanController.c ****             #else
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  727              		.cfi_def_cfa_offset 4
  728              		.cfi_offset 7, -4
  729 0002 85B0     		sub	sp, sp, #20
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 29
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 29
 
 
  730              	.LCFI36:
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  884:.\Generated_Source\PSoC5/FanController.c ****     return(duyCycle);
  762              		.loc 1 884 0
  763 0046 FB89     		ldrh	r3, [r7, #14]
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 30
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 30
 
 
  885:.\Generated_Source\PSoC5/FanController.c **** }
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  786              	.LCFI38:
  787              		.cfi_def_cfa_offset 16
  788              		.cfi_offset 4, -16
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 31
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 31
 
 
  789              		.cfi_offset 5, -12
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  818 0032 4FEAC303 		lsl	r3, r3, #3
  819 0036 5B1A     		subs	r3, r3, r1
  820 0038 4FEA4303 		lsl	r3, r3, #1
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 32
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 32
 
 
  821 003c D318     		adds	r3, r2, r3
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  870 00ba A3FB0213 		umull	r1, r3, r3, r2
  871 00be 4FEA5313 		lsr	r3, r3, #5
  943:.\Generated_Source\PSoC5/FanController.c ****                 overrideDuty =  (uint32)FanController_fanProperties[fanNumber - 1u].dutyA -
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 33
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 33
 
 
  872              		.loc 1 943 0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  912 011e FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
  913 0120 03F1FF31 		add	r1, r3, #-1
  914 0124 40F20002 		movw	r2, #:lower16:FanController_fanProperties
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 34
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 34
 
 
  915 0128 C0F20002 		movt	r2, #:upper16:FanController_fanProperties
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  977:.\Generated_Source\PSoC5/FanController.c ****             FanController_fanControl.desiredPeriod[fanNumber - 1u] =
  978:.\Generated_Source\PSoC5/FanController.c ****                 (uint16) (FanController_RPM_PERIOD_CONV_FACTOR /
  979:.\Generated_Source\PSoC5/FanController.c ****                     (uint32) ((uint32) rpm + (((uint32) rpm * FanController_TOLERANCE) /
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 35
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 35
 
 
  980:.\Generated_Source\PSoC5/FanController.c ****                         FanController_TOLERANCE_DIVIDER)));
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
 1019:.\Generated_Source\PSoC5/FanController.c ****     *  uint8 fanNumber
 1020:.\Generated_Source\PSoC5/FanController.c ****     *  Valid range is 1-16 and should not exceed the number of fans in the system.
 1021:.\Generated_Source\PSoC5/FanController.c ****     *
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 36
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 36
 
 
 1022:.\Generated_Source\PSoC5/FanController.c ****     * Return:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  983 000a 4FF00003 		mov	r3, #0
  984 000e FB81     		strh	r3, [r7, #14]	@ movhi
 1058:.\Generated_Source\PSoC5/FanController.c **** 
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 37
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 37
 
 
 1059:.\Generated_Source\PSoC5/FanController.c ****     if(fanNumber <= FanController_NUMBER_OF_FANS)
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1003 003e 1A46     		mov	r2, r3
 1093:.\Generated_Source\PSoC5/FanController.c ****                 actualSpeed = (uint16) (FanController_RPM_PERIOD_CONV_FACTOR /
  1004              		.loc 1 1093 0
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 38
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 38
 
 
  1005 0040 4CF28033 		movw	r3, #50048
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
 1126:.\Generated_Source\PSoC5/FanController.c **** 
 1127:.\Generated_Source\PSoC5/FanController.c ****     void FanController_OverrideAutomaticControl(uint8 override)
 1128:.\Generated_Source\PSoC5/FanController.c ****                                 
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 39
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 39
 
 
 1129:.\Generated_Source\PSoC5/FanController.c ****     {
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
 1183:.\Generated_Source\PSoC5/FanController.c ****             /* Calculate PID Constants for fan and store them into temporary variables to
 1184:.\Generated_Source\PSoC5/FanController.c ****             * be later written to PID vars. This is done so to not disable interrupt for a
 1185:.\Generated_Source\PSoC5/FanController.c ****             * long time.
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 40
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 40
 
 
 1186:.\Generated_Source\PSoC5/FanController.c ****             */
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
 1240:.\Generated_Source\PSoC5/FanController.c ****         {
 1241:.\Generated_Source\PSoC5/FanController.c ****             /* Calculate PID Constants for fan and store them into temporary variables to
 1242:.\Generated_Source\PSoC5/FanController.c ****             * be later written to PID vars. This is done so to not disable interrupt for a
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 41
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 41
 
 
 1243:.\Generated_Source\PSoC5/FanController.c ****             * long time.
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
 1297:.\Generated_Source\PSoC5/FanController.c ****     *  None
 1298:.\Generated_Source\PSoC5/FanController.c ****     *
 1299:.\Generated_Source\PSoC5/FanController.c ****     * Side Effects:
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 42
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 42
 
 
 1300:.\Generated_Source\PSoC5/FanController.c ****     *  None
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
 1338:.\Generated_Source\PSoC5/FanController.c ****                                                     HI16(FanController_TACH_ACTUAL_PERIOD_PTR),
 1339:.\Generated_Source\PSoC5/FanController.c ****                                                     HI16(((uint32)&FanController_fanControl.actualP
  1044              		.loc 1 1339 0
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 43
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 43
 
 
  1045 0006 40F20003 		movw	r3, #:lower16:FanController_fanControl
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1076              	.L35:
 1352:.\Generated_Source\PSoC5/FanController.c ****         for (counti = 0u; counti < FanController_NUMBER_OF_FANS; counti++)
  1077              		.loc 1 1352 0 is_stmt 0 discriminator 1
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 44
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 44
 
 
  1078 0056 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
 1399:.\Generated_Source\PSoC5/FanController.c ****                                             FanController_TachOutDMA__TD_TERMOUT_EN);
 1400:.\Generated_Source\PSoC5/FanController.c **** 
 1401:.\Generated_Source\PSoC5/FanController.c ****                     (void) CyDmaTdSetConfiguration(
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 45
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 45
 
 
 1402:.\Generated_Source\PSoC5/FanController.c ****                                 FanController_fanOutTds[FanController_NUMBER_OF_FANS].setActualPeri
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
 1441:.\Generated_Source\PSoC5/FanController.c ****                             TD_INC_DST_ADR | FanController_TD_SWAP_ENDIAN_FLAG  |
 1442:.\Generated_Source\PSoC5/FanController.c ****                             /* Also assert NRQ at end of each TD in hardware controlled fan mode */
 1443:.\Generated_Source\PSoC5/FanController.c ****                             FanController_TachOutDMA__TD_TERMOUT_EN);
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 46
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 46
 
 
 1444:.\Generated_Source\PSoC5/FanController.c **** 
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1126              	.L39:
 1370:.\Generated_Source\PSoC5/FanController.c ****         for (counti = 0u; counti < FanController_NUMBER_OF_FANS; counti++)
  1127              		.loc 1 1370 0
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 47
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 47
 
 
  1128 00c6 FB79     		ldrb	r3, [r7, #7]
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1137 00d4 4FF00003 		mov	r3, #0
  1138 00d8 FB71     		strb	r3, [r7, #7]
  1139 00da 18E0     		b	.L41
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 48
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 48
 
 
  1140              	.L42:
@@ -2854,7 +2854,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1152              		.loc 1 1538 0 discriminator 2
  1153 00f8 9BB2     		uxth	r3, r3
  1154 00fa 1046     		mov	r0, r2
- 1155 00fc 46F60801 		movw	r1, #26632
+ 1155 00fc 46F60821 		movw	r1, #27144
  1156 0100 1A46     		mov	r2, r3
  1157 0102 FFF7FEFF 		bl	CyDmaTdSetAddress
 1523:.\Generated_Source\PSoC5/FanController.c ****         for (counti = 0u; counti < FanController_NUMBER_OF_FANS; counti++)
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
 1548:.\Generated_Source\PSoC5/FanController.c ****                                 LO16(FanController_TACH_DESIRED_PERIOD_PTR));
 1549:.\Generated_Source\PSoC5/FanController.c **** 
 1550:.\Generated_Source\PSoC5/FanController.c ****                 /* TD for tolerance to tachometer */
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 49
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 49
 
 
 1551:.\Generated_Source\PSoC5/FanController.c ****                 (void) CyDmaTdSetAddress(FanController_fanInTds[counti].getToleranceTD,
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
 1581:.\Generated_Source\PSoC5/FanController.c ****     * Parameters:
 1582:.\Generated_Source\PSoC5/FanController.c ****     *  uint8  burstCount
 1583:.\Generated_Source\PSoC5/FanController.c ****     *  uint8  requestPerBurst
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 50
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 50
 
 
 1584:.\Generated_Source\PSoC5/FanController.c ****     *  uint16 upperSrcAddress
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1224 002a 0190     		str	r0, [sp, #4]
  1225 002c 0846     		mov	r0, r1
  1226 002e 1146     		mov	r1, r2
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 51
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 51
 
 
  1227 0030 1A46     		mov	r2, r3
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
 1625:.\Generated_Source\PSoC5/FanController.c ****     *
 1626:.\Generated_Source\PSoC5/FanController.c ****     * Summary:
 1627:.\Generated_Source\PSoC5/FanController.c ****     *   Frees the channel associated with FanController_TachOutDMA and
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 52
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 52
 
 
 1628:.\Generated_Source\PSoC5/FanController.c ****     *   also frees the TD descriptors.
@@ -3107,18 +3107,18 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1287              		.type	FanController_fanDriverRegs, %object
  1288              		.size	FanController_fanDriverRegs, 4
  1289              	FanController_fanDriverRegs:
- 1290 0000 46640040 		.word	1073767494
+ 1290 0000 44640040 		.word	1073767492
  1291              		.global	FanController_fanPwmInitRegs
  1292              		.align	2
  1293              		.type	FanController_fanPwmInitRegs, %object
  1294              		.size	FanController_fanPwmInitRegs, 8
  1295              	FanController_fanPwmInitRegs:
- 1296 0004 16640040 		.word	1073767446
- 1297 0008 96640040 		.word	1073767574
+ 1296 0004 14640040 		.word	1073767444
+ 1297 0008 94640040 		.word	1073767572
  1298              		.comm	FanController_fanControl,2,4
  1299              		.global	FanController_fanProperties
  1300              		.data
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 53
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 53
 
 
  1301              		.align	2
@@ -3147,10 +3147,10 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1324 0006 00000000 		.4byte	.Ldebug_abbrev0
  1325 000a 04       		.byte	0x4
  1326 000b 01       		.uleb128 0x1
- 1327 000c 68040000 		.4byte	.LASF77
+ 1327 000c 02040000 		.4byte	.LASF77
  1328 0010 01       		.byte	0x1
- 1329 0011 6A050000 		.4byte	.LASF78
- 1330 0015 4B030000 		.4byte	.LASF79
+ 1329 0011 04050000 		.4byte	.LASF78
+ 1330 0015 48050000 		.4byte	.LASF79
  1331 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1332 001d 00000000 		.4byte	0
  1333 0021 00000000 		.4byte	0
@@ -3162,11 +3162,11 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1339 0030 02       		.uleb128 0x2
  1340 0031 01       		.byte	0x1
  1341 0032 08       		.byte	0x8
- 1342 0033 B6040000 		.4byte	.LASF1
+ 1342 0033 50040000 		.4byte	.LASF1
  1343 0037 02       		.uleb128 0x2
  1344 0038 02       		.byte	0x2
  1345 0039 05       		.byte	0x5
- 1346 003a C4040000 		.4byte	.LASF2
+ 1346 003a 5E040000 		.4byte	.LASF2
  1347 003e 02       		.uleb128 0x2
  1348 003f 02       		.byte	0x2
  1349 0040 07       		.byte	0x7
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1355 004c 02       		.uleb128 0x2
  1356 004d 04       		.byte	0x4
  1357 004e 07       		.byte	0x7
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 54
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 54
 
 
  1358 004f E5010000 		.4byte	.LASF5
@@ -3216,7 +3216,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1390 0090 02       		.uleb128 0x2
  1391 0091 04       		.byte	0x4
  1392 0092 04       		.byte	0x4
- 1393 0093 1E040000 		.4byte	.LASF12
+ 1393 0093 B8030000 		.4byte	.LASF12
  1394 0097 02       		.uleb128 0x2
  1395 0098 08       		.byte	0x8
  1396 0099 04       		.byte	0x4
@@ -3224,9 +3224,9 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1398 009e 02       		.uleb128 0x2
  1399 009f 01       		.byte	0x1
  1400 00a0 08       		.byte	0x8
- 1401 00a1 19050000 		.4byte	.LASF14
+ 1401 00a1 B3040000 		.4byte	.LASF14
  1402 00a5 04       		.uleb128 0x4
- 1403 00a6 B1040000 		.4byte	.LASF15
+ 1403 00a6 4B040000 		.4byte	.LASF15
  1404 00aa 02       		.byte	0x2
  1405 00ab F0       		.byte	0xf0
  1406 00ac B0000000 		.4byte	0xb0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1412 00bb F1       		.byte	0xf1
  1413 00bc C0000000 		.4byte	0xc0
  1414 00c0 05       		.uleb128 0x5
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 55
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 55
 
 
  1415 00c1 7A000000 		.4byte	0x7a
@@ -3261,7 +3261,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1432 00e1 00       		.uleb128 0
  1433 00e2 00       		.byte	0
  1434 00e3 04       		.uleb128 0x4
- 1435 00e4 13060000 		.4byte	.LASF18
+ 1435 00e4 E5050000 		.4byte	.LASF18
  1436 00e8 03       		.byte	0x3
  1437 00e9 D4       		.byte	0xd4
  1438 00ea CC000000 		.4byte	0xcc
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1469 0124 8B010000 		.4byte	0x18b
  1470 0128 07       		.uleb128 0x7
  1471 0129 86020000 		.4byte	.LASF22
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 56
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 56
 
 
  1472 012d 03       		.byte	0x3
@@ -3332,7 +3332,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1500 015e 23       		.byte	0x23
  1501 015f 06       		.uleb128 0x6
  1502 0160 07       		.uleb128 0x7
- 1503 0161 06060000 		.4byte	.LASF26
+ 1503 0161 D8050000 		.4byte	.LASF26
  1504 0165 03       		.byte	0x3
  1505 0166 F7       		.byte	0xf7
  1506 0167 7A000000 		.4byte	0x7a
@@ -3357,8 +3357,8 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1525 0189 0C       		.uleb128 0xc
  1526 018a 00       		.byte	0
  1527 018b 04       		.uleb128 0x4
- 1528 018c E6030000 		.4byte	.LASF29
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 57
+ 1528 018c 80030000 		.4byte	.LASF29
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 57
 
 
  1529 0190 03       		.byte	0x3
@@ -3418,14 +3418,14 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1583 01f7 01       		.byte	0x1
  1584 01f8 00000000 		.4byte	.LFB0
  1585 01fc 2A000000 		.4byte	.LFE0
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 58
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 58
 
 
  1586 0200 00000000 		.4byte	.LLST0
  1587 0204 01       		.byte	0x1
  1588 0205 0D       		.uleb128 0xd
  1589 0206 01       		.byte	0x1
- 1590 0207 B1030000 		.4byte	.LASF36
+ 1590 0207 4B030000 		.4byte	.LASF36
  1591 020b 01       		.byte	0x1
  1592 020c A5       		.byte	0xa5
  1593 020d 01       		.byte	0x1
@@ -3435,7 +3435,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1597 021a 01       		.byte	0x1
  1598 021b 0E       		.uleb128 0xe
  1599 021c 01       		.byte	0x1
- 1600 021d 30060000 		.4byte	.LASF39
+ 1600 021d 02060000 		.4byte	.LASF39
  1601 0221 01       		.byte	0x1
  1602 0222 E0       		.byte	0xe0
  1603 0223 01       		.byte	0x1
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1640 0273 B001     		.2byte	0x1b0
  1641 0275 6F000000 		.4byte	0x6f
  1642 0279 02       		.byte	0x2
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 59
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 59
 
 
  1643 027a 91       		.byte	0x91
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1697 02ee 12       		.uleb128 0x12
  1698 02ef 51010000 		.4byte	.LASF45
  1699 02f3 01       		.byte	0x1
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 60
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 60
 
 
  1700 02f4 2C02     		.2byte	0x22c
@@ -3557,7 +3557,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1713 030c 00       		.byte	0
  1714 030d 13       		.uleb128 0x13
  1715 030e 01       		.byte	0x1
- 1716 030f C4030000 		.4byte	.LASF47
+ 1716 030f 5E030000 		.4byte	.LASF47
  1717 0313 01       		.byte	0x1
  1718 0314 4C02     		.2byte	0x24c
  1719 0316 01       		.byte	0x1
@@ -3568,7 +3568,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1724 0327 01       		.byte	0x1
  1725 0328 14       		.uleb128 0x14
  1726 0329 01       		.byte	0x1
- 1727 032a 93050000 		.4byte	.LASF44
+ 1727 032a 2D050000 		.4byte	.LASF44
  1728 032e 01       		.byte	0x1
  1729 032f 6802     		.2byte	0x268
  1730 0331 01       		.byte	0x1
@@ -3578,7 +3578,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1734 033e 01       		.byte	0x1
  1735 033f 53030000 		.4byte	0x353
  1736 0343 12       		.uleb128 0x12
- 1737 0344 0F050000 		.4byte	.LASF46
+ 1737 0344 A9040000 		.4byte	.LASF46
  1738 0348 01       		.byte	0x1
  1739 0349 6802     		.2byte	0x268
  1740 034b 7A000000 		.4byte	0x7a
@@ -3598,11 +3598,11 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1754 0369 D4010000 		.4byte	.LLST9
  1755 036d 01       		.byte	0x1
  1756 036e 82030000 		.4byte	0x382
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 61
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 61
 
 
  1757 0372 11       		.uleb128 0x11
- 1758 0373 0F050000 		.4byte	.LASF46
+ 1758 0373 A9040000 		.4byte	.LASF46
  1759 0377 01       		.byte	0x1
  1760 0378 8902     		.2byte	0x289
  1761 037a 7A000000 		.4byte	0x7a
@@ -3612,7 +3612,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1765 0381 00       		.byte	0
  1766 0382 13       		.uleb128 0x13
  1767 0383 01       		.byte	0x1
- 1768 0384 24040000 		.4byte	.LASF48
+ 1768 0384 BE030000 		.4byte	.LASF48
  1769 0388 01       		.byte	0x1
  1770 0389 AE02     		.2byte	0x2ae
  1771 038b 01       		.byte	0x1
@@ -3623,7 +3623,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1776 039c 01       		.byte	0x1
  1777 039d 15       		.uleb128 0x15
  1778 039e 01       		.byte	0x1
- 1779 039f CE040000 		.4byte	.LASF50
+ 1779 039f 68040000 		.4byte	.LASF50
  1780 03a3 01       		.byte	0x1
  1781 03a4 CA02     		.2byte	0x2ca
  1782 03a6 01       		.byte	0x1
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1811 03ec 01       		.byte	0x1
  1812 03ed 2B03     		.2byte	0x32b
  1813 03ef 6F000000 		.4byte	0x6f
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 62
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 62
 
 
  1814 03f3 02       		.byte	0x2
@@ -3683,7 +3683,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1833 0414 00       		.byte	0
  1834 0415 15       		.uleb128 0x15
  1835 0416 01       		.byte	0x1
- 1836 0417 BA050000 		.4byte	.LASF56
+ 1836 0417 8C050000 		.4byte	.LASF56
  1837 041b 01       		.byte	0x1
  1838 041c 5D03     		.2byte	0x35d
  1839 041e 01       		.byte	0x1
@@ -3702,7 +3702,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1852 0441 91       		.byte	0x91
  1853 0442 6F       		.sleb128 -17
  1854 0443 11       		.uleb128 0x11
- 1855 0444 1E050000 		.4byte	.LASF57
+ 1855 0444 B8040000 		.4byte	.LASF57
  1856 0448 01       		.byte	0x1
  1857 0449 5F03     		.2byte	0x35f
  1858 044b 7A000000 		.4byte	0x7a
@@ -3712,13 +3712,13 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1862 0452 00       		.byte	0
  1863 0453 10       		.uleb128 0x10
  1864 0454 01       		.byte	0x1
- 1865 0455 43060000 		.4byte	.LASF58
+ 1865 0455 15060000 		.4byte	.LASF58
  1866 0459 01       		.byte	0x1
  1867 045a 9303     		.2byte	0x393
  1868 045c 01       		.byte	0x1
  1869 045d 00000000 		.4byte	.LFB14
  1870 0461 7C010000 		.4byte	.LFE14
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 63
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 63
 
 
  1871 0465 E0020000 		.4byte	.LLST14
@@ -3778,10 +3778,10 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1925 04d7 91       		.byte	0x91
  1926 04d8 6F       		.sleb128 -17
  1927 04d9 11       		.uleb128 0x11
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 64
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 64
 
 
- 1928 04da AE050000 		.4byte	.LASF63
+ 1928 04da 80050000 		.4byte	.LASF63
  1929 04de 01       		.byte	0x1
  1930 04df 2104     		.2byte	0x421
  1931 04e1 7A000000 		.4byte	0x7a
@@ -3790,7 +3790,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1934 04e7 76       		.sleb128 -10
  1935 04e8 00       		.byte	0
  1936 04e9 17       		.uleb128 0x17
- 1937 04ea 27050000 		.4byte	.LASF80
+ 1937 04ea C1040000 		.4byte	.LASF80
  1938 04ee 01       		.byte	0x1
  1939 04ef 1705     		.2byte	0x517
  1940 04f1 01       		.byte	0x1
@@ -3808,7 +3808,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1952 0510 91       		.byte	0x91
  1953 0511 6F       		.sleb128 -17
  1954 0512 11       		.uleb128 0x11
- 1955 0513 DF030000 		.4byte	.LASF64
+ 1955 0513 79030000 		.4byte	.LASF64
  1956 0517 01       		.byte	0x1
  1957 0518 1A05     		.2byte	0x51a
  1958 051a 6F000000 		.4byte	0x6f
@@ -3816,7 +3816,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1960 051f 91       		.byte	0x91
  1961 0520 6E       		.sleb128 -18
  1962 0521 11       		.uleb128 0x11
- 1963 0522 EE050000 		.4byte	.LASF65
+ 1963 0522 C0050000 		.4byte	.LASF65
  1964 0526 01       		.byte	0x1
  1965 0527 1F05     		.2byte	0x51f
  1966 0529 34050000 		.4byte	0x534
@@ -3832,13 +3832,13 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1976 0542 00       		.byte	0
  1977 0543 00       		.byte	0
  1978 0544 18       		.uleb128 0x18
- 1979 0545 41040000 		.4byte	.LASF81
+ 1979 0545 DB030000 		.4byte	.LASF81
  1980 0549 01       		.byte	0x1
  1981 054a 3B06     		.2byte	0x63b
  1982 054c 01       		.byte	0x1
  1983 054d 6F000000 		.4byte	0x6f
  1984 0551 00000000 		.4byte	.LFB17
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 65
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 65
 
 
  1985 0555 62000000 		.4byte	.LFE17
@@ -3854,7 +3854,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  1995 056f 91       		.byte	0x91
  1996 0570 6F       		.sleb128 -17
  1997 0571 12       		.uleb128 0x12
- 1998 0572 3E050000 		.4byte	.LASF67
+ 1998 0572 D8040000 		.4byte	.LASF67
  1999 0576 01       		.byte	0x1
  2000 0577 3B06     		.2byte	0x63b
  2001 0579 6F000000 		.4byte	0x6f
@@ -3896,9 +3896,9 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2037 05bf C0030000 		.4byte	.LLST18
  2038 05c3 01       		.byte	0x1
  2039 05c4 0F       		.uleb128 0xf
- 2040 05c5 EE040000 		.4byte	.LASF71
+ 2040 05c5 88040000 		.4byte	.LASF71
  2041 05c9 01       		.byte	0x1
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 66
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 66
 
 
  2042 05ca 41       		.byte	0x41
@@ -3925,7 +3925,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2063 05f8 1B       		.uleb128 0x1b
  2064 05f9 D5050000 		.4byte	0x5d5
  2065 05fd 1C       		.uleb128 0x1c
- 2066 05fe 08040000 		.4byte	.LASF73
+ 2066 05fe A2030000 		.4byte	.LASF73
  2067 0602 01       		.byte	0x1
  2068 0603 3C       		.byte	0x3c
  2069 0604 6F000000 		.4byte	0x6f
@@ -3934,7 +3934,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2072 060a 03       		.byte	0x3
  2073 060b 00000000 		.4byte	FanController_initVar
  2074 060f 1A       		.uleb128 0x1a
- 2075 0610 D5050000 		.4byte	.LASF74
+ 2075 0610 A7050000 		.4byte	.LASF74
  2076 0614 01       		.byte	0x1
  2077 0615 8509     		.2byte	0x985
  2078 0617 15010000 		.4byte	0x115
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2096 063f 05       		.byte	0x5
  2097 0640 03       		.byte	0x3
  2098 0641 00000000 		.4byte	FanController_fanDriverRegs
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 67
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 67
 
 
  2099 0645 1B       		.uleb128 0x1b
@@ -3971,7 +3971,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2106 0658 00       		.byte	0
  2107 0659 00       		.byte	0
  2108 065a 1A       		.uleb128 0x1a
- 2109 065b 4E050000 		.4byte	.LASF76
+ 2109 065b E8040000 		.4byte	.LASF76
  2110 065f 01       		.byte	0x1
  2111 0660 340A     		.2byte	0xa34
  2112 0662 4A060000 		.4byte	0x64a
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2153 0021 24       		.uleb128 0x24
  2154 0022 00       		.byte	0
  2155 0023 0B       		.uleb128 0xb
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 68
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 68
 
 
  2156 0024 0B       		.uleb128 0xb
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2210 005a 00       		.byte	0
  2211 005b 08       		.uleb128 0x8
  2212 005c 01       		.uleb128 0x1
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 69
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 69
 
 
  2213 005d 01       		.byte	0x1
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2267 0093 13       		.uleb128 0x13
  2268 0094 00       		.byte	0
  2269 0095 00       		.byte	0
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 70
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 70
 
 
  2270 0096 0D       		.uleb128 0xd
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2324 00ce 0B       		.uleb128 0xb
  2325 00cf 3B       		.uleb128 0x3b
  2326 00d0 0B       		.uleb128 0xb
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 71
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 71
 
 
  2327 00d1 49       		.uleb128 0x49
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2381 0108 05       		.uleb128 0x5
  2382 0109 49       		.uleb128 0x49
  2383 010a 13       		.uleb128 0x13
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 72
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 72
 
 
  2384 010b 02       		.uleb128 0x2
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2438 0143 15       		.uleb128 0x15
  2439 0144 2E       		.uleb128 0x2e
  2440 0145 01       		.byte	0x1
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 73
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 73
 
 
  2441 0146 3F       		.uleb128 0x3f
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2495 017d 40       		.uleb128 0x40
  2496 017e 06       		.uleb128 0x6
  2497 017f 9642     		.uleb128 0x2116
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 74
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 74
 
 
  2498 0181 0C       		.uleb128 0xc
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2552 01b9 03       		.uleb128 0x3
  2553 01ba 0E       		.uleb128 0xe
  2554 01bb 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 75
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 75
 
 
  2555 01bc 0B       		.uleb128 0xb
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2609 0024 00000000 		.4byte	0
  2610 0028 00000000 		.4byte	0
  2611              	.LLST1:
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 76
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 76
 
 
  2612 002c 00000000 		.4byte	.LFB1
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2666 00b2 7D       		.byte	0x7d
  2667 00b3 10       		.sleb128 16
  2668 00b4 06000000 		.4byte	.LCFI9
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 77
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 77
 
 
  2669 00b8 5C000000 		.4byte	.LFE3
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2723 013c 02000000 		.4byte	.LCFI16
  2724 0140 0200     		.2byte	0x2
  2725 0142 7D       		.byte	0x7d
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 78
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 78
 
 
  2726 0143 00       		.sleb128 0
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2780 01c8 0200     		.2byte	0x2
  2781 01ca 77       		.byte	0x77
  2782 01cb 10       		.sleb128 16
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 79
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 79
 
 
  2783 01cc 00000000 		.4byte	0
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2837 0250 04000000 		.4byte	.LCFI30
  2838 0254 06000000 		.4byte	.LCFI31
  2839 0258 0200     		.2byte	0x2
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 80
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 80
 
 
  2840 025a 7D       		.byte	0x7d
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2894 02dc 00000000 		.4byte	0
  2895              	.LLST14:
  2896 02e0 00000000 		.4byte	.LFB14
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 81
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 81
 
 
  2897 02e4 02000000 		.4byte	.LCFI38
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  2951 0367 0C       		.sleb128 12
  2952 0368 04000000 		.4byte	.LCFI45
  2953 036c 06000000 		.4byte	.LCFI46
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 82
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 82
 
 
  2954 0370 0200     		.2byte	0x2
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  3008 0006 00000000 		.4byte	.Ldebug_info0
  3009 000a 04       		.byte	0x4
  3010 000b 00       		.byte	0
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 83
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 83
 
 
  3011 000c 0000     		.2byte	0
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  3065 0028 00000000 		.4byte	.LFB5
  3066 002c 3A000000 		.4byte	.LFE5
  3067 0030 00000000 		.4byte	.LFB6
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 84
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 84
 
 
  3068 0034 56000000 		.4byte	.LFE6
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  3107      725F4765 
  3107      74416374 
  3108              	.LASF54:
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 85
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 85
 
 
  3109 0046 64757479 		.ascii	"dutyCycle\000"
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  3129 00f2 7369676E 		.ascii	"signed char\000"
  3129      65642063 
  3129      68617200 
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 86
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 86
 
 
  3130              	.LASF55:
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  3155      6F6C6C65 
  3155      725F6661 
  3155      6E447269 
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 87
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 87
 
 
  3156              	.LASF70:
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  3177      6E7400
  3178              	.LASF53:
  3179 0276 66616E4F 		.ascii	"fanOrBankNumber\000"
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 88
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 88
 
 
  3179      7242616E 
@@ -5276,192 +5276,184 @@ ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 1
  3201      6F6C6C65 
  3201      725F5461 
  3201      63684F75 
- 3202              	.LASF79:
- 3203 034b 5C5C6D69 		.ascii	"\\\\mightor\\home\\spring2013\\gmh5970\\Documents\\"
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 89
+ 3202              	.LASF36:
+ 3203 034b 46616E43 		.ascii	"FanController_Stop\000"
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 89
 
 
- 3203      6768746F 
- 3203      725C686F 
- 3203      6D655C73 
- 3203      7072696E 
- 3204 0377 50536F43 		.ascii	"PSoC Creator\\Fan_And_Potentiometer\\FW_Fan_Control"
- 3204      20437265 
- 3204      61746F72 
- 3204      5C46616E 
- 3204      5F416E64 
- 3205 03a8 30312E63 		.ascii	"01.cydsn\000"
- 3205      7964736E 
- 3205      00
- 3206              	.LASF36:
- 3207 03b1 46616E43 		.ascii	"FanController_Stop\000"
- 3207      6F6E7472 
- 3207      6F6C6C65 
- 3207      725F5374 
- 3207      6F7000
- 3208              	.LASF47:
- 3209 03c4 46616E43 		.ascii	"FanController_GetAlertMode\000"
+ 3203      6F6E7472 
+ 3203      6F6C6C65 
+ 3203      725F5374 
+ 3203      6F7000
+ 3204              	.LASF47:
+ 3205 035e 46616E43 		.ascii	"FanController_GetAlertMode\000"
+ 3205      6F6E7472 
+ 3205      6F6C6C65 
+ 3205      725F4765 
+ 3205      74416C65 
+ 3206              	.LASF64:
+ 3207 0379 66616E4E 		.ascii	"fanNum\000"
+ 3207      756D00
+ 3208              	.LASF29:
+ 3209 0380 46616E43 		.ascii	"FanController_fanPropertiesStruct\000"
  3209      6F6E7472 
  3209      6F6C6C65 
- 3209      725F4765 
- 3209      74416C65 
- 3210              	.LASF64:
- 3211 03df 66616E4E 		.ascii	"fanNum\000"
- 3211      756D00
- 3212              	.LASF29:
- 3213 03e6 46616E43 		.ascii	"FanController_fanPropertiesStruct\000"
- 3213      6F6E7472 
- 3213      6F6C6C65 
- 3213      725F6661 
- 3213      6E50726F 
- 3214              	.LASF73:
- 3215 0408 46616E43 		.ascii	"FanController_initVar\000"
+ 3209      725F6661 
+ 3209      6E50726F 
+ 3210              	.LASF73:
+ 3211 03a2 46616E43 		.ascii	"FanController_initVar\000"
+ 3211      6F6E7472 
+ 3211      6F6C6C65 
+ 3211      725F696E 
+ 3211      69745661 
+ 3212              	.LASF12:
+ 3213 03b8 666C6F61 		.ascii	"float\000"
+ 3213      7400
+ 3214              	.LASF48:
+ 3215 03be 46616E43 		.ascii	"FanController_GetAlertSource\000"
  3215      6F6E7472 
  3215      6F6C6C65 
- 3215      725F696E 
- 3215      69745661 
- 3216              	.LASF12:
- 3217 041e 666C6F61 		.ascii	"float\000"
- 3217      7400
- 3218              	.LASF48:
- 3219 0424 46616E43 		.ascii	"FanController_GetAlertSource\000"
- 3219      6F6E7472 
- 3219      6F6C6C65 
- 3219      725F4765 
- 3219      74416C65 
- 3220              	.LASF81:
- 3221 0441 46616E43 		.ascii	"FanController_TachOutDMA_DmaInitialize\000"
- 3221      6F6E7472 
- 3221      6F6C6C65 
- 3221      725F5461 
- 3221      63684F75 
- 3222              	.LASF77:
- 3223 0468 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
- 3223      4320342E 
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 90
+ 3215      725F4765 
+ 3215      74416C65 
+ 3216              	.LASF81:
+ 3217 03db 46616E43 		.ascii	"FanController_TachOutDMA_DmaInitialize\000"
+ 3217      6F6E7472 
+ 3217      6F6C6C65 
+ 3217      725F5461 
+ 3217      63684F75 
+ 3218              	.LASF77:
+ 3219 0402 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
+ 3219      4320342E 
+ 3219      372E3320 
+ 3219      32303133 
+ 3219      30333132 
+ 3220 0435 616E6368 		.ascii	"anch revision 196615]\000"
+ 3220      20726576 
+ 3220      6973696F 
+ 3220      6E203139 
+ 3220      36363135 
+ 3221              	.LASF15:
+ 3222 044b 72656738 		.ascii	"reg8\000"
+ 3222      00
+ 3223              	.LASF1:
+ 3224 0450 756E7369 		.ascii	"unsigned char\000"
+ 3224      676E6564 
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 90
 
 
- 3223      372E3320 
- 3223      32303133 
- 3223      30333132 
- 3224 049b 616E6368 		.ascii	"anch revision 196615]\000"
- 3224      20726576 
- 3224      6973696F 
- 3224      6E203139 
- 3224      36363135 
- 3225              	.LASF15:
- 3226 04b1 72656738 		.ascii	"reg8\000"
- 3226      00
- 3227              	.LASF1:
- 3228 04b6 756E7369 		.ascii	"unsigned char\000"
- 3228      676E6564 
- 3228      20636861 
- 3228      7200
- 3229              	.LASF2:
- 3230 04c4 73686F72 		.ascii	"short int\000"
- 3230      7420696E 
- 3230      7400
- 3231              	.LASF50:
- 3232 04ce 46616E43 		.ascii	"FanController_GetFanStallStatus\000"
- 3232      6F6E7472 
- 3232      6F6C6C65 
- 3232      725F4765 
- 3232      7446616E 
- 3233              	.LASF71:
- 3234 04ee 46616E43 		.ascii	"FanController_TachOutDMA_channel\000"
- 3234      6F6E7472 
- 3234      6F6C6C65 
- 3234      725F5461 
- 3234      63684F75 
- 3235              	.LASF46:
- 3236 050f 616C6572 		.ascii	"alertMask\000"
- 3236      744D6173 
- 3236      6B00
- 3237              	.LASF14:
- 3238 0519 63686172 		.ascii	"char\000"
- 3238      00
- 3239              	.LASF57:
- 3240 051e 64757943 		.ascii	"duyCycle\000"
- 3240      79636C65 
- 3240      00
- 3241              	.LASF80:
- 3242 0527 46616E43 		.ascii	"FanController_SetupDMA\000"
+ 3224      20636861 
+ 3224      7200
+ 3225              	.LASF2:
+ 3226 045e 73686F72 		.ascii	"short int\000"
+ 3226      7420696E 
+ 3226      7400
+ 3227              	.LASF50:
+ 3228 0468 46616E43 		.ascii	"FanController_GetFanStallStatus\000"
+ 3228      6F6E7472 
+ 3228      6F6C6C65 
+ 3228      725F4765 
+ 3228      7446616E 
+ 3229              	.LASF71:
+ 3230 0488 46616E43 		.ascii	"FanController_TachOutDMA_channel\000"
+ 3230      6F6E7472 
+ 3230      6F6C6C65 
+ 3230      725F5461 
+ 3230      63684F75 
+ 3231              	.LASF46:
+ 3232 04a9 616C6572 		.ascii	"alertMask\000"
+ 3232      744D6173 
+ 3232      6B00
+ 3233              	.LASF14:
+ 3234 04b3 63686172 		.ascii	"char\000"
+ 3234      00
+ 3235              	.LASF57:
+ 3236 04b8 64757943 		.ascii	"duyCycle\000"
+ 3236      79636C65 
+ 3236      00
+ 3237              	.LASF80:
+ 3238 04c1 46616E43 		.ascii	"FanController_SetupDMA\000"
+ 3238      6F6E7472 
+ 3238      6F6C6C65 
+ 3238      725F5365 
+ 3238      74757044 
+ 3239              	.LASF67:
+ 3240 04d8 72657175 		.ascii	"requestPerBurst\000"
+ 3240      65737450 
+ 3240      65724275 
+ 3240      72737400 
+ 3241              	.LASF76:
+ 3242 04e8 46616E43 		.ascii	"FanController_fanProperties\000"
  3242      6F6E7472 
  3242      6F6C6C65 
- 3242      725F5365 
- 3242      74757044 
- 3243              	.LASF67:
- 3244 053e 72657175 		.ascii	"requestPerBurst\000"
- 3244      65737450 
- 3244      65724275 
- 3244      72737400 
- 3245              	.LASF76:
- 3246 054e 46616E43 		.ascii	"FanController_fanProperties\000"
+ 3242      725F6661 
+ 3242      6E50726F 
+ 3243              	.LASF78:
+ 3244 0504 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\FanController.c\000"
+ 3244      6E657261 
+ 3244      7465645F 
+ 3244      536F7572 
+ 3244      63655C50 
+ 3245              	.LASF44:
+ 3246 052d 46616E43 		.ascii	"FanController_SetAlertMask\000"
  3246      6F6E7472 
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 91
-
-
  3246      6F6C6C65 
- 3246      725F6661 
- 3246      6E50726F 
- 3247              	.LASF78:
- 3248 056a 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\FanController.c\000"
- 3248      6E657261 
- 3248      7465645F 
- 3248      536F7572 
- 3248      63655C50 
- 3249              	.LASF44:
- 3250 0593 46616E43 		.ascii	"FanController_SetAlertMask\000"
- 3250      6F6E7472 
- 3250      6F6C6C65 
- 3250      725F5365 
- 3250      74416C65 
- 3251              	.LASF63:
- 3252 05ae 61637475 		.ascii	"actualSpeed\000"
- 3252      616C5370 
- 3252      65656400 
- 3253              	.LASF56:
- 3254 05ba 46616E43 		.ascii	"FanController_GetDutyCycle\000"
- 3254      6F6E7472 
- 3254      6F6C6C65 
- 3254      725F4765 
- 3254      74447574 
- 3255              	.LASF74:
- 3256 05d5 46616E43 		.ascii	"FanController_fanControl\000"
- 3256      6F6E7472 
- 3256      6F6C6C65 
- 3256      725F6661 
- 3256      6E436F6E 
- 3257              	.LASF65:
- 3258 05ee 46616E43 		.ascii	"FanController_fanOutTds\000"
- 3258      6F6E7472 
- 3258      6F6C6C65 
- 3258      725F6661 
- 3258      6E4F7574 
- 3259              	.LASF26:
- 3260 0606 64757479 		.ascii	"dutyRpmSlope\000"
- 3260      52706D53 
- 3260      6C6F7065 
- 3260      00
- 3261              	.LASF18:
- 3262 0613 46616E43 		.ascii	"FanController_fanTdOutStruct\000"
- 3262      6F6E7472 
- 3262      6F6C6C65 
- 3262      725F6661 
- 3262      6E54644F 
- 3263              	.LASF39:
- 3264 0630 46616E43 		.ascii	"FanController_Init\000"
- 3264      6F6E7472 
- 3264      6F6C6C65 
- 3264      725F496E 
- 3264      697400
- 3265              	.LASF58:
- 3266 0643 46616E43 		.ascii	"FanController_SetDesiredSpeed\000"
- 3266      6F6E7472 
-ARM GAS  C:\Users\gmh5970\AppData\Local\Temp\ccSVEkXB.s 			page 92
+ 3246      725F5365 
+ARM GAS  D:\Users\BertoTech\TEMP\ccFqKowu.s 			page 91
 
 
- 3266      6F6C6C65 
- 3266      725F5365 
- 3266      74446573 
- 3267              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br
+ 3246      74416C65 
+ 3247              	.LASF79:
+ 3248 0548 443A5C55 		.ascii	"D:\\Users\\BertoTech\\Documents\\PID\\FW_Fan_Contro"
+ 3248      73657273 
+ 3248      5C426572 
+ 3248      746F5465 
+ 3248      63685C44 
+ 3249 0576 6C30312E 		.ascii	"l01.cydsn\000"
+ 3249      63796473 
+ 3249      6E00
+ 3250              	.LASF63:
+ 3251 0580 61637475 		.ascii	"actualSpeed\000"
+ 3251      616C5370 
+ 3251      65656400 
+ 3252              	.LASF56:
+ 3253 058c 46616E43 		.ascii	"FanController_GetDutyCycle\000"
+ 3253      6F6E7472 
+ 3253      6F6C6C65 
+ 3253      725F4765 
+ 3253      74447574 
+ 3254              	.LASF74:
+ 3255 05a7 46616E43 		.ascii	"FanController_fanControl\000"
+ 3255      6F6E7472 
+ 3255      6F6C6C65 
+ 3255      725F6661 
+ 3255      6E436F6E 
+ 3256              	.LASF65:
+ 3257 05c0 46616E43 		.ascii	"FanController_fanOutTds\000"
+ 3257      6F6E7472 
+ 3257      6F6C6C65 
+ 3257      725F6661 
+ 3257      6E4F7574 
+ 3258              	.LASF26:
+ 3259 05d8 64757479 		.ascii	"dutyRpmSlope\000"
+ 3259      52706D53 
+ 3259      6C6F7065 
+ 3259      00
+ 3260              	.LASF18:
+ 3261 05e5 46616E43 		.ascii	"FanController_fanTdOutStruct\000"
+ 3261      6F6E7472 
+ 3261      6F6C6C65 
+ 3261      725F6661 
+ 3261      6E54644F 
+ 3262              	.LASF39:
+ 3263 0602 46616E43 		.ascii	"FanController_Init\000"
+ 3263      6F6E7472 
+ 3263      6F6C6C65 
+ 3263      725F496E 
+ 3263      697400
+ 3264              	.LASF58:
+ 3265 0615 46616E43 		.ascii	"FanController_SetDesiredSpeed\000"
+ 3265      6F6E7472 
+ 3265      6F6C6C65 
+ 3265      725F5365 
+ 3265      74446573 
+ 3266              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br
