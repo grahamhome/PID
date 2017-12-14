@@ -1,11 +1,13 @@
 -- Project:   FW_Fan_Control01
--- Generated: 12/13/2017 20:05:19
+-- Generated: 12/13/2017 23:47:34
 -- 
 
 ENTITY FW_Fan_Control01 IS
     PORT(
         P0_1(0)_PAD : OUT std_ulogic;
         Pin_2(0)_PAD : IN std_ulogic;
+        Pin_3(0)_PAD : IN std_ulogic;
+        Pin_4(0)_PAD : IN std_ulogic;
         \LCD:LCDPort(0)_PAD\ : OUT std_ulogic;
         \LCD:LCDPort(1)_PAD\ : OUT std_ulogic;
         \LCD:LCDPort(2)_PAD\ : OUT std_ulogic;
@@ -42,6 +44,12 @@ ARCHITECTURE __DEFAULT__ OF FW_Fan_Control01 IS
     SIGNAL Net_122_local : bit;
     SIGNAL Net_142 : bit;
     SIGNAL Net_155 : bit;
+    SIGNAL Net_186 : bit;
+    ATTRIBUTE placement_force OF Net_186 : SIGNAL IS "U(3,4,A)0";
+    SIGNAL Net_187 : bit;
+    ATTRIBUTE placement_force OF Net_187 : SIGNAL IS "U(3,3,B)3";
+    SIGNAL Net_188 : bit;
+    SIGNAL Net_190 : bit;
     SIGNAL Net_257 : bit;
     ATTRIBUTE global_signal OF Net_257 : SIGNAL IS true;
     SIGNAL Net_257_local : bit;
@@ -49,19 +57,21 @@ ARCHITECTURE __DEFAULT__ OF FW_Fan_Control01 IS
     ATTRIBUTE global_signal OF Net_291 : SIGNAL IS true;
     SIGNAL Net_291_local : bit;
     SIGNAL Net_357 : bit;
-    ATTRIBUTE placement_force OF Net_357 : SIGNAL IS "U(3,3,A)0";
+    ATTRIBUTE placement_force OF Net_357 : SIGNAL IS "U(2,2,A)0";
     SIGNAL Net_541 : bit;
-    ATTRIBUTE placement_force OF Net_541 : SIGNAL IS "U(0,1,A)0";
+    ATTRIBUTE placement_force OF Net_541 : SIGNAL IS "U(2,3,A)1";
     SIGNAL Net_714 : bit;
     SIGNAL Net_83 : bit;
     ATTRIBUTE global_signal OF Net_83 : SIGNAL IS true;
     SIGNAL Net_83_local : bit;
     SIGNAL Net_914 : bit;
     SIGNAL Net_947 : bit;
-    ATTRIBUTE placement_force OF Net_947 : SIGNAL IS "U(3,2,A)1";
+    ATTRIBUTE placement_force OF Net_947 : SIGNAL IS "U(2,4,A)0";
     SIGNAL P0_1(0)__PA : bit;
     SIGNAL Pin_1(0)__PA : bit;
     SIGNAL Pin_2(0)__PA : bit;
+    SIGNAL Pin_3(0)__PA : bit;
+    SIGNAL Pin_4(0)__PA : bit;
     SIGNAL \ADC_DelSig_1:Net_245_0\ : bit;
     SIGNAL \ADC_DelSig_1:Net_245_1\ : bit;
     SIGNAL \ADC_DelSig_1:Net_245_2\ : bit;
@@ -85,11 +95,11 @@ ARCHITECTURE __DEFAULT__ OF FW_Fan_Control01 IS
     SIGNAL \ADC_DelSig_1:mod_dat_3\ : bit;
     SIGNAL \ADC_DelSig_1:mod_reset\ : bit;
     SIGNAL \Echo_Timer:TimerUDB:capt_fifo_load\ : bit;
-    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:capt_fifo_load\ : SIGNAL IS "U(0,2,A)0";
+    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:capt_fifo_load\ : SIGNAL IS "U(0,1,A)0";
     SIGNAL \Echo_Timer:TimerUDB:capt_int_temp\ : bit;
-    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:capt_int_temp\ : SIGNAL IS "U(0,2,A)2";
+    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:capt_int_temp\ : SIGNAL IS "U(0,1,B)1";
     SIGNAL \Echo_Timer:TimerUDB:capture_last\ : bit;
-    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:capture_last\ : SIGNAL IS "U(0,2,A)1";
+    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:capture_last\ : SIGNAL IS "U(0,1,A)1";
     SIGNAL \Echo_Timer:TimerUDB:control_0\ : bit;
     SIGNAL \Echo_Timer:TimerUDB:control_1\ : bit;
     SIGNAL \Echo_Timer:TimerUDB:control_2\ : bit;
@@ -99,21 +109,21 @@ ARCHITECTURE __DEFAULT__ OF FW_Fan_Control01 IS
     SIGNAL \Echo_Timer:TimerUDB:control_6\ : bit;
     SIGNAL \Echo_Timer:TimerUDB:control_7\ : bit;
     SIGNAL \Echo_Timer:TimerUDB:int_capt_count_0\ : bit;
-    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:int_capt_count_0\ : SIGNAL IS "U(0,1,B)1";
+    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:int_capt_count_0\ : SIGNAL IS "U(0,1,A)2";
     SIGNAL \Echo_Timer:TimerUDB:int_capt_count_1\ : bit;
     ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:int_capt_count_1\ : SIGNAL IS "U(0,1,B)0";
     SIGNAL \Echo_Timer:TimerUDB:per_zero\ : bit;
     SIGNAL \Echo_Timer:TimerUDB:run_mode\ : bit;
-    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:run_mode\ : SIGNAL IS "U(1,1,A)3";
+    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:run_mode\ : SIGNAL IS "U(1,1,A)2";
     SIGNAL \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u0.ce0__sig\ : bit;
     SIGNAL \Echo_Timer:TimerUDB:status_2\ : bit;
     SIGNAL \Echo_Timer:TimerUDB:status_3\ : bit;
     SIGNAL \Echo_Timer:TimerUDB:status_tc\ : bit;
-    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:status_tc\ : SIGNAL IS "U(0,2,B)0";
+    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:status_tc\ : SIGNAL IS "U(1,1,A)0";
     SIGNAL \Echo_Timer:TimerUDB:timer_enable\ : bit;
-    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:timer_enable\ : SIGNAL IS "U(1,1,B)1";
+    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:timer_enable\ : SIGNAL IS "U(1,1,A)1";
     SIGNAL \Echo_Timer:TimerUDB:trig_disable\ : bit;
-    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:trig_disable\ : SIGNAL IS "U(1,1,A)2";
+    ATTRIBUTE placement_force OF \Echo_Timer:TimerUDB:trig_disable\ : SIGNAL IS "U(1,1,B)1";
     SIGNAL \FanController:FanTach:FanTachCounter:u0.ce0__sig\ : bit;
     SIGNAL \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:ce0\ : bit;
     SIGNAL \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:ce1\ : bit;
@@ -128,9 +138,9 @@ ARCHITECTURE __DEFAULT__ OF FW_Fan_Control01 IS
     SIGNAL \FanController:B_FanCtrl:alert_mask_control_lsb_6\ : bit;
     SIGNAL \FanController:B_FanCtrl:alert_mask_control_lsb_7\ : bit;
     SIGNAL \FanController:B_FanCtrl:alert_reg\ : bit;
-    ATTRIBUTE placement_force OF \FanController:B_FanCtrl:alert_reg\ : SIGNAL IS "U(3,1,A)1";
+    ATTRIBUTE placement_force OF \FanController:B_FanCtrl:alert_reg\ : SIGNAL IS "U(2,3,B)1";
     SIGNAL \FanController:B_FanCtrl:continuous_nrq\ : bit;
-    ATTRIBUTE placement_force OF \FanController:B_FanCtrl:continuous_nrq\ : SIGNAL IS "U(3,2,B)0";
+    ATTRIBUTE placement_force OF \FanController:B_FanCtrl:continuous_nrq\ : SIGNAL IS "U(3,4,B)0";
     SIGNAL \FanController:B_FanCtrl:control_0\ : bit;
     SIGNAL \FanController:B_FanCtrl:control_1\ : bit;
     SIGNAL \FanController:B_FanCtrl:control_2\ : bit;
@@ -140,11 +150,11 @@ ARCHITECTURE __DEFAULT__ OF FW_Fan_Control01 IS
     SIGNAL \FanController:B_FanCtrl:control_7\ : bit;
     SIGNAL \FanController:B_FanCtrl:interrupt\ : bit;
     SIGNAL \FanController:B_FanCtrl:stall_alrt\ : bit;
-    ATTRIBUTE placement_force OF \FanController:B_FanCtrl:stall_alrt\ : SIGNAL IS "U(3,1,A)2";
+    ATTRIBUTE placement_force OF \FanController:B_FanCtrl:stall_alrt\ : SIGNAL IS "U(2,2,B)0";
     SIGNAL \FanController:B_FanCtrl:stall_status\ : bit;
-    ATTRIBUTE placement_force OF \FanController:B_FanCtrl:stall_status\ : SIGNAL IS "U(3,1,B)1";
+    ATTRIBUTE placement_force OF \FanController:B_FanCtrl:stall_status\ : SIGNAL IS "U(2,2,A)1";
     SIGNAL \FanController:B_FanCtrl:sync_nrq\ : bit;
-    ATTRIBUTE placement_force OF \FanController:B_FanCtrl:sync_nrq\ : SIGNAL IS "U(3,2,A)2";
+    ATTRIBUTE placement_force OF \FanController:B_FanCtrl:sync_nrq\ : SIGNAL IS "U(3,4,A)3";
     SIGNAL \Trigger_Timer:TimerUDB:sT32:timerdp:u0.ce0__sig\ : bit;
     SIGNAL \FanController:FanTach:co_1\ : bit;
     SIGNAL \FanController:FanTach:fan_count_4\ : bit;
@@ -152,45 +162,45 @@ ARCHITECTURE __DEFAULT__ OF FW_Fan_Control01 IS
     SIGNAL \FanController:FanTach:fan_count_6\ : bit;
     SIGNAL \FanController:FanTach:fan_count_tc\ : bit;
     SIGNAL \FanController:FanTach:filtered_rising_tach\ : bit;
-    ATTRIBUTE placement_force OF \FanController:FanTach:filtered_rising_tach\ : SIGNAL IS "U(2,1,B)3";
+    ATTRIBUTE placement_force OF \FanController:FanTach:filtered_rising_tach\ : SIGNAL IS "U(2,0,A)2";
     SIGNAL \FanController:FanTach:gf_dmp_state\ : bit;
-    ATTRIBUTE placement_force OF \FanController:FanTach:gf_dmp_state\ : SIGNAL IS "U(2,1,B)0";
+    ATTRIBUTE placement_force OF \FanController:FanTach:gf_dmp_state\ : SIGNAL IS "U(2,1,B)3";
     SIGNAL \FanController:FanTach:glitch_filter_cntr_cs_1\ : bit;
     SIGNAL \FanController:FanTach:glitch_filter_ld\ : bit;
-    ATTRIBUTE placement_force OF \FanController:FanTach:glitch_filter_ld\ : SIGNAL IS "U(2,1,B)1";
+    ATTRIBUTE placement_force OF \FanController:FanTach:glitch_filter_ld\ : SIGNAL IS "U(2,1,A)3";
     SIGNAL \FanController:FanTach:glitch_filter_state\ : bit;
-    ATTRIBUTE placement_force OF \FanController:FanTach:glitch_filter_state\ : SIGNAL IS "U(2,1,B)2";
+    ATTRIBUTE placement_force OF \FanController:FanTach:glitch_filter_state\ : SIGNAL IS "U(2,1,B)1";
     SIGNAL \FanController:FanTach:glitch_filter_tc\ : bit;
     SIGNAL \FanController:FanTach:next_fan\ : bit;
-    ATTRIBUTE placement_force OF \FanController:FanTach:next_fan\ : SIGNAL IS "U(2,2,B)3";
+    ATTRIBUTE placement_force OF \FanController:FanTach:next_fan\ : SIGNAL IS "U(3,1,B)3";
     SIGNAL \FanController:FanTach:pulse_tc\ : bit;
-    ATTRIBUTE placement_force OF \FanController:FanTach:pulse_tc\ : SIGNAL IS "U(2,3,A)3";
+    ATTRIBUTE placement_force OF \FanController:FanTach:pulse_tc\ : SIGNAL IS "U(3,2,A)3";
     SIGNAL \FanController:FanTach:stall_det\ : bit;
-    ATTRIBUTE placement_force OF \FanController:FanTach:stall_det\ : SIGNAL IS "U(2,2,A)3";
+    ATTRIBUTE placement_force OF \FanController:FanTach:stall_det\ : SIGNAL IS "U(3,2,B)0";
     SIGNAL \FanController:FanTach:tach\ : bit;
-    ATTRIBUTE placement_force OF \FanController:FanTach:tach\ : SIGNAL IS "U(2,2,A)1";
+    ATTRIBUTE placement_force OF \FanController:FanTach:tach\ : SIGNAL IS "U(3,1,A)2";
     SIGNAL \FanController:FanTach:tach_state_0\ : bit;
-    ATTRIBUTE placement_force OF \FanController:FanTach:tach_state_0\ : SIGNAL IS "U(3,0,A)3";
+    ATTRIBUTE placement_force OF \FanController:FanTach:tach_state_0\ : SIGNAL IS "U(3,0,A)0";
     SIGNAL \FanController:FanTach:tach_state_1\ : bit;
-    ATTRIBUTE placement_force OF \FanController:FanTach:tach_state_1\ : SIGNAL IS "U(2,0,A)3";
+    ATTRIBUTE placement_force OF \FanController:FanTach:tach_state_1\ : SIGNAL IS "U(3,0,B)1";
     SIGNAL \FanController:FanTach:tach_state_2\ : bit;
-    ATTRIBUTE placement_force OF \FanController:FanTach:tach_state_2\ : SIGNAL IS "U(3,0,B)1";
+    ATTRIBUTE placement_force OF \FanController:FanTach:tach_state_2\ : SIGNAL IS "U(2,0,A)0";
     SIGNAL \FanController:FanTach:tach_state_3\ : bit;
-    ATTRIBUTE placement_force OF \FanController:FanTach:tach_state_3\ : SIGNAL IS "U(2,3,B)2";
+    ATTRIBUTE placement_force OF \FanController:FanTach:tach_state_3\ : SIGNAL IS "U(2,0,B)2";
     SIGNAL \FanController:Net_6081\ : bit;
     SIGNAL \FanController:Net_6146\ : bit;
-    ATTRIBUTE placement_force OF \FanController:Net_6146\ : SIGNAL IS "U(3,3,B)2";
+    ATTRIBUTE placement_force OF \FanController:Net_6146\ : SIGNAL IS "U(2,0,B)0";
     SIGNAL \FanController:Net_6149_0\ : bit;
-    ATTRIBUTE placement_force OF \FanController:Net_6149_0\ : SIGNAL IS "U(2,2,B)1";
+    ATTRIBUTE placement_force OF \FanController:Net_6149_0\ : SIGNAL IS "U(3,2,A)1";
     SIGNAL \FanController:Net_6505\ : bit;
-    ATTRIBUTE placement_force OF \FanController:Net_6505\ : SIGNAL IS "U(3,1,B)2";
+    ATTRIBUTE placement_force OF \FanController:Net_6505\ : SIGNAL IS "U(2,1,B)0";
     SIGNAL \FanController:address_0\ : bit;
     SIGNAL \FanController:address_1\ : bit;
     SIGNAL \FanController:address_2\ : bit;
     SIGNAL \FanController:address_3\ : bit;
     SIGNAL \FanController:alert_mask_0\ : bit;
     SIGNAL \FanController:drq\ : bit;
-    ATTRIBUTE placement_force OF \FanController:drq\ : SIGNAL IS "U(2,0,B)3";
+    ATTRIBUTE placement_force OF \FanController:drq\ : SIGNAL IS "U(3,1,A)0";
     SIGNAL \FanController:enable\ : bit;
     SIGNAL \FanController:tach_clk\ : bit;
     ATTRIBUTE global_signal OF \FanController:tach_clk\ : SIGNAL IS true;
@@ -216,9 +226,9 @@ ARCHITECTURE __DEFAULT__ OF FW_Fan_Control01 IS
     SIGNAL \Trigger_Timer:TimerUDB:status_2\ : bit;
     SIGNAL \Trigger_Timer:TimerUDB:status_3\ : bit;
     SIGNAL \Trigger_Timer:TimerUDB:status_tc\ : bit;
-    ATTRIBUTE placement_force OF \Trigger_Timer:TimerUDB:status_tc\ : SIGNAL IS "U(1,0,A)3";
+    ATTRIBUTE placement_force OF \Trigger_Timer:TimerUDB:status_tc\ : SIGNAL IS "U(3,3,A)1";
     SIGNAL __ONE__ : bit;
-    ATTRIBUTE placement_force OF __ONE__ : SIGNAL IS "U(0,3,B)2";
+    ATTRIBUTE placement_force OF __ONE__ : SIGNAL IS "U(2,2,A)3";
     ATTRIBUTE POWER OF __ONE__ : SIGNAL IS true;
     SIGNAL __ZERO__ : bit;
     ATTRIBUTE GROUND OF __ZERO__ : SIGNAL IS true;
@@ -303,147 +313,157 @@ ARCHITECTURE __DEFAULT__ OF FW_Fan_Control01 IS
     SIGNAL \Trigger_Timer:TimerUDB:sT32:timerdp:u3.sor__sig\ : bit;
     SIGNAL \Trigger_Timer:TimerUDB:sT32:timerdp:u3.cmsbo__sig\ : bit;
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
-    ATTRIBUTE lib_model OF Net_357 : LABEL IS "macrocell1";
-    ATTRIBUTE Location OF Net_357 : LABEL IS "U(3,3)";
-    ATTRIBUTE lib_model OF Net_541 : LABEL IS "macrocell2";
-    ATTRIBUTE Location OF Net_541 : LABEL IS "U(0,1)";
-    ATTRIBUTE lib_model OF Net_947 : LABEL IS "macrocell3";
-    ATTRIBUTE Location OF Net_947 : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF Net_186 : LABEL IS "macrocell1";
+    ATTRIBUTE Location OF Net_186 : LABEL IS "U(3,4)";
+    ATTRIBUTE lib_model OF Net_187 : LABEL IS "macrocell2";
+    ATTRIBUTE Location OF Net_187 : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF Net_357 : LABEL IS "macrocell3";
+    ATTRIBUTE Location OF Net_357 : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF Net_541 : LABEL IS "macrocell4";
+    ATTRIBUTE Location OF Net_541 : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF Net_947 : LABEL IS "macrocell5";
+    ATTRIBUTE Location OF Net_947 : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF P0_1(0) : LABEL IS "iocell1";
     ATTRIBUTE Location OF P0_1(0) : LABEL IS "P1[6]";
     ATTRIBUTE lib_model OF Pin_1(0) : LABEL IS "iocell2";
     ATTRIBUTE Location OF Pin_1(0) : LABEL IS "P0[0]";
     ATTRIBUTE lib_model OF Pin_2(0) : LABEL IS "iocell3";
     ATTRIBUTE Location OF Pin_2(0) : LABEL IS "P1[7]";
+    ATTRIBUTE lib_model OF Pin_3(0) : LABEL IS "iocell4";
+    ATTRIBUTE Location OF Pin_3(0) : LABEL IS "P0[2]";
+    ATTRIBUTE lib_model OF Pin_4(0) : LABEL IS "iocell5";
+    ATTRIBUTE Location OF Pin_4(0) : LABEL IS "P12[2]";
     ATTRIBUTE Location OF \ADC_DelSig_1:DEC\ : LABEL IS "F(Decimator,0)";
     ATTRIBUTE Location OF \ADC_DelSig_1:DSM\ : LABEL IS "F(DSM,0)";
     ATTRIBUTE Location OF \ADC_DelSig_1:IRQ\ : LABEL IS "[IntrHod=(0)][IntrId=(29)]";
     ATTRIBUTE lib_model OF \EOC_SR:sts:sts_reg\ : LABEL IS "statuscell1";
-    ATTRIBUTE Location OF \EOC_SR:sts:sts_reg\ : LABEL IS "U(3,2)";
-    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:capt_fifo_load\ : LABEL IS "macrocell4";
-    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:capt_fifo_load\ : LABEL IS "U(0,2)";
-    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:capt_int_temp\ : LABEL IS "macrocell5";
-    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:capt_int_temp\ : LABEL IS "U(0,2)";
-    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:capture_last\ : LABEL IS "macrocell6";
-    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:capture_last\ : LABEL IS "U(0,2)";
-    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:int_capt_count_0\ : LABEL IS "macrocell7";
+    ATTRIBUTE Location OF \EOC_SR:sts:sts_reg\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:capt_fifo_load\ : LABEL IS "macrocell6";
+    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:capt_fifo_load\ : LABEL IS "U(0,1)";
+    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:capt_int_temp\ : LABEL IS "macrocell7";
+    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:capt_int_temp\ : LABEL IS "U(0,1)";
+    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:capture_last\ : LABEL IS "macrocell8";
+    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:capture_last\ : LABEL IS "U(0,1)";
+    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:int_capt_count_0\ : LABEL IS "macrocell9";
     ATTRIBUTE Location OF \Echo_Timer:TimerUDB:int_capt_count_0\ : LABEL IS "U(0,1)";
-    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:int_capt_count_1\ : LABEL IS "macrocell8";
+    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:int_capt_count_1\ : LABEL IS "macrocell10";
     ATTRIBUTE Location OF \Echo_Timer:TimerUDB:int_capt_count_1\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell1";
-    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(0,2)";
-    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:run_mode\ : LABEL IS "macrocell9";
+    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(0,1)";
+    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:run_mode\ : LABEL IS "macrocell11";
     ATTRIBUTE Location OF \Echo_Timer:TimerUDB:run_mode\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell1";
     ATTRIBUTE Location OF \Echo_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell1";
-    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "datapathcell2";
-    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(0,2)";
-    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:status_tc\ : LABEL IS "macrocell10";
-    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:status_tc\ : LABEL IS "U(0,2)";
-    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:timer_enable\ : LABEL IS "macrocell11";
+    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(0,1)";
+    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:status_tc\ : LABEL IS "macrocell12";
+    ATTRIBUTE Location OF \Echo_Timer:TimerUDB:status_tc\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:timer_enable\ : LABEL IS "macrocell13";
     ATTRIBUTE Location OF \Echo_Timer:TimerUDB:timer_enable\ : LABEL IS "U(1,1)";
-    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:trig_disable\ : LABEL IS "macrocell12";
+    ATTRIBUTE lib_model OF \Echo_Timer:TimerUDB:trig_disable\ : LABEL IS "macrocell14";
     ATTRIBUTE Location OF \Echo_Timer:TimerUDB:trig_disable\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \FanController:B_FanCtrl:AlertMaskLSB\ : LABEL IS "controlcell2";
-    ATTRIBUTE Location OF \FanController:B_FanCtrl:AlertMaskLSB\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \FanController:B_FanCtrl:AlertMaskLSB\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \FanController:B_FanCtrl:AlertStatusReg\ : LABEL IS "statusicell2";
-    ATTRIBUTE Location OF \FanController:B_FanCtrl:AlertStatusReg\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \FanController:B_FanCtrl:AlertStatusReg\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \FanController:B_FanCtrl:GlobalControlReg\ : LABEL IS "controlcell3";
-    ATTRIBUTE Location OF \FanController:B_FanCtrl:GlobalControlReg\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \FanController:B_FanCtrl:GlobalControlReg\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u0\ : LABEL IS "datapathcell3";
-    ATTRIBUTE Location OF \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u0\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u0\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u1\ : LABEL IS "datapathcell4";
-    ATTRIBUTE Location OF \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u1\ : LABEL IS "U(3,3)";
+    ATTRIBUTE Location OF \FanController:B_FanCtrl:OPEN_LOOP:FanPWM_1_2:PWM10:OpenLoopFan10:u1\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \FanController:B_FanCtrl:StallError_LSB\ : LABEL IS "statuscell2";
-    ATTRIBUTE Location OF \FanController:B_FanCtrl:StallError_LSB\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \FanController:B_FanCtrl:alert_reg\ : LABEL IS "macrocell13";
-    ATTRIBUTE Location OF \FanController:B_FanCtrl:alert_reg\ : LABEL IS "U(3,1)";
-    ATTRIBUTE lib_model OF \FanController:B_FanCtrl:continuous_nrq\ : LABEL IS "macrocell14";
-    ATTRIBUTE Location OF \FanController:B_FanCtrl:continuous_nrq\ : LABEL IS "U(3,2)";
-    ATTRIBUTE lib_model OF \FanController:B_FanCtrl:stall_alrt\ : LABEL IS "macrocell15";
-    ATTRIBUTE Location OF \FanController:B_FanCtrl:stall_alrt\ : LABEL IS "U(3,1)";
-    ATTRIBUTE lib_model OF \FanController:B_FanCtrl:stall_status\ : LABEL IS "macrocell16";
-    ATTRIBUTE Location OF \FanController:B_FanCtrl:stall_status\ : LABEL IS "U(3,1)";
-    ATTRIBUTE lib_model OF \FanController:B_FanCtrl:sync_nrq\ : LABEL IS "macrocell17";
-    ATTRIBUTE Location OF \FanController:B_FanCtrl:sync_nrq\ : LABEL IS "U(3,2)";
-    ATTRIBUTE Location OF \FanController:FanTach:FanCounter\ : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF \FanController:B_FanCtrl:StallError_LSB\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \FanController:B_FanCtrl:alert_reg\ : LABEL IS "macrocell15";
+    ATTRIBUTE Location OF \FanController:B_FanCtrl:alert_reg\ : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF \FanController:B_FanCtrl:continuous_nrq\ : LABEL IS "macrocell16";
+    ATTRIBUTE Location OF \FanController:B_FanCtrl:continuous_nrq\ : LABEL IS "U(3,4)";
+    ATTRIBUTE lib_model OF \FanController:B_FanCtrl:stall_alrt\ : LABEL IS "macrocell17";
+    ATTRIBUTE Location OF \FanController:B_FanCtrl:stall_alrt\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \FanController:B_FanCtrl:stall_status\ : LABEL IS "macrocell18";
+    ATTRIBUTE Location OF \FanController:B_FanCtrl:stall_status\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \FanController:B_FanCtrl:sync_nrq\ : LABEL IS "macrocell19";
+    ATTRIBUTE Location OF \FanController:B_FanCtrl:sync_nrq\ : LABEL IS "U(3,4)";
+    ATTRIBUTE Location OF \FanController:FanTach:FanCounter\ : LABEL IS "U(3,1)";
     ATTRIBUTE lib_model OF \FanController:FanTach:FanTachCounter:u0\ : LABEL IS "datapathcell5";
     ATTRIBUTE Location OF \FanController:FanTach:FanTachCounter:u0\ : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \FanController:FanTach:FanTachCounter:u1\ : LABEL IS "datapathcell6";
     ATTRIBUTE Location OF \FanController:FanTach:FanTachCounter:u1\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \FanController:FanTach:GlitchFilterTimer:u0\ : LABEL IS "datapathcell7";
     ATTRIBUTE Location OF \FanController:FanTach:GlitchFilterTimer:u0\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \FanController:FanTach:filtered_rising_tach\ : LABEL IS "macrocell18";
-    ATTRIBUTE Location OF \FanController:FanTach:filtered_rising_tach\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \FanController:FanTach:gf_dmp_state\ : LABEL IS "macrocell19";
+    ATTRIBUTE lib_model OF \FanController:FanTach:filtered_rising_tach\ : LABEL IS "macrocell20";
+    ATTRIBUTE Location OF \FanController:FanTach:filtered_rising_tach\ : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF \FanController:FanTach:gf_dmp_state\ : LABEL IS "macrocell21";
     ATTRIBUTE Location OF \FanController:FanTach:gf_dmp_state\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \FanController:FanTach:glitch_filter_ld\ : LABEL IS "macrocell20";
+    ATTRIBUTE lib_model OF \FanController:FanTach:glitch_filter_ld\ : LABEL IS "macrocell22";
     ATTRIBUTE Location OF \FanController:FanTach:glitch_filter_ld\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \FanController:FanTach:glitch_filter_state\ : LABEL IS "macrocell21";
+    ATTRIBUTE lib_model OF \FanController:FanTach:glitch_filter_state\ : LABEL IS "macrocell23";
     ATTRIBUTE Location OF \FanController:FanTach:glitch_filter_state\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \FanController:FanTach:next_fan\ : LABEL IS "macrocell22";
-    ATTRIBUTE Location OF \FanController:FanTach:next_fan\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \FanController:FanTach:pulse_tc\ : LABEL IS "macrocell23";
-    ATTRIBUTE Location OF \FanController:FanTach:pulse_tc\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \FanController:FanTach:stall_det\ : LABEL IS "macrocell24";
-    ATTRIBUTE Location OF \FanController:FanTach:stall_det\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \FanController:FanTach:tach\ : LABEL IS "macrocell25";
-    ATTRIBUTE Location OF \FanController:FanTach:tach\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \FanController:FanTach:tach_state_0\ : LABEL IS "macrocell26";
+    ATTRIBUTE lib_model OF \FanController:FanTach:next_fan\ : LABEL IS "macrocell24";
+    ATTRIBUTE Location OF \FanController:FanTach:next_fan\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \FanController:FanTach:pulse_tc\ : LABEL IS "macrocell25";
+    ATTRIBUTE Location OF \FanController:FanTach:pulse_tc\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \FanController:FanTach:stall_det\ : LABEL IS "macrocell26";
+    ATTRIBUTE Location OF \FanController:FanTach:stall_det\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \FanController:FanTach:tach\ : LABEL IS "macrocell27";
+    ATTRIBUTE Location OF \FanController:FanTach:tach\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \FanController:FanTach:tach_state_0\ : LABEL IS "macrocell28";
     ATTRIBUTE Location OF \FanController:FanTach:tach_state_0\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \FanController:FanTach:tach_state_1\ : LABEL IS "macrocell27";
-    ATTRIBUTE Location OF \FanController:FanTach:tach_state_1\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \FanController:FanTach:tach_state_2\ : LABEL IS "macrocell28";
-    ATTRIBUTE Location OF \FanController:FanTach:tach_state_2\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \FanController:FanTach:tach_state_3\ : LABEL IS "macrocell29";
-    ATTRIBUTE Location OF \FanController:FanTach:tach_state_3\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \FanController:Net_6146\ : LABEL IS "macrocell30";
-    ATTRIBUTE Location OF \FanController:Net_6146\ : LABEL IS "U(3,3)";
-    ATTRIBUTE lib_model OF \FanController:Net_6149_0\ : LABEL IS "macrocell31";
-    ATTRIBUTE Location OF \FanController:Net_6149_0\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \FanController:Net_6505\ : LABEL IS "macrocell32";
-    ATTRIBUTE Location OF \FanController:Net_6505\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \FanController:FanTach:tach_state_1\ : LABEL IS "macrocell29";
+    ATTRIBUTE Location OF \FanController:FanTach:tach_state_1\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \FanController:FanTach:tach_state_2\ : LABEL IS "macrocell30";
+    ATTRIBUTE Location OF \FanController:FanTach:tach_state_2\ : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF \FanController:FanTach:tach_state_3\ : LABEL IS "macrocell31";
+    ATTRIBUTE Location OF \FanController:FanTach:tach_state_3\ : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF \FanController:Net_6146\ : LABEL IS "macrocell32";
+    ATTRIBUTE Location OF \FanController:Net_6146\ : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF \FanController:Net_6149_0\ : LABEL IS "macrocell33";
+    ATTRIBUTE Location OF \FanController:Net_6149_0\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \FanController:Net_6505\ : LABEL IS "macrocell34";
+    ATTRIBUTE Location OF \FanController:Net_6505\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \FanController:TachOutDMA\ : LABEL IS "drqcell1";
     ATTRIBUTE Location OF \FanController:TachOutDMA\ : LABEL IS "[DrqHod=(0)][DrqId=(0)]";
-    ATTRIBUTE lib_model OF \FanController:drq\ : LABEL IS "macrocell33";
-    ATTRIBUTE Location OF \FanController:drq\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \LCD:LCDPort(0)\ : LABEL IS "iocell4";
+    ATTRIBUTE lib_model OF \FanController:drq\ : LABEL IS "macrocell35";
+    ATTRIBUTE Location OF \FanController:drq\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \LCD:LCDPort(0)\ : LABEL IS "iocell6";
     ATTRIBUTE Location OF \LCD:LCDPort(0)\ : LABEL IS "P2[0]";
-    ATTRIBUTE lib_model OF \LCD:LCDPort(1)\ : LABEL IS "iocell5";
+    ATTRIBUTE lib_model OF \LCD:LCDPort(1)\ : LABEL IS "iocell7";
     ATTRIBUTE Location OF \LCD:LCDPort(1)\ : LABEL IS "P2[1]";
-    ATTRIBUTE lib_model OF \LCD:LCDPort(2)\ : LABEL IS "iocell6";
+    ATTRIBUTE lib_model OF \LCD:LCDPort(2)\ : LABEL IS "iocell8";
     ATTRIBUTE Location OF \LCD:LCDPort(2)\ : LABEL IS "P2[2]";
-    ATTRIBUTE lib_model OF \LCD:LCDPort(3)\ : LABEL IS "iocell7";
+    ATTRIBUTE lib_model OF \LCD:LCDPort(3)\ : LABEL IS "iocell9";
     ATTRIBUTE Location OF \LCD:LCDPort(3)\ : LABEL IS "P2[3]";
-    ATTRIBUTE lib_model OF \LCD:LCDPort(4)\ : LABEL IS "iocell8";
+    ATTRIBUTE lib_model OF \LCD:LCDPort(4)\ : LABEL IS "iocell10";
     ATTRIBUTE Location OF \LCD:LCDPort(4)\ : LABEL IS "P2[4]";
-    ATTRIBUTE lib_model OF \LCD:LCDPort(5)\ : LABEL IS "iocell9";
+    ATTRIBUTE lib_model OF \LCD:LCDPort(5)\ : LABEL IS "iocell11";
     ATTRIBUTE Location OF \LCD:LCDPort(5)\ : LABEL IS "P2[5]";
-    ATTRIBUTE lib_model OF \LCD:LCDPort(6)\ : LABEL IS "iocell10";
+    ATTRIBUTE lib_model OF \LCD:LCDPort(6)\ : LABEL IS "iocell12";
     ATTRIBUTE Location OF \LCD:LCDPort(6)\ : LABEL IS "P2[6]";
     ATTRIBUTE lib_model OF \Trigger_Timer:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell3";
-    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:rstSts:stsreg\ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF \Trigger_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell4";
-    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(0,0)";
+    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \Trigger_Timer:TimerUDB:sT32:timerdp:u0\ : LABEL IS "datapathcell8";
-    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:sT32:timerdp:u0\ : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:sT32:timerdp:u0\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \Trigger_Timer:TimerUDB:sT32:timerdp:u1\ : LABEL IS "datapathcell9";
-    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:sT32:timerdp:u1\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:sT32:timerdp:u1\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \Trigger_Timer:TimerUDB:sT32:timerdp:u2\ : LABEL IS "datapathcell10";
-    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:sT32:timerdp:u2\ : LABEL IS "U(0,0)";
+    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:sT32:timerdp:u2\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \Trigger_Timer:TimerUDB:sT32:timerdp:u3\ : LABEL IS "datapathcell11";
-    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:sT32:timerdp:u3\ : LABEL IS "U(1,0)";
-    ATTRIBUTE lib_model OF \Trigger_Timer:TimerUDB:status_tc\ : LABEL IS "macrocell34";
-    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:status_tc\ : LABEL IS "U(1,0)";
-    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell35";
-    ATTRIBUTE Location OF __ONE__ : LABEL IS "U(0,3)";
+    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:sT32:timerdp:u3\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \Trigger_Timer:TimerUDB:status_tc\ : LABEL IS "macrocell36";
+    ATTRIBUTE Location OF \Trigger_Timer:TimerUDB:status_tc\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell37";
+    ATTRIBUTE Location OF __ONE__ : LABEL IS "U(2,2)";
     ATTRIBUTE Location OF end_echo_IRR : LABEL IS "[IntrHod=(0)][IntrId=(0)]";
-    ATTRIBUTE lib_model OF pwm_1(0) : LABEL IS "iocell11";
+    ATTRIBUTE Location OF left : LABEL IS "[IntrHod=(0)][IntrId=(1)]";
+    ATTRIBUTE lib_model OF pwm_1(0) : LABEL IS "iocell13";
     ATTRIBUTE Location OF pwm_1(0) : LABEL IS "P3[0]";
-    ATTRIBUTE Location OF start_echo_IRR : LABEL IS "[IntrHod=(0)][IntrId=(1)]";
-    ATTRIBUTE lib_model OF tach_1(0) : LABEL IS "iocell12";
+    ATTRIBUTE Location OF right : LABEL IS "[IntrHod=(0)][IntrId=(2)]";
+    ATTRIBUTE Location OF start_echo_IRR : LABEL IS "[IntrHod=(0)][IntrId=(3)]";
+    ATTRIBUTE lib_model OF tach_1(0) : LABEL IS "iocell14";
     ATTRIBUTE Location OF tach_1(0) : LABEL IS "P3[1]";
     COMPONENT abufcell
     END COMPONENT;
@@ -1385,6 +1405,20 @@ BEGIN
             dclk_5 => Net_257_local,
             aclk_glb_ff_0 => \ClockBlock.aclk_glb_ff_0__sig\);
 
+    Net_186:macrocell
+        GENERIC MAP(
+            eqn_main => "(!main_0)")
+        PORT MAP(
+            q => Net_186,
+            main_0 => Net_188);
+
+    Net_187:macrocell
+        GENERIC MAP(
+            eqn_main => "(!main_0)")
+        PORT MAP(
+            q => Net_187,
+            main_0 => Net_190);
+
     Net_357:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * !main_1 * !main_2)")
@@ -1665,6 +1699,180 @@ BEGIN
             oe => open,
             fb => Net_914,
             pad_in => Pin_2(0)_PAD,
+            in_clock => ClockBlock_BUS_CLK,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    Pin_3:logicalport
+        GENERIC MAP(
+            drive_mode => "001",
+            ibuf_enabled => "1",
+            id => "605bdd88-2069-4677-850b-806d2815ff7a",
+            init_dr_st => "0",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "I",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "0",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open,
+            in_clock => open);
+
+    Pin_3(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 2,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "Pin_3",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000100000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => Pin_3(0)__PA,
+            oe => open,
+            fb => Net_188,
+            pad_in => Pin_3(0)_PAD,
+            in_clock => ClockBlock_BUS_CLK,
+            in_clock_en => '1',
+            in_reset => '0',
+            out_clock => open,
+            out_clock_en => '1',
+            out_reset => '0');
+
+    Pin_4:logicalport
+        GENERIC MAP(
+            drive_mode => "001",
+            ibuf_enabled => "1",
+            id => "3a86d953-08e0-4e50-a771-3919da24ce53",
+            init_dr_st => "0",
+            input_clk_en => 0,
+            input_sync => "1",
+            input_sync_mode => "0",
+            intr_mode => "00",
+            invert_in_clock => 0,
+            invert_in_clock_en => 0,
+            invert_in_reset => 0,
+            invert_out_clock => 0,
+            invert_out_clock_en => 0,
+            invert_out_reset => 0,
+            io_voltage => "",
+            layout_mode => "CONTIGUOUS",
+            oe_conn => "0",
+            oe_reset => 0,
+            oe_sync => "0",
+            output_clk_en => 0,
+            output_clock_mode => "0",
+            output_conn => "0",
+            output_mode => "0",
+            output_reset => 0,
+            output_sync => "0",
+            pa_in_clock => -1,
+            pa_in_clock_en => -1,
+            pa_in_reset => -1,
+            pa_out_clock => -1,
+            pa_out_clock_en => -1,
+            pa_out_reset => -1,
+            pin_aliases => "",
+            pin_mode => "I",
+            por_state => 4,
+            port_alias_group => "",
+            port_alias_required => 0,
+            sio_group_cnt => 0,
+            sio_hifreq => "",
+            sio_hyst => "0",
+            sio_ibuf => "00000000",
+            sio_info => "00",
+            sio_obuf => "00000000",
+            sio_refsel => "00000000",
+            sio_vtrip => "00000000",
+            slew_rate => "0",
+            spanning => 0,
+            sw_only => 0,
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0)
+        PORT MAP(
+            in_clock_en => open,
+            in_reset => open,
+            out_clock_en => open,
+            out_reset => open,
+            in_clock => open);
+
+    Pin_4(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 2,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "Pin_4",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000100000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => Pin_4(0)__PA,
+            oe => open,
+            fb => Net_190,
+            pad_in => Pin_4(0)_PAD,
             in_clock => ClockBlock_BUS_CLK,
             in_clock_en => '1',
             in_reset => '0',
@@ -2981,6 +3189,13 @@ BEGIN
             interrupt => Net_155,
             clock => ClockBlock_BUS_CLK);
 
+    left:interrupt
+        GENERIC MAP(
+            int_type => "00")
+        PORT MAP(
+            interrupt => Net_186,
+            clock => ClockBlock_BUS_CLK);
+
     pwm_1:logicalport
         GENERIC MAP(
             drive_mode => "110",
@@ -3067,6 +3282,13 @@ BEGIN
             out_clock => open,
             out_clock_en => '1',
             out_reset => '0');
+
+    right:interrupt
+        GENERIC MAP(
+            int_type => "00")
+        PORT MAP(
+            interrupt => Net_187,
+            clock => ClockBlock_BUS_CLK);
 
     start_echo_IRR:interrupt
         GENERIC MAP(

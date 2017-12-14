@@ -41,6 +41,12 @@
 #include <Pin_2.h>
 #include <end_echo_IRR.h>
 #include <start_echo_IRR.h>
+#include <Pin_3_aliases.h>
+#include <Pin_3.h>
+#include <Pin_4_aliases.h>
+#include <Pin_4.h>
+#include <left.h>
+#include <right.h>
 #include <LCD_LCDPort_aliases.h>
 #include <LCD_LCDPort.h>
 #include <ADC_DelSig_1_AMux.h>

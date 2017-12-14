@@ -139,13 +139,6 @@ void end_echo_IRR_Stop(void)
 *   None
 *
 *******************************************************************************/
-CY_ISR(end_echo_IRR_Interrupt)
-{
-    /*  Place your Interrupt code here. */
-    /* `#START end_echo_IRR_Interrupt` */
-
-    /* `#END` */
-}
 
 
 /*******************************************************************************

@@ -65,6 +65,16 @@
   <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\end_echo_IRR.h" value="NONE;end_echo_IRR" />
   <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\start_echo_IRR.c" value="ARM_C_FILE;start_echo_IRR" />
   <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\start_echo_IRR.h" value="NONE;start_echo_IRR" />
+  <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\Pin_3_aliases.h" value="NONE;Pin_3" />
+  <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\Pin_3.c" value="ARM_C_FILE;Pin_3" />
+  <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\Pin_3.h" value="NONE;Pin_3" />
+  <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\Pin_4_aliases.h" value="NONE;Pin_4" />
+  <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\Pin_4.c" value="ARM_C_FILE;Pin_4" />
+  <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\Pin_4.h" value="NONE;Pin_4" />
+  <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\left.c" value="ARM_C_FILE;left" />
+  <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\left.h" value="NONE;left" />
+  <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\right.c" value="ARM_C_FILE;right" />
+  <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\right.h" value="NONE;right" />
   <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\LCD_LCDPort_aliases.h" value="NONE;LCD_LCDPort" />
   <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\LCD_LCDPort.c" value="ARM_C_FILE;LCD_LCDPort" />
   <file name="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\codegentemp\LCD_LCDPort.h" value="NONE;LCD_LCDPort" />

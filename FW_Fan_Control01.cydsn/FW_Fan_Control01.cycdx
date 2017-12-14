@@ -1,58 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
+  <block name="ZeroTerminal_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="Pin_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="end_echo_IRR" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="clock_4" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   <block name="P0_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-  <block name="clock_3" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-  <block name="Pin_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-  <block name="Trigger_Timer" BASE="0x0" SIZE="0x0" desc="" visible="true">
-    <block name="VirtualMux_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-    <block name="VirtualMux_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-    <block name="VirtualMux_3" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-    <block name="OneTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-    <block name="TimerUDB" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-    <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-    <register name="Trigger_Timer_COUNTER" address="0x40006508" bitWidth="32" desc="UDB.A0 - Current Down Counter Value" />
-    <register name="Trigger_Timer_PERIOD" address="0x40006528" bitWidth="32" desc="UDB.D0 - Assigned Period" />
-    <register name="Trigger_Timer_Control_Reg" address="0x4000657A" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value">
-      <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the Timer" />
-      <field name="CTRL_CMODE" from="6" to="5" access="RW" resetVal="" desc="Capture Mode" />
-      <field name="CTRL_TEN" from="4" to="4" access="RW" resetVal="" desc="Trigger Enable Bit" />
-      <field name="CTRL_TMODE" from="3" to="2" access="RW" resetVal="" desc="Trigger Mode" />
-      <field name="CTRL_IC" from="1" to="0" access="RW" resetVal="" desc="Interrupt Count" />
-    </register>
-    <register name="Trigger_Timer_STATUS_MASK" address="0x4000658B" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register">
-      <field name="TIMER_STS_TC" from="0" to="0" access="R" resetVal="" desc="Enables the Interrupt on TC" />
-      <field name="TIMER_STS_CAPT" from="1" to="1" access="R" resetVal="" desc="Enables the Interrupt on Capture" />
-      <field name="TIMER_STS_FIFO_FULL" from="2" to="2" access="R" resetVal="" desc="FIFO Full Status " />
-      <field name="TIMER_STS_FIFO_NEMPTY" from="3" to="3" access="R" resetVal="" desc="FIFO Empty status " />
-    </register>
-    <register name="Trigger_Timer_STATUS_AUX_CTRL" address="0x4000659B" bitWidth="8" desc="UDB Auxilliary Control Register">
-      <field name="FIFO0_CLR" from="0" to="0" access="RW" resetVal="" desc="FIFO0 clear">
-        <value name="E_FIFO_CLR_0" value="0" desc="Normal FIFO operation" />
-        <value name="E_FIFO_CLR_1" value="1" desc="Clear FIFO state" />
-      </field>
-      <field name="FIFO1_CLR" from="1" to="1" access="RW" resetVal="" desc="FIFO1 clear">
-        <value name="E_FIFO_CLR_0" value="0" desc="Normal FIFO operation" />
-        <value name="E_FIFO_CLR_1" value="1" desc="Clear FIFO state" />
-      </field>
-      <field name="FIFO0_LVL" from="2" to="2" access="RW" resetVal="" desc="FIFO level">
-        <value name="E_FIFO_LVL_0" value="0" desc="FIFO LVL: input mode: FIFO not full; output mode: FIFO not empty" />
-        <value name="E_FIFO_LVL_1" value="1" desc="FIFO LVL: input mode: FIFO at least 1/2 empty; output mode: FIFO at least 1/2 full" />
-      </field>
-      <field name="FIFO1_LVL" from="3" to="3" access="RW" resetVal="" desc="FIFO level">
-        <value name="E_FIFO_LVL_0" value="0" desc="FIFO LVL: input mode: FIFO not full; output mode: FIFO not empty" />
-        <value name="E_FIFO_LVL_1" value="1" desc="FIFO LVL: input mode: FIFO at least 1/2 empty; output mode: FIFO at least 1/2 full" />
-      </field>
-      <field name="INT_EN" from="4" to="4" access="RW" resetVal="" desc="">
-        <value name="E_INT_EN0" value="0" desc="Interrupt disabled" />
-        <value name="E_INT_EN1" value="1" desc="Interrupt enabled" />
-      </field>
-      <field name="CNT_START" from="5" to="5" access="RW" resetVal="" desc="FIFO0 clear">
-        <value name="E_CNT_START0" value="0" desc="Disable counter" />
-        <value name="E_CNT_START1" value="1" desc="Enable counter" />
-      </field>
-    </register>
-  </block>
   <block name="Echo_Timer" BASE="0x0" SIZE="0x0" desc="" visible="true">
     <block name="VirtualMux_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
     <block name="VirtualMux_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
@@ -60,15 +13,22 @@
     <block name="OneTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
     <block name="TimerUDB" BASE="0x0" SIZE="0x0" desc="" visible="true" />
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-    <register name="Echo_Timer_COUNTER" address="0x40006408" bitWidth="16" desc="UDB.A0 - Current Down Counter Value" />
-    <register name="Echo_Timer_PERIOD" address="0x40006428" bitWidth="16" desc="UDB.D0 - Assigned Period" />
-    <register name="Echo_Timer_STATUS_MASK" address="0x40006489" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register">
+    <register name="Echo_Timer_COUNTER" address="0x40006508" bitWidth="16" desc="UDB.A0 - Current Down Counter Value" />
+    <register name="Echo_Timer_PERIOD" address="0x40006528" bitWidth="16" desc="UDB.D0 - Assigned Period" />
+    <register name="Echo_Timer_Control_Reg" address="0x40006579" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value">
+      <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the Timer" />
+      <field name="CTRL_CMODE" from="6" to="5" access="RW" resetVal="" desc="Capture Mode" />
+      <field name="CTRL_TEN" from="4" to="4" access="RW" resetVal="" desc="Trigger Enable Bit" />
+      <field name="CTRL_TMODE" from="3" to="2" access="RW" resetVal="" desc="Trigger Mode" />
+      <field name="CTRL_IC" from="1" to="0" access="RW" resetVal="" desc="Interrupt Count" />
+    </register>
+    <register name="Echo_Timer_STATUS_MASK" address="0x40006589" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register">
       <field name="TIMER_STS_TC" from="0" to="0" access="R" resetVal="" desc="Enables the Interrupt on TC" />
       <field name="TIMER_STS_CAPT" from="1" to="1" access="R" resetVal="" desc="Enables the Interrupt on Capture" />
       <field name="TIMER_STS_FIFO_FULL" from="2" to="2" access="R" resetVal="" desc="FIFO Full Status " />
       <field name="TIMER_STS_FIFO_NEMPTY" from="3" to="3" access="R" resetVal="" desc="FIFO Empty status " />
     </register>
-    <register name="Echo_Timer_STATUS_AUX_CTRL" address="0x40006499" bitWidth="8" desc="UDB Auxilliary Control Register">
+    <register name="Echo_Timer_STATUS_AUX_CTRL" address="0x40006599" bitWidth="8" desc="UDB Auxilliary Control Register">
       <field name="FIFO0_CLR" from="0" to="0" access="RW" resetVal="" desc="FIFO0 clear">
         <value name="E_FIFO_CLR_0" value="0" desc="Normal FIFO operation" />
         <value name="E_FIFO_CLR_1" value="1" desc="Clear FIFO state" />
@@ -94,22 +54,18 @@
         <value name="E_CNT_START1" value="1" desc="Enable counter" />
       </field>
     </register>
-    <register name="Echo_Timer_Control_Reg" address="0x40006579" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value">
-      <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the Timer" />
-      <field name="CTRL_CMODE" from="6" to="5" access="RW" resetVal="" desc="Capture Mode" />
-      <field name="CTRL_TEN" from="4" to="4" access="RW" resetVal="" desc="Trigger Enable Bit" />
-      <field name="CTRL_TMODE" from="3" to="2" access="RW" resetVal="" desc="Trigger Mode" />
-      <field name="CTRL_IC" from="1" to="0" access="RW" resetVal="" desc="Interrupt Count" />
-    </register>
   </block>
-  <block name="end_echo_IRR" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="right" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="not_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="not_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="left" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   <block name="start_echo_IRR" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-  <block name="Pin_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-  <block name="clock_4" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-  <block name="ZeroTerminal_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-  <block name="pwm_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="Pin_3" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="Pin_4" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   <block name="FAN1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-  <block name="tach_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="PWR_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="GND_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="pwm_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   <block name="LCD" BASE="0x0" SIZE="0x0" desc="" visible="true">
     <block name="LCDPort" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   </block>
@@ -138,17 +94,7 @@
     <block name="VirtualMux_8" BASE="0x0" SIZE="0x0" desc="" visible="true" />
     <block name="VirtualMux_6" BASE="0x0" SIZE="0x0" desc="" visible="true" />
     <block name="VirtualMux_7" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-    <register name="FanController_ALRT_MASK_LSB" address="0x40006474" bitWidth="8" desc="Alert Mask LSB Register">
-      <field name="ALRT_MASK_1" from="0" to="0" access="RW" resetVal="" desc="Alert Mask for Fan1" />
-      <field name="ALRT_MASK_2" from="1" to="1" access="RW" resetVal="" desc="Alert Mask for Fan2" />
-      <field name="ALRT_MASK_3" from="2" to="2" access="RW" resetVal="" desc="Alert Mask for Fan3" />
-      <field name="ALRT_MASK_4" from="3" to="3" access="RW" resetVal="" desc="Alert Mask for Fan4" />
-      <field name="ALRT_MASK_5" from="4" to="4" access="RW" resetVal="" desc="Alert Mask for Fan5" />
-      <field name="ALRT_MASK_6" from="5" to="5" access="RW" resetVal="" desc="Alert Mask for Fan6" />
-      <field name="ALRT_MASK_7" from="6" to="6" access="RW" resetVal="" desc="Alert Mask for Fan7" />
-      <field name="ALRT_MASK_8" from="7" to="7" access="RW" resetVal="" desc="Alert Mask for Fan8" />
-    </register>
-    <register name="FanController_ALERT_STATUS" address="0x40006566" bitWidth="8" desc="Alert Status Register">
+    <register name="FanController_ALERT_STATUS" address="0x40006464" bitWidth="8" desc="Alert Status Register">
       <field name="STALL_STATUS" from="0" to="0" access="R" resetVal="" desc="Stall status for all Fans">
         <value name="NO_STALL" value="0" desc="No stall occurred" />
         <value name="STALL" value="1" desc="Stall is occurred" />
@@ -158,7 +104,7 @@
         <value name="SPEED_ERROR" value="1" desc="Speed error is occurred" />
       </field>
     </register>
-    <register name="FanController_STALL_STATUS_LSB" address="0x40006567" bitWidth="8" desc="Stall Status LSB Register">
+    <register name="FanController_STALL_STATUS_LSB" address="0x40006467" bitWidth="8" desc="Stall Status LSB Register">
       <field name="STALL_STAT_1" from="0" to="0" access="RW" resetVal="" desc="Stall status for Fan1" />
       <field name="STALL_STAT_2" from="1" to="1" access="RW" resetVal="" desc="Stall status for Fan2" />
       <field name="STALL_STAT_3" from="2" to="2" access="RW" resetVal="" desc="Stall status for Fan3" />
@@ -168,7 +114,17 @@
       <field name="STALL_STAT_7" from="6" to="6" access="RW" resetVal="" desc="Stall status for Fan7" />
       <field name="STALL_STAT_8" from="7" to="7" access="RW" resetVal="" desc="Stall status for Fan8" />
     </register>
-    <register name="FanController_GLBL_CTRL" address="0x40006576" bitWidth="8" desc="Global Control Register">
+    <register name="FanController_ALRT_MASK_LSB" address="0x40006476" bitWidth="8" desc="Alert Mask LSB Register">
+      <field name="ALRT_MASK_1" from="0" to="0" access="RW" resetVal="" desc="Alert Mask for Fan1" />
+      <field name="ALRT_MASK_2" from="1" to="1" access="RW" resetVal="" desc="Alert Mask for Fan2" />
+      <field name="ALRT_MASK_3" from="2" to="2" access="RW" resetVal="" desc="Alert Mask for Fan3" />
+      <field name="ALRT_MASK_4" from="3" to="3" access="RW" resetVal="" desc="Alert Mask for Fan4" />
+      <field name="ALRT_MASK_5" from="4" to="4" access="RW" resetVal="" desc="Alert Mask for Fan5" />
+      <field name="ALRT_MASK_6" from="5" to="5" access="RW" resetVal="" desc="Alert Mask for Fan6" />
+      <field name="ALRT_MASK_7" from="6" to="6" access="RW" resetVal="" desc="Alert Mask for Fan7" />
+      <field name="ALRT_MASK_8" from="7" to="7" access="RW" resetVal="" desc="Alert Mask for Fan8" />
+    </register>
+    <register name="FanController_GLBL_CTRL" address="0x40006477" bitWidth="8" desc="Global Control Register">
       <field name="ALERT_ENABLE" from="0" to="0" access="RW" resetVal="" desc="Global alert enable signal">
         <value name="ALERTS_DIS" value="0" desc="Generation of all alerts is disabled" />
         <value name="ALERTS_EN" value="1" desc="Generation of alerts is enabled" />
@@ -192,8 +148,58 @@
       <field name="RSRVD" from="7" to="7" access="R" resetVal="" desc="Reserved" />
     </register>
   </block>
-  <block name="PWR_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-  <block name="Clock_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="tach_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="Pin_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="Trigger_Timer" BASE="0x0" SIZE="0x0" desc="" visible="true">
+    <block name="VirtualMux_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="VirtualMux_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="VirtualMux_3" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="OneTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="TimerUDB" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+    <register name="Trigger_Timer_COUNTER" address="0x40006402" bitWidth="32" desc="UDB.A0 - Current Down Counter Value" />
+    <register name="Trigger_Timer_PERIOD" address="0x40006422" bitWidth="32" desc="UDB.D0 - Assigned Period" />
+    <register name="Trigger_Timer_Control_Reg" address="0x40006472" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value">
+      <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the Timer" />
+      <field name="CTRL_CMODE" from="6" to="5" access="RW" resetVal="" desc="Capture Mode" />
+      <field name="CTRL_TEN" from="4" to="4" access="RW" resetVal="" desc="Trigger Enable Bit" />
+      <field name="CTRL_TMODE" from="3" to="2" access="RW" resetVal="" desc="Trigger Mode" />
+      <field name="CTRL_IC" from="1" to="0" access="RW" resetVal="" desc="Interrupt Count" />
+    </register>
+    <register name="Trigger_Timer_STATUS_MASK" address="0x40006485" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register">
+      <field name="TIMER_STS_TC" from="0" to="0" access="R" resetVal="" desc="Enables the Interrupt on TC" />
+      <field name="TIMER_STS_CAPT" from="1" to="1" access="R" resetVal="" desc="Enables the Interrupt on Capture" />
+      <field name="TIMER_STS_FIFO_FULL" from="2" to="2" access="R" resetVal="" desc="FIFO Full Status " />
+      <field name="TIMER_STS_FIFO_NEMPTY" from="3" to="3" access="R" resetVal="" desc="FIFO Empty status " />
+    </register>
+    <register name="Trigger_Timer_STATUS_AUX_CTRL" address="0x40006495" bitWidth="8" desc="UDB Auxilliary Control Register">
+      <field name="FIFO0_CLR" from="0" to="0" access="RW" resetVal="" desc="FIFO0 clear">
+        <value name="E_FIFO_CLR_0" value="0" desc="Normal FIFO operation" />
+        <value name="E_FIFO_CLR_1" value="1" desc="Clear FIFO state" />
+      </field>
+      <field name="FIFO1_CLR" from="1" to="1" access="RW" resetVal="" desc="FIFO1 clear">
+        <value name="E_FIFO_CLR_0" value="0" desc="Normal FIFO operation" />
+        <value name="E_FIFO_CLR_1" value="1" desc="Clear FIFO state" />
+      </field>
+      <field name="FIFO0_LVL" from="2" to="2" access="RW" resetVal="" desc="FIFO level">
+        <value name="E_FIFO_LVL_0" value="0" desc="FIFO LVL: input mode: FIFO not full; output mode: FIFO not empty" />
+        <value name="E_FIFO_LVL_1" value="1" desc="FIFO LVL: input mode: FIFO at least 1/2 empty; output mode: FIFO at least 1/2 full" />
+      </field>
+      <field name="FIFO1_LVL" from="3" to="3" access="RW" resetVal="" desc="FIFO level">
+        <value name="E_FIFO_LVL_0" value="0" desc="FIFO LVL: input mode: FIFO not full; output mode: FIFO not empty" />
+        <value name="E_FIFO_LVL_1" value="1" desc="FIFO LVL: input mode: FIFO at least 1/2 empty; output mode: FIFO at least 1/2 full" />
+      </field>
+      <field name="INT_EN" from="4" to="4" access="RW" resetVal="" desc="">
+        <value name="E_INT_EN0" value="0" desc="Interrupt disabled" />
+        <value name="E_INT_EN1" value="1" desc="Interrupt enabled" />
+      </field>
+      <field name="CNT_START" from="5" to="5" access="RW" resetVal="" desc="FIFO0 clear">
+        <value name="E_CNT_START0" value="0" desc="Disable counter" />
+        <value name="E_CNT_START1" value="1" desc="Enable counter" />
+      </field>
+    </register>
+  </block>
+  <block name="clock_3" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   <block name="ADC_DelSig_1" BASE="0x0" SIZE="0x0" desc="" visible="true">
     <block name="cy_analog_virtualmux_5" BASE="0x0" SIZE="0x0" desc="" visible="true" />
     <block name="cy_analog_noconnect_5" BASE="0x0" SIZE="0x0" desc="" visible="true" />
@@ -1015,12 +1021,10 @@
       </field>
     </register>
   </block>
-  <block name="Clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-  <block name="GND_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   <block name="EOC_SR" BASE="0x0" SIZE="0x0" desc="" visible="true">
-    <register name="EOC_SR_STATUS_REG" address="0x40006466" bitWidth="8" desc="" />
-    <register name="EOC_SR_MASK_REG" address="0x40006486" bitWidth="8" desc="" />
-    <register name="EOC_SR_STATUS_AUX_CTL_REG" address="0x40006496" bitWidth="8" desc="">
+    <register name="EOC_SR_STATUS_REG" address="0x40006463" bitWidth="8" desc="" />
+    <register name="EOC_SR_MASK_REG" address="0x40006483" bitWidth="8" desc="" />
+    <register name="EOC_SR_STATUS_AUX_CTL_REG" address="0x40006493" bitWidth="8" desc="">
       <field name="FIFO0" from="5" to="5" access="RW" resetVal="" desc="FIFO0 clear">
         <value name="ENABLED" value="1" desc="Enable counter" />
         <value name="DISABLED" value="0" desc="Disable counter" />
@@ -1047,4 +1051,6 @@
       </field>
     </register>
   </block>
+  <block name="Clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="Clock_2" BASE="0x0" SIZE="0x0" desc="" visible="true" />
 </blockRegMap>

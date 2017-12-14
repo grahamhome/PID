@@ -18,7 +18,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="FW_Fan_Control01" Path="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn" Version="4.11" Type="Normal">
+  <Project Name="FW_Fan_Control01" Path="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn" Version="4.11" Type="Normal">
     <CMSIS_SVD_File>FW_Fan_Control01.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -27,14 +27,14 @@
       <LinkerFile Toolchain="IAR EWARM">.\Generated_Source\PSoC5\Cm3Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="BUILD" Path="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn">
-        <Files Root="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn">
+      <Folder BuildType="BUILD" Path="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn">
+        <Files Root="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn">
           <File BuildType="BUILD" Toolchain="">.\main.c</File>
           <File BuildType="BUILD" Toolchain="">.\device.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\Generated_Source\PSoC5">
-        <Files Root="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\Generated_Source\PSoC5">
+        <Files Root="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn">
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cymetadata.c</File>
@@ -129,47 +129,57 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\end_echo_IRR.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\start_echo_IRR.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\start_echo_IRR.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_3_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_3.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_3.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_4_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_4.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_4.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\left.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\left.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\right.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\right.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\prebuild.bat</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\postbuild.bat</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CyElfTool.exe</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\libelf.dll</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\Generated_Source\PSoC5\ARM_GCC">
-        <Files Root="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\Generated_Source\PSoC5\ARM_GCC">
+        <Files Root="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn">
           <File BuildType="BUILD" Toolchain="ARM GCC">.\Generated_Source\PSoC5\ARM_GCC\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\Generated_Source\PSoC5\ARM_Keil_MDK">
-        <Files Root="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\Generated_Source\PSoC5\ARM_Keil_MDK">
+        <Files Root="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn">
           <File BuildType="BUILD" Toolchain="ARM Keil MDK">.\Generated_Source\PSoC5\ARM_Keil_MDK\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn\Generated_Source\PSoC5\IAR">
-        <Files Root="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn">
+      <Folder BuildType="STRICT" Path="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn\Generated_Source\PSoC5\IAR">
+        <Files Root="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn">
           <File BuildType="BUILD" Toolchain="IAR">.\Generated_Source\PSoC5\IAR\CyComponentLibrary.a</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn" />
+        <Files Root="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn" />
+        <Files Root="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn" />
+        <Files Root="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_951">
-        <Files Root="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn" />
+        <Files Root="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn" />
+        <Files Root="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn" />
+        <Files Root="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="\\mightor\home\spring2013\gmh5970\Documents\PSoC Creator\Fan_And_Potentiometer\FW_Fan_Control01.cydsn" />
+        <Files Root="D:\Users\BertoTech\Documents\PID\FW_Fan_Control01.cydsn" />
       </Folder>
     </Folders>
   </Project>
